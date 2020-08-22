@@ -20,8 +20,12 @@
     "vue": "^2.6.12"
   },
   "devDependencies": {
+    "css-loader": "^4.2.1",
+    "sass-loader": "^9.0.3",
+    "style-loader": "^1.2.1",
     "vue-loader": "^15.9.3",
     "vue-markdown-loader": "^2.4.1",
+    "vue-router": "^3.4.3",
     "vue-template-compiler": "^2.6.12",
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12",
