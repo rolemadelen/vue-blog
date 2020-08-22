@@ -9,7 +9,7 @@ module.exports = {
     },
 
     entry: {
-        app: path.join(__dirname, 'main.js'),
+        app: path.join(__dirname, 'src/main.js'),
     },
 
     module: {
@@ -29,7 +29,10 @@ module.exports = {
                         }
                     }
                 ]
-            },
+            }, {
+                test: /\.s[ac]ss$/i,
+                use: ['style-loader', 'css-loader', 'sass-loader'],
+            }
         ],
     },
     plugins: [
