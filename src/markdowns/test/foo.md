@@ -4,5 +4,4 @@ _lorem ipsum_ dolor __amet__
 
 ```cpp
 #include <iostream>
-
 ```
