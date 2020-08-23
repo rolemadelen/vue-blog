@@ -14,26 +14,25 @@ module.exports = {
 
     module: {
         rules: [{
-                test: /\.vue$/,
-                loader: ['vue-loader'],
-            }, {
-                test: /\.md$/,
-                use: [
-                    {
-                        loader: 'vue-loader'
-                    },
-                    {
-                        loader: 'vue-markdown-loader/lib/markdown-compiler',
-                        options: {
-                            raw: true
-                        }
+            test: /\.vue$/,
+            loader: 'vue-loader',
+        }, {
+            test: /\.md$/,
+            use: [
+                {
+                    loader: 'vue-loader'
+                },
+                {
+                    loader: 'vue-markdown-loader/lib/markdown-compiler',
+                    options: {
+                        raw: true,
                     }
-                ]
-            }, {
-                test: /\.s[ac]ss$/i,
-                use: ['style-loader', 'css-loader', 'sass-loader'],
-            }
-        ],
+                }
+            ]
+        }, {
+            test: /\.s[ac]ss$/i,
+            use: ['style-loader', 'css-loader', 'sass-loader'],
+        }],
     },
     plugins: [
         new VueLoaderPlugin(),
