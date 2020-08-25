@@ -12,9 +12,17 @@
       </router-link>
 
       <div class="lang-selector">
+        <router-link to="/about">
         <language-selector lang="eng" class="selected" @click.native="onChangeLang('eng')"/>
+        </router-link>
+
+        <router-link to="/about/ko">
         <language-selector lang="ko" @click.native="onChangeLang('ko')"/>
+        </router-link>
+
+        <router-link to="/about/ja">
         <language-selector lang="ja" @click.native="onChangeLang('ja')"/>
+        </router-link>
       </div>
 
       <div class="header-menu">
