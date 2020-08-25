@@ -11,7 +11,7 @@ export default {
     },
     data() {
         return {
-            image: `/src/assets/${this.lang}.png`,
+            image: `./assets/${this.lang}.png`,
     }
   }
 }
