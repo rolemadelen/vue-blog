@@ -1,6 +1,6 @@
 <template>
   <div class="blog">
-    <h1>{{$route.name}}</h1>
+    <!-- <h1>{{$route.name}}</h1> -->
     <router-view />
     <router-link to="/" tag="a" class="back">&laquo; Back</router-link>
   </div>

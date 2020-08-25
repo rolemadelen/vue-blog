@@ -1,6 +1,7 @@
 <template>
 <div class="about">
-    Hi. I’m <b>Jione Eu</b> who goes by <b>Jii</b>. 
+    <h2 style="text-align: center;"> Hello! </h2>
+    I’m <b>Jione Eu</b> who goes by <b>Jii</b>. 
 
     <br><br>
 
@@ -8,7 +9,7 @@
 
     <br><br>
 
-    I was born in Korea, raised in the States, and now working in Japan as a Foreign Language Teacher in elementary school.
+    I was born in Korea, raised in the States, and now working in Japan as a Foreign Language Teacher in elementary schools.
 
     <br><br> 
 
