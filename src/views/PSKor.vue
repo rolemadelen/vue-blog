@@ -2,19 +2,19 @@
   <div class="home">
     <div class="sections">
       <div v-for="(section, index) in Object.keys(entries)" :key="index" class="group">
-        <div v-if="section === 'Algorithm'"> 
-            <h2>{{section}}</h2>
-            <div class="section" v-for="entry in entries[section]" :key="entry.id">
-              <div v-if="entry.lang === '/' ||entry.lang === 'eng'">
-                <div class="entry">
-                    <h3 @click="$router.push({name: entry.id, title: entry.title})">
-                    {{entry.title}}
-                    <span class="subtitle">{{entry.date}}</span>
-                    </h3>
-                    <p>{{entry.description}}</p>
-                </div>
-                </div>
+        <div v-if="section === 'PS'">
+          <h2>{{section}}</h2>
+          <div class="section" v-for="entry in entries[section]" :key="entry.id">
+            <div v-if="entry.lang === 'kor'">
+              <div class="entry">
+                <h3 @click="$router.push({name: entry.id, title: entry.title})">
+                  {{entry.title}}
+                  <span class="subtitle">{{entry.date}}</span>
+                </h3>
+                <p>{{entry.description}}</p>
+              </div>
             </div>
+          </div>
         </div>
       </div>
     </div>
@@ -75,7 +75,6 @@ p.description {
   margin: 0 auto;
   margin-top: 4rem;
 }
-
 .group {
   margin-bottom: 4rem;
 }

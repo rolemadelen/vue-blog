@@ -2,18 +2,16 @@
   <div class="home">
     <div class="sections">
       <div v-for="(section, index) in Object.keys(entries)" :key="index" class="group">
-        <div v-if="section === 'Algorithm'"> 
-            <h2>{{section}}</h2>
-            <div class="section" v-for="entry in entries[section]" :key="entry.id">
-              <div v-if="entry.lang === '/' ||entry.lang === 'eng'">
-                <div class="entry">
-                    <h3 @click="$router.push({name: entry.id, title: entry.title})">
-                    {{entry.title}}
-                    <span class="subtitle">{{entry.date}}</span>
-                    </h3>
-                    <p>{{entry.description}}</p>
-                </div>
-                </div>
+          <h2>{{section}}</h2>
+          <div class="section" v-for="entry in entries[section]" :key="entry.id">
+            <div v-if="entry.lang === 'kor'">
+              <div class="entry">
+                <h3 @click="$router.push({name: entry.id, lang: entry.lang})">
+                  {{entry.title}}
+                  <span class="subtitle">{{entry.date}}</span>
+                </h3>
+                <p class="description">{{entry.description}}</p>
+              </div>
             </div>
         </div>
       </div>
@@ -31,6 +29,11 @@ export default {
       return BLOGENTRIES;
     },
   },
+  data() {
+    return {
+      sectionName: ''
+    }
+  },
 };
 </script>
 
@@ -44,8 +47,10 @@ img {
   width: 150px;
 }
 h2 {
-  color: #35495e;
+  color: rgba(0, 0, 0, 0.3);
   text-transform: capitalize;
+  // margin-bottom: 2rem;
+  font-size: 0.9em;
 }
 h3 {
   // color: #42b883;
@@ -70,6 +75,7 @@ p.description {
   font-size: 15px;
   color: rgba(0, 0, 0, 0.85);
 }
+
 .sections {
   max-width: 35em;
   margin: 0 auto;

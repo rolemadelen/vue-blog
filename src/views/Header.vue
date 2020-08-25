@@ -1,7 +1,7 @@
 <template>
   <div>
     <div id="header">
-      <router-link to="/">
+      <div @click="goHome">
         <img
           class="logo"
           width="85px"
@@ -9,28 +9,20 @@
           src="https://avatars3.githubusercontent.com/u/34954499?v=4"
           alt="Github Logo"
         />
-      </router-link>
+      </div>
 
       <div class="lang-selector">
-        <router-link to="/about">
         <language-selector lang="eng" class="selected" @click.native="onChangeLang('eng')"/>
-        </router-link>
-
-        <router-link to="/about/ko">
-        <language-selector lang="ko" @click.native="onChangeLang('ko')"/>
-        </router-link>
-
-        <router-link to="/about/ja">
-        <language-selector lang="ja" @click.native="onChangeLang('ja')"/>
-        </router-link>
+        <language-selector lang="kor" @click.native="onChangeLang('kor')"/>
+        <language-selector lang="jap" @click.native="onChangeLang('jap')"/>
       </div>
 
       <div class="header-menu">
-        <header-menu page="about" name="about" />
-        <header-menu page="algorithm" name="algorithm" />
-        <header-menu page="data-structure" name="data-structure" />
-        <header-menu page="problem-solving" name="ps" />
-        <header-menu page="til" name="TIL" />
+        <header-menu page="about/" name="about" @click.native="navMenu('-about/')"/>
+        <header-menu page="algorithm/" name="algorithm" @click.native="navMenu('-algorithm/')"/>
+        <header-menu page="data-structure/" name="data-structure" @click.native="navMenu('-data-structure/')"/>
+        <header-menu page="problem-solving/" name="ps" @click.native="navMenu('-problem-solving/')"/>
+        <header-menu page="til/" name="TIL" @click.native="navMenu('-til/')"/>
 
       </div>
     </div>
@@ -44,27 +36,60 @@ import HeaderMenu from "./HeaderMenu";
 
 export default {
   components: { LanguageSelector, HeaderMenu },
+  data() {
+    return {
+      lang: "eng",
+    }
+  },
   computed: {
     getLangSelector: function() {
         return document.querySelectorAll('div.lang-selector div');
-    }
+    },
   },
   methods: {
+    navMenu: function(str) {
+        const path = '/' + this.lang + '/' + this.lang + str;
+        if (this.$router.currentRoute.path !== path) {
+          this.$router.replace({path: path});
+        }
+    },
+    goHome: function() {
+      const path = '/home/' + this.lang + '-home';
+      if (this.$router.currentRoute.path !== path) { 
+        this.$router.replace({path: path});
+      }
+    },
     onChangeLang(lang) {
       const langSelector = this.getLangSelector;
+      const prevPath = this.$router.currentRoute.path;
+      let currPath = prevPath.split(/[\s/]+/);
+      if ("engkorjap".includes(currPath[1])) {
+        currPath[1] = lang;
+      }
+      let secondParam = currPath[2].split(/[\s-]+/);
+      secondParam[0] = lang;
+      secondParam = secondParam.join('-');
+      currPath[2] = secondParam;
+      currPath = currPath.join('/');
 
-      if (lang==='eng') {
-        langSelector[0].className = 'selected';
-        langSelector[1].className = '';
-        langSelector[2].className = '';
-      } else if (lang==='ko') {
-        langSelector[0].className = '';
-        langSelector[1].className = 'selected';
-        langSelector[2].className = '';
-      } else {
-        langSelector[0].className = '';
-        langSelector[1].className = '';
-        langSelector[2].className = 'selected';
+      if (prevPath !== currPath) {
+        if (lang==='eng') {
+          this.lang = "eng";
+          langSelector[0].className = 'selected';
+          langSelector[1].className = '';
+          langSelector[2].className = '';
+        } else if (lang==='kor') {
+          this.lang = "kor";
+          langSelector[0].className = '';
+          langSelector[1].className = 'selected';
+          langSelector[2].className = '';
+        } else if (lang==='jap') {
+          this.lang = "jap";
+          langSelector[0].className = '';
+          langSelector[1].className = '';
+          langSelector[2].className = 'selected';
+        }
+        this.$router.replace({path: currPath});
       }
     } 
   }
