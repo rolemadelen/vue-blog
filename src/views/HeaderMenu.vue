@@ -1,6 +1,6 @@
 <template>
     <div>
-        <router-link :to="pageLink">{{this.name}}</router-link>
+        <router-link :to="page">{{this.name}}</router-link>
     </div>
 </template>
 
@@ -8,18 +8,7 @@
 export default {
     props: {
         page: String,
-        name: String
+        name: String,
     },
-    
-    data() {
-        return {
-            pageLink: '/eng/' + this.page,
-        }
-    }
-    
 }
 </script>
-
-<style lang="scss" scoped>
-
-</style>

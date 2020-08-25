@@ -2,10 +2,10 @@
   <div class="home">
     <div class="sections">
       <div v-for="(section, index) in Object.keys(entries)" :key="index" class="group">
-        <div v-if="section === 'Algorithm'"> 
+        <div v-if="section === 'PS'"> 
             <h2>{{section}}</h2>
             <div class="section" v-for="entry in entries[section]" :key="entry.id">
-              <div v-if="entry.lang === '/' ||entry.lang === 'eng'">
+              <div v-if="entry.lang === 'kor'">
                 <div class="entry">
                     <h3 @click="$router.push({name: entry.id, title: entry.title})">
                     {{entry.title}}
@@ -44,7 +44,6 @@ img {
   width: 150px;
 }
 h2 {
-  color: #35495e;
   text-transform: capitalize;
 }
 h3 {
@@ -75,7 +74,6 @@ p.description {
   margin: 0 auto;
   margin-top: 4rem;
 }
-
 .group {
   margin-bottom: 4rem;
 }
