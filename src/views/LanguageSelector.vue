@@ -1,18 +1,18 @@
 <template>
     <div>
-        <img :src="image" :alt="country">
+        <img :src="image" :alt="lang">
     </div>
 </template>
 
 <script>
 export default {
     props: {
-        country: String,
+        lang: String,
     },
     data() {
         return {
-            image: `/src/assets/${this.country}.png`,
-        }
+            image: `/src/assets/${this.lang}.png`,
     }
+  }
 }
 </script>
