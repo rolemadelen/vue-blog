@@ -5,7 +5,7 @@
         <div v-if="section === 'Algorithm'"> 
             <h2>{{section}}</h2>
             <div class="section" v-for="entry in entries[section]" :key="entry.id">
-              <div v-if="entry.lang === '/' ||entry.lang === 'eng'">
+              <div v-if="entry.lang === 'jap'">
                 <div class="entry">
                     <h3 @click="$router.push({name: entry.id, title: entry.title})">
                     {{entry.title}}
@@ -75,7 +75,6 @@ p.description {
   margin: 0 auto;
   margin-top: 4rem;
 }
-
 .group {
   margin-bottom: 4rem;
 }
