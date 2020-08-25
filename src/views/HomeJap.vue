@@ -76,9 +76,7 @@ p.description {
   margin: 0 auto;
   margin-top: 4rem;
 }
-.section {
-  margin-bottom: 3rem;
-}
+
 .group {
   margin-bottom: 4rem;
 }
