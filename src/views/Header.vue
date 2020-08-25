@@ -12,18 +12,25 @@
       </div>
 
       <div class="lang-selector">
-        <language-selector lang="eng" class="selected" @click.native="onChangeLang('eng')"/>
-        <language-selector lang="kor" @click.native="onChangeLang('kor')"/>
-        <language-selector lang="jap" @click.native="onChangeLang('jap')"/>
+        <language-selector lang="eng" class="selected" @click.native="onChangeLang('eng')" />
+        <language-selector lang="kor" @click.native="onChangeLang('kor')" />
+        <language-selector lang="jap" @click.native="onChangeLang('jap')" />
       </div>
 
       <div class="header-menu">
-        <header-menu page="about/" name="about" @click.native="navMenu('-about/')"/>
-        <header-menu page="algorithm/" name="algorithm" @click.native="navMenu('-algorithm/')"/>
-        <header-menu page="data-structure/" name="data-structure" @click.native="navMenu('-data-structure/')"/>
-        <header-menu page="problem-solving/" name="ps" @click.native="navMenu('-problem-solving/')"/>
-        <header-menu page="til/" name="TIL" @click.native="navMenu('-til/')"/>
-
+        <header-menu page="about/" name="about" @click.native="navMenu('-about/')" />
+        <header-menu page="algorithm/" name="algorithm" @click.native="navMenu('-algorithm/')" />
+        <header-menu
+          page="data-structure/"
+          name="data-structure"
+          @click.native="navMenu('-data-structure/')"
+        />
+        <header-menu
+          page="problem-solving/"
+          name="ps"
+          @click.native="navMenu('-problem-solving/')"
+        />
+        <header-menu page="til/" name="TIL" @click.native="navMenu('-til/')" />
       </div>
     </div>
     <div class="divider"></div>
@@ -39,60 +46,63 @@ export default {
   data() {
     return {
       lang: "eng",
-    }
+    };
   },
   computed: {
-    getLangSelector: function() {
-        return document.querySelectorAll('div.lang-selector div');
+    getLangSelector: function () {
+      return document.querySelectorAll("div.lang-selector div");
     },
   },
   methods: {
-    navMenu: function(str) {
-        const path = '/' + this.lang + '/' + this.lang + str;
-        if (this.$router.currentRoute.path !== path) {
-          this.$router.replace({path: path});
-        }
+    navMenu: function (str) {
+      const path = "/" + this.lang + "/" + this.lang + str;
+      if (this.$router.currentRoute.path !== path) {
+        this.$router.replace({ path: path });
+      }
     },
-    goHome: function() {
-      const path = '/home/' + this.lang + '-home';
-      if (this.$router.currentRoute.path !== path) { 
-        this.$router.replace({path: path});
+    goHome: function () {
+      const path = "/home/" + this.lang + "-home";
+      if (this.$router.currentRoute.path !== path) {
+        this.$router.replace({ path: path });
       }
     },
     onChangeLang(lang) {
       const langSelector = this.getLangSelector;
-      const prevPath = this.$router.currentRoute.path;
+      let prevPath = this.$router.currentRoute.path;
+      if (prevPath === "/") {
+        prevPath = "/home/eng-home";
+      }
       let currPath = prevPath.split(/[\s/]+/);
       if ("engkorjap".includes(currPath[1])) {
         currPath[1] = lang;
       }
       let secondParam = currPath[2].split(/[\s-]+/);
       secondParam[0] = lang;
-      secondParam = secondParam.join('-');
+      secondParam = secondParam.join("-");
       currPath[2] = secondParam;
-      currPath = currPath.join('/');
+      currPath = currPath.join("/");
 
       if (prevPath !== currPath) {
-        if (lang==='eng') {
+        if (lang === "eng") {
           this.lang = "eng";
-          langSelector[0].className = 'selected';
-          langSelector[1].className = '';
-          langSelector[2].className = '';
-        } else if (lang==='kor') {
+          langSelector[0].className = "selected";
+          langSelector[1].className = "";
+          langSelector[2].className = "";
+        } else if (lang === "kor") {
           this.lang = "kor";
-          langSelector[0].className = '';
-          langSelector[1].className = 'selected';
-          langSelector[2].className = '';
-        } else if (lang==='jap') {
+          langSelector[0].className = "";
+          langSelector[1].className = "selected";
+          langSelector[2].className = "";
+        } else if (lang === "jap") {
           this.lang = "jap";
-          langSelector[0].className = '';
-          langSelector[1].className = '';
-          langSelector[2].className = 'selected';
+          langSelector[0].className = "";
+          langSelector[1].className = "";
+          langSelector[2].className = "selected";
         }
-        this.$router.replace({path: currPath});
+        this.$router.replace({ path: currPath });
       }
-    } 
-  }
+    },
+  },
 };
 </script>
 
@@ -107,7 +117,7 @@ div#header {
     height: 85px;
     border-radius: 40%;
     box-shadow: 0 0 2px rgb(160, 152, 152);
-    transition: margin-right .1s ease-in;
+    transition: margin-right 0.1s ease-in;
   }
 
   img.logo:hover {
@@ -161,13 +171,30 @@ div#header {
   }
 }
 
-  .divider {
-    width: 40%;
-    background: #ddd;
-    background: -webkit-gradient(linear,left top,right top,from(rgba(255,255,255,0)),color-stop(#ccc),to(rgba(255,255,255,0)));
-    background: -webkit-linear-gradient(left,rgba(255,255,255,0),#ccc,rgba(255,255,255,0));
-    background: linear-gradient(to right,rgba(255,255,255,0),#ccc,rgba(255,255,255,0));
-    height: 1px;
-    margin: 2em auto;
-  }
+.divider {
+  width: 40%;
+  background: #ddd;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(rgba(255, 255, 255, 0)),
+    color-stop(#ccc),
+    to(rgba(255, 255, 255, 0))
+  );
+  background: -webkit-linear-gradient(
+    left,
+    rgba(255, 255, 255, 0),
+    #ccc,
+    rgba(255, 255, 255, 0)
+  );
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0),
+    #ccc,
+    rgba(255, 255, 255, 0)
+  );
+  height: 1px;
+  margin: 2em auto;
+}
 </style>
