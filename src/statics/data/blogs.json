@@ -3,28 +3,28 @@
     {
       "id": "eng-graph-bfs",
       "date": "June 11, 2020",
-      "title": "ENG Graph - Breadth First Search (BFS)",
+      "title": "Graph - Breadth First Search (BFS)",
       "description": "Learn and implement BFS algorithm",
       "lang": "eng"
     },
     {
       "id": "jap-graph-bfs",
       "date": "June 11, 2020",
-      "title": "JAP Graph - Breadth First Search (BFS)",
+      "title": "グラフ・幅優先探索（BFS)",
       "description": "Learn and implement BFS algorithm",
       "lang": "jap"
     },
     {
       "id": "kor-graph-bfs",
       "date": "June 11, 2020",
-      "title": "KOR Graph - Breadth First Search (BFS)",
+      "title": "그래프 - 넓이 우선 탐색 (BFS)",
       "description": "Learn and implement BFS algorithm",
       "lang": "kor"
     }
   ],
   "PS": [
     {
-      "id": "atcoder",
+      "id": "eng-abc153",
       "date": "February 04, 2020",
       "title": "AtCoder Beginner Contest 153",
       "description": "ABC 153 Solutions",
@@ -33,7 +33,7 @@
   ],
   "Data Structure": [
     {
-      "id": "circular-linked-list",
+      "id": "eng-circular-linked-list",
       "date": "July 18, 2020",
       "title": "Circular Linked List in Ruby",
       "description": "Circular Linked List implementation in Ruby",
@@ -58,7 +58,7 @@
   ],
   "generic": [
     {
-      "id": "en-c-generic",
+      "id": "eng-c-generic",
       "date": "Augest 10, 2019",
       "title": "Generic",
       "description": "Testing markdown",
@@ -67,11 +67,25 @@
   ],
   "test": [
     {
-      "id": "foo",
+      "id": "eng-foo",
       "date": "Augest 10, 2019",
       "title": "Foo",
       "description": "Testing markdown",
       "lang": "eng"
+    },
+    {
+      "id": "jap-foo",
+      "date": "Augest 10, 2019",
+      "title": "Foo",
+      "description": "Testing markdown",
+      "lang": "jap"
+    },
+    {
+      "id": "kor-foo",
+      "date": "Augest 10, 2019",
+      "title": "Foo",
+      "description": "Testing markdown",
+      "lang": "kor"
     }
   ]
 }
