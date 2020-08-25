@@ -8,7 +8,7 @@ module.exports = {
     },
 
     entry: {
-        app: path.join(__dirname, '/src/main.js'),
+        app: path.join(__dirname, 'main.js'),
     },
 
     module: {
@@ -37,8 +37,8 @@ module.exports = {
         new VueLoaderPlugin(),
     ],
     output: {
-        path: path.join(__dirname, '/src/dist/'),
+        path: path.join(__dirname, 'dist'),
         filename: '[name].js',
-        publicPath: '/src/dist/',
+        publicPath: '/dist/',
     }
 }
