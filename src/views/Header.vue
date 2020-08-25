@@ -1,7 +1,7 @@
 <template>
   <div>
     <div id="header">
-      <router-link to="/">
+      <router-link to="/eng">
         <img
           class="logo"
           width="85px"
@@ -12,25 +12,17 @@
       </router-link>
 
       <div class="lang-selector">
-        <router-link to="/about">
         <language-selector lang="eng" class="selected" @click.native="onChangeLang('eng')"/>
-        </router-link>
-
-        <router-link to="/about/ko">
-        <language-selector lang="ko" @click.native="onChangeLang('ko')"/>
-        </router-link>
-
-        <router-link to="/about/ja">
-        <language-selector lang="ja" @click.native="onChangeLang('ja')"/>
-        </router-link>
+        <language-selector lang="kor" @click.native="onChangeLang('kor')"/>
+        <language-selector lang="jap" @click.native="onChangeLang('jap')"/>
       </div>
 
       <div class="header-menu">
-        <header-menu page="about" name="about" />
-        <header-menu page="algorithm" name="algorithm" />
-        <header-menu page="data-structure" name="data-structure" />
-        <header-menu page="problem-solving" name="ps" />
-        <header-menu page="til" name="TIL" />
+        <header-menu page="about/" name="about" />
+        <header-menu page="algorithm/" name="algorithm" />
+        <header-menu page="data-structure/" name="data-structure" />
+        <header-menu page="problem-solving/" name="ps" />
+        <header-menu page="til/" name="TIL" />
 
       </div>
     </div>
@@ -47,24 +39,33 @@ export default {
   computed: {
     getLangSelector: function() {
         return document.querySelectorAll('div.lang-selector div');
-    }
+    },
+
   },
   methods: {
     onChangeLang(lang) {
       const langSelector = this.getLangSelector;
-
-      if (lang==='eng') {
-        langSelector[0].className = 'selected';
-        langSelector[1].className = '';
-        langSelector[2].className = '';
-      } else if (lang==='ko') {
-        langSelector[0].className = '';
-        langSelector[1].className = 'selected';
-        langSelector[2].className = '';
-      } else {
-        langSelector[0].className = '';
-        langSelector[1].className = '';
-        langSelector[2].className = 'selected';
+      const prevPath = this.$router.currentRoute.path;
+      let currPath = prevPath.split(/[\s/]+/);
+      currPath[1] = lang;
+      currPath = currPath.join('/');
+      
+      if (prevPath !== currPath) {
+        if (lang==='eng') {
+          langSelector[0].className = 'selected';
+          langSelector[1].className = '';
+          langSelector[2].className = '';
+        } else if (lang==='kor') {
+          langSelector[0].className = '';
+          langSelector[1].className = 'selected';
+          langSelector[2].className = '';
+        } else if (lang==='jap') {
+          langSelector[0].className = '';
+          langSelector[1].className = '';
+          langSelector[2].className = 'selected';
+        }
+        this.$router.replace({path: currPath});
+        console.log("header: ", currPath);
       }
     } 
   }
