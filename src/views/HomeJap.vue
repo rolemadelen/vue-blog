@@ -4,7 +4,7 @@
       <div v-for="(section, index) in Object.keys(entries)" :key="index" class="group">
           <h2>{{section}}</h2>
           <div class="section" v-for="entry in entries[section]" :key="entry.id">
-            <div v-if="sameLang(entry.lang) === true">
+            <div v-if="entry.lang === 'jap'">
               <div class="entry">
                 <h3 @click="$router.push({name: entry.id, lang: entry.lang})">
                   {{entry.title}}
@@ -29,17 +29,6 @@ export default {
       return BLOGENTRIES;
     },
   },
-    methods: {
-      sameLang(lang) {
-        const currLang = this.$router.currentRoute.path.split(/[\s/]+/)[1];
-        console.log("currLang: ", currLang);
-        if(lang === 'eng' && (currLang === 'eng' || currLang === '/')) {
-          return true;
-        }
-
-        return false;
-      }
-    },
 };
 </script>
 

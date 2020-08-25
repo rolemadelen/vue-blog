@@ -13,7 +13,7 @@ export default {
     
     data() {
         return {
-            pageLink: '/' + this.page + '/',
+            pageLink: '/eng/' + this.page,
         }
     }
     
