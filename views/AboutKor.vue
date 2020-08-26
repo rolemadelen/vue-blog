@@ -32,10 +32,15 @@
 .about {
   @import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,300;0,400;1,300;1,400&display=swap');
   font-family: 'Source Serif Pro', serif;
+  font-size: 15px;
 
   max-width: 40em;
   margin: 2rem auto;
 
+  h2 {
+    margin-bottom: 2em;
+  }
+  
   a {
       text-decoration: none;
       color: #176ac1;
