@@ -8,7 +8,7 @@ Creating a blog using..
 - MacOS (Safari/Chrome)
 
 ## Demo
-[https://jioneeu-blog.netlify.app/#/](https://jioneeu-blog.netlify.app/#/){:target="_blank"}
+<a href="https://jioneeu-blog.netlify.app/#/" target="_blank">https://jioneeu-blog.netlify.app/#/</a>
 
 ## Reference
 - https://github.com/vycoder/vue-markdown-blog
