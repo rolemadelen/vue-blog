@@ -37,7 +37,7 @@
   font-size: 15px;
 
   max-width: 40em;
-  margin: 2rem auto;
+  margin: 0 auto;
   
   h2 {
     margin-bottom: 2em;

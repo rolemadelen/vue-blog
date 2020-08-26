@@ -4,7 +4,7 @@
     <b>jioneeu</b>という名でネットで活動している<b>Jione Eu</b>です。
     <br /><br />
     
-    ２０１９年<a href="https://ucsd.edu/" target="_blank">UC San Diego</a>から<a href="http://cogsci.ucsd.edu/undergraduates/major/design-interaction.html" target="_blank">認知科学 HCI</a>学位を受けて卒業しました。
+    2019年<a href="https://ucsd.edu/" target="_blank">UC San Diego</a>から<a href="http://cogsci.ucsd.edu/undergraduates/major/design-interaction.html" target="_blank">認知科学 HCI</a>学位を受けて卒業しました。
     <br /><br />
     
     韓国生まれで、アメリカ育ちです。今は日本の小学校で英語の先生で働いていますが、software developerを目指して一生懸命勉強しています。
