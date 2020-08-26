@@ -1,5 +1,6 @@
 const path = require('path');
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
+const webpack = require('webpack');
 
 module.exports = {
     mode: 'development',
@@ -39,11 +40,14 @@ module.exports = {
     },
     plugins: [
         new VueLoaderPlugin(),
+        new webpack.optimize.LimitChunkCountPlugin({
+            maxChunks: 2,
+        })
     ],
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: '[name].js',
-        chunkFilename: '[name].js',
+        chunkFilename: 'chunk.bundle.js',
         publicPath: '/dist/',
     },
 
