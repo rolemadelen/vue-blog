@@ -9,10 +9,10 @@ export default {
   props: {
     lang: String,
   },
-  data() {
-    return {
-      image: `./assets/${this.lang}.png`,
-    };
+  computed: {
+    image: function() {
+        return `./assets/${this.lang}.png`;
+    }
   },
 };
 </script>
