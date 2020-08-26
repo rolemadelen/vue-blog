@@ -3,7 +3,7 @@
     <div class="sections">
       <div v-for="(section, index) in Object.keys(entries)" :key="index">
         <div v-if="section === (_section==='' ? section : _section)" class="group">
-          <h2>{{section}}</h2>
+          <h2 v-if="(entries[section]).map((entry)=>entry.lang).includes(lang)">{{section}}</h2>
           <div v-for="entry in entries[section]" :key="entry.id">
             <div class="section" v-if="lang.includes(entry.lang)">
               <div class="entry">
@@ -33,7 +33,7 @@ export default {
     entries() {
       return BLOGENTRIES;
     },
-  },
+  }
 };
 </script>
 
