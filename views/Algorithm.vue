@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <list-posts _section="Algorithm" lang="/eng"/>
+    <list-posts _section="Algorithm" lang="eng"/>
   </div>
 </template>
 
