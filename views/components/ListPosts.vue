@@ -23,8 +23,8 @@
 
 <script>
 import BLOGENTRIES from "../../statics/data/blogs.json";
-
 export default {
+  
   props: {
     lang: String,
     _section: String,
