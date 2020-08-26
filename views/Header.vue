@@ -38,8 +38,8 @@
 </template>
 
 <script>
-import LanguageSelector from "./LanguageSelector";
-import HeaderMenu from "./HeaderMenu";
+import LanguageSelector from "./components/LanguageSelector";
+import HeaderMenu from "./components/HeaderMenu";
 
 export default {
   components: { LanguageSelector, HeaderMenu },
