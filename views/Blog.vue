@@ -1,6 +1,5 @@
 <template>
   <div class="blog">
-    <!-- <h1>{{$route.name}}</h1> -->
     <router-view />
     <router-link to="/" tag="a" class="back">&laquo; Back</router-link>
   </div>
@@ -13,7 +12,5 @@
 
   max-width: 40em;
   margin: 3rem auto;
-
-  @import "../styles/_content.scss";
 }
 </style>
