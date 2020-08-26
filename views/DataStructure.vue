@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <list-posts _section="Data Structure" lang="/eng"/>
+    <list-posts _section="Data Structure" lang="eng"/>
   </div>
 </template>
 
