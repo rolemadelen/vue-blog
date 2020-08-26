@@ -30,8 +30,11 @@ module.exports = {
                 }
             ]
         }, {
-            test: /\.s[ac]ss$/i,
-            use: ['style-loader', 'css-loader', 'sass-loader'],
+            test: /\.css$/,
+            use: ['style-loader', 'css-loader'],
+        }, {
+            test: /\.scss$/,
+            use: ['style-loader', 'css-loader','sass-loader'],
         }],
     },
     plugins: [
@@ -42,5 +45,6 @@ module.exports = {
         filename: '[name].js',
         chunkFilename: '[name].js',
         publicPath: '/dist/',
-    }
+    },
+
 }
