@@ -1,4 +1,9 @@
 
+<center>
+<img src="assets/algorithm/graph/dfsbfs.gif"> <br>
+<span style="font-size:11px"><i>gif source: <a href="https://twpower.github.io/73-how-to-implement-dfs-and-bfs-in-cpp">TWpower's Tech Blog</a></i></span>
+</center>
+
 ## Breadth First Search
 Unlike [Depth First Search](en-algorithm-graph-dfs) algorithm, BFS explore all nodes connected to the current 
 vertex first. So if 3 nodes are connected to the current vertex, it explores all those nodes first.

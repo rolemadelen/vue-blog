@@ -1,13 +1,20 @@
 
-## 日本語
-Unlike [Depth First Search](en-algorithm-graph-dfs) algorithm, BFS explore all nodes connected to the current 
-vertex first. So if 3 nodes are connected to the current vertex, it explores all those nodes first.
-
-BFS can be implemented using a queue.
+<center>
+<img src="assets/algorithm/graph/dfsbfs.gif"> <br>
+<span style="font-size:11px"><i>gif source: <a href="https://twpower.github.io/73-how-to-implement-dfs-and-bfs-in-cpp">TWpower's Tech Blog</a></i></span>
+</center>
 
 <div class="divider"></div>
 
-## Implementation
+## 幅優先探索（Breadth First Search)
+ 
+幅優先探索（BFS）アルゴリズムは[DFS](./ja-algorithm-graph-dfs)とは逆に元ノードから繋いでる、近隣のノードたちから探索をします。例えば、最初のノードと繋いでるノードが３つあったら、この３つをまず探索します。
+
+BFSはqueueを使って実装できます。
+
+<div class="divider"></div>
+
+## 実装
 
 ```cpp
 #define vi vector<int>
