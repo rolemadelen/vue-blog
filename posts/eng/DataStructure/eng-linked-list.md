@@ -5,6 +5,7 @@ contiguously in the memory. Each element in a linked list is called a _node_.
 These nodes are linked together via _pointers_ referencing different nodes.
 
 ![Linked List image](assets/data-structure/linked-list/linkedlist.png)
+
 <div style="font-size: 10px; text-align: center;">Source: https://dev.to/swarup260/data-structures-algorithms-in-javascript-single-linked-list-part-1-3ghg</div>
 
 <div class="divider"></div>
