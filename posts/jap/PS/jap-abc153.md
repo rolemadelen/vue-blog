@@ -1,19 +1,18 @@
 # AtCoder Beginner Contest 153
 
-| Tasks | Time Limit | Memory Limit |
+| 問題 | 実行時間制限 | メモリ制限 |
 |:-:|:-:|:-:|
-|[A](#A)|2 sec|1024 MB|
-|[B](#B)|2 sec|1024 MB|
-|[C](#C)|2 sec|1024 MB|
-|[D](#D)|2 sec|1024 MB|
-|[E](#E)|2 sec|1024 MB|
-|F|2 sec|1024 MB|
+|[A](#A)|2 秒|1024 MB|
+|[B](#B)|2 秒|1024 MB|
+|[C](#C)|2 秒|1024 MB|
+|[D](#D)|2 秒|1024 MB|
+|[E](#E)|2 秒|1024 MB|
+|F|2 秒|1024 MB|
 
 <div class="divider"></div>
 
 ## A. Serval vs Monster<a id="A"></a>
-The health of the monster is `H` and Serval can dealt `A` damage.
-How many attacks will Serval need to kill the monster? Do the division.
+モンスターを倒すためセルバルは何回攻撃したらいいのか。
 
 ```c
 #include <stdio.h>
@@ -29,9 +28,6 @@ int main(h, a)
 <div class="divider"></div>
 
 ## B. Common Raccoon vs Monster <a id="B"></a>
-Can Raccoon kill a monster using `N` special moves where each move can only be used once?
-Given the health of the monster, `H`, we can loop through Raccoon's special moves and 
-check whether the monster's health is `<= 0`.
 
 ```c
 #include <stdio.h>
@@ -54,14 +50,6 @@ int main(h, n, t)
 <div class="divider"></div>
 
 ## C. Fennec vs Monster <a id="C"></a>
-Given that Fennec can kill `K` out of `N` monsters right away with its special move, 
-how many attacks will Fennec need to kill the rest?
-
-We first sort monsters based on its health and ignore (or remove) top `K` monsters.
-Now we sum up `N-K` monsters health and that becomes Fennec's minimum number of attacks.
-
-The time complexity is `O(NlogN)`.
-
 ```c
 #include <stdio.h>
 #include <stdlib.h>
@@ -106,8 +94,6 @@ int main(n, k)
 
 ## D. Caracal vs Monster <a id="D"></a>
 
-Find the maximum number of nodes in a binary tree with a height `h`.
-
 ```c
 #include <stdio.h>
 #include <math.h>
@@ -125,16 +111,6 @@ int main(void)
 <div class="divider"></div>
 
 ## E. Crested Ibis vs Monster <a id="E"></a>  
-
-- `1 <= h <= H`: HP
-- `A[i]`: damage of `i`<sup>th</sup> spell
-- `B[i]`: MP used by `i`<sup>th</sup> spell
-- `dp[h]`: minimum MP used to kill a monster with HP `h`
-
-Initialize `dp[0] = 0` and the rest with `INF`. 
-Then`dp[h]` becomes `min(dp[h], dp[max(h - A[i], 0)] + B[i])`.
-
-The time complexity is `(NH)`.
 
 ```c
 #include <stdio.h>
