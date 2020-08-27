@@ -33,11 +33,158 @@
   ],
   "DataStructure": [
     {
-      "id": "eng-circular-linked-list",
-      "date": "Jul 18, 2020",
-      "title": "Circular Linked List in Ruby",
+      "id": "eng-binaryheap",
+      "date": "Aug 13, 2020",
+      "title": "What is Binary Heap?",
       "description": "Circular Linked List implementation in Ruby",
       "lang": "eng"
+    },
+    {
+      "id": "eng-bst",
+      "date": "Aug 12, 2020",
+      "title": "Ruby・Binary Search Tree",
+      "description": "Circular Linked List implementation in Ruby",
+      "lang": "eng"
+    },
+    {
+      "id": "eng-binarytree",
+      "date": "Aug 12, 2020",
+      "title": "What is tree?",
+      "description": "Circular Linked List implementation in Ruby",
+      "lang": "eng"
+    },
+    {
+      "id": "eng-queue",
+      "date": "Aug 10, 2020",
+      "title": "Ruby・Queue",
+      "description": "Circular Linked List implementation in Ruby",
+      "lang": "eng"
+    },
+    {
+      "id": "kor-queue",
+      "date": "Aug 10, 2020",
+      "title": "Ruby・큐(queue)란",
+      "description": "Circular Linked List implementation in Ruby",
+      "lang": "kor"
+    },
+    {
+      "id": "eng-stack",
+      "date": "Aug 10, 2020",
+      "title": "Ruby・Stack",
+      "description": "Circular Linked List implementation in Ruby",
+      "lang": "eng"
+    },
+    {
+      "id": "kor-stack",
+      "date": "Aug 10, 2020",
+      "title": "Ruby・스택(stack)이란",
+      "description": "Circular Linked List implementation in Ruby",
+      "lang": "kor"
+    },
+    {
+      "id": "eng-array",
+      "date": "Aug 03, 2020",
+      "title": "Ruby・Array",
+      "description": "Circular Linked List implementation in Ruby",
+      "lang": "eng"
+    },
+    {
+      "id": "jap-array",
+      "date": "Aug 03, 2020",
+      "title": "Ruby・配列「array」とは",
+      "description": "Circular Linked List implementation in Ruby",
+      "lang": "jap"
+    },
+    {
+      "id": "kor-array",
+      "date": "Aug 03, 2020",
+      "title": "Ruby・배열(array)이란",
+      "description": "Circular Linked List implementation in Ruby",
+      "lang": "kor"
+    },
+    {
+      "id": "eng-linked-list-circular",
+      "date": "Jul 18, 2020",
+      "title": "Ruby・Circular Linked List",
+      "description": "Circular Linked List implementation in Ruby",
+      "lang": "eng"
+    },
+    {
+      "id": "jap-linked-list-circular",
+      "date": "Jul 18, 2020",
+      "title": "Ruby・循環リスト「Circular Linked List」とは",
+      "description": "Circular Linked List implementation in Ruby",
+      "lang": "jap"
+    },
+    {
+      "id": "kor-linked-list-circular",
+      "date": "Jul 18, 2020",
+      "title": "Ruby・원형 연결 리스트(Circular Linked List)란",
+      "description": "Circular Linked List implementation in Ruby",
+      "lang": "kor"
+    },
+    {
+      "id": "eng-linked-list-doubly",
+      "date": "Jul 11, 2020",
+      "title": "Ruby・Doubly Linked List",
+      "description": "Circular Linked List implementation in Ruby",
+      "lang": "eng"
+    },
+    {
+      "id": "jap-linked-list-doubly",
+      "date": "Jul 11, 2020",
+      "title": "Ruby・双方向リスト「Doubly Linked List」とは",
+      "description": "Circular Linked List implementation in Ruby",
+      "lang": "jap"
+    },
+    {
+      "id": "kor-linked-list-doubly",
+      "date": "Jul 11, 2020",
+      "title": "Ruby・이중 연결 리스트(Doubly Linked List)란",
+      "description": "Circular Linked List implementation in Ruby",
+      "lang": "kor"
+    },
+    {
+      "id": "eng-linked-list-singly",
+      "date": "May 9, 2020",
+      "title": "Ruby・Singly Linked List",
+      "description": "Circular Linked List implementation in Ruby",
+      "lang": "eng"
+    },
+    {
+      "id": "jap-linked-list-singly",
+      "date": "May 9, 2020",
+      "title": "Ruby・単方向リスト「Singly Linked List」とは",
+      "description": "Circular Linked List implementation in Ruby",
+      "lang": "jap"
+    },
+    {
+      "id": "kor-linked-list-singly",
+      "date": "May 9, 2020",
+      "title": "Ruby・단일 연결 리스트(Singly Linked List)란",
+      "description": "Circular Linked List implementation in Ruby",
+      "lang": "kor"
+    },
+    {
+      "id": "eng-linked-list",
+      "date": "May 9, 2020",
+      "title": "What is Linked List?",
+      "description": "Learn fundamentals of Linked List",
+      "lang": "eng"
+    },
+    {
+      "id": "jap-linked-list",
+      "date": "May 9, 2020",
+      "title": "連結リスト「Linked List」とは",
+      "description": "Learn fundamentals of Linked List",
+      "lang": "jap"
+    },
+    {
+      "id": "kor-linked-list",
+      "date": "May 9, 2020",
+      "title": "연결 리스트(Linked List)란",
+      "description": "Learn fundamentals of Linked List",
+      "lang": "kor"
     }
   ],
   "TIL": [
@@ -54,66 +201,6 @@
       "title": "How to cancel a local commit",
       "description": "Learn how to cancel a local commit",
       "lang": "eng"
-    }
-  ],
-  "generic": [
-    {
-      "id": "eng-c-generic",
-      "date": "Aug 10, 2019",
-      "title": "Generic",
-      "description": "Testing markdown",
-      "lang": "eng"
-    }
-  ],
-  "test": [
-    {
-      "id": "eng-foo",
-      "date": "Aug 10, 2019",
-      "title": "Foo",
-      "description": "Testing markdown",
-      "lang": "eng"
-    },
-    {
-      "id": "eng-foo2",
-      "date": "Aug 10, 2019",
-      "title": "Foo 2",
-      "description": "Testing markdown",
-      "lang": "eng"
-    },
-    {
-      "id": "eng-foo3",
-      "date": "Aug 10, 2019",
-      "title": "Foo3",
-      "description": "Testing markdown",
-      "lang": "eng"
-    },
-    {
-      "id": "eng-foo4",
-      "date": "Aug 10, 2019",
-      "title": "Foo4",
-      "description": "Testing markdown",
-      "lang": "eng"
-    },
-    {
-      "id": "eng-foo5",
-      "date": "Aug 10, 2019",
-      "title": "Foo5",
-      "description": "Testing markdown",
-      "lang": "eng"
-    },
-    {
-      "id": "jap-foo",
-      "date": "Aug 10, 2019",
-      "title": "Foo",
-      "description": "Testing markdown",
-      "lang": "jap"
-    },
-    {
-      "id": "kor-foo",
-      "date": "Aug 10, 2019",
-      "title": "Foo",
-      "description": "Testing markdown",
-      "lang": "kor"
     }
   ]
 }
