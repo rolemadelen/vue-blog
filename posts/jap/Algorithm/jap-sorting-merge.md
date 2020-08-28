@@ -29,8 +29,8 @@
 分割統治を使って整列される過程を確認してみよう。
 
 1. 与えられた配列を部分配列に分割「**divide**」する。
-2. ただ1個の要素が残るまで再帰的に分割する。<img style="text-align: center" src="assets/images/algorithm/sorting/merge1.png">
-3. 部分配列たちをマージ「**merge**」する。<img style="text-align: center" src="assets/images/algorithm/sorting/merge2.png">
+2. ただ1個の要素が残るまで再帰的に分割する。<img style="text-align: center" src="assets/algorithm/sorting/merge1.png">
+3. 部分配列たちをマージ「**merge**」する。<img style="text-align: center" src="assets/algorithm/sorting/merge2.png">
 
 <div class="divider"></div>
 
