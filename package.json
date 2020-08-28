@@ -4,7 +4,7 @@
   "description": "Vue practice - Creating a blog (https://www.jioneeu.com)",
   "main": "index.js",
   "scripts": {
-    "build": "webpack --mode=production",
+    "build": "webpack",
     "dev": "webpack-dev-server"
   },
   "repository": {

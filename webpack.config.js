@@ -4,7 +4,6 @@ const webpack = require('webpack');
 
 module.exports = {
     mode: 'production',
-    devtool: 'inline-source-ap',
     resolve: {
         extensions: ['.js', '.vue'],
     },
