@@ -30,12 +30,17 @@
 
 1. 주어진 배열을 두 개의 부분 배열로 분할(**divide**)한다.
 <<<<<<< HEAD
+<<<<<<< HEAD
 2. 더 이상 분할할 수 없을때까지 재귀를 사용하여 분할한다. <img style="text-align: center" src="assets/algorithm/sorting/merge1.png">
 3. 작은 배열들을 병합(**merge**)한다.<img style="text-align: center" src="assets/algorithm/sorting/merge2.png">
 =======
 2. 더 이상 분할할 수 없을때까지 재귀를 사용하여 분할한다. <img style="text-align: center" src="assets/images/algorithm/sorting/merge1.png">
 3. 작은 배열들을 병합(**merge**)한다.<img style="text-align: center" src="assets/images/algorithm/sorting/merge2.png">
 >>>>>>> 939a889 (Algorithm posts ported and assets added')
+=======
+2. 더 이상 분할할 수 없을때까지 재귀를 사용하여 분할한다. <img style="text-align: center" src="assets/algorithm/sorting/merge1.png">
+3. 작은 배열들을 병합(**merge**)한다.<img style="text-align: center" src="assets/algorithm/sorting/merge2.png">
+>>>>>>> cd40bfe (image link fixed)
 
 <div class="divider"></div>
 
