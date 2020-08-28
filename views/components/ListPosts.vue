@@ -5,7 +5,7 @@
         <div v-if="section === (_section==='' ? section : _section)" class="group">
           <h2 v-if="(entries[section]).map((entry)=>entry.lang).includes(lang)">{{section}}</h2>
           <div v-for="entry in entries[section]" :key="entry.id">
-            <div class="section" v-if="lang.includes(entry.lang)">
+            <div class="section" v-if="lang.includes(entry.lang) && entry.published === true">
               <div class="entry">
                 <h3 @click="$router.push({name: entry.id, lang: entry.lang})">
                   {{entry.title}}
