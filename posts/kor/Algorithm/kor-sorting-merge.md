@@ -29,8 +29,8 @@
 분할정복을 사용해 어떻게 정렬이 이루어지는지 살펴본다.
 
 1. 주어진 배열을 두 개의 부분 배열로 분할(**divide**)한다.
-2. 더 이상 분할할 수 없을때까지 재귀를 사용하여 분할한다. <img style="text-align: center" src="assets/images/algorithm/sorting/merge1.png">
-3. 작은 배열들을 병합(**merge**)한다.<img style="text-align: center" src="assets/images/algorithm/sorting/merge2.png">
+2. 더 이상 분할할 수 없을때까지 재귀를 사용하여 분할한다. <img style="text-align: center" src="assets/algorithm/sorting/merge1.png">
+3. 작은 배열들을 병합(**merge**)한다.<img style="text-align: center" src="assets/algorithm/sorting/merge2.png">
 
 <div class="divider"></div>
 
