@@ -4,133 +4,133 @@
       "id": "eng-sorting-counting",
       "date": "Aug 12, 2020",
       "title": "What is Counting Sort?",
-      "description": "Learn and implement BFS algorithm",
+      "description": "Counting sort is an algorithm for sorting a collection of objects according to keys that are small integers.",
       "lang": "eng"
     },
     {
       "id": "jap-sorting-counting",
       "date": "Aug 12, 2020",
       "title": "Countingソートとは",
-      "description": "Learn and implement BFS algorithm",
+      "description": "",
       "lang": "jap"
     },
     {
       "id": "kor-sorting-counting",
       "date": "Aug 12, 2020",
       "title": "계수 정렬(Counting Sort)이란",
-      "description": "Learn and implement BFS algorithm",
+      "description": "",
       "lang": "kor"
     },
     {
       "id": "eng-sorting-quick",
       "date": "Aug 12, 2020",
       "title": "What is Quick Sort?",
-      "description": "Learn and implement BFS algorithm",
+      "description": "Quick sort is an efficient sorting algorithm that can be faster than the merge or heap sort - if implemented correctly.",
       "lang": "eng"
     },
     {
       "id": "jap-sorting-quick",
       "date": "Aug 12, 2020",
       "title": "Quickソートとは",
-      "description": "Learn and implement BFS algorithm",
+      "description": "",
       "lang": "jap"
     },
     {
       "id": "kor-sorting-quick",
       "date": "Aug 12, 2020",
       "title": "퀵 정렬(Quick Sort)이란",
-      "description": "Learn and implement BFS algorithm",
+      "description": "",
       "lang": "kor"
     },
     {
       "id": "eng-sorting-bubble",
       "date": "Jul 09, 2020",
       "title": "What is Bubble Sort?",
-      "description": "Learn and implement BFS algorithm",
+      "description": "Bubble sort is the simplest sorting algorithm which works by repeatedly comparing and swapping two adjacent elements if they're in the wrong order.",
       "lang": "eng"
     },
     {
       "id": "jap-sorting-bubble",
       "date": "Jul 09, 2020",
       "title": "バブルソート「Bubble Sort」とは",
-      "description": "Learn and implement BFS algorithm",
+      "description": "",
       "lang": "jap"
     },
     {
       "id": "kor-sorting-bubble",
       "date": "Jul 09, 2020",
       "title": "거품 정렬(Bubble Sort)이란",
-      "description": "Learn and implement BFS algorithm",
+      "description": "",
       "lang": "kor"
     },
     {
       "id": "eng-sorting-merge",
       "date": "Jun 26, 2020",
       "title": "What is Merge Sort?",
-      "description": "Learn and implement BFS algorithm",
+      "description": "Merge sort is an efficient comparison-based, divide-and-conquer algorithm invented by John von Neumann in 1945.",
       "lang": "eng"
     },
     {
       "id": "jap-sorting-merge",
       "date": "Jun 26, 2020",
       "title": "マージソート「Merge Sort」とは",
-      "description": "Learn and implement BFS algorithm",
+      "description": "",
       "lang": "jap"
     },
     {
       "id": "kor-sorting-merge",
       "date": "Jun 26, 2020",
       "title": "병합 정렬(Merge Sort)이란",
-      "description": "Learn and implement BFS algorithm",
+      "description": "",
       "lang": "kor"
     },
     {
       "id": "eng-sorting-selection",
       "date": "Jun 19, 2020",
       "title": "What is Selection Sort?",
-      "description": "Learn and implement BFS algorithm",
+      "description": "Selection sort is an in-place comparison sorting algorithm. Generally it performs worse than the insertion sort on larger lists.",
       "lang": "eng"
     },
     {
       "id": "jap-sorting-selection",
       "date": "Jun 19, 2020",
       "title": "選択ソート「Selection Sort」とは",
-      "description": "Learn and implement BFS algorithm",
+      "description": "",
       "lang": "jap"
     },
     {
       "id": "kor-sorting-selection",
       "date": "Jun 19, 2020",
       "title": "선택 정렬(Selection Sort)이란",
-      "description": "Learn and implement BFS algorithm",
+      "description": "",
       "lang": "kor"
     },
     {
       "id": "eng-sorting-insertion",
       "date": "Jun 12, 2020",
       "title": "What is Insertion Sort?",
-      "description": "Learn and implement BFS algorithm",
+      "description": "Insertion sort is an efficient sorting algorithm for sorting smaller sets of data.",
       "lang": "eng"
     },
     {
       "id": "jap-sorting-insertion",
       "date": "Jun 12, 2020",
       "title": "挿入ソート「Insertion Sort」とは",
-      "description": "Learn and implement BFS algorithm",
+      "description": "",
       "lang": "jap"
     },
     {
       "id": "kor-sorting-insertion",
       "date": "Jun 12, 2020",
       "title": "삽입 정렬(Insertion Sort)이란",
-      "description": "Learn and implement BFS algorithm",
+      "description": "",
       "lang": "kor"
     },
     {
       "id": "eng-graph-bfs",
       "date": "Jun 11, 2020",
       "title": "Graph - Breadth First Search (BFS)",
-      "description": "Learn and implement BFS algorithm",
+      "description": "BFS starts at the root (given) node and explores all of the neighbor nodes at the present depth prior to moving on to the nodes at the next depth level.",
       "lang": "eng"
     },
     {
@@ -151,21 +151,21 @@
       "id": "eng-graph-dfs",
       "date": "Jun 10, 2020",
       "title": "Graph - Depth First Search (DFS)",
-      "description": "Learn and implement BFS algorithm",
+      "description": "DFS starts at the root (given) node and explores as deep as possible along each branch before backtracking.",
       "lang": "eng"
     },
     {
       "id": "jap-graph-dfs",
       "date": "Jun 10, 2020",
       "title": "グラフ・深さ優先探索（DFS）",
-      "description": "Learn and implement BFS algorithm",
+      "description": "",
       "lang": "jap"
     },
     {
       "id": "kor-graph-dfs",
       "date": "Jun 10, 2020",
       "title": "그래프 - 깊이 우선 탐색 (DFS)",
-      "description": "Learn and implement BFS algorithm",
+      "description": "",
       "lang": "kor"
     }
 
@@ -182,231 +182,210 @@
       "id": "eng-apc2020",
       "date": "Jul 11, 2020",
       "title": "Alsing Programming Contest 2020",
-      "description": "Solutions to Alsing Programming Contest 2020",
+      "description": "Alsing Programming Contest 2020 - A, B",
       "lang": "eng"
     },
     {
       "id": "jap-apc2020",
       "date": "Jul 11, 2020",
       "title": "Alsing Programming Contest 2020",
-      "description": "Solutions to Alsing Programming Contest 2020",
+      "description": "Alsing Programming Contest 2020 - A, B",
       "lang": "jap"
     },
     {
       "id": "kor-apc2020",
       "date": "Jul 11, 2020",
       "title": "Alsing Programming Contest 2020",
-      "description": "Solutions to Alsing Programming Contest 2020",
+      "description": "Alsing Programming Contest 2020 - A, B",
       "lang": "kor"
     },
     {
       "id": "eng-abc173",
       "date": "Jul 05, 2020",
-      "title": "AtCoder Beginner Contest 173",
-      "description": "ABC 173 Solutions",
+      "title": "ABC 173",
+      "description": "AtCoder Beginner Contest 173 - A, B",
       "lang": "eng"
     },
     {
       "id": "jap-abc173",
       "date": "Jul 05, 2020",
-      "title": "AtCoder Beginner Contest 173",
-      "description": "ABC 173 Solutions",
+      "title": "ABC 173",
+      "description": "AtCoder Beginner Contest 173 - A, B",
       "lang": "jap"
     },
     {
       "id": "kor-abc173",
       "date": "Jul 05, 2020",
-      "title": "AtCoder Beginner Contest 173",
-      "description": "ABC 173 Solutions",
-      "lang": "kor"
-    },
-    {
-      "id": "eng-abc173",
-      "date": "Jul 05, 2020",
-      "title": "AtCoder Beginner Contest 173",
-      "description": "ABC 173 Solutions",
-      "lang": "eng"
-    },
-    {
-      "id": "jap-abc173",
-      "date": "Jul 05, 2020",
-      "title": "AtCoder Beginner Contest 173",
-      "description": "ABC 173 Solutions",
-      "lang": "jap"
-    },
-    {
-      "id": "kor-abc173",
-      "date": "Jul 05, 2020",
-      "title": "AtCoder Beginner Contest 173",
-      "description": "ABC 173 Solutions",
+      "title": "ABC 173",
+      "description": "AtCoder Beginner Contest 173 - A, B",
       "lang": "kor"
     },
     {
       "id": "eng-abc172",
       "date": "Jun 27, 2020",
-      "title": "AtCoder Beginner Contest 172",
-      "description": "ABC 172 Solutions",
+      "title": "ABC 172",
+      "description": "AtCoder Beginner Contest 172 - A, B",
       "lang": "eng"
     },
     {
       "id": "jap-abc172",
       "date": "Jun 27, 2020",
-      "title": "AtCoder Beginner Contest 172",
-      "description": "ABC 172 Solutions",
+      "title": "ABC 172",
+      "description": "AtCoder Beginner Contest 172 - A, B",
       "lang": "jap"
     },
     {
       "id": "kor-abc172",
       "date": "Jun 27, 2020",
-      "title": "AtCoder Beginner Contest 172",
-      "description": "ABC 172 Solutions",
+      "title": "ABC 172",
+      "description": "AtCoder Beginner Contest 172 - A, B",
       "lang": "kor"
     },
     {
       "id": "eng-abc169",
       "date": "May 31, 2020",
-      "title": "AtCoder Beginner Contest 169",
-      "description": "ABC 169 Solutions",
+      "title": "ABC 169",
+      "description": "AtCoder Beginner Contest 169 - A, B, C",
       "lang": "eng"
     },
     {
       "id": "jap-abc169",
       "date": "May 31, 2020",
-      "title": "AtCoder Beginner Contest 169",
-      "description": "ABC 169 Solutions",
+      "title": "ABC 169",
+      "description": "AtCoder Beginner Contest 169 - A, B, C",
       "lang": "jap"
     },
     {
       "id": "kor-abc169",
       "date": "May 31, 2020",
-      "title": "AtCoder Beginner Contest 169",
-      "description": "ABC 169 Solutions",
+      "title": "ABC 169",
+      "description": "AtCoder Beginner Contest 169 - A, B, C",
       "lang": "kor"
     },
     {
       "id": "eng-abc168",
       "date": "May 17, 2020",
-      "title": "AtCoder Beginner Contest 168",
-      "description": "ABC 168 Solutions",
+      "title": "ABC 168",
+      "description": "AtCoder Beginner Contest 168 - A, B, C",
       "lang": "eng"
     },
     {
       "id": "jap-abc168",
       "date": "May 17, 2020",
-      "title": "AtCoder Beginner Contest 168",
-      "description": "ABC 168 Solutions",
+      "title": "ABC 168",
+      "description": "AtCoder Beginner Contest 168 - A, B, C",
       "lang": "jap"
     },
     {
       "id": "kor-abc168",
       "date": "May 17, 2020",
-      "title": "AtCoder Beginner Contest 168",
-      "description": "ABC 168 Solutions",
+      "title": "ABC 168",
+      "description": "AtCoder Beginner Contest 168 - A, B, C",
       "lang": "kor"
     },
     {
       "id": "eng-abc167",
       "date": "May 10, 2020",
-      "title": "AtCoder Beginner Contest 167",
-      "description": "ABC 167 Solutions",
+      "title": "ABC 167",
+      "description": "AtCoder Beginner Contest 167 - A, B",
       "lang": "eng"
     },
     {
       "id": "jap-abc167",
       "date": "May 10, 2020",
-      "title": "AtCoder Beginner Contest 167",
-      "description": "ABC 167 Solutions",
+      "title": "ABC 167",
+      "description": "AtCoder Beginner Contest 167 - A, B",
       "lang": "jap"
     },
     {
       "id": "kor-abc167",
       "date": "May 10, 2020",
-      "title": "AtCoder Beginner Contest 167",
-      "description": "ABC 167 Solutions",
+      "title": "ABC 167",
+      "description": "AtCoder Beginner Contest 167 - A, B",
       "lang": "kor"
     },
     {
       "id": "eng-abc166",
       "date": "May 03, 2020",
-      "title": "AtCoder Beginner Contest 166",
-      "description": "ABC 166 Solutions",
+      "title": "ABC 166",
+      "description": "AtCoder Beginner Contest 166 - A",
       "lang": "eng"
     },
     {
       "id": "jap-abc166",
       "date": "May 03, 2020",
-      "title": "AtCoder Beginner Contest 166",
-      "description": "ABC 166 Solutions",
+      "title": "ABC 166",
+      "description": "AtCoder Beginner Contest 166 - A",
       "lang": "jap"
     },
     {
       "id": "kor-abc166",
       "date": "May 03, 2020",
-      "title": "AtCoder Beginner Contest 166",
-      "description": "ABC 166 Solutions",
+      "title": "ABC 166",
+      "description": "AtCoder Beginner Contest 166 - A",
       "lang": "kor"
     },
     {
       "id": "eng-abc162",
       "date": "Apr 12, 2020",
-      "title": "AtCoder Beginner Contest 162",
-      "description": "ABC 162 Solutions",
+      "title": "ABC 162",
+      "description": "AtCoder Beginner Contest 162 - A, B, C",
       "lang": "eng"
     },
     {
       "id": "jap-abc162",
       "date": "Apr 12, 2020",
-      "title": "AtCoder Beginner Contest 162",
-      "description": "ABC 162 Solutions",
+      "title": "ABC 162",
+      "description": "AtCoder Beginner Contest 162 - A, B, C",
       "lang": "jap"
     },
     {
       "id": "kor-abc162",
       "date": "Apr 12, 2020",
-      "title": "AtCoder Beginner Contest 162",
-      "description": "ABC 162 Solutions",
+      "title": "ABC 162",
+      "description": "AtCoder Beginner Contest 162 - A, B, C",
       "lang": "kor"
     },
     {
       "id": "eng-abc161",
       "date": "Apr 04, 2020",
-      "title": "AtCoder Beginner Contest 161",
-      "description": "ABC 161 Solutions",
+      "title": "ABC 161",
+      "description": "AtCoder Beginner Contest 161 - A, B, C",
       "lang": "eng"
     },
     {
       "id": "jap-abc161",
       "date": "Apr 04, 2020",
-      "title": "AtCoder Beginner Contest 161",
-      "description": "ABC 161 Solutions",
+      "title": "ABC 161",
+      "description": "AtCoder Beginner Contest 161 - A, B, C",
       "lang": "jap"
     },
     {
       "id": "kor-abc161",
       "date": "Apr 04, 2020",
-      "title": "AtCoder Beginner Contest 161",
-      "description": "ABC 161 Solutions",
+      "title": "ABC 161",
+      "description": "AtCoder Beginner Contest 161 - A, B, C",
       "lang": "kor"
     },
     {
       "id": "eng-abc153",
       "date": "Feb 04, 2020",
-      "title": "AtCoder Beginner Contest 153",
-      "description": "ABC 153 Solutions",
+      "title": "ABC 153",
+      "description": "AtCoder Beginner Contest 153 - A, B, C, D, E",
       "lang": "eng"
     },
     {
       "id": "jap-abc153",
       "date": "Feb 04, 2020",
-      "title": "AtCoder Beginner Contest 153",
-      "description": "ABC 153 Solutions",
+      "title": "ABC 153",
+      "description": "AtCoder Beginner Contest 153 - A, B, C, D, E",
       "lang": "jap"
     },
     {
       "id": "kor-abc153",
       "date": "Feb 04, 2020",
-      "title": "AtCoder Beginner Contest 153",
-      "description": "ABC 153 Solutions",
+      "title": "ABC 153",
+      "description": "AtCoder Beginner Contest 153 - A, B, C, D, E",
       "lang": "kor"
     }
   ],
@@ -415,70 +394,70 @@
       "id": "eng-binaryheap",
       "date": "Aug 13, 2020",
       "title": "What is Binary Heap?",
-      "description": "Circular Linked List implementation in Ruby",
+      "description": "",
       "lang": "eng"
     },
     {
       "id": "eng-bst",
       "date": "Aug 12, 2020",
       "title": "Ruby・Binary Search Tree",
-      "description": "Circular Linked List implementation in Ruby",
+      "description": "",
       "lang": "eng"
     },
     {
       "id": "eng-binarytree",
       "date": "Aug 12, 2020",
       "title": "What is tree?",
-      "description": "Circular Linked List implementation in Ruby",
+      "description": "",
       "lang": "eng"
     },
     {
       "id": "eng-queue",
       "date": "Aug 10, 2020",
       "title": "Ruby・Queue",
-      "description": "Circular Linked List implementation in Ruby",
+      "description": "",
       "lang": "eng"
     },
     {
       "id": "kor-queue",
       "date": "Aug 10, 2020",
       "title": "Ruby・큐(queue)란",
-      "description": "Circular Linked List implementation in Ruby",
+      "description": "",
       "lang": "kor"
     },
     {
       "id": "eng-stack",
       "date": "Aug 10, 2020",
       "title": "Ruby・Stack",
-      "description": "Circular Linked List implementation in Ruby",
+      "description": "",
       "lang": "eng"
     },
     {
       "id": "kor-stack",
       "date": "Aug 10, 2020",
       "title": "Ruby・스택(stack)이란",
-      "description": "Circular Linked List implementation in Ruby",
+      "description": "",
       "lang": "kor"
     },
     {
       "id": "eng-array",
       "date": "Aug 03, 2020",
       "title": "Ruby・Array",
-      "description": "Circular Linked List implementation in Ruby",
+      "description": "",
       "lang": "eng"
     },
     {
       "id": "jap-array",
       "date": "Aug 03, 2020",
       "title": "Ruby・配列「array」とは",
-      "description": "Circular Linked List implementation in Ruby",
+      "description": "",
       "lang": "jap"
     },
     {
       "id": "kor-array",
       "date": "Aug 03, 2020",
       "title": "Ruby・배열(array)이란",
-      "description": "Circular Linked List implementation in Ruby",
+      "description": "",
       "lang": "kor"
     },
     {
@@ -506,42 +485,42 @@
       "id": "eng-linked-list-doubly",
       "date": "Jul 11, 2020",
       "title": "Ruby・Doubly Linked List",
-      "description": "Circular Linked List implementation in Ruby",
+      "description": "",
       "lang": "eng"
     },
     {
       "id": "jap-linked-list-doubly",
       "date": "Jul 11, 2020",
       "title": "Ruby・双方向リスト「Doubly Linked List」とは",
-      "description": "Circular Linked List implementation in Ruby",
+      "description": "",
       "lang": "jap"
     },
     {
       "id": "kor-linked-list-doubly",
       "date": "Jul 11, 2020",
       "title": "Ruby・이중 연결 리스트(Doubly Linked List)란",
-      "description": "Circular Linked List implementation in Ruby",
+      "description": "",
       "lang": "kor"
     },
     {
       "id": "eng-linked-list-singly",
       "date": "May 9, 2020",
       "title": "Ruby・Singly Linked List",
-      "description": "Circular Linked List implementation in Ruby",
+      "description": "",
       "lang": "eng"
     },
     {
       "id": "jap-linked-list-singly",
       "date": "May 9, 2020",
       "title": "Ruby・単方向リスト「Singly Linked List」とは",
-      "description": "Circular Linked List implementation in Ruby",
+      "description": "",
       "lang": "jap"
     },
     {
       "id": "kor-linked-list-singly",
       "date": "May 9, 2020",
       "title": "Ruby・단일 연결 리스트(Singly Linked List)란",
-      "description": "Circular Linked List implementation in Ruby",
+      "description": "",
       "lang": "kor"
     },
     {

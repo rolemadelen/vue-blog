@@ -7,10 +7,10 @@
     2019年<a href="https://ucsd.edu/" target="_blank">UC San Diego</a>から<a href="http://cogsci.ucsd.edu/undergraduates/major/design-interaction.html" target="_blank">認知科学 HCI</a>学位を受けて卒業しました。
     <br /><br />
     
-    韓国生まれで、アメリカ育ちです。今は日本の小学校で英語の先生で働いていますが、software developerを目指して一生懸命勉強しています。
+    韓国生まれで、アメリカ育ちです。今は日本の小学校で英語の先生として働いていますが、software developerを目指して一生懸命勉強しています。
     <br /><br />
 
-    私自分の動機付けのため
+    また自分の動機付けのために
     <a href="https://www.youtube.com/channel/UC8hY3wjYlK2U9W4fqKN598Q?view_as=subscriber" target="_blank">Study with me</a>チャンネルを運営しています。開発の勉強ではなくても大丈夫なので、一緒に勉強したいと思う方はいつでも見に来てください。
     <br /><br />
 
