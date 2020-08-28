@@ -2,7 +2,7 @@
 ## What is Doubly Linked List?
 Unlike [Singly Linked List](en-data-structure-linked-list-singly) where nodes are linked in one direction, Doubly Linked List is a linear data structure where a node can be linked bidiretionally.
 
-![Linked List image](assets/images/data-structure/linked-list/dll.png)
+![Linked List image](assets/data-structure/linked-list/dll.png)
 
 A node in a doubly linked list holds the following three information at a minimum.
 1. node's data
@@ -106,19 +106,19 @@ The `insert` method adds a node at the back of the list. We need to consider two
 When the list is empty, we assign the new node to `@head` and `@tail`. Since there is only one node, it becomes both head and tail.
 
 <div style="text-align: center">
-<img src="assets/images/data-structure/linked-list/dll-insert1.png" alt="head and tail pointing to the node">
+<img src="assets/data-structure/linked-list/dll-insert1.png" alt="head and tail pointing to the node">
 </div>
 
 When the list is not empty, let `@tail.next`(A.next) point to the `new_node`, and let `new_node.prev`(C.prev) point to the current tail.
 
 <div style="text-align: center">
-<img src="assets/images/data-structure/linked-list/dll-insert2.png" alt="tail pointing to the new node">
+<img src="assets/data-structure/linked-list/dll-insert2.png" alt="tail pointing to the new node">
 </div>
 
 Now we need to update the `@tail` so that it actually points to the last node in the list.
 
 <div style="text-align: center">
-<img src="assets/images/data-structure/linked-list/dll-insert3.png" alt="update the tail">
+<img src="assets/data-structure/linked-list/dll-insert3.png" alt="update the tail">
 </div>
 
 ### Inserting a node (insert\_at)
@@ -164,7 +164,7 @@ end
 We can insert a node at a desired position. Here, we have three possible scenarios.
 
 <div style="text-align: center">
-<img src="assets/images/data-structure/linked-list/dll-insert_at1.png" alt="two nodes connected to each other">
+<img src="assets/data-structure/linked-list/dll-insert_at1.png" alt="two nodes connected to each other">
 </div>
 
 1. Insert at the back of the node C: call `insert`
@@ -190,7 +190,7 @@ new_node.prev = curr
 Below is the resulting state of each node after we ran the above two lines of codes.
 
 <div style="text-align: center">
-<img src="assets/images/data-structure/linked-list/dll-insert_at2.png" alt="new nodes next/prev linked to A and C">
+<img src="assets/data-structure/linked-list/dll-insert_at2.png" alt="new nodes next/prev linked to A and C">
 </div>
 
 We can see that the `new_node` is in the correct position, however, the node A and C is still linked together and we need disconnect them.
@@ -201,7 +201,7 @@ curr.next = new_node
 ```
 
 <div style="text-align: center">
-<img src="assets/images/data-structure/linked-list/dll-insert_at3.png" alt="links disconnected between A and C">
+<img src="assets/data-structure/linked-list/dll-insert_at3.png" alt="links disconnected between A and C">
 </div>
 
 ### Returning a node (get\_node\_at)
@@ -258,7 +258,7 @@ end
 We need to consider three cases when removing nodes from the list.
 
 <div style="text-align: center">
-<img src="assets/images/data-structure/linked-list/dll-remove_at1.png" alt="three nodes linked together">
+<img src="assets/data-structure/linked-list/dll-remove_at1.png" alt="three nodes linked together">
 </div>
 
 1. Removing the head node (node A)
@@ -284,7 +284,7 @@ curr.next.prev = curr.prev
 ```
 
 <div style="text-align: center">
-<img src="assets/images/data-structure/linked-list/dll-remove_at3.png" alt="three nodes linked together">
+<img src="assets/data-structure/linked-list/dll-remove_at3.png" alt="three nodes linked together">
 </div>
 
 Then we disconnect links connected from the `curr` and remove its node.
@@ -294,7 +294,7 @@ curr = curr.prev = curr.next = nil
 ```
 
 <div style="text-align: center">
-<img src="assets/images/data-structure/linked-list/dll-remove_at4.png" alt="three nodes linked together">
+<img src="assets/data-structure/linked-list/dll-remove_at4.png" alt="three nodes linked together">
 </div>
 
 ### Searching a node (search)

@@ -7,13 +7,13 @@
 The end of the linked lists are normally defined by the tail node pointing to `nil`. In the case of [Doubly Linked List](/en-data-structure-linked-list-doubly) both the `head.prev` and `tail.next` points to `nil`.
 
 <div style="text-align: center">
-  <img src="assets/images/data-structure/linked-list/cll-doubly-example.png" alt="Linked list picture">
+  <img src="assets/data-structure/linked-list/cll-doubly-example.png" alt="Linked list picture">
 </div>
 
 In the circular linked list, however, `tail.next` points to the head node and `head.prev` points back to the tail node.
 
 <div style="text-align: center">
-  <img src="assets/images/data-structure/linked-list/cll-doubly.png" alt="Linked list picture">
+  <img src="assets/data-structure/linked-list/cll-doubly.png" alt="Linked list picture">
 </div>
 
 ### :bulb: Node Structure
@@ -64,7 +64,7 @@ end
 In a singly linked list, normally `@head` -- a node which holds the address of the first node -- is used. In a circular singly list, however, we use `@last` which is a node that holds the last element of a linked list.
 
 <div style="text-align: center">
-  <img src="assets/images/data-structure/linked-list/cll-singly-insert1.png" alt="circular singly list image">
+  <img src="assets/data-structure/linked-list/cll-singly-insert1.png" alt="circular singly list image">
 </div>
 
 We can still use `@head`, but it is better to use `@last` because by doing it this way, we have a direct access to the tail (`@last`) and the head (`@last.next`). Also in some insert/remove operations, it is more efficient and time saving to know the last node rather than the first node.
@@ -81,7 +81,7 @@ end
 In Circular Doubly Linked List, we can access the tail node with `@head.prev`, so we only define and use `@head`.
 
 <div style="text-align: center">
-  <img src="assets/images/data-structure/linked-list/cll-doubly-insert1.png" alt="circular doubly linked list picture">
+  <img src="assets/data-structure/linked-list/cll-doubly-insert1.png" alt="circular doubly linked list picture">
 </div>
 
 
@@ -101,19 +101,19 @@ In Circular Doubly Linked List, we can access the tail node with `@head.prev`, s
 First, let the `new_node` point at the head node which is `@last.next`.
 
 <div style="text-align: center">
-  <img src="assets/images/data-structure/linked-list/cll-singly-insert2.png" alt="circular singly list image">
+  <img src="assets/data-structure/linked-list/cll-singly-insert2.png" alt="circular singly list image">
 </div>
 
 Now we need to update the link of `@last` so that it's pointing at the `new_node` or the new last node.
 
 <div style="text-align: center">
-  <img src="assets/images/data-structure/linked-list/cll-singly-insert3.png" alt="circular singly list image">
+  <img src="assets/data-structure/linked-list/cll-singly-insert3.png" alt="circular singly list image">
 </div>
 
 Now `new_node` is the last node so update the `@last` so that it actaully holds the address of the last node.
 
 <div style="text-align: center">
-  <img src="assets/images/data-structure/linked-list/cll-singly-insert4.png" alt="circular singly list image">
+  <img src="assets/data-structure/linked-list/cll-singly-insert4.png" alt="circular singly list image">
 </div>
 
 **Circular Doubly Linked List**
@@ -131,19 +131,19 @@ In circular doubly list, we need to to take care of both `prev` and `next` which
 Lets take a look at the `new_node` part first. Our new node will be the new last node, so let `new_node.prev` and `new_node.next` point to the current last node (`B` node in the figure below) and the current head node respectively.
 
 <div style="text-align: center">
-  <img src="assets/images/data-structure/linked-list/cll-doubly-insert2.png" alt="circular doubly linked list picture">
+  <img src="assets/data-structure/linked-list/cll-doubly-insert2.png" alt="circular doubly linked list picture">
 </div>
 
 Now let `B.next` (`@head.prev.next`) point to the new last node.
 
 <div style="text-align: center">
-  <img src="assets/images/data-structure/linked-list/cll-doubly-insert3.png" alt="circular doubly linked list picture">
+  <img src="assets/data-structure/linked-list/cll-doubly-insert3.png" alt="circular doubly linked list picture">
 </div>
 
 And last but not least, let `@head.prev` be theh new last node (`new_node`).
 
 <div style="text-align: center">
-  <img src="assets/images/data-structure/linked-list/cll-doubly-insert4.png" alt="circular doubly linked list picture">
+  <img src="assets/data-structure/linked-list/cll-doubly-insert4.png" alt="circular doubly linked list picture">
 </div>
 
 
@@ -174,13 +174,13 @@ When inserting a node at the back, simply call `insert` method that we implement
 Our `new_node` will become the new head. Since we need to place this node in between the current last and head node, first link `new_node` with the current head, `@last.next`.
 
 <div style="text-align: center">
-  <img src="assets/images/data-structure/linked-list/cll-singly-insert_at1.png" alt="circular doubly linked list picture">
+  <img src="assets/data-structure/linked-list/cll-singly-insert_at1.png" alt="circular doubly linked list picture">
 </div>
 
 And let `@last` point to the new head.
 
 <div style="text-align: center">
-  <img src="assets/images/data-structure/linked-list/cll-singly-insert_at2.png" alt="circular doubly linked list picture">
+  <img src="assets/data-structure/linked-list/cll-singly-insert_at2.png" alt="circular doubly linked list picture">
 </div>
 
 **Circular Doubly Linked List**
@@ -198,19 +198,19 @@ And let `@last` point to the new head.
 The idea is pretty much the same. Lets first connect `new_node`'s `prev` and `next`.
 
 <div style="text-align: center">
-  <img src="assets/images/data-structure/linked-list/cll-doubly-insert_at3.png" alt="circular doubly linked list picture">
+  <img src="assets/data-structure/linked-list/cll-doubly-insert_at3.png" alt="circular doubly linked list picture">
 </div>
 
 Currently `last.next` is pointing at the old head. We need to fix this link so that it's pointing to the new head (`new_node`). 
 
 <div style="text-align: center">
-  <img src="assets/images/data-structure/linked-list/cll-doubly-insert_at4.png" alt="circular doubly linked list picture">
+  <img src="assets/data-structure/linked-list/cll-doubly-insert_at4.png" alt="circular doubly linked list picture">
 </div>
 
 And finally, we update `head.prev` so that it's pointing to our new head.
 
 <div style="text-align: center">
-  <img src="assets/images/data-structure/linked-list/cll-doubly-insert_at5.png" alt="circular doubly linked list picture">
+  <img src="assets/data-structure/linked-list/cll-doubly-insert_at5.png" alt="circular doubly linked list picture">
 </div>
 
 #### :pencil2: Inserting a node in between nodes
@@ -228,13 +228,13 @@ And finally, we update `head.prev` so that it's pointing to our new head.
 When we're inserting a new node at index `i`, we need to have an access to a node located at `i-1`. We save this node at `curr` and let new node point to `curr.next`.
 
 <div style="text-align: center">
-  <img src="assets/images/data-structure/linked-list/cll-singly-insert_at3.png" alt="circular doubly linked list picture">
+  <img src="assets/data-structure/linked-list/cll-singly-insert_at3.png" alt="circular doubly linked list picture">
 </div>
 
 And we connect `curr.next` with `new_node` and we're done.
 
 <div style="text-align: center">
-  <img src="assets/images/data-structure/linked-list/cll-singly-insert_at4.png" alt="circular doubly linked list picture">
+  <img src="assets/data-structure/linked-list/cll-singly-insert_at4.png" alt="circular doubly linked list picture">
 </div>
 
 **Circular Doubly Linked List**
@@ -253,13 +253,13 @@ And we connect `curr.next` with `new_node` and we're done.
 Save the node located at the index we're going to insert a new node to `curr` -- `B` node in the figure below -- and link `new_node.prev` and `new_node.next` to `curr.prev` and `curr.next` respectively.
 
 <div style="text-align: center">
-  <img src="assets/images/data-structure/linked-list/cll-doubly-insert_at1.png" alt="circular doubly linked list picture">
+  <img src="assets/data-structure/linked-list/cll-doubly-insert_at1.png" alt="circular doubly linked list picture">
 </div>
 
 And let `curr.prev.next` -- `head.next` -- and `curr.prev` point to `new_node`.
 
 <div style="text-align: center">
-  <img src="assets/images/data-structure/linked-list/cll-doubly-insert_at2.png" alt="circular doubly linked list picture">
+  <img src="assets/data-structure/linked-list/cll-doubly-insert_at2.png" alt="circular doubly linked list picture">
 </div>
 
 ### :bulb: remove\_at
@@ -279,7 +279,7 @@ end
 Since `@last.next` points to the head node, we can simply re-link this node to `@last.next.next`.
 
 <div style="text-align: center">
-  <img src="assets/images/data-structure/linked-list/cll-singly-remove-at1.png" alt="circular doubly linked list picture">
+  <img src="assets/data-structure/linked-list/cll-singly-remove-at1.png" alt="circular doubly linked list picture">
 </div>
 
 **Circular Doubly Linked List**
@@ -303,7 +303,7 @@ We need to dislink all nodes connected to `@head`.
 Below figure shows the state of our circular linked list after above two lines are executed.
 
 <div style="text-align: center">
-  <img src="assets/images/data-structure/linked-list/cll-doubly-remove-at1.png" alt="circular doubly linked list picture">
+  <img src="assets/data-structure/linked-list/cll-doubly-remove-at1.png" alt="circular doubly linked list picture">
 </div>
 
 And then we move the `@head` to its next node (`@head.next`).
@@ -313,7 +313,7 @@ And then we move the `@head` to its next node (`@head.next`).
 ```
 
 <div style="text-align: center">
-  <img src="assets/images/data-structure/linked-list/cll-doubly-remove-at2.png" alt="circular doubly linked list picture">
+  <img src="assets/data-structure/linked-list/cll-doubly-remove-at2.png" alt="circular doubly linked list picture">
 </div>
 
 #### :pencil2: Removing the tail node
@@ -333,13 +333,13 @@ end
 In order to remove the `@last` node, we need to have an access to its previous node (`B` node in the figure below). We save this node to `curr` and let `curr.next` point to `@last.next`.
 
 <div style="text-align: center">
-  <img src="assets/images/data-structure/linked-list/cll-singly-remove-at2.png" alt="circular doubly linked list picture">
+  <img src="assets/data-structure/linked-list/cll-singly-remove-at2.png" alt="circular doubly linked list picture">
 </div>
 
 And then we update the `@last`.
 
 <div style="text-align: center">
-  <img src="assets/images/data-structure/linked-list/cll-singly-remove-at3.png" alt="circular doubly linked list picture">
+  <img src="assets/data-structure/linked-list/cll-singly-remove-at3.png" alt="circular doubly linked list picture">
 </div>
 
 **Circular Doubly Linked List**
@@ -357,7 +357,7 @@ The idea is same as the circular singly list except that it's much easier.
 Since we can access to its previous node using `prev`, we can access tail's previous node using `@head.prev.prev`. Once we're there, we simply disconnect the link from the current tail and re-link it to the head.
 
 <div style="text-align: center">
-  <img src="assets/images/data-structure/linked-list/cll-doubly-remove-at3.png" alt="circular doubly linked list picture">
+  <img src="assets/data-structure/linked-list/cll-doubly-remove-at3.png" alt="circular doubly linked list picture">
 </div>
 
 #### :pencil2: Removing the node in between two nodes
