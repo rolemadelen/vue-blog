@@ -30,12 +30,17 @@
 
 1. 与えられた配列を部分配列に分割「**divide**」する。
 <<<<<<< HEAD
+<<<<<<< HEAD
 2. ただ1個の要素が残るまで再帰的に分割する。<img style="text-align: center" src="assets/algorithm/sorting/merge1.png">
 3. 部分配列たちをマージ「**merge**」する。<img style="text-align: center" src="assets/algorithm/sorting/merge2.png">
 =======
 2. ただ1個の要素が残るまで再帰的に分割する。<img style="text-align: center" src="assets/images/algorithm/sorting/merge1.png">
 3. 部分配列たちをマージ「**merge**」する。<img style="text-align: center" src="assets/images/algorithm/sorting/merge2.png">
 >>>>>>> 939a889 (Algorithm posts ported and assets added')
+=======
+2. ただ1個の要素が残るまで再帰的に分割する。<img style="text-align: center" src="assets/algorithm/sorting/merge1.png">
+3. 部分配列たちをマージ「**merge**」する。<img style="text-align: center" src="assets/algorithm/sorting/merge2.png">
+>>>>>>> cd40bfe (image link fixed)
 
 <div class="divider"></div>
 
