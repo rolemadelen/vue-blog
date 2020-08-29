@@ -1,9 +1,9 @@
 
-連結リストが何か分からん！って思っている方たちは、この<router-link to="jap-linked-list">連結リスト「Linked List」</router-link>とは記事を先に読んでください。
+連結リストが何か分からん！っと思った方だちは<router-link to="jap-linked-list">この記事</router-link>を先に読んでください。
 
 <div class="divider"></div>
 
-## 単方向リストとは？
+### 単方向リストとは？
 単方向リスト「Singly Linked List」はすべてのノード「node」たちが順次につながっている。そして単方向なので片方にだけ移動できる。
 
 ![Linked List image](assets/data-structure/linked-list/linkedlist.png)
@@ -27,7 +27,7 @@ end
 
 <div class="divider"></div>
 
-## 機能
+### 機能
 
 単方向リストはこの3つの演算が基本的にできる。
 - `add()`: リストにでーたを追加。
@@ -36,7 +36,7 @@ end
 
 <div class="divider"></div>
 
-## 単方向リストRubyコード
+### 単方向リストRubyコード
 
 ```rb
 class SinglyLinkedList

@@ -1,5 +1,5 @@
 
-## Linked List
+### Linked List
 Linked List is a linear data structure in which data are not stored
 contiguously in the memory. Each element in a linked list is called a _node_. 
 These nodes are linked together via _pointers_ referencing different nodes.
@@ -10,7 +10,7 @@ These nodes are linked together via _pointers_ referencing different nodes.
 
 <div class="divider"></div>
 
-## Linked List vs. Array
+### Linked List vs. Array
 Arrays are used to store linear data of same types, but they have the following limitations:
 1. The size of the array is fixed.
 2. Inserting and deleting an element is expensive, because we first need to create a room for the 
@@ -24,12 +24,12 @@ the right to maintain its order.
 
 <div class="divider"></div>
 
-## Advantages of Linked List
+### Advantages of Linked List
 - Unlike the arrays, the size of the linked lists is dynamic. You can insert or delete elements
 without resizing or shifting its elements.
 - Linked lists have faster insert and delete operations.
 
-## Disadvantages of Linked List
+### Disadvantages of Linked List
 - Random access is not allowed. We have to access elements sequentially starting from the 
 first node.
 - Every time we create a new node to link, we're using that much more memory space.
@@ -45,7 +45,7 @@ so there's locality of reference.
 
 <div class="divider"></div>
 
-## Representation
+### Representation
 A linked list is represented by a pointer to the first node or the linked list, which is called 
 the `head` node. `head` is `nil` if the list is empty.
 
@@ -53,7 +53,7 @@ Each node consists of at least two parts: `value`, which is the data stored in t
 
 <div class="divider"></div>
 
-## Simple Linked List
+### Simple Linked List
 ```rb
 class Node
   attr_accessor :data, :next
@@ -72,7 +72,7 @@ head.next = second    # [head, 1] -> [second, 2] -> nil
 second.next = third   # [head, 1] -> [second, 2] -> [third, 3]
 ```
 
-## Traversal
+### Traversal
 ```rb
 def print_list(node)
   while node != nil
