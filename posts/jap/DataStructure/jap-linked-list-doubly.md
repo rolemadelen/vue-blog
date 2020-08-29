@@ -1,5 +1,5 @@
 
-## 双方向リストとは?
+### 双方向リストとは?
 双方向リスト「Doubly Linked List」は一方向だけでつながっている<router-link to="jap-linked-list-singly">単方向リスト</router-link>とは違い、ノードが両方向でつながっているリストだ。
 
 ![Linked List image](assets/data-structure/linked-list/dll.png)
@@ -23,7 +23,7 @@ end
 
 <div class="divider"></div>
 
-## 双方向リストの実装
+### 双方向リストの実装
 
 実装する双方向リストの構造は下記のどおりだ。
 

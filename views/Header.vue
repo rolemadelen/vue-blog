@@ -45,44 +45,20 @@ export default {
   components: { LanguageSelector, HeaderMenu },
   data() {
     return {
-      lang: "eng",
+      lang: 'eng',
     };
   },
-  computed: {
-    getLangSelector: function () {
-      return document.querySelectorAll("div.lang-selector div");
-    },
+  mounted() {
+    this.goHome();
   },
-  methods: {
-    navMenu: function (str) {
-      const path = "/" + this.lang + "/" + this.lang + str;
-      if (this.$router.currentRoute.path !== path) {
-        this.$router.replace({ path: path });
-      }
-    },
-    goHome: function () {
-      const path = "/home/" + this.lang + "-home";
-      if (this.$router.currentRoute.path !== path) {
-        this.$router.replace({ path: path });
-      }
-    },
-    onChangeLang(lang) {
-      const langSelector = this.getLangSelector;
-      let prevPath = this.$router.currentRoute.path;
-      if (prevPath === "/") {
-        prevPath = "/home/eng-home";
-      }
-      let currPath = prevPath.split(/[\s/]+/);
-      if ("engkorjap".includes(currPath[1])) {
-        currPath[1] = lang;
-      }
-      let secondParam = currPath[2].split(/[\s-]+/);
-      secondParam[0] = lang;
-      secondParam = secondParam.join("-");
-      currPath[2] = secondParam;
-      currPath = currPath.join("/");
-
-      if (prevPath !== currPath) {
+  computed: {
+    lang2: {
+      get: function () {
+        return this.lang;
+      },
+      set: function (lang) {
+        const langSelector = this.getLangSelector;
+        this.lang = lang;
         if (lang === "eng") {
           this.lang = "eng";
           langSelector[0].className = "selected";
@@ -99,6 +75,42 @@ export default {
           langSelector[1].className = "";
           langSelector[2].className = "selected";
         }
+      }
+    },
+    getLangSelector: function () {
+      return document.querySelectorAll("div.lang-selector div");
+    },
+  },
+  methods: {
+    navMenu: function (str) {
+      const path = "/" + this.lang + "/" + this.lang2 + str;
+      if (this.$router.currentRoute.path !== path) {
+        this.$router.replace({ path: path });
+      }
+    },
+    goHome: function () {
+      const path = "/home/" + this.lang2 + "-home";
+      if (this.$router.currentRoute.path !== path) {
+        this.$router.replace({ path: path });
+      }
+    },
+    onChangeLang(lang) {
+      let prevPath = this.$router.currentRoute.path;
+      if (prevPath === "/") {
+        prevPath = "/home/eng-home";
+      }
+      let currPath = prevPath.split(/[\s/]+/);
+      if ("engkorjap".includes(currPath[1])) {
+        currPath[1] = lang;
+      }
+      let secondParam = currPath[2].split(/[\s-]+/);
+      secondParam[0] = lang;
+      secondParam = secondParam.join("-");
+      currPath[2] = secondParam;
+      currPath = currPath.join("/");
+
+      if (prevPath !== currPath) {
+        this.lang2 = lang;
         this.$router.replace({ path: currPath });
       }
     },
@@ -129,7 +141,8 @@ div#header {
     display: flex;
     justify-content: space-evenly;
 
-    width: 15%;
+    min-width: 11em;
+    max-width: 15em;
     margin: 0.5rem auto;
 
     div img {
@@ -156,9 +169,10 @@ div#header {
   .header-menu {
     display: flex;
     width: auto;
-    max-width: 25em;
+    max-width: 26em;
     justify-content: space-evenly;
     margin: 2em auto;
+    font-size: 15px;
 
     a {
       text-decoration: none;

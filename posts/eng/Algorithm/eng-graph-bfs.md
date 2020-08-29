@@ -4,15 +4,17 @@
 <span style="font-size:11px"><i>gif source: <a href="https://twpower.github.io/73-how-to-implement-dfs-and-bfs-in-cpp">TWpower's Tech Blog</a></i></span>
 </center>
 
-## Breadth First Search
-Unlike [Depth First Search](en-algorithm-graph-dfs) algorithm, BFS explore all nodes connected to the current 
+<div class="divider"></div>
+
+### Breadth First Search
+Unlike <router-link to="eng-graph-dfs">Depth First Search</router-link> algorithm, BFS explore all nodes connected to the current 
 vertex first. So if 3 nodes are connected to the current vertex, it explores all those nodes first.
 
 BFS can be implemented using a queue.
 
 <div class="divider"></div>
 
-## Implementation
+### Implementation
 
 ```cpp
 #define vi vector<int>

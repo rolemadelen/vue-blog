@@ -5,6 +5,7 @@
       "date": "Aug 12, 2020",
       "title": "What is Counting Sort?",
       "description": "Counting sort is an algorithm for sorting a collection of objects according to keys that are small integers.",
+      "published": false,
       "lang": "eng"
     },
     {
@@ -12,20 +13,23 @@
       "date": "Aug 12, 2020",
       "title": "Countingソートとは",
       "description": "",
+      "published": false,
       "lang": "jap"
     },
     {
       "id": "kor-sorting-counting",
       "date": "Aug 12, 2020",
       "title": "계수 정렬(Counting Sort)이란",
-      "description": "",
-      "lang": "kor"
+      "description": "오브젝트의 키(key), 인덱스, 등 숫자를 가지고 정렬하는 알고리즘.",
+      "published": false,
+      "lang": "false"
     },
     {
       "id": "eng-sorting-quick",
       "date": "Aug 12, 2020",
       "title": "What is Quick Sort?",
       "description": "Quick sort is an efficient sorting algorithm that can be faster than the merge or heap sort - if implemented correctly.",
+      "published": false,
       "lang": "eng"
     },
     {
@@ -33,13 +37,15 @@
       "date": "Aug 12, 2020",
       "title": "Quickソートとは",
       "description": "",
+      "published": false,
       "lang": "jap"
     },
     {
       "id": "kor-sorting-quick",
       "date": "Aug 12, 2020",
       "title": "퀵 정렬(Quick Sort)이란",
-      "description": "",
+      "description": "구현 방식에 따라 병할정렬과 힙정렬보다 빠른 효율적인 정렬 알고리즘.",
+      "published": false,
       "lang": "kor"
     },
     {
@@ -47,20 +53,23 @@
       "date": "Jul 09, 2020",
       "title": "What is Bubble Sort?",
       "description": "Bubble sort is the simplest sorting algorithm which works by repeatedly comparing and swapping two adjacent elements if they're in the wrong order.",
+      "published": true,
       "lang": "eng"
     },
     {
       "id": "jap-sorting-bubble",
       "date": "Jul 09, 2020",
       "title": "バブルソート「Bubble Sort」とは",
-      "description": "",
+      "description": "隣接する2個の要素を反復的に比較して、位置を変えながら整列が行われるアルゴリズム。",
+      "published": true,
       "lang": "jap"
     },
     {
       "id": "kor-sorting-bubble",
       "date": "Jul 09, 2020",
       "title": "거품 정렬(Bubble Sort)이란",
-      "description": "",
+      "description": "인접한 두 요소를 비교하고 순서가 틀릴 시 서로 위치를 바꾸는 과정을 반복하며 정렬을 하는 알고리즘.",
+      "published": true,
       "lang": "kor"
     },
     {
@@ -68,20 +77,23 @@
       "date": "Jun 26, 2020",
       "title": "What is Merge Sort?",
       "description": "Merge sort is an efficient comparison-based, divide-and-conquer algorithm invented by John von Neumann in 1945.",
+      "published": true,
       "lang": "eng"
     },
     {
       "id": "jap-sorting-merge",
       "date": "Jun 26, 2020",
       "title": "マージソート「Merge Sort」とは",
-      "description": "",
+      "description": "分割統治「Divide-and-Conquer」アルゴリズムと呼ばれる効率的なアルゴリズム。",
+      "published": true,
       "lang": "jap"
     },
     {
       "id": "kor-sorting-merge",
       "date": "Jun 26, 2020",
       "title": "병합 정렬(Merge Sort)이란",
-      "description": "",
+      "description": "존 폰 노이만(John von Neumann)이 고안한 분할정복(divide-and-conquer) 방식의 효율적인 정렬 알고리즘.",
+      "published": true,
       "lang": "kor"
     },
     {
@@ -89,20 +101,23 @@
       "date": "Jun 19, 2020",
       "title": "What is Selection Sort?",
       "description": "Selection sort is an in-place comparison sorting algorithm. Generally it performs worse than the insertion sort on larger lists.",
+      "published": true,
       "lang": "eng"
     },
     {
       "id": "jap-sorting-selection",
       "date": "Jun 19, 2020",
       "title": "選択ソート「Selection Sort」とは",
-      "description": "",
+      "description": "In-placeアルゴリズムの一つ。一般的に挿入ソートよりファフォマンスが悪い。",
+      "published": true,
       "lang": "jap"
     },
     {
       "id": "kor-sorting-selection",
       "date": "Jun 19, 2020",
       "title": "선택 정렬(Selection Sort)이란",
-      "description": "",
+      "description": "제자리 정렬 알고리즘 중 하나. 일반적으로 삽입 정렬보다 느린 정렬 속도를 가진다.",
+      "published": true,
       "lang": "kor"
     },
     {
@@ -110,20 +125,23 @@
       "date": "Jun 12, 2020",
       "title": "What is Insertion Sort?",
       "description": "Insertion sort is an efficient sorting algorithm for sorting smaller sets of data.",
+      "published": true,
       "lang": "eng"
     },
     {
       "id": "jap-sorting-insertion",
       "date": "Jun 12, 2020",
       "title": "挿入ソート「Insertion Sort」とは",
-      "description": "",
+      "description": "少ない数のデータを整列するとき効率的なアルゴリズム。",
+      "published": true,
       "lang": "jap"
     },
     {
       "id": "kor-sorting-insertion",
       "date": "Jun 12, 2020",
       "title": "삽입 정렬(Insertion Sort)이란",
-      "description": "",
+      "description": "적은 수의 자료들을 정렬할 때 효율적인 절령 알고리즘.",
+      "published": true,
       "lang": "kor"
     },
     {
@@ -131,20 +149,23 @@
       "date": "Jun 11, 2020",
       "title": "Graph - Breadth First Search (BFS)",
       "description": "BFS starts at the root (given) node and explores all of the neighbor nodes at the present depth prior to moving on to the nodes at the next depth level.",
+      "published": true,
       "lang": "eng"
     },
     {
       "id": "jap-graph-bfs",
       "date": "Jun 11, 2020",
       "title": "グラフ・幅優先探索（BFS）",
-      "description": "Learn and implement BFS algorithm",
+      "description": "近隣のノードたちから探索するアルゴリズム。",
+      "published": true,
       "lang": "jap"
     },
     {
       "id": "kor-graph-bfs",
       "date": "Jun 11, 2020",
       "title": "그래프 - 넓이 우선 탐색 (BFS)",
-      "description": "Learn and implement BFS algorithm",
+      "description": "루트 노드에서 시작해 인접한 노드들을 먼저 탐색하는 알고리즘.",
+      "published": true,
       "lang": "kor"
     },
     {
@@ -152,20 +173,23 @@
       "date": "Jun 10, 2020",
       "title": "Graph - Depth First Search (DFS)",
       "description": "DFS starts at the root (given) node and explores as deep as possible along each branch before backtracking.",
+      "published": true,
       "lang": "eng"
     },
     {
       "id": "jap-graph-dfs",
       "date": "Jun 10, 2020",
       "title": "グラフ・深さ優先探索（DFS）",
-      "description": "",
+      "description": " rootノードから始めてもう走査ができないノードまで深く探索するアルゴリズム。",
+      "published": true,
       "lang": "jap"
     },
     {
       "id": "kor-graph-dfs",
       "date": "Jun 10, 2020",
       "title": "그래프 - 깊이 우선 탐색 (DFS)",
-      "description": "",
+      "description": "루트 노드에서 시작해 다음 분기로 넘어가기 전, 해당 분기를 끝까지 탐색하는 알고리즘.",
+      "published": true,
       "lang": "kor"
     }
 
@@ -176,6 +200,7 @@
       "date": "Aug 08, 2020",
       "title": "BOJ 2167 - 2차원 배열의 합",
       "description": "백준 온라인 저지 문제 2167  풀이",
+      "published": true,
       "lang": "kor"
     },
     {
@@ -183,6 +208,7 @@
       "date": "Jul 11, 2020",
       "title": "Alsing Programming Contest 2020",
       "description": "Alsing Programming Contest 2020 - A, B",
+      "published": true,
       "lang": "eng"
     },
     {
@@ -190,6 +216,7 @@
       "date": "Jul 11, 2020",
       "title": "Alsing Programming Contest 2020",
       "description": "Alsing Programming Contest 2020 - A, B",
+      "published": true,
       "lang": "jap"
     },
     {
@@ -197,6 +224,7 @@
       "date": "Jul 11, 2020",
       "title": "Alsing Programming Contest 2020",
       "description": "Alsing Programming Contest 2020 - A, B",
+      "published": true,
       "lang": "kor"
     },
     {
@@ -204,6 +232,7 @@
       "date": "Jul 05, 2020",
       "title": "ABC 173",
       "description": "AtCoder Beginner Contest 173 - A, B",
+      "published": true,
       "lang": "eng"
     },
     {
@@ -211,6 +240,7 @@
       "date": "Jul 05, 2020",
       "title": "ABC 173",
       "description": "AtCoder Beginner Contest 173 - A, B",
+      "published": true,
       "lang": "jap"
     },
     {
@@ -218,6 +248,7 @@
       "date": "Jul 05, 2020",
       "title": "ABC 173",
       "description": "AtCoder Beginner Contest 173 - A, B",
+      "published": true,
       "lang": "kor"
     },
     {
@@ -225,6 +256,7 @@
       "date": "Jun 27, 2020",
       "title": "ABC 172",
       "description": "AtCoder Beginner Contest 172 - A, B",
+      "published": true,
       "lang": "eng"
     },
     {
@@ -232,6 +264,7 @@
       "date": "Jun 27, 2020",
       "title": "ABC 172",
       "description": "AtCoder Beginner Contest 172 - A, B",
+      "published": true,
       "lang": "jap"
     },
     {
@@ -239,6 +272,7 @@
       "date": "Jun 27, 2020",
       "title": "ABC 172",
       "description": "AtCoder Beginner Contest 172 - A, B",
+      "published": true,
       "lang": "kor"
     },
     {
@@ -246,6 +280,7 @@
       "date": "May 31, 2020",
       "title": "ABC 169",
       "description": "AtCoder Beginner Contest 169 - A, B, C",
+      "published": true,
       "lang": "eng"
     },
     {
@@ -253,6 +288,7 @@
       "date": "May 31, 2020",
       "title": "ABC 169",
       "description": "AtCoder Beginner Contest 169 - A, B, C",
+      "published": true,
       "lang": "jap"
     },
     {
@@ -260,6 +296,7 @@
       "date": "May 31, 2020",
       "title": "ABC 169",
       "description": "AtCoder Beginner Contest 169 - A, B, C",
+      "published": true,
       "lang": "kor"
     },
     {
@@ -267,6 +304,7 @@
       "date": "May 17, 2020",
       "title": "ABC 168",
       "description": "AtCoder Beginner Contest 168 - A, B, C",
+      "published": true,
       "lang": "eng"
     },
     {
@@ -274,6 +312,7 @@
       "date": "May 17, 2020",
       "title": "ABC 168",
       "description": "AtCoder Beginner Contest 168 - A, B, C",
+      "published": true,
       "lang": "jap"
     },
     {
@@ -281,6 +320,7 @@
       "date": "May 17, 2020",
       "title": "ABC 168",
       "description": "AtCoder Beginner Contest 168 - A, B, C",
+      "published": true,
       "lang": "kor"
     },
     {
@@ -288,6 +328,7 @@
       "date": "May 10, 2020",
       "title": "ABC 167",
       "description": "AtCoder Beginner Contest 167 - A, B",
+      "published": true,
       "lang": "eng"
     },
     {
@@ -295,6 +336,7 @@
       "date": "May 10, 2020",
       "title": "ABC 167",
       "description": "AtCoder Beginner Contest 167 - A, B",
+      "published": true,
       "lang": "jap"
     },
     {
@@ -302,6 +344,7 @@
       "date": "May 10, 2020",
       "title": "ABC 167",
       "description": "AtCoder Beginner Contest 167 - A, B",
+      "published": true,
       "lang": "kor"
     },
     {
@@ -309,6 +352,7 @@
       "date": "May 03, 2020",
       "title": "ABC 166",
       "description": "AtCoder Beginner Contest 166 - A",
+      "published": true,
       "lang": "eng"
     },
     {
@@ -316,6 +360,7 @@
       "date": "May 03, 2020",
       "title": "ABC 166",
       "description": "AtCoder Beginner Contest 166 - A",
+      "published": true,
       "lang": "jap"
     },
     {
@@ -323,6 +368,7 @@
       "date": "May 03, 2020",
       "title": "ABC 166",
       "description": "AtCoder Beginner Contest 166 - A",
+      "published": true,
       "lang": "kor"
     },
     {
@@ -330,6 +376,7 @@
       "date": "Apr 12, 2020",
       "title": "ABC 162",
       "description": "AtCoder Beginner Contest 162 - A, B, C",
+      "published": true,
       "lang": "eng"
     },
     {
@@ -337,6 +384,7 @@
       "date": "Apr 12, 2020",
       "title": "ABC 162",
       "description": "AtCoder Beginner Contest 162 - A, B, C",
+      "published": true,
       "lang": "jap"
     },
     {
@@ -344,6 +392,7 @@
       "date": "Apr 12, 2020",
       "title": "ABC 162",
       "description": "AtCoder Beginner Contest 162 - A, B, C",
+      "published": true,
       "lang": "kor"
     },
     {
@@ -351,6 +400,7 @@
       "date": "Apr 04, 2020",
       "title": "ABC 161",
       "description": "AtCoder Beginner Contest 161 - A, B, C",
+      "published": true,
       "lang": "eng"
     },
     {
@@ -358,6 +408,7 @@
       "date": "Apr 04, 2020",
       "title": "ABC 161",
       "description": "AtCoder Beginner Contest 161 - A, B, C",
+      "published": true,
       "lang": "jap"
     },
     {
@@ -365,6 +416,7 @@
       "date": "Apr 04, 2020",
       "title": "ABC 161",
       "description": "AtCoder Beginner Contest 161 - A, B, C",
+      "published": true,
       "lang": "kor"
     },
     {
@@ -372,6 +424,7 @@
       "date": "Feb 04, 2020",
       "title": "ABC 153",
       "description": "AtCoder Beginner Contest 153 - A, B, C, D, E",
+      "published": true,
       "lang": "eng"
     },
     {
@@ -379,6 +432,7 @@
       "date": "Feb 04, 2020",
       "title": "ABC 153",
       "description": "AtCoder Beginner Contest 153 - A, B, C, D, E",
+      "published": true,
       "lang": "jap"
     },
     {
@@ -386,6 +440,7 @@
       "date": "Feb 04, 2020",
       "title": "ABC 153",
       "description": "AtCoder Beginner Contest 153 - A, B, C, D, E",
+      "published": true,
       "lang": "kor"
     }
   ],
@@ -395,6 +450,7 @@
       "date": "Aug 13, 2020",
       "title": "What is Binary Heap?",
       "description": "",
+      "published": false,
       "lang": "eng"
     },
     {
@@ -402,163 +458,192 @@
       "date": "Aug 12, 2020",
       "title": "Ruby・Binary Search Tree",
       "description": "",
+      "published": false,
       "lang": "eng"
     },
     {
       "id": "eng-binarytree",
       "date": "Aug 12, 2020",
+      "title": "Ruby・Binary Tree",
+      "description": "",
+      "published": false,
+      "lang": "eng"
+    },
+    {
+      "id": "eng-tree",
+      "date": "Aug 12, 2020",
       "title": "What is tree?",
       "description": "",
+      "published": false,
       "lang": "eng"
     },
     {
       "id": "eng-queue",
       "date": "Aug 10, 2020",
       "title": "Ruby・Queue",
-      "description": "",
+      "description": "Queue is a linear data structure which follows a particular order in which the operations are performed -- FIFO.",
+      "published": false,
       "lang": "eng"
     },
     {
       "id": "kor-queue",
       "date": "Aug 10, 2020",
       "title": "Ruby・큐(queue)란",
-      "description": "",
+      "description": "First-In-First-Out (FIFO)구조로 자료를 저장하는 형식의 선형 자료구조.",
+      "published": false,
       "lang": "kor"
+    },
+    {
+      "id": "jap-queue",
+      "date": "Aug 10, 2020",
+      "title": "Ruby・キュー「Queue」とは",
+      "description": "First-In-First-Out「FIFO」の方法でデータを保存するデータ構造。",
+      "published": false,
+      "lang": "jap"
     },
     {
       "id": "eng-stack",
       "date": "Aug 10, 2020",
       "title": "Ruby・Stack",
-      "description": "",
+      "description": "Stack is a linear data structure which follows a particular order in which the operations are performed -- LIFO or FILO.",
+      "published": false,
       "lang": "eng"
     },
     {
       "id": "kor-stack",
       "date": "Aug 10, 2020",
-      "title": "Ruby・스택(stack)이란",
-      "description": "",
+      "title": "Ruby・스택(Stack)이란",
+      "description": "Last-In-First-Out (LIFO) 또는 First-In-Last-Out (FILO) 구조로 자료를 저장하는 선형 자료구조.",
+      "published": false,
       "lang": "kor"
+    },
+    {
+      "id": "jap-stack",
+      "date": "Aug 10, 2020",
+      "title": "Ruby・スタック「Stack」とは",
+      "description": "Last-In-First-Out（LIFO）またはFirst-In-Last-Out（FILO）方法でデータを保存するデータ構造。",
+      "published": false,
+      "lang": "jap"
     },
     {
       "id": "eng-array",
       "date": "Aug 03, 2020",
       "title": "Ruby・Array",
-      "description": "",
+      "description": "Array is a data structure consisting of a collection of elements, each identified by at least one array index or key.",
+      "published": true,
       "lang": "eng"
     },
     {
       "id": "jap-array",
       "date": "Aug 03, 2020",
       "title": "Ruby・配列「array」とは",
-      "description": "",
+      "description": "同じデータ型の変数を含むコンテナ。",
+      "published": true,
       "lang": "jap"
     },
     {
       "id": "kor-array",
       "date": "Aug 03, 2020",
       "title": "Ruby・배열(array)이란",
-      "description": "",
+      "description": "같은 타입형의 변수들로 이루어진 유한 집합. 각각의 요소들은 메모리 상에 연속적으로 나열되어 있다.",
+      "published": true,
       "lang": "kor"
     },
     {
       "id": "eng-linked-list-circular",
       "date": "Jul 18, 2020",
       "title": "Ruby・Circular Linked List",
-      "description": "Circular Linked List implementation in Ruby",
+      "description": "Circular linked list is a variation of a linked list where the first node points to the last node and vice versa.",
+      "published": true,
       "lang": "eng"
     },
     {
       "id": "jap-linked-list-circular",
       "date": "Jul 18, 2020",
       "title": "Ruby・循環リスト「Circular Linked List」とは",
-      "description": "Circular Linked List implementation in Ruby",
+      "description": "最初と最後のノードがつながってる連結リスト。",
+      "published": true,
       "lang": "jap"
     },
     {
       "id": "kor-linked-list-circular",
       "date": "Jul 18, 2020",
       "title": "Ruby・원형 연결 리스트(Circular Linked List)란",
-      "description": "Circular Linked List implementation in Ruby",
+      "description": "첫 번째와 마지막 노드가 서로 연결되어 있는 리스트.",
+      "published": true,
       "lang": "kor"
     },
     {
       "id": "eng-linked-list-doubly",
       "date": "Jul 11, 2020",
       "title": "Ruby・Doubly Linked List",
-      "description": "",
+      "description": "Doubly linked list is a bidirectional linked list, that is, it can be traversed in either direction.",
+      "published": true,
       "lang": "eng"
     },
     {
       "id": "jap-linked-list-doubly",
       "date": "Jul 11, 2020",
       "title": "Ruby・双方向リスト「Doubly Linked List」とは",
-      "description": "",
+      "description": "双方向のポインタを持ってるノードからなるリスト。",
+      "published": true,
       "lang": "jap"
     },
     {
       "id": "kor-linked-list-doubly",
       "date": "Jul 11, 2020",
       "title": "Ruby・이중 연결 리스트(Doubly Linked List)란",
-      "description": "",
+      "description": "양방향의 포인터를 가진 노드로 이루어진 리스트.",
+      "published": true,
       "lang": "kor"
     },
     {
       "id": "eng-linked-list-singly",
       "date": "May 9, 2020",
       "title": "Ruby・Singly Linked List",
-      "description": "",
+      "description": "Singly linked list is a unidirectional linked list, that is, it can only traverse in forward direction.",
+      "published": true,
       "lang": "eng"
     },
     {
       "id": "jap-linked-list-singly",
       "date": "May 9, 2020",
       "title": "Ruby・単方向リスト「Singly Linked List」とは",
-      "description": "",
+      "description": "単方向のポインタを持ってるノードからなるリスト。",
+      "published": true,
       "lang": "jap"
     },
     {
       "id": "kor-linked-list-singly",
       "date": "May 9, 2020",
       "title": "Ruby・단일 연결 리스트(Singly Linked List)란",
-      "description": "",
+      "description": "단일 방향의 포인터를 가진 노드로 이루어진 리스트.",
+      "published": true,
       "lang": "kor"
     },
     {
       "id": "eng-linked-list",
       "date": "May 9, 2020",
       "title": "What is Linked List?",
-      "description": "Learn fundamentals of Linked List",
+      "description": "A linked list is a linear collection of data elements whose order is not given by their physical placement in memory.",
+      "published": true,
       "lang": "eng"
     },
     {
       "id": "jap-linked-list",
       "date": "May 9, 2020",
       "title": "連結リスト「Linked List」とは",
-      "description": "Learn fundamentals of Linked List",
+      "description": "メモリに離れているデータ「node」たちを連結しながらデータを保存するデータ構造。",
+      "published": true,
       "lang": "jap"
     },
     {
       "id": "kor-linked-list",
       "date": "May 9, 2020",
       "title": "연결 리스트(Linked List)란",
-      "description": "Learn fundamentals of Linked List",
+      "description": "데이터와 포인터를 가지는 노드를 한 줄로 연결해서 데이터를 저장하는 방식의 자료구조.",
+      "published": true,
       "lang": "kor"
-    }
-  ],
-  "TIL": [
-    {
-      "id": "vue-directives-on-components",
-      "date": "Aug 25, 2020",
-      "title": "Adding Vue directives on Components",
-      "description": "How to add v-directives like (v-on, v-bind, etc) on the component?",
-      "lang": "eng"
-    },
-    {
-      "id": "cancel-commit",
-      "date": "Aug 14, 2020",
-      "title": "How to cancel a local commit",
-      "description": "Learn how to cancel a local commit",
-      "lang": "eng"
     }
   ]
 }
