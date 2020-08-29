@@ -9,7 +9,7 @@ Creating a blog using..
 - MacOS (Safari/Chrome)
 
 ## Demo
-<a href="https://jioneeu-blog.netlify.app/#/" target="_blank">https://jioneeu-blog.netlify.app/#/</a>
+<a href="https://www.jioneeu.com" target="_blank">https://www.jioneeu.com</a>
 
 ## The original design of the blog
 
