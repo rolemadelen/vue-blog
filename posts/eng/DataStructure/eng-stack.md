@@ -1,6 +1,6 @@
-## What is Stack?
+### What is Stack?
 
-## Implementation
+### Implementation
 
 ### Array based
 ```rb
