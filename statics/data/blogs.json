@@ -482,7 +482,7 @@
       "date": "Aug 10, 2020",
       "title": "Ruby・Queue",
       "description": "Queue is a linear data structure which follows a particular order in which the operations are performed -- FIFO.",
-      "published": true,
+      "published": false,
       "lang": "eng"
     },
     {
@@ -490,7 +490,7 @@
       "date": "Aug 10, 2020",
       "title": "Ruby・큐(queue)란",
       "description": "First-In-First-Out (FIFO)구조로 자료를 저장하는 형식의 선형 자료구조.",
-      "published": true,
+      "published": false,
       "lang": "kor"
     },
     {
@@ -498,7 +498,7 @@
       "date": "Aug 10, 2020",
       "title": "Ruby・キュー「Queue」とは",
       "description": "First-In-First-Out「FIFO」の方法でデータを保存するデータ構造。",
-      "published": true,
+      "published": false,
       "lang": "jap"
     },
     {
@@ -506,7 +506,7 @@
       "date": "Aug 10, 2020",
       "title": "Ruby・Stack",
       "description": "Stack is a linear data structure which follows a particular order in which the operations are performed -- LIFO or FILO.",
-      "published": true,
+      "published": false,
       "lang": "eng"
     },
     {
@@ -514,7 +514,7 @@
       "date": "Aug 10, 2020",
       "title": "Ruby・스택(Stack)이란",
       "description": "Last-In-First-Out (LIFO) 또는 First-In-Last-Out (FILO) 구조로 자료를 저장하는 선형 자료구조.",
-      "published": true,
+      "published": false,
       "lang": "kor"
     },
     {
@@ -522,7 +522,7 @@
       "date": "Aug 10, 2020",
       "title": "Ruby・スタック「Stack」とは",
       "description": "Last-In-First-Out（LIFO）またはFirst-In-Last-Out（FILO）方法でデータを保存するデータ構造。",
-      "published": true,
+      "published": false,
       "lang": "jap"
     },
     {
