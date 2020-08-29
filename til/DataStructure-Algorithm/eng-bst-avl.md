@@ -25,8 +25,6 @@ Operations:
 
 Implemenation: [GitHub](https://github.com/jioneeu/coding/blob/master/data_structure/ruby/tree/bst/bst.rb)
 
-<div class="divider"></div>
-
 ## AVL Tree
 - Adelson, Velski & Landis (AVL Tree)
 - Height balancing BST
@@ -41,8 +39,6 @@ AVL Rotations (operations)
 - Right-Left rotation (double rot)
 
 Not yet implemented.
-
-<div class="divider"></div>
 
 ## Find the Tree's Maximum Depth (height)
 
@@ -63,8 +59,6 @@ def get_height(node)
   return h
 end
 ```
-
-<div class="divider"></div>
 
 ## Reference
 - [BST](https://www.tutorialspoint.com/data_structures_algorithms/tree_data_structure.htm)
