@@ -11,3 +11,9 @@ export default {
   components: { ListPosts },
 };
 </script>
+
+<style lang="scss">
+  .section {
+    line-height: 1.3;
+  }
+</style>

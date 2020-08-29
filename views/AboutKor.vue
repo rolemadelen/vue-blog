@@ -2,19 +2,16 @@
 <div class="about">
   
 <h2 style="text-align: center;"> 안녕하세요! </h2>
-<b>jioneeu</b>라는 이름으로 활동하고 있는 <b>유 지원</b>입니다.
+<b>jioneeu</b>라는 이름으로 활동하고 있는 <b>Jii Eu</b>입니다.
 
 <br><br>
 
-2019년 <a href="https://ucsd.edu/" target="_blank">UC San Diego</a> 에서 <a href="http://cogsci.ucsd.edu/undergraduates/major/design-interaction.html" target="_blank">B.S. Cognitive Science Spec. Human Computer and Interaction</a> 학위를 받고 졸업했습니다.
+한국 태생이지만 미국에서 초중고를 나오고 대학교는 2019년 <a href="https://ucsd.edu/" target="_blank">UC San Diego</a> 에서 <a href="http://cogsci.ucsd.edu/undergraduates/major/design-interaction.html" target="_blank">B.S. Cognitive Science Spec. Human Computer and Interaction</a> 학위를 받고 졸업했습니다.
+지금은 일본에서 초등학교 외국어 교사로 일하면서, 웹 개발자를 목표로 공부하고 있습니다.
 
 <br><br>
 
-한국에서 태어나 미국에서 대부분의 시간을 보냈고, 지금은 일본에서 초등학교 외국어 교사로 일하고 있습니다. 현재는 개발자를 목표로 틈틈히 개발, 알고리즘, 자료구조, 등등을 공부 중 입니다.
-
-<br><br>
-
-개인적으로 동기부여를 위해 <a href="https://www.youtube.com/channel/UC8hY3wjYlK2U9W4fqKN598Q?view_as=subscriber" target="_blank">Study with me</a> 채널을 운영하고 있으니, 같이 공부하고 싶으신 분들은 참여해주세요 :)
+개인적인 동기부여를 위해 <a href="https://www.youtube.com/channel/UC8hY3wjYlK2U9W4fqKN598Q?view_as=subscriber" target="_blank">Study with me</a> 채널을 운영하고 있으니 같이 공부하고 싶으신 분들은 언제든지 환영입니다 :)
 
 <br><br>
 
@@ -30,10 +27,8 @@
 <style lang="scss" scoped>
 
 .about {
-  @import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,300;0,400;1,300;1,400&display=swap');
-  font-family: 'Source Serif Pro', serif;
   font-size: 15px;
-
+  line-height: 1.5;
   max-width: 40em;
   margin: 0 auto;
 

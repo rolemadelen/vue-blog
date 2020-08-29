@@ -8,9 +8,8 @@
 <style lang="scss">
 .blog {
   @import "../styles/_content.scss";
-  @import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,300;0,400;1,300;1,400&display=swap');
-  font-family: 'Source Serif Pro', serif;
-
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  line-height: 1.5;
   max-width: 40em;
   margin: 3rem auto;
 }

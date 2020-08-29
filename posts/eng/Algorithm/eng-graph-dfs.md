@@ -1,14 +1,14 @@
 
 <center>
-<img src="assets/algorithm/graph/dfsbfs.gif"> <br>
+<img src="assets/algorithm/graph/dfsbfs.gif" alt="dfs and bfs gif"> <br>
 <span style="font-size:11px"><i>gif source: <a href="https://twpower.github.io/73-how-to-implement-dfs-and-bfs-in-cpp">TWpower's Tech Blog</a></i></span>
 </center>
 
 <div class="divider"></div>
 
-## Depth First Search
+### Depth First Search
 
-DFS is an algorithm for searching (traversing) tree or graph. This algorithm starts at a root node for tree 
+DFS is an algorithm for searching and traversing in a tree or graph. This algorithm starts at a root node for tree 
 or any specified node (starting node) for a graph and explores as far as possible along each 
 branch (or neighbors) before [backtracking](https://en.wikipedia.org/wiki/Backtracking).
 

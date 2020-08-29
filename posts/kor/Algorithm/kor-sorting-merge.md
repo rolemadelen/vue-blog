@@ -1,5 +1,5 @@
 
-## 병합 정렬
+### 병합 정렬
 
 분할정복 알고리즘의 대표적인 예로 병합 정렬(Merge Sort)을 꼽을 수 있다.
 
@@ -24,7 +24,7 @@
 
 <div class="divider"></div>
 
-## 병합 정렬 알고리즘 요약
+### 병합 정렬 알고리즘 요약
 
 분할정복을 사용해 어떻게 정렬이 이루어지는지 살펴본다.
 
@@ -34,7 +34,7 @@
 
 <div class="divider"></div>
 
-## 병합 정렬 코드
+### 병합 정렬 코드
 ```rb
 def merge(arr, left, mid, right)
   sorted_arr = [0]*right
@@ -87,9 +87,7 @@ p arr
 p arr
 ```
 
-<div class="divider"></div>
-
-## 시간 복잡도
+### 시간 복잡도
 - 분할 과정
   + 배열의 중간 위치를 계산: **O(1)**
   + 배열을 계속해서 반으로 분할: **O(log n)**
@@ -99,6 +97,6 @@ p arr
 
 <div class="divider"></div>
 
-## Reference
+### Reference
 - [Introduction to Algorithms 3rd edition](https://www.amazon.com/Introduction-Algorithms-3rd-MIT-Press/dp/0262033844)
 - [studytonight - Merge Sort Algorithm](https://www.studytonight.com/data-structures/merge-sort#:~:text=Time%20complexity%20of%20Merge%20Sort,space%20as%20the%20unsorted%20array)

@@ -1,6 +1,6 @@
-## What is Queue 
+### What is Queue 
 
-## Implementation
+### Implementation
 
 ### Array based
 ```rb
