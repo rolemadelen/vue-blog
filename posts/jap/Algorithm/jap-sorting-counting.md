@@ -1,7 +1,7 @@
 
-## Counting Sort
+### Counting Sort
 
-## The code
+### The code
 
 ```rb
 # 1 <= n <= 10,000,000
@@ -20,6 +20,6 @@ end
 end
 ```
 
-## Time Complexity
+### Time Complexity
 
-## Reference
+### Reference

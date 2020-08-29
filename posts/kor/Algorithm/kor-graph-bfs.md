@@ -6,15 +6,15 @@
 
 <div class="divider"></div>
 
-## 넓이 우선 탐색 (BFS)
-넓이 우선 탐색 (BFS) 알고리즘은 가장 깊이 탐색하는 [DFS](./ko-algorithm-graph-dfs)와는 반대로 현재 정점에 연결된 가까운 노드들 부터
-탐색합니다. 첫 번째 정점과 연결되 있는 노드가 3개 있다면, 이 노드들을 먼저 전부 탐색합니다.
+### 넓이 우선 탐색 (BFS)
+넓이 우선 탐색 (BFS) 알고리즘은 가장 깊이 탐색하는 <router-link to="./kor-graph-dfs">DFS</router-link>와는 반대로 현재 정점과 연결된 노드들부터
+탐색합니다. 첫 번째 정점과 연결되어 있는 노드가 `n`개 있다면, 이 `n`개의 이웃들을 먼저 방문합니다.
 
 BFS는 큐를 사용해서 구현할 수 있습니다.
 
 <div class="divider"></div>
 
-## 구현
+### 구현
 
 ```cpp
 #define vi vector<int>

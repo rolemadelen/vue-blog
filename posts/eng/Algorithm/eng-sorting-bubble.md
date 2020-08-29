@@ -1,10 +1,10 @@
 
-## Bubble Sort
+### Bubble Sort
 Bubble sort is the simplest sorting algorithm which works by repeatedly comparing and swapping two adjacent elements if they're not in the correct order.
 
 <div class="divider"></div>
 
-## How it works
+### How it works
 
 Imagine you have an array -- `[3, 1, 5, 4]`  -- and your task it to sort them in ascending order.
 
@@ -28,7 +28,7 @@ As we compare adjacent elements, we can set a flag -- `swapped` -- to check if s
 
 <div class="divider"></div>
 
-## The Code
+### Implementation
 
 ```rb
 def bubble_sort(arr)
@@ -56,9 +56,7 @@ def bubble_sort(arr)
 end
 ```
 
-<div class="divider"></div>
-
-## Time Complexity
+### Time Complexity
 
 #### best case
 - number of comparisons: `n-1` times
@@ -72,5 +70,5 @@ end
 
 <div class="divider"></div>
 
-## Reference
+### Reference
 - [https://medium.com/madhash/bubble-sort-in-a-nutshell-how-when-where-4965e77910d8](https://medium.com/madhash/bubble-sort-in-a-nutshell-how-when-where-4965e77910d8)

@@ -1,11 +1,11 @@
 
-## 거품 정렬
+### 거품 정렬
 거품 정렬(Bubble sort)은 가장 간단한 정렬 알고리즘으로 인접한 두 개의 원소를 반복적으로 비교하고 위치를 바꾸면서
 정렬이 이루어진다. 
 
 <div class="divider"></div>
 
-## 알고리즘의 작동 원리
+### 알고리즘의 작동 원리
 
 아래의 배열을 오름차순으로 정렬하려고 한다.
 
@@ -32,7 +32,7 @@
 
 <div class="divider"></div>
 
-## 거품 정렬 코드
+### 거품 정렬 코드
 
 ```rb
 def bubble_sort(arr)
@@ -60,9 +60,7 @@ def bubble_sort(arr)
 end
 ```
 
-<div class="divider"></div>
-
-## 시간 복잡도
+### 시간 복잡도
 
 #### 최선의 경우
 - 비교 횟수: `n-1` times
@@ -76,5 +74,5 @@ end
 
 <div class="divider"></div>
 
-## Reference
+### Reference
 - [https://medium.com/madhash/bubble-sort-in-a-nutshell-how-when-where-4965e77910d8](https://medium.com/madhash/bubble-sort-in-a-nutshell-how-when-where-4965e77910d8)

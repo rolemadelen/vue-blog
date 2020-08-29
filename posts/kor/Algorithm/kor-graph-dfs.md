@@ -6,7 +6,7 @@
 
 <div class="divider"></div>
 
-## Depth First Search
+### Depth First Search
  
 깊이 우선 탐색 (DFS)는 트리와 그래프 자료구조에서 탐색 또는 순회를 할 때 사용되는 알고리즘입니다.
 트리의 경우 위 그림과 같이 루트 (root) 노드에서 시작하여 가장 깊이 들어가면서 탐색을 하는 알고리즘 입니다. 

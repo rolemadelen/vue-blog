@@ -1,12 +1,12 @@
 
 <center>
-<img src="assets/algorithm/graph/dfsbfs.gif"> <br>
+<img src="assets/algorithm/graph/dfsbfs.gif" alt="dfs and bfs gif"> <br>
 <span style="font-size:11px"><i>gif source: <a href="https://twpower.github.io/73-how-to-implement-dfs-and-bfs-in-cpp">TWpower's Tech Blog</a></i></span>
 </center>
 
 <div class="divider"></div>
 
-## 深さ優先探索（Depth First Search)
+### 深さ優先探索（Depth First Search)
  
 深さ優先探索はツリーやグラフデータ構造の探索及び走査をする時使用されるアルゴリズムです。ツリーの場合はrootから始めてもう走査ができないノードまで深く探索をします。グラフの場合はスターとノードを選択して、そのノードと繋いでる一つのノードを最後まで探索します。一つのノードには何個のノードも来れるので、配列とかvectorなどを使ってノードを訪問したとかの状態をセーブします。
 
@@ -14,7 +14,7 @@ DFSはスタック（stack）を使って実装できます。Recursionの動作
 
 <div class="divider"></div>
 
-## Implementation
+### Implementation
 
 ### Recursion 
 ```cpp

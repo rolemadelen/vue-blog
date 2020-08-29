@@ -1,17 +1,17 @@
 
-## Insertion Sort
+### Insertion Sort
 - The most efficient algorithm for sorting small sets of data.
   + Best when data is almost sorted.
 - The algorithm is similar to how most people sort game cards in their hands.
   + Compare the new card with already sorted cards and find the correct position to insert.
   + Repeat until their are no more new cards.
 
-<img src="assets/algorithm/sorting/insertion.png"> <br>
+<img src="assets/algorithm/sorting/insertion.png" alt="sorting cards in hands"> <br>
 <span style="font-size:11px"><i>source: <a href="https://studyalgorithms.com/array/insertion-sort/#">studyalgorithm.com</a></i></span>
 
 <div class="divider"></div>
 
-## Algorithm  Summary
+### Algorithm  Summary
 - Let `key` be the current position's data to compare with others.
 - **Start with the 2nd data** (`key = arr[1]`) and compare with all data in front of the `key`.
 - If the value in front of the `key` is larger, then swap its position with the key.
@@ -19,7 +19,7 @@
 
 <div class="divider"></div>
 
-## The code
+### Implementation
 ```rb
 def insertion_sort(arr)
   n = arr.size
@@ -51,9 +51,7 @@ print arr
 puts
 ```
 
-<div class="divider"></div>
-
-## Time Complexity
+### Time Complexity
 #### best case
 - number of comparisons: `n-1`
 - number of swaps: `0`
@@ -66,7 +64,7 @@ puts
 
 <div class="divider"></div>
 
-## Reference
+### Reference
 - [Introduction to Algorithms 3rd edition](https://www.amazon.com/Introduction-Algorithms-3rd-MIT-Press/dp/0262033844)
 - [CS3 Data Structures & Algorithms](https://opendsa-server.cs.vt.edu/ODSA/Books/CS3/html/InsertionSort.html)
 - [삽입 정렬(insertion sort)이란](https://gmlwjd9405.github.io/2018/05/06/algorithm-insertion-sort.html)

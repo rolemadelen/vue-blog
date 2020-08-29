@@ -1,7 +1,7 @@
 
-## Quick Sort
+### Quick Sort
 
-## The code
+### The code
 
 ```rb
 # https://mygumi.tistory.com/308
@@ -47,6 +47,6 @@ quicksort(a, 0, size-1)
 p a
 ```
 
-## Time Complexity
+### Time Complexity
 
-## Reference
+### Reference
