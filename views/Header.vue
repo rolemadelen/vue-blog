@@ -141,7 +141,7 @@ div#header {
     display: flex;
     justify-content: space-evenly;
 
-    width: 15%;
+    width: 20%;
     margin: 0.5rem auto;
 
     div img {
