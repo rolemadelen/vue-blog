@@ -1,10 +1,5 @@
-
-<div class="updated">
-2020-07-24: typo fixed & more figures added
-</div>
-
-## What is Circular Linked List?
-The end of the linked lists are normally defined by the tail node pointing to `nil`. In the case of [Doubly Linked List](/en-data-structure-linked-list-doubly) both the `head.prev` and `tail.next` points to `nil`.
+### What is Circular Linked List?
+The end of the linked lists are normally defined by the tail node pointing to `nil`. In the case of <routerlink to="/en-data-structure-linked-list-doubly">Doubly Linked List</router-link> both the `head.prev` and `tail.next` points to `nil`.
 
 <div style="text-align: center">
   <img src="assets/data-structure/linked-list/cll-doubly-example.png" alt="Linked list picture">
@@ -16,7 +11,7 @@ In the circular linked list, however, `tail.next` points to the head node and `h
   <img src="assets/data-structure/linked-list/cll-doubly.png" alt="Linked list picture">
 </div>
 
-### :bulb: Node Structure
+### Node Structure
 The difference of circular list and other linked lists are in adding and removing nodes; thus, the structure of the Node of the circular list is same with other typical linked lists' structures of the Node.
 
 **Circular Singly Linked List**
@@ -48,9 +43,9 @@ end
 
 <div class="divider"></div>
 
-## Circular Linked List Implementation
+### Circular Linked List Implementation
 
-### :bulb: initialize: Constructor
+### initialize: Constructor
 
 **Circular Singly Linked List**
 
@@ -85,7 +80,7 @@ In Circular Doubly Linked List, we can access the tail node with `@head.prev`, s
 </div>
 
 
-### :bulb: insert
+### insert
 
 `insert` method adds a node at the back of the list.
 
@@ -147,9 +142,9 @@ And last but not least, let `@head.prev` be theh new last node (`new_node`).
 </div>
 
 
-### :bulb: insert\_at
+### insert\_at
 
-#### :pencil2: Inserting a node at the back of the list
+#### Inserting a node at the back of the list
 
 **Circular Singly/Doubly Linked List**
 
@@ -161,7 +156,7 @@ And last but not least, let `@head.prev` be theh new last node (`new_node`).
 
 When inserting a node at the back, simply call `insert` method that we implemented earlier.
 
-#### :pencil2: Inserting a node at the front of the list
+#### Inserting a node at the front of the list
 
 **Circular Singly Linked List**
 
@@ -212,8 +207,7 @@ And finally, we update `head.prev` so that it's pointing to our new head.
 <div style="text-align: center">
   <img src="assets/data-structure/linked-list/cll-doubly-insert_at5.png" alt="circular doubly linked list picture">
 </div>
-
-#### :pencil2: Inserting a node in between nodes
+ Inserting a node in between nodes
 
 **Circular Singly Linked List**
 
@@ -262,9 +256,9 @@ And let `curr.prev.next` -- `head.next` -- and `curr.prev` point to `new_node`.
   <img src="assets/data-structure/linked-list/cll-doubly-insert_at2.png" alt="circular doubly linked list picture">
 </div>
 
-### :bulb: remove\_at
+### remove\_at
 
-#### :pencil2: Removing the head node
+#### Removing the head node
 
 **Circular Singly Linked List**
 
@@ -315,8 +309,7 @@ And then we move the `@head` to its next node (`@head.next`).
 <div style="text-align: center">
   <img src="assets/data-structure/linked-list/cll-doubly-remove-at2.png" alt="circular doubly linked list picture">
 </div>
-
-#### :pencil2: Removing the tail node
+ Removing the tail node
 
 **Circular Singly Linked List**
 
@@ -359,8 +352,7 @@ Since we can access to its previous node using `prev`, we can access tail's prev
 <div style="text-align: center">
   <img src="assets/data-structure/linked-list/cll-doubly-remove-at3.png" alt="circular doubly linked list picture">
 </div>
-
-#### :pencil2: Removing the node in between two nodes
+ Removing the node in between two nodes
 
 **Circular Singly Linked List**
 

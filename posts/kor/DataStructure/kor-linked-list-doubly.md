@@ -1,6 +1,6 @@
 
-## 이중 연결 리스트란?
-이중 연결 리스트(Doubly Linked List)는 노드들이 한 방향으로만 연결된 [단일 리스트](/ko-data-structure-linked-list-singly)와는 달리, 노드가 양쪽 방향으로 연결된 연결 리스트이다.
+### 이중 연결 리스트란?
+이중 연결 리스트(Doubly Linked List)는 노드들이 한 방향으로만 연결된 <router-link to="./kor-linked-list-singly">단일 리스트</router-link>와는 달리, 노드가 양쪽 방향으로 연결된 연결 리스트이다.
 
 ![Linked List image](assets/data-structure/linked-list/dll.png)
 
@@ -26,7 +26,7 @@ end
 
 <div class="divider"></div>
 
-## 연결 리스트 구현
+### 연결 리스트 구현
 
 여기서 구현 할 이중 연결 리스트의 구조는 아래와 같다.
 

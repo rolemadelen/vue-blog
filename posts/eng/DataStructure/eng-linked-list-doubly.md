@@ -1,6 +1,6 @@
 
-## What is Doubly Linked List?
-Unlike [Singly Linked List](en-data-structure-linked-list-singly) where nodes are linked in one direction, Doubly Linked List is a linear data structure where a node can be linked bidiretionally.
+### What is Doubly Linked List?
+Unlike <router-link to="eng-linked-list-singly">Singly Linked List</router-link> where nodes are linked in one direction, Doubly Linked List is a linear data structure where a node can be linked bidirectionally.
 
 ![Linked List image](assets/data-structure/linked-list/dll.png)
 
@@ -27,7 +27,7 @@ Unless given, both `prev` and `next` points to nothing in the beginning when we 
 
 <div class="divider"></div>
 
-## Doubly Linked List Implementation
+### Doubly Linked List Implementation
 
 Below is the specification of the doubly linked list we are going to implement.
 

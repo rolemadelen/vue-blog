@@ -1,5 +1,5 @@
 
-## What is Array?
+### What is Array?
 
 Array is a container or a set which contains same type of variables. For example, in an integer array, only integers are allowed. In a character array, every data is a character.
 
@@ -39,7 +39,7 @@ end
 
 <div class="divider"></div>
 
-## Operations on Array
+### Operations on Array
 
 ### Create
 
@@ -172,9 +172,7 @@ arr.uniq! # => [1, 2, 3, 4, 5]
 arr       # => [1, 2, 3, 4, 5] 
 ```
 
-<div class="divider"></div>
-
-## 2-Dimensional Array
+### 2-Dimensional Array
 
 Let's briefly take a look at the structure of 2-D Array and how to create one in Ruby.
 

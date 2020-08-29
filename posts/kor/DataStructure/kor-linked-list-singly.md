@@ -1,10 +1,9 @@
 
-연결 리스트가 뭐지? 하는 생각이 든다면 우선 <i>[연결 리스트(Linked List)란](./ko-data-structure-linked-list)</i> 
-글을 보고 오기를 권장한다.
+연결 리스트에 대해 생소하다면 이 <router-link to="./kor-linked-list">포스팅</router-link>을 먼저 읽어주세요.
 
 <div class="divider"></div>
 
-## 단일 연결 리스트란?
+### 단일 연결 리스트란?
 단일 연결 리스트(Singly Linked List)는 모든 노드들이 순차적으로 연결되어 있다. 
 또한 단방향의 연결 리스트이기 때문에 오직 앞으로만 이동할 수 있다.
 
@@ -32,7 +31,7 @@ end
 
 <div class="divider"></div>
 
-## 연산
+### 연산
 
 단일 연결 리스트에서는 기본적으로 아래 세 개의 연산이 가능하다.
 - `add()`: 리스트에 데이터를 추가
@@ -41,7 +40,7 @@ end
 
 <div class="divider"></div>
 
-## 단일 연결 리스트 Ruby 코드
+### 단일 연결 리스트 Ruby 코드
 
 ```rb
 class SinglyLinkedList

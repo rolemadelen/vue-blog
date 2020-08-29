@@ -1,9 +1,9 @@
 
-If you don't know what Linked List is, please read <i>[What is Linked List?](./en-data-structure-linked-list)</i>.
+If you don't know what Linked List is, please read <i><router-link to="./eng-linked-list">What is Linked List?</router-link></i>.
 
 <div class="divider"></div>
 
-## Singly Linked List
+### Singly Linked List
 Singly Linked List (SLL) is a list where data can only be accessed sequentially. 
 
 ![Linked List image](assets/data-structure/linked-list/linkedlist.png)
@@ -14,7 +14,7 @@ is a pointer or reference to the next node.
 
 <div class="divider"></div>
 
-## Operations of Singly Linked List
+### Operations of Singly Linked List
 These are basic operations of Singly Linked List.
 
 - `add()` adds a node to a list.
@@ -23,7 +23,7 @@ These are basic operations of Singly Linked List.
 
 <div class="divider"></div>
 
-## Implementation in Ruby
+### Implementation in Ruby
 
 First we need a `Node` class to be used inside the singly linked list.
 It initializes the `@data` with a given `data` and `next` as null because it's not pointing to anything.

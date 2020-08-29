@@ -1,5 +1,5 @@
 
-## 循環リストとは?
+### 循環リストとは?
 一般的に連結リストの最後のノードの次は「これがラストです」っと言う意味で`nil`を指す。<router-link to="./jap-linked-list-doubly">双方向リスト</router-link>の場合最後のノードの次「`next`」だけじゃなく、最初のノードの以前「`prev`」も`nil`を指す。
 
 <div style="text-align: center">
@@ -12,7 +12,7 @@
   <img src="assets/data-structure/linked-list/cll-doubly.png" alt="Linked list picture">
 </div>
 
-### :bulb: ノードの構造
+### ノードの構造
 普通のリストと循環リストの違いはノードの追加及び除去部分にあるので、ノードの構造は普通の連結リストと同じだ。
 
 **単方向循環リスト**
@@ -44,9 +44,9 @@ end
 
 <div class="divider"></div>
 
-## 循環リスト実装
+### 循環リスト実装
 
-### :bulb: initialize：コンストラクタ
+### initialize：コンストラクタ
 
 **単方向循環リスト**
 
@@ -81,7 +81,7 @@ end
 </div>
 
 
-### :bulb: insert：リスト最後にノード追加
+### insert：リスト最後にノード追加
 
 **単方向循環リスト**
 
@@ -141,9 +141,9 @@ end
 </div>
 
 
-### :bulb: insert\_at：ノード挿入
+### insert\_at：ノード挿入
 
-#### :pencil2: リスト最後に挿入
+#### リスト最後に挿入
 
 **単方向・双方向循環リスト**
 
@@ -153,7 +153,7 @@ end
 
 リストの最後に追加する時には先に実装した`insert`メソッドを使う。
 
-#### :pencil2: リスト最初に挿入
+#### リスト最初に挿入
 
 **単方向循環リスト**
 
@@ -205,7 +205,7 @@ end
   <img src="assets/data-structure/linked-list/cll-doubly-insert_at5.png" alt="circular doubly linked list picture">
 </div>
 
-#### :pencil2: リスト中間に挿入
+#### リスト中間に挿入
 
 **単方向循環リスト**
 
@@ -254,9 +254,9 @@ end
   <img src="assets/data-structure/linked-list/cll-doubly-insert_at2.png" alt="circular doubly linked list picture">
 </div>
 
-### :bulb: remove\_at：ノード削除
+### remove\_at：ノード削除
 
-#### :pencil2: 最初のノード削除
+#### 最初のノード削除
 
 **単方向循環リスト**
 
@@ -305,7 +305,7 @@ end
   <img src="assets/data-structure/linked-list/cll-doubly-remove-at2.png" alt="circular doubly linked list picture">
 </div>
 
-#### :pencil2: 最後のノード削除
+#### 最後のノード削除
 
 **単方向循環リスト**
 
@@ -348,7 +348,7 @@ end
   <img src="assets/data-structure/linked-list/cll-doubly-remove-at3.png" alt="circular doubly linked list picture">
 </div>
 
-#### :pencil2: 中間のノード削除
+#### 中間のノード削除
 
 **単方向循環リスト**
 
