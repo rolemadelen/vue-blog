@@ -1,4 +1,4 @@
-## 원형 연결 리스트란?
+### 원형 연결 리스트란?
 일반적으로 연결 리스트에서 마지막 노드는 '이 노드가 마지막입니다'라는 의미로 `nil`을 가리킨다. [이중 연결 리스트](/ko-data-structure-linked-list-doubly)의 경우 마지막 노드의 `next`와 더불어 첫 번째 노드의 `prev`도 `nil`을 가리킨다.
 
 <div style="text-align: center">
@@ -11,7 +11,7 @@
   <img src="assets/data-structure/linked-list/cll-doubly.png" alt="Linked list picture">
 </div>
 
-### :bulb: 노드 구조
+### 노드 구조
 원형 리스트에서의 차이는 노드의 추가/제거 부분이기 때문에 노드의 구조는 일반적인 연결 리스트와 똑같다. 
 
 **원형 단일 연결 리스트**
@@ -45,7 +45,7 @@ end
 
 ## 연결 리스트 구현
 
-### :bulb: initialize: 생성자
+### initialize: 생성자
 
 **원형 단일 연결 리스트**
 
@@ -82,7 +82,7 @@ end
 </div>
 
 
-### :bulb: insert: 리스트 끝에 노드 추가
+### insert: 리스트 끝에 노드 추가
 
 **원형 단일 연결 리스트**
 
@@ -142,9 +142,9 @@ end
 </div>
 
 
-### :bulb: insert\_at: 노드 삽입
+### insert\_at: 노드 삽입
 
-#### :pencil2: 리스트 꼬리에 노드 삽입
+#### 리스트 꼬리에 노드 삽입
 
 **원형 단일/이중 연결 리스트**
 
@@ -156,7 +156,7 @@ end
 
 리스트가 비어 있거나 노드를 마지막에 추가하는 경우, 먼저 구현한 `insert` 메소드를 호출한다.
 
-#### :pencil2: 리스트 머리에 노드 삽입
+#### 리스트 머리에 노드 삽입
 
 **원형 단일 연결 리스트**
 
@@ -207,7 +207,7 @@ end
   <img src="assets/data-structure/linked-list/cll-doubly-insert_at5.png" alt="circular doubly linked list picture">
 </div>
 
-#### :pencil2: 리스트 중간에 노드 삽입
+#### 리스트 중간에 노드 삽입
 
 **원형 단일 연결 리스트**
 
@@ -256,9 +256,9 @@ end
   <img src="assets/data-structure/linked-list/cll-doubly-insert_at2.png" alt="circular doubly linked list picture">
 </div>
 
-### :bulb: remove\_at: 노드 삭제
+### remove\_at: 노드 삭제
 
-#### :pencil2: 첫 번째 노드 삭제
+#### 첫 번째 노드 삭제
 
 **원형 단일 연결 리스트**
 
@@ -306,7 +306,7 @@ end
   <img src="assets/data-structure/linked-list/cll-doubly-remove-at2.png" alt="circular doubly linked list picture">
 </div>
 
-#### :pencil2: 마지막 노드 삭제
+#### 마지막 노드 삭제
 
 **원형 단일 연결 리스트**
 
@@ -347,7 +347,7 @@ end
   <img src="assets/data-structure/linked-list/cll-doubly-remove-at3.png" alt="circular doubly linked list picture">
 </div>
 
-#### :pencil2: 중간 노드 삭제
+#### 중간 노드 삭제
 
 **원형 단일 연결 리스트**
 
