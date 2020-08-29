@@ -51,6 +51,14 @@
   ],
   "Frontend": [
     {
+      "id": "eng-highlightjs",
+      "date": "Aug 29, 2020",
+      "title": "CSS - syntax highlighting",
+      "description": "Adding code highlights with highlight.js",
+      "published": true,
+      "lang": "eng"
+    },
+    {
       "id": "eng-change-content-on-hover",
       "date": "May 22, 2020",
       "title": "CSS - Change the content on hover",
