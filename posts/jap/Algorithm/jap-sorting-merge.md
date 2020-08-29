@@ -1,5 +1,5 @@
 
-## マージソート
+### マージソート
 
 マージソート「Merge Sort」は分割統治アルゴリズムと呼ばれる。
 
@@ -87,9 +87,7 @@ p arr
 p arr
 ```
 
-<div class="divider"></div>
-
-## 時間複雑度
+### 時間複雑度
 - 分割過程
   + 配列の中央インデックスの値を経産：**O(1)**
   + 配列を毎回半分する：**O(log n)**
@@ -99,6 +97,6 @@ p arr
 
 <div class="divider"></div>
 
-## Reference
+### Reference
 - [Introduction to Algorithms 3rd edition](https://www.amazon.com/Introduction-Algorithms-3rd-MIT-Press/dp/0262033844)
 - [studytonight - Merge Sort Algorithm](https://www.studytonight.com/data-structures/merge-sort#:~:text=Time%20complexity%20of%20Merge%20Sort,space%20as%20the%20unsorted%20array)

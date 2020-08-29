@@ -1,10 +1,10 @@
 
-## バブルソート
+### バブルソート
 バブルソート「Bubble Sort」は一番簡単なアルゴリズムで隣接する2個の要素を反復的に比較して、位置を変えながら整列が行われる。
 
 <div class="divider"></div>
 
-## バブルソートアルゴリズム要約
+### バブルソートアルゴリズム要約
 
 下記の配列を昇順で整列する。
 
@@ -29,7 +29,7 @@
 
 <div class="divider"></div>
 
-## バブルソートのコード
+### バブルソートのコード
 
 ```rb
 def bubble_sort(arr)
@@ -57,9 +57,7 @@ def bubble_sort(arr)
 end
 ```
 
-<div class="divider"></div>
-
-## 時間複雑度
+### 時間複雑度
 
 #### best case
 - 比較回数: `n-1`回
@@ -73,5 +71,5 @@ end
 
 <div class="divider"></div>
 
-## Reference
+### Reference
 - [https://medium.com/madhash/bubble-sort-in-a-nutshell-how-when-where-4965e77910d8](https://medium.com/madhash/bubble-sort-in-a-nutshell-how-when-where-4965e77910d8)
