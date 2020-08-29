@@ -4,19 +4,22 @@
     <div>
       <router-view />
     </div>
+    <blog-footer />
   </div>
 </template>
 
 <script>
 import BlogHeader from "./views/Header";
+import BlogFooter from "./views/Footer";
 
 export default {
-  components: { BlogHeader },
+  components: { BlogHeader, BlogFooter },
 };
 </script>
 
 <style lang="scss">
 body {
+  margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
