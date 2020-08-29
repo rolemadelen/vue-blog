@@ -1,0 +1,498 @@
+{
+  "DataStructure-Algorithm": [
+    {
+      "id": "eng-bfs-dfs-connected-components",
+      "date": "Jun 06, 2020",
+      "title": "BFS, DFS, and Connected Components",
+      "description": "BFS and DFS for PS. What is Connected Components?",
+      "published": true,
+      "lang": "eng"
+    },
+    {
+      "id": "eng-bst-avl",
+      "date": "May 13, 2020",
+      "title": "Tree - BST, AVL Tree, finding the maximum height",
+      "description": "Learned about BST, basic AVL Tree, and a way to find the max depth of a tree;",
+      "published": true,
+      "lang": "eng"
+    },
+    {
+      "id": "eng-priority-queue",
+      "date": "May 12, 2020",
+      "title": "Priority Queue",
+      "description": "What is Priority Queue?",
+      "published": true,
+      "lang": "eng"
+    },
+    {
+      "id": "eng-cdll-skiplist-stack-queue",
+      "date": "May 11, 2020",
+      "title": "Circular Doubly Linked List, Skip List, Stack, and Queue",
+      "description": "Implement CDLL, Stack, and Queue; What is a skip list?",
+      "published": true,
+      "lang": "eng"
+    },
+    {
+      "id": "eng-dll-csll-algorithm",
+      "date": "May 10, 2020",
+      "title": "Doubly and Circular Linked List, list algorithms",
+      "description": "Pros and cons of Doubly and Circular Linked List; Simple List algorithms.",
+      "published": true,
+      "lang": "eng"
+    },
+    {
+      "id": "eng-linkedlist-sll",
+      "date": "May 09, 2020",
+      "title": "Linked List and Singly Linked List",
+      "description": "Pros and cons of Linked List; Implement SLL;",
+      "published": true,
+      "lang": "eng"
+    }
+  ],
+  "Frontend": [
+    {
+      "id": "eng-change-content-on-hover",
+      "date": "May 22, 2020",
+      "title": "CSS - Change the content on hover",
+      "description": "Change the content of the section on hover;",
+      "published": true,
+      "lang": "eng"
+    },
+    {
+      "id": "eng-css-nth-child",
+      "date": "May 17, 2020",
+      "title": "CSS - :nth-chlid",
+      "description": "CSS :nth-child() syntax.",
+      "published": true,
+      "lang": "eng"
+    }
+  ],
+  "Git": [
+    {
+      "id": "eng-git-amend",
+      "date": "May 19, 2020",
+      "title": "Git --amend",
+      "description": "How to fix previous commit message?",
+      "published": true,
+      "lang": "eng"
+    },
+    {
+      "id": "eng-cancel-commit",
+      "date": "Aug 14, 2020",
+      "title": "How to cancel a local commit",
+      "description": "Learn how to cancel a local commit;",
+      "published": true,
+      "lang": "eng"
+    },
+    {
+      "id": "eng-remote-add-merge-unrelated-histories",
+      "date": "May 12, 2020",
+      "title": "Remote add, merging unrelated histories",
+      "description": "Remotely adding a repository; How to fix 'merge unrelated histories' error",
+      "published": true,
+      "lang": "eng"
+    },
+    {
+      "id": "eng-merge",
+      "date": "Jan 23, 2020",
+      "title": "Merge Repositories Without Losing File Histories",
+      "description": "Merge different repositories into one without losing the git commit histories;",
+      "published": true,
+      "lang": "eng"
+    },
+    {
+      "id": "eng-staging-deleted-files",
+      "date": "Jan 16, 2020",
+      "title": "Staging Deleted Files",
+      "description": "How to stage deleted files;",
+      "published": true,
+      "lang": "eng"
+    }
+  ],
+  "JavaScript": [
+    {
+      "id": "eng-padding-zeroes",
+      "date": "Jul 27, 2020",
+      "title": "Padding Zeroes",
+      "description": "Learned how to pad zeroes in JavaScript;",
+      "published": true,
+      "lang": "eng"
+    },
+    {
+      "id": "eng-prevent-default",
+      "date": "Jul 25, 2020",
+      "title": "Webpack basic, preventing a form from refreshing its page.",
+      "description": "Review webpack; How to stop a form to stop re-submitting/refreshing its page on submit?",
+      "published": true,
+      "lang": "eng"
+    },
+    {
+      "id": "eng-converting-bases-float2int",
+      "date": "May 30, 2020",
+      "title": "Converting bases, cast float to int",
+      "description": "Convert integers to different bases; how to cast a float to int?",
+      "published": true,
+      "lang": "eng"
+    },
+    {
+      "id": "eng-eval-alternative",
+      "date": "May 29, 2020",
+      "title": "Alternatives to eval()",
+      "description": "eval() is not recommended to use. Then what is or are the alternative(s) to eval?",
+      "published": true,
+      "lang": "eng"
+    },
+    {
+      "id": "eng-ascii-code",
+      "date": "May 22, 2020",
+      "title": "Character to Ascii and vice versa",
+      "description": "Learned how get an ascii code from a character and vice versa;",
+      "published": true,
+      "lang": "eng"
+    },
+    {
+      "id": "eng-jasmine-reset-param-dom",
+      "date": "May 21, 2020",
+      "title": "Testing Framework Jasmine, Reset Parameters, DOM",
+      "description": "Learned how to pad zeroes in JavaScript;",
+      "published": true,
+      "lang": "eng"
+    }
+  ],
+  "Linux": [
+    {
+      "id": "eng-mongodb",
+      "date": "Aug 02, 2020",
+      "title": "Install MongoDB on Arch Linux",
+      "description": "Install and setup MongoDB on Arch Linux;",
+      "published": true,
+      "lang": "eng"
+    },
+    {
+      "id": "eng-mv-shorthand",
+      "date": "Apr 30, 2020",
+      "title": "'mv' command shorthand",
+      "description": "Little trick on 'mv' command;",
+      "published": true,
+      "lang": "eng"
+    },
+    {
+      "id": "eng-delete-all-except",
+      "date": "Apr 06, 2020",
+      "title": "Delete all except...",
+      "description": "Delete all files except one or except [..];",
+      "published": true,
+      "lang": "eng"
+    },
+    {
+      "id": "eng-crontab",
+      "date": "Jan 18, 2020",
+      "title": "Crontab",
+      "description": "Learned how crontab works;",
+      "published": true,
+      "lang": "eng"
+    }
+  ],
+  "Rails": [
+    {
+      "id": "eng-fontawesome",
+      "date": "Aug 13, 2020",
+      "title": "Installing Fontawesome",
+      "description": "Installing fontawesome for Rails;",
+      "published": true,
+      "lang": "eng"
+    },
+    {
+      "id": "eng-dbmigrate-error",
+      "date": "Jul 30, 2020",
+      "title": "Fixing db:migrate error",
+      "description": "Fix an error caused by db:migrate;",
+      "published": true,
+      "lang": "eng"
+    },
+    {
+      "id": "eng-blog-comment",
+      "date": "Jul 26, 2020",
+      "title": "Creating a blog - Comment part",
+      "description": "What is the relationship for the Comment part?",
+      "published": true,
+      "lang": "eng"
+    },
+    {
+      "id": "eng-partial-delete",
+      "date": "Jul 25, 2020",
+      "title": "Creating a Blog - Deleting a post, Partial rendering",
+      "description": "How to delete a post when creating a blog? How to add partial files?",
+      "published": true,
+      "lang": "eng"
+    },
+    {
+      "id": "eng-undo-rails-generate",
+      "date": "Jul 13, 2020",
+      "title": "Undo 'rails-generate'",
+      "description": "How to undo 'rails-generate'?",
+      "published": true,
+      "lang": "eng"
+    },
+    {
+      "id": "eng-creating-a-blog-2",
+      "date": "Jul 01, 2020",
+      "title": "Creating a blog - Model? Rotuer? Controller?",
+      "description": "What is model? Router? Controller?",
+      "published": true,
+      "lang": "eng"
+    }, 
+    {
+      "id": "eng-creating-a-blog-1",
+      "date": "Jun 30, 2020",
+      "title": "Creating a blog - Rails basic pt.2",
+      "description": "Learned basics of rails app and how to conifure the database;",
+      "published": true,
+      "lang": "eng"
+    }, 
+    {
+      "id": "eng-rails-guide-3",
+      "date": "Jun 28, 2020",
+      "title": "Rails Guide - Action Controller pt.3",
+      "description": "Rails guide on action controllers;",
+      "published": true,
+      "lang": "eng"
+    }, 
+    {
+      "id": "eng-rails-guide-2",
+      "date": "Jun 25, 2020",
+      "title": "Rails Guide - Action Controller pt.2",
+      "description": "Rails guide on action controllers;",
+      "published": true,
+      "lang": "eng"
+    }, 
+    {
+      "id": "eng-rails-guide-1",
+      "date": "Jun 22, 2020",
+      "title": "Rails Guide - Action Controller pt.1",
+      "description": "Rails guide on action controllers - Controller Namespaces, Non-resourceful routes, route restricton; RESTful API",
+      "published": true,
+      "lang": "eng"
+    }, 
+    {
+      "id": "eng-rails-routing-2",
+      "date": "Jun 20, 2020",
+      "title": "Routing",
+      "description": "Learned about how routing works in rails;",
+      "published": true,
+      "lang": "eng"
+    }, 
+    {
+      "id": "eng-rails-mvc",
+      "date": "Jun 10, 2020",
+      "title": "MVC Pattern",
+      "description": "Learned about rails MVC pattern;",
+      "published": true,
+      "lang": "eng"
+    },
+    {
+      "id": "eng-api-cookies-route",
+      "date": "Jun 05, 2020",
+      "title": "Rails basics - API, Cookies, Routes",
+      "description": "Before starting on Rails, grasp the idea of API, cookies, and routes;",
+      "published": true,
+      "lang": "eng"
+    },
+    {
+      "id": "eng-rails-heroku-setup",
+      "date": "May 31, 2020",
+      "title": "Setup Rails and Heroku",
+      "description": "Learned how to setup rails and heroku;",
+      "published": true,
+      "lang": "eng"
+    }
+  ],
+  "Ruby": [
+    {
+      "id": "eng-rubygem",
+      "date": "May 23, 2020",
+      "title": "Creating a rubygem",
+      "description": "How to create a rubygem?;",
+      "published": true,
+      "lang": "eng"
+    },
+    {
+      "id": "eng-string-unpack",
+      "date": "May 22, 2020",
+      "title": "String#unpack",
+      "description": "Decode a string with a specified format string;",
+      "published": true,
+      "lang": "eng"
+    },
+    {
+      "id": "eng-pry-regex",
+      "date": "May 20, 2020",
+      "title": "Pry and regex",
+      "description": "How to debug in Ruby; Regular Expression in Ruby;",
+      "published": true,
+      "lang": "eng"
+    },
+    {
+      "id": "eng-error-connecting-rubygems-org",
+      "date": "May 17, 2020",
+      "title": "Error connecting rubygems'org",
+      "description": "How to fix when you can't connect to rubygems.org;",
+      "published": true,
+      "lang": "eng"
+    },
+    {
+      "id": "eng-date-printf-io-shuffle-dec2bin",
+      "date": "May 12, 2020",
+      "title": "Date, printf, File IO, shuffle, #chr, and #ord",
+      "description": "Learned some basic methods in Ruby and File IO;",
+      "published": true,
+      "lang": "eng"
+    },
+    {
+      "id": "eng-tk",
+      "date": "Apr 16, 2020",
+      "title": "Ruby/Tk",
+      "description": "Ubuntu Ruby/Tk setup;",
+      "published": true,
+      "lang": "eng"
+    },
+    {
+      "id": "eng-eof",
+      "date": "Apr 12, 2020",
+      "title": "End-Of-File",
+      "description": "Learned about EOFs;",
+      "published": true,
+      "lang": "eng"
+    },
+    {
+      "id": "eng-conditional-loop",
+      "date": "Apr 11, 2020",
+      "title": "Coditional statements and Loops",
+      "description": "Ruby conditional statements and loops;",
+      "published": true,
+      "lang": "eng"
+    },
+    {
+      "id": "eng-basic-io",
+      "date": "Apr 10, 2020",
+      "title": "Basic IO",
+      "description": "Basic Input/Output;",
+      "published": true,
+      "lang": "eng"
+    }
+  ],
+  "Selenium": [
+    {
+      "id": "eng-java-selenium",
+      "date": "Jan 29, 2020",
+      "title": "Selenium Java setup",
+      "description": "Selenium Java setup with Chrome;",
+      "published": true,
+      "lang": "eng"
+    }
+  ],
+  "Vim": [
+    {
+      "id": "eng-custom-commands-viminfo",
+      "date": "May 03, 2020",
+      "title": "Custom Commands and viminfo",
+      "description": "Adding custom commands of vim; viminfo command;",
+      "published": true,
+      "lang": "eng"
+    },
+    {
+      "id": "eng-fold-lines",
+      "date": "Apr 30, 2020",
+      "title": "Fold lines",
+      "description": "How to fold lines on Vim?",
+      "published": true,
+      "lang": "eng"
+    }
+  ],
+  "Vue": [
+    {
+      "id": "eng-vue-directives-on-components",
+      "date": "Aug 25, 2020",
+      "title": "Adding Vue directives on Components",
+      "description": "How to add v-directives like (v-on, v-bind, etc) on the component?",
+      "published": true,
+      "lang": "eng"
+    },
+    {
+      "id": "eng-vue-directives-life-cycle",
+      "date": "Aug 13, 2020",
+      "title": "Vue directives and Life Cycle",
+      "description": "Vue directives (v-if vs. v-show); Vue Life Cycle (created, mounted, updated, destroyed);",
+      "published": true,
+      "lang": "eng"
+    },
+    {
+      "id": "eng-vue-webpack-review",
+      "date": "Aug 13, 2020",
+      "title": "Webpack review",
+      "description": "Review setting up webpack for Vue;",
+      "published": true,
+      "lang": "eng"
+    },
+    {
+      "id": "eng-vue-directive-shortcuts-loaders-webpack",
+      "date": "Jul 26, 2020",
+      "title": "Directive shortucts, webpack --watch, style loaders",
+      "description": "Several shortcuts used in Vue; Auto recompile using --watch; Adding styles in Vue;",
+      "published": true,
+      "lang": "eng"
+    },
+    {
+      "id": "eng-vue-structure-ifs-for",
+      "date": "Jul 14, 2020",
+      "title": "Basic structures; v-if and v-for",
+      "description": "Learned about basic structure of Vue and how to work with conditions and loops;",
+      "published": true,
+      "lang": "eng"
+    }
+  ],
+  "Web": [
+    {
+      "id": "eng-http-basics-3",
+      "date": "Jun 03, 2020",
+      "title": "HTTP basics - Authentication, Caching, REST, MVC",
+      "description": "Secure HTTP, certificates, HTTP cache, basics of REST and MVC;",
+      "published": true,
+      "lang": "eng"
+    },
+    {
+      "id": "eng-http-basics-2",
+      "date": "Jun 02, 2020",
+      "title": "HTTP basics - HTTP and server-side connections",
+      "description": "HTTP Connections, Identification and Authentication;",
+      "published": true,
+      "lang": "eng"
+    },
+    {
+      "id": "eng-http-basics-1",
+      "date": "May 31, 2020",
+      "title": "HTTP Basics",
+      "description": "HTTP Basics - URLs, Verbs, Status Codes, Requset and Response methods;",
+      "published": true,
+      "lang": "eng"
+    }
+  ],
+  "etc": [
+    {
+      "id": "eng-ds-store",
+      "date": "Aug 13, 2020",
+      "title": "What is .DS_store?",
+      "description": "Can I remove this? What is '.DS_store'?",
+      "published": false,
+      "lang": "eng"
+    },
+    {
+      "id": "eng-mac-dev-env-setup",
+      "date": "Aug 11, 2020",
+      "title": "Setting up dev. enviornment in Mac",
+      "description": "Recommended tools to install for dev. env. in Mac;",
+      "published": false,
+      "lang": "eng"
+    }
+  ]
+}
