@@ -1,10 +1,10 @@
 
-## 선택 정렬
-- 데이터의 위치를 한 칸씩 옮기면서 올바른 위치를 찾는 [삽입 정렬](ko-algorithm-sorting-insertion)과는 달리, 정해진 위치에 와야할 데이터를 찾는다.
+### 선택 정렬
+- 데이터의 위치를 한 칸씩 옮기면서 올바른 위치를 찾는 <router-link to="./kor-sorting-insertion">삽입 정렬</router-link>과는 달리, 정해진 위치에 와야할 데이터를 찾는다.
 
 <div class="divider"></div>
 
-## 알고리즘 요약
+### 알고리즘 요약
 - 가장 작은 데이터를 찾아 배열의 첫 번째 위치로 옮긴다.
   + 두 번째로 작은 데이터를 찾아 배열의 두 번째 위치로 옮긴다.
   + `i`번째로 작은 데이터를 찾아 배열의 `i`번째 위치로 옮긴다.
@@ -12,7 +12,7 @@
 
 <div class="divider"></div>
 
-## 선택 정렬 코드
+### 선택 정렬 코드
 
 ```rb
 def selection_sort(arr)
@@ -44,9 +44,7 @@ print arr
 puts
 ```
 
-<div class="divider"></div>
-
-## 시간 복잡도
+### 시간 복잡도
 
 #### 최선의 경우
 - 비교 횟수: `n*(n-1)/2`번
@@ -60,5 +58,5 @@ puts
 
 <div class="divider"></div>
 
-## Reference
+### Reference
 - [Introduction to Algorithms 3rd edition](https://www.amazon.com/Introduction-Algorithms-3rd-MIT-Press/dp/0262033844)

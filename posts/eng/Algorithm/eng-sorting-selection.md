@@ -1,10 +1,10 @@
 
-## Selection Sort
-- Unlike [insertion sort](./en-algorithm-sorting-insertion) where you find the correct position by shifting its data one by one, selection sort selects the data that goes to position 1, 2, ..., n.
+### Selection Sort
+- Unlike <router-link to="./eng-sorting-insertion">insertion sort</router-link> where you find the correct position by shifting its data one by one, selection sort selects the data that goes to position 1, 2, ..., n.
 
 <div class="divider"></div>
 
-## Algorithm Summary
+### Algorithm Summary
 - Find the smallest data and move it to `arr[0]`.
   + find the 2nd smallest data and move it to `arr[1]`.
   + find the `n`th smallest data and  move it to `arr[n-1]`.
@@ -12,7 +12,7 @@
 
 <div class="divider"></div>
 
-## The code
+### Implementation
 
 ```rb
 def selection_sort(arr)
@@ -44,10 +44,7 @@ print arr
 puts
 ```
 
-
-<div class="divider"></div>
-
-## Time Complexity
+### Time Complexity
 
 #### best case
 - number of comparisons: `n*(n-1)/2`
@@ -61,5 +58,5 @@ puts
 
 <div class="divider"></div>
 
-## Reference
+### Reference
 - [Introduction to Algorithms 3rd edition](https://www.amazon.com/Introduction-Algorithms-3rd-MIT-Press/dp/0262033844)

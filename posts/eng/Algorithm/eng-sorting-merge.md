@@ -1,5 +1,5 @@
 
-## Merge Sort
+### Merge Sort
 This algorithm is known as the **divide-and-conquer** algorithm. It breaks the problem into several
  subproblems that are similar to the original larger problem but smaller in size.
  It solve subproblems recursively and then combine these solutions to create a solution to the
@@ -22,7 +22,7 @@ The **disadvantage** of Divide and Conquer algorithm.
 
 <div class="divider"></div>
 
-## Algorithm Summary
+### Algorithm Summary
 1. **Divide** 
   + Divide the array with `n` elements into two subarrays of `n/2` elements each.
 2. **Conquer**
@@ -32,7 +32,7 @@ The **disadvantage** of Divide and Conquer algorithm.
 
 <div class="divider"></div>
 
-## The code
+### Implementation
 
 ```rb
 def merge(arr, left, mid, right)
@@ -86,9 +86,7 @@ p arr
 p arr
 ```
 
-<div class="divider"></div>
-
-## Time Complexity
+### Time Complexity
 - Divide process
   + Dividing arrays into half in every step: **O(log n)**
   + finding the mid: **O(1)**
@@ -98,6 +96,6 @@ p arr
 
 <div class="divider"></div>
 
-## Reference
+### Reference
 - [Introduction to Algorithms 3rd edition](https://www.amazon.com/Introduction-Algorithms-3rd-MIT-Press/dp/0262033844)
 - [studytonight - Merge Sort Algorithm](https://www.studytonight.com/data-structures/merge-sort#:~:text=Time%20complexity%20of%20Merge%20Sort,space%20as%20the%20unsorted%20array)
