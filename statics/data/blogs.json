@@ -5,7 +5,7 @@
       "date": "Aug 12, 2020",
       "title": "What is Counting Sort?",
       "description": "Counting sort is an algorithm for sorting a collection of objects according to keys that are small integers.",
-      "published": true,
+      "published": false,
       "lang": "eng"
     },
     {
@@ -13,7 +13,7 @@
       "date": "Aug 12, 2020",
       "title": "Countingソートとは",
       "description": "",
-      "published": true,
+      "published": false,
       "lang": "jap"
     },
     {
@@ -21,15 +21,15 @@
       "date": "Aug 12, 2020",
       "title": "계수 정렬(Counting Sort)이란",
       "description": "오브젝트의 키(key), 인덱스, 등 숫자를 가지고 정렬하는 알고리즘.",
-      "published": true,
-      "lang": "kor"
+      "published": false,
+      "lang": "false"
     },
     {
       "id": "eng-sorting-quick",
       "date": "Aug 12, 2020",
       "title": "What is Quick Sort?",
       "description": "Quick sort is an efficient sorting algorithm that can be faster than the merge or heap sort - if implemented correctly.",
-      "published": true,
+      "published": false,
       "lang": "eng"
     },
     {
@@ -37,7 +37,7 @@
       "date": "Aug 12, 2020",
       "title": "Quickソートとは",
       "description": "",
-      "published": true,
+      "published": false,
       "lang": "jap"
     },
     {
@@ -45,7 +45,7 @@
       "date": "Aug 12, 2020",
       "title": "퀵 정렬(Quick Sort)이란",
       "description": "구현 방식에 따라 병할정렬과 힙정렬보다 빠른 효율적인 정렬 알고리즘.",
-      "published": true,
+      "published": false,
       "lang": "kor"
     },
     {
@@ -60,7 +60,7 @@
       "id": "jap-sorting-bubble",
       "date": "Jul 09, 2020",
       "title": "バブルソート「Bubble Sort」とは",
-      "description": "",
+      "description": "隣接する2個の要素を反復的に比較して、位置を変えながら整列が行われるアルゴリズム。",
       "published": true,
       "lang": "jap"
     },
@@ -84,7 +84,7 @@
       "id": "jap-sorting-merge",
       "date": "Jun 26, 2020",
       "title": "マージソート「Merge Sort」とは",
-      "description": "",
+      "description": "分割統治「Divide-and-Conquer」アルゴリズムと呼ばれる効率的なアルゴリズム。",
       "published": true,
       "lang": "jap"
     },
@@ -108,7 +108,7 @@
       "id": "jap-sorting-selection",
       "date": "Jun 19, 2020",
       "title": "選択ソート「Selection Sort」とは",
-      "description": "",
+      "description": "In-placeアルゴリズムの一つ。一般的に挿入ソートよりファフォマンスが悪い。",
       "published": true,
       "lang": "jap"
     },
@@ -132,7 +132,7 @@
       "id": "jap-sorting-insertion",
       "date": "Jun 12, 2020",
       "title": "挿入ソート「Insertion Sort」とは",
-      "description": "",
+      "description": "少ない数のデータを整列するとき効率的なアルゴリズム。",
       "published": true,
       "lang": "jap"
     },
@@ -156,7 +156,7 @@
       "id": "jap-graph-bfs",
       "date": "Jun 11, 2020",
       "title": "グラフ・幅優先探索（BFS）",
-      "description": "Learn and implement BFS algorithm",
+      "description": "近隣のノードたちから探索するアルゴリズム。",
       "published": true,
       "lang": "jap"
     },
@@ -180,7 +180,7 @@
       "id": "jap-graph-dfs",
       "date": "Jun 10, 2020",
       "title": "グラフ・深さ優先探索（DFS）",
-      "description": "",
+      "description": " rootノードから始めてもう走査ができないノードまで深く探索するアルゴリズム。",
       "published": true,
       "lang": "jap"
     },
@@ -521,7 +521,7 @@
       "id": "jap-array",
       "date": "Aug 03, 2020",
       "title": "Ruby・配列「array」とは",
-      "description": "",
+      "description": "同じデータ型の変数を含むコンテナ。",
       "published": true,
       "lang": "jap"
     },
@@ -545,7 +545,7 @@
       "id": "jap-linked-list-circular",
       "date": "Jul 18, 2020",
       "title": "Ruby・循環リスト「Circular Linked List」とは",
-      "description": "Circular Linked List implementation in Ruby",
+      "description": "最初と最後のノードがつながってる連結リスト。",
       "published": true,
       "lang": "jap"
     },
@@ -569,7 +569,7 @@
       "id": "jap-linked-list-doubly",
       "date": "Jul 11, 2020",
       "title": "Ruby・双方向リスト「Doubly Linked List」とは",
-      "description": "",
+      "description": "双方向のポインタを持ってるノードからなるリスト。",
       "published": true,
       "lang": "jap"
     },
@@ -593,7 +593,7 @@
       "id": "jap-linked-list-singly",
       "date": "May 9, 2020",
       "title": "Ruby・単方向リスト「Singly Linked List」とは",
-      "description": "",
+      "description": "単方向のポインタを持ってるノードからなるリスト。",
       "published": true,
       "lang": "jap"
     },
@@ -617,7 +617,7 @@
       "id": "jap-linked-list",
       "date": "May 9, 2020",
       "title": "連結リスト「Linked List」とは",
-      "description": "Learn fundamentals of Linked List",
+      "description": "メモリに離れているデータ「node」たちを連結しながらデータを保存するデータ構造。",
       "published": true,
       "lang": "jap"
     },
