@@ -40,6 +40,13 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 @import "../styles/_home.scss";
+.blog h2 {
+  font-size: 25px !important;
+}
+
+.blog h3 {
+  font-size: 20px !important;
+}
 </style>

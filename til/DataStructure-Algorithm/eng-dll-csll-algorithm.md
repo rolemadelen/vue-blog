@@ -17,11 +17,6 @@
   + insert before a given node
 - remove_at() 
 
-### Implementation
-[Doubly Linked List Implementation](https://github.com/jioneeu/coding/blob/master/data_structure/ruby/linked-list/doubly/dll.rb)
-
-<div class="divider"></div>
-
 ## Circlular Singly Linked List
 Circular Linked List is a linked list where all nodes are connected to form a circle. 
 In a doubly linked list, `head->prev` or `tail->next` normally points to `nil`. In a CLL, however,
@@ -40,11 +35,6 @@ it points back to `tail` or `head`.
 - remove_front()
 - remove_back()
 
-### Implementation
-[Circular Singly Linked List Implementation](https://github.com/jioneeu/coding/blob/master/data_structure/ruby/linked-list/circular/csll.rb)
-
-<div class="divider"></div>
-
 ## Reverse a linked list
 I haven't fully understood how this works. I need to go back and double check.
 ```rb
@@ -60,8 +50,6 @@ def reverse_list(head)
   rest
 end
 ```
-
-<div class="divider"></div>
 
 ## Binary to Decimal trick
 Traditional way of converting a binary to decimal is using powers of 2.

@@ -43,7 +43,6 @@ void dfs(VEC(vi) g, int start) {
   }
 }
 ```
-<div class="divider"></div>
 
 ## BFS
 
@@ -72,8 +71,6 @@ void bfs(VEC(vi) g, int start) {
   }
 }
 ```
-
-<div class="divider"></div>
 
 ## Connected Components
  하나의 그래프에서 a와 b가 연결 되어 있지 않아 마치 여러개의 그래프로 보이는 경우가 있다.

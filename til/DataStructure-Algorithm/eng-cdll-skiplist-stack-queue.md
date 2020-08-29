@@ -16,12 +16,6 @@ class Node
 end
 ```
 
-### Implementation
-
-[GitHub](https://github.com/jioneeu/coding/blob/master/data_structure/ruby/linked-list/circular/cdll.rb)
-
-<div class="divider"></div>
-
 ## Skip List
 - Normal search in a linked list => O(n)
 - Skip list search => O(log n)
@@ -37,14 +31,9 @@ navigate the list faster by creating a multiple layers (or levels).
   + \* what is lockless? [Read](https://www.informit.com/articles/article.aspx?p=1626980)
 - does well in persistent storage (often better than AVL and EH)
 
-### Implementation
-[GitHub](https://github.com/jioneeu/coding/blob/master/data_structure/ruby/linked-list/skip-list/skip.rb)
-
 I still did not fully understood the implementation.
 
 I will need to revisit this section.
-
-<div class="divider"></div>
 
 ## Stack
 - LIFO or FILO Linear Data Structure
@@ -61,11 +50,6 @@ I will need to revisit this section.
 - `peek` or `top` returns the top element of stack
 - `is_empty?` returns true if stack is empty, else false
 
-### Implementation
-[GitHub](https://github.com/jioneeu/coding/blob/master/data_structure/ruby/stack/stack.rb)
-
-<div class="divider"></div>
-
 ## Queue
 - FIFO
 - only difference with stack is removing
@@ -78,11 +62,6 @@ I will need to revisit this section.
   + underflow condition: queue is empty
 - `front` get the front item from queue
 - `rear` get the last item from queue
-
-### Implementation
-[GitHub](https://github.com/jioneeu/coding/blob/master/data_structure/ruby/queue/queue.rb)
-
-<div class="divider"></div>
 
 ## Reference
 - [Circular Doubly Linked List](https://www.geeksforgeeks.org/doubly-circular-linked-list-set-1-introduction-and-insertion/)
