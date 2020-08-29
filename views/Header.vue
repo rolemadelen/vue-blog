@@ -141,7 +141,8 @@ div#header {
     display: flex;
     justify-content: space-evenly;
 
-    width: 20%;
+    min-width: 11em;
+    max-width: 15em;
     margin: 0.5rem auto;
 
     div img {
@@ -168,9 +169,10 @@ div#header {
   .header-menu {
     display: flex;
     width: auto;
-    max-width: 25em;
+    max-width: 26em;
     justify-content: space-evenly;
     margin: 2em auto;
+    font-size: 15px;
 
     a {
       text-decoration: none;
