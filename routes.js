@@ -26,6 +26,7 @@ import DataStructureJap from './views/DataStructureJap.vue';
 Vue.use(VueRouter);
 
 import BlogEntries from './statics/data/blogs.json';
+import TilEntries from './statics/data/til.json';
 
 const blogRoutes = Object.keys(BlogEntries).map(section => {
     const children = BlogEntries[section].map(child => ({
@@ -33,6 +34,22 @@ const blogRoutes = Object.keys(BlogEntries).map(section => {
         name: child.id,
         lang: child.lang,
         component: () => import(`./posts/${child.lang}/${section}/${child.id}.md`)
+    }));
+    return {
+        path: `/${section}`,
+        name: section,
+        component: () => import('./views/Blog.vue'),
+        children
+    }
+});
+
+
+const tilRoutes = Object.keys(TilEntries).map(section => {
+    const children = TilEntries[section].map(child => ({
+        path: child.id,
+        name: child.id,
+        lang: child.lang,
+        component: () => import(`./til/${section}/${child.id}.md`)
     }));
     return {
         path: `/${section}`,
@@ -51,7 +68,7 @@ export default new VueRouter({
         { path: '/eng/eng-about/', name: 'about', component: About },
         { path: '/kor/kor-about/', name: 'about-kor', component: AboutKor },
         { path: '/jap/jap-about/', name: 'about-jap', component: AboutJap },
-        { path: '/eng/eng-til', name: 'til', component: Til },
+        { path: '/eng/eng-til', name: 'til', component: Til, alias: ['/kor/kor-til', '/jap/jap-til'] },
         { path: '/eng/eng-algorithm', name: 'algorithm', component: Algorithm },
         { path: '/kor/kor-algorithm', name: 'algorithm-kor', component: AlgorithmKor },
         { path: '/jap/jap-algorithm', name: 'algorithm-jap', component: AlgorithmJap },
@@ -61,6 +78,7 @@ export default new VueRouter({
         { path: '/eng/eng-problem-solving', name: 'ps', component: Ps },
         { path: '/kor/kor-problem-solving', name: 'ps-kor', component: PsKor },
         { path: '/jap/jap-problem-solving', name: 'ps-jap', component: PsJap },
-        ...blogRoutes
+        ...blogRoutes,
+        ...tilRoutes
     ],
 })
