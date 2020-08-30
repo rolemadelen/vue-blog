@@ -1,4 +1,27 @@
 ### What is Stack?
+Stack is an ordered collection of items which follows a particular order in which the operations are performed. 
+This ordering principle is called **LIFO**, Last-In First-Out, or **FILO**, First-In Last-Out.
+
+The _base_ refers to the bottom of the stack where the oldest item resides, and the _top_ refers to the other end where addition and removal of data occurs.
+
+<center>
+<img src="assets/data-structure/stack/stack-1.png" alt="stack of books" /> <br />
+</center>
+
+Think of a stack of books. When books are stacked, you can only see the cover of the one at the top. In order to see the next one, you need to remove the book on top of the stack. Similarly, you'll need to take out everything in order to see `book 1` in the figure above.
+
+So most recently added book, or data, is located at the top, while the oldest is at the bottom.
+
+### Operations
+- `push (data)` - inserts `data` at the top of the stack.
+- `pop` - removes a data at the top of the stack.
+- `top` - returns the data at the top of the stack.
+- `empty?` - returns true if the stack is empty, else return false.
+
+### Applications
+- Balanced Parenthesis
+- Balanced Symbols
+- Evaluating postfix experessions.
 
 ### Implementation
 
@@ -55,8 +78,6 @@ class Stack
   end
 end
 ```
-
-[Array based stack implementation in C++]()
 
 ### Linked List based
 ```rb
@@ -118,5 +139,3 @@ class Stack
   end
 end
 ```
-
-[Linked List based stack implementation in C++]()
