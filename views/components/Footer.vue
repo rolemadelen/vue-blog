@@ -1,5 +1,6 @@
 <template>
   <div id="footer">
+    <div class="divider"></div>
     <div class="created-by center">© 2020 Jii Eu</div>
     <div class="powered-by center">
       &lt;/&gt; Powered by
@@ -25,10 +26,10 @@
 
 <style lang="scss" scoped>
 #footer {
+  margin-top: 2em;
   position: relative;
   width: 100%;
   height: 7em;
-  border-top: 1px solid rgb(0, 0, 0, 0.1);
   background-color: rgba(255, 255, 255, 1);
   color: rgba(0, 0, 0, 0.6);
 

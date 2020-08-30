@@ -9,8 +9,8 @@
 </template>
 
 <script>
-import BlogHeader from "./views/Header";
-import BlogFooter from "./views/Footer";
+import BlogHeader from "./views/components/Header";
+import BlogFooter from "./views/components/Footer";
 
 export default {
   components: { BlogHeader, BlogFooter },
