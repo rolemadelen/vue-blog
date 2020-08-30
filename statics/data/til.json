@@ -51,6 +51,14 @@
   ],
   "Frontend": [
     {
+      "id": "eng-center-vertical-horizontal",
+      "date": "Aug 30, 2020",
+      "title": "CSS - Center vertical and horizontally.",
+      "description": "Vertical and horizontal align the tag.",
+      "published": true,
+      "lang": "eng"
+    },
+    {
       "id": "eng-highlightjs",
       "date": "Aug 29, 2020",
       "title": "CSS - syntax highlighting",
