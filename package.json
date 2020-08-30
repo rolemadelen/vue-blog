@@ -18,7 +18,8 @@
   },
   "homepage": "https://github.com/jioneeu/vue-jioneeu-blog#readme",
   "dependencies": {
-    "vue": "^2.6.12"
+    "vue": "^2.6.12",
+    "vue-disqus": "^4.0.1"
   },
   "devDependencies": {
     "css-loader": "^4.2.1",
