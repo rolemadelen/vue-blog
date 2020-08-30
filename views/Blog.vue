@@ -1,9 +1,22 @@
 <template>
   <div class="blog">
     <router-view />
+    
     <router-link to="/" tag="a" class="back">&laquo; Back</router-link>
+    <br>
+    <br>
+    
+    <disqus shortname="jioneeu" />
   </div>
 </template>
+
+<script>
+import { Disqus } from 'vue-disqus';
+
+export default {
+  components: { Disqus },
+}
+</script>
 
 <style lang="scss">
 .blog {
