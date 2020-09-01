@@ -51,6 +51,14 @@
   ],
   "Frontend": [
     {
+      "id": "eng-dom-add-remove-class",
+      "date": "Sep 01, 2020",
+      "title": "CSS - Add/Remove a class using DOM",
+      "description": "Use JavaScript and DOM to add and remove a class from the tag.",
+      "published": true,
+      "lang": "eng"
+    },
+    {
       "id": "eng-center-vertical-horizontal",
       "date": "Aug 30, 2020",
       "title": "CSS - Center vertical and horizontally.",
