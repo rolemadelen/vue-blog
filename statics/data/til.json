@@ -503,6 +503,14 @@
   ],
   "etc": [
     {
+      "id": "eng-vs-code-md-preview",
+      "date": "Sep 01, 2020",
+      "title": "VS Code - Previewing .md file",
+      "description": "A shortcut key to preview a markdown file",
+      "published": true,
+      "lang": "eng"
+    },
+    {
       "id": "eng-ds-store",
       "date": "Aug 13, 2020",
       "title": "What is .DS_store?",
