@@ -435,6 +435,14 @@
   ],
   "Vue": [
     {
+      "id": "eng-vue-cli-setup",
+      "date": "Sep 01, 2020",
+      "title": "Vue CLI - Installation and creating a project",
+      "description": "Vue CLI Installation.",
+      "published": true,
+      "lang": "eng"
+    },
+    {
       "id": "eng-vue-directives-on-components",
       "date": "Aug 25, 2020",
       "title": "Adding Vue directives on Components",
