@@ -1,6 +1,8 @@
 # Blog [![Netlify Status](https://api.netlify.com/api/v1/badges/5e8436d3-0e65-4b6d-89e8-6c5b66b5d195/deploy-status)](https://app.netlify.com/sites/jioneeu-blog/deploys)
 
-Creating a blog using..
+Previous blog: [https://jioneeu.github.io](https://jioneeu.github.io) (made with Jekyll + Template theme)
+
+Creating a personal blog using..
 - HTML/CSS/JS
 - SASS
 - Vue.js
