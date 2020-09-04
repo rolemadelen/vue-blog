@@ -1,8 +1,27 @@
 ### What is Queue 
 
+Queue is a collection of items where inserting (_enqueue_) and deleting (_dequeue_) occurs at the different end. This particular order where operations are performed is called FIFO (First-In First-Out).
+
+<center>
+<img src="assets/data-structure/queue/queue-1.png" alt="Customer Queue" /> <br />
+</center>
+
+Think of a grocery store's cashier line. Customers are served on a first-come, first-served basis. This is Queue. First-In, First-Out.
+
+So enqueue occurs only at the one end. And same goes with the dequeue.
+
+### Operations
+
+**First-In First Out** (FIFO).
+
+- `enqueue (data)` - inserts a `data` at the end of the list.
+- `dequeue` - removes the data in the front of the list.
+- `empty?` - returns `true` if the list is empty, else `false`.
+- `front` - returns the `data` in the front of the list.
+
 ### Implementation
 
-### Array based
+### Array
 ```rb
 class Queue
   def initialize (size)
@@ -33,15 +52,6 @@ class Queue
     val
   end
 
-  def print_queue
-    print "FRONT--| "
-    curr = @rear
-    0.upto(@size-2) do |i|
-      print "#{@queue.fetch(i)} -> "
-    end
-    puts "#{@queue.fetch(@size-1)} |--REAR"
-  end
-
   def empty?
     @size == 0
   end
@@ -56,8 +66,6 @@ class Queue
   end
 end
 ```
-
-[Array based Queue implementation in C++]()
 
 ### Linked List
 ```rb
@@ -114,17 +122,15 @@ class Queue
   def rear
     @rear.data
   end
-
-  def print_queue
-    print "REAR--| "
-    curr = @rear
-    while curr != @front
-      print "#{curr.data} -> "
-      curr = curr.next
-    end
-    puts "#{@front.data} |--FRONT"
-  end
 end
 ```
 
-[Linked List based Queue implementation in C++]()
+### Applications
+
+Queue is used in a place where data must be processed in timed order.
+
+- BFS
+- Priority Queue
+- Cache Implementation
+- Process Manager
+- Printer queues
