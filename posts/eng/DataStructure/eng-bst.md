@@ -11,76 +11,61 @@ but smaller than the `right child`.
 
 ## Insert
 ```rb
-class Node
-  attr_accessor :value, :left, :right
-  def initialize(value, _left = nil, _right = nil)
-    @value = value 
-    @left = _left
-    @right = _right 
+class Node 
+  attr_accessor :left, :right, :data
+
+  def initialize(data, left=nil, right=nil) 
+    @left = left 
+    @right = right 
+    @data = data
   end
 end
 
-class BST
-  attr_accessor :root
-  def initialize(value)
-    @root = Node.new(value, nil, nil)
+class BinaryTree 
+  def initialize(data)
+    @root  = Node.new(data)
   end
 
-  def insert(value, node)
-    if value < node.value
-      if node.left 
-        insert(value, node.left)
-      else 
-        node.left = Node.new(value)
-      end
+  def insert(data) 
+    @root = insertRecursive(@root, data)
+  end
+
+  def insertRecursive(node, data) 
+    return Node.new(data) if (node == nil) 
+
+    if data > node.data 
+      node.right = insertRecursive(node.right, data)
+    elsif data < node.data
+      node.left = insertRecursive(node.left, data) 
     else 
-      if node.right 
-        insert(value, node.right) 
-      else 
-        node.right = Node.new(value)
-      end
+      return node 
     end
-  end
 
-  def dfs
-    dfs_helper(@root)
-  end
-
-  def dfs_helper(node)
-    return if node==nil 
-
-    puts node.value
-    dfs_helper(node.left)
-    dfs_helper(node.right)
+    return node
   end
 end
-
-bst = BST.new(50)
-bst.insert(76, bst.root)
-bst.insert(21, bst.root)
-bst.insert(4, bst.root)
-bst.insert(32, bst.root)
-bst.insert(100, bst.root)
-bst.insert(64, bst.root)
-bst.insert(52, bst.root)
-bst.dfs
 ```
 
-## Find
+## Search (find)
 ```rb
-  def exist?(value, node=@root)
-    return false if node == nil
-    return true if node.value == value 
+def search(value) 
+  node = @root 
 
-    if value > node.value
-      exist?(value, node.right)
-    else
-      exist?(value, node.left)
+  while true 
+    return nil if node == nil 
+    return node if node.data == value
+
+    if value > node.data 
+      node = node.right
+    else 
+      node = node.left
     end
   end
+end
 ```
 
 ## Delete
+
 Consider 3 cases 
 
 ### A node with no children (leaf node)
@@ -88,53 +73,101 @@ Consider 3 cases
 - Simply remove it. We don't need to reorganize the tree.
 
 ```rb
-  if node.left == nil and node.right == nil 
-    (node.parent.left == node) ? node.parent.left = nil : node.parent.right = nil
-  end
+  return nil if curr.left == nil and curr.right == nil 
 ```
 
 ### A node with just one child (left or right)
 
-- remove the current node and replace it with its offspring.
+- 
 
 ```rb
-  if node.parent.left == node 
-    if node.left 
-      node.left.parent = node.parent
-      node.parent.left = node.left
-    else 
-      node.right.parent = node.parent
-      node.parent.left = node.right
+  return curr.left if curr.right == nil  
+  return curr.right if curr.left == nil 
+```
+
+### A node with two children 
+- Find the smallest node from the right offstring and replace the current node with it.
+
+```rb
+  smallest_data = find_min(curr.right)
+  curr.data = smallest_data  
+  curr.right = deleteRecursive(curr.right, smallest_data) 
+  return curr
+```
+
+## Delete: Full Implementation
+```rb
+ def find_min(node)
+    return node.data if node.left == nil
+    find_min(node.left)
+  end
+
+  def delete(data) 
+    @root = deleteRecursive(@root, data)
+  end
+
+  def deleteRecursive(curr, data) 
+    return nil if curr == nil 
+  
+    if data == curr.data 
+      return nil if curr.left == nil and curr.right == nil 
+      return curr.left if curr.right == nil  
+      return curr.right if curr.left == nil 
+
+      smallest_data = find_min(curr.right)
+      curr.data = smallest_data  
+      curr.right = deleteRecursive(curr.right, smallest_data) 
+      return curr
     end
-  else
-    if node.left 
-      node.left.parent = node.parent
-      node.parent.right = node.left
-    else 
-      node.right.parent = node.parent
-      node.parent.right = node.right
+
+    if data < curr.data
+      curr.left = deleteRecursive(curr.left, data)
+      return curr
     end
+
+    curr.right = deleteRecursive(curr.right, data) 
+    return curr
   end
 ```
 
-### A node with twe children 
-- Starting from the current node's right children, navigate all the way to the left to find the 
-minimum node. Replace the current node with that minimum. 
-
+## Depth First Search
 ```rb
-  if node.left && node.right
-    min = node.right
-    x = find_min(node.right)
-    min = x if x != nil
+def preorder(node = @root)
+  return if (node == nil) 
+  print "#{node.data} "
+  preorder(node.left)
+  preorder(node.right)
+end
 
-    if x != nil
-      node.value = min.value
-    end
+def inorder(node = @root) 
+  return if node == nil 
+  inorder(node.left)
+  print "#{node.data} "
+  inorder(node.right)
+end
 
-    min.parent.left = nil if min.parent.left == min 
-    min.parent.right = nil if min.parent.right == min 
-  end
+def postorder(node = @root) 
+  return if node == nil 
+  postorder(node.left)
+  postorder(node.right)
+  print "#{node.data} "
+end
 ```
 
+### Breadth First Search
+```rb
+def bfs
+  return nil if @root == nil
+  q = [@root]
+
+  while !q.empty? 
+    neighbor = q.shift
+    print "#{neighbor.data} "
+
+    (q << neighbor.left) if neighbor.left != nil 
+    (q << neighbor.right) if neighbor.right != nil 
+  end
+end
+```
 ### Reference
-- https://www.freecodecamp.org/news/all-you-need-to-know-about-tree-data-structures-bceacb85490c/
+- [https://www.baeldung.com/java-binary-tree](https://www.baeldung.com/java-binary-tree)
