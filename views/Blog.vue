@@ -21,7 +21,6 @@ export default {
 <style lang="scss">
 .blog {
   @import "../styles/_content.scss";
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   line-height: 1.5;
   max-width: 40em;
   margin: 3rem auto;
