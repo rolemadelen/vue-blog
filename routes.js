@@ -81,4 +81,7 @@ export default new VueRouter({
         ...blogRoutes,
         ...tilRoutes
     ],
+    scrollBehavior (to, from, savedPosition) {
+        return { x: 0, y: 0 }
+    }
 })

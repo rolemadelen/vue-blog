@@ -1,6 +1,11 @@
 ### キュー「Queue」とは
 
+<center>
+<img src="assets/data-structure/queue/queue-1.png" alt="Customer Queue" /> <br />
+</center>
+
 ### 実装
+
 ### 配列
 ```rb
 class Queue
@@ -12,7 +17,7 @@ class Queue
 
   def enqueue (data)
     if @size == @capacity
-      puts "The queue is full. Resizing the queue (#{@capacity} -> #{@capacity * 2})"
+      puts "The queue is full."
       @capacity <<= 1
     end
 

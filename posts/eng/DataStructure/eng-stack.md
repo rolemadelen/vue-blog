@@ -1,4 +1,4 @@
-### What is Stack?
+### What is Stack? <a id="top"></a>
 Stack is an ordered collection of items which follows a particular order in which the operations are performed. 
 This ordering principle is called **LIFO**, Last-In First-Out, or **FILO**, First-In Last-Out.
 
@@ -139,3 +139,6 @@ class Stack
   end
 end
 ```
+
+### Related Post
+- <router-link to="./eng-queue">What is Queue?</router-link>
