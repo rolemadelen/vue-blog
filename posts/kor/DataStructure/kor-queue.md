@@ -1,5 +1,23 @@
-
 ### 큐(queue)란
+
+먼저 들어온 데이터가 먼저 처리되는 선입선출 (First-In, First-Out; FIFO) 구조의 자료구조이다. 
+
+선입선출은 일상생활에서도 상당히 많이 쓰이는, 모두가 알고있는 개념이다. 예를들어 마트에서의 계산대를 생각해보자. 아래 그림과 같이 사람들이 줄을 서고, 가장 먼저 온 사람이 먼저 계산을, 나중에 온 사람이 나중에 계산을 한다.
+
+<center>
+<img src="assets/data-structure/queue/queue-1.png" alt="Customer Queue" /> <br />
+</center>
+
+자료구조 큐(Queue)는 마치 계산대의 직원처럼 데이터의 순서를 기억하고 순서대로 처리할 때 사용되는 자료구조이다.
+
+### 큐의 연산 (Operations)
+선입선출 (**First-In First Out**; FIFO)의 구조를 따르는 자료구조.
+
+- `enqueue (data)` - 리스트 끝에 `data`를 추가한다.
+- `dequeue` - 리스트의 첫 번째 자료를 제거한다.
+- `empty?` - 리스트가 비어있으면 `true`, 아니면 `false`를 반환한다.
+- `front` - 리스트의 첫 번째 자료의 값을 반환한다.
+
 
 ### 구현
 
@@ -14,7 +32,7 @@ class Queue
 
   def enqueue (data)
     if @size == @capacity
-      puts "The queue is full. Resizing the queue (#{@capacity} -> #{@capacity * 2})"
+      puts "The queue is full."
       @capacity <<= 1
     end
 
@@ -57,8 +75,6 @@ class Queue
   end
 end
 ```
-
-[C++ 큐 배열 구현 코드]()
 
 ### 연결리스트 (linked list)
 ```rb
@@ -128,4 +144,16 @@ class Queue
 end
 ```
 
-[C++ 큐 연결리스트 구현 코드]()
+
+### 큐의 응용사례
+
+자료가 들어온 순서대로 처리할 때 사용되는 자료구조.
+
+- 넓이 우선 탐색 (Breadth First Sort)
+- 우선 순위 큐 (Priority Queue)
+- Cache Implementation
+- 프로세스 관리자 (Process Manager)
+- 프린터 큐 (Printer queues)
+
+###  Related Post
+- <router-link to="./kor-stack">스택(Stack)이란?</router-link>

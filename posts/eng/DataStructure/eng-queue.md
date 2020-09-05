@@ -1,4 +1,4 @@
-### What is Queue 
+### What is Queue <a id="top"></a>
 
 Queue is a collection of items where inserting (_enqueue_) and deleting (_dequeue_) occurs at the different end. This particular order where operations are performed is called FIFO (First-In First-Out).
 
@@ -137,3 +137,4 @@ Queue is used in a place where data must be processed in timed order.
 
 
 ###  Related Post
+- <router-link to="./eng-stack">What is Stack?</router-link>
