@@ -435,6 +435,14 @@
   ],
   "Vue": [
     {
+      "id": "jap-vue-route-scroll-behavior",
+      "date": "Sep 05, 2020",
+      "title": "Vue Route - Scroll Behavior",
+      "description": "Move to the top of the page when moving to different pages.",
+      "published": true,
+      "lang": "jap"
+    },
+    {
       "id": "eng-vue-cli-setup",
       "date": "Sep 01, 2020",
       "title": "Vue CLI - Installation and creating a project",
