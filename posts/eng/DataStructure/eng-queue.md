@@ -32,7 +32,7 @@ class Queue
 
   def enqueue (data)
     if @size == @capacity
-      puts "The queue is full. Resizing the queue (#{@capacity} -> #{@capacity * 2})"
+      puts "The queue is full."
       @capacity <<= 1
     end
 
@@ -134,3 +134,6 @@ Queue is used in a place where data must be processed in timed order.
 - Cache Implementation
 - Process Manager
 - Printer queues
+
+
+###  Related Post

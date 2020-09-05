@@ -49,7 +49,7 @@ export default {
     };
   },
   mounted() {
-    this.goHome();
+    // this.goHome();
   },
   computed: {
     lang2: {

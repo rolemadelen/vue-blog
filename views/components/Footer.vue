@@ -53,11 +53,13 @@
   }
 
   .created-by {
+    width: 100%;
     font-size: 12px;
     padding-bottom: 47px;
   }
 
   .powered-by {
+    width: 100%;
     font-size: 11px;
     font-weight: 300;
     padding-bottom: 10px;
