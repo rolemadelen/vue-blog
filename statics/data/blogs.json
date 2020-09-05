@@ -2,7 +2,7 @@
   "Algorithm": [
     {
       "id": "eng-sorting-counting",
-      "date": "Aug 12, 2020",
+      "date": "08.12.20",
       "title": "What is Counting Sort?",
 <<<<<<< HEAD
       "description": "Counting sort is an algorithm for sorting a collection of objects according to keys that are small integers.",
@@ -21,7 +21,7 @@
     },
     {
       "id": "jap-sorting-counting",
-      "date": "Aug 12, 2020",
+      "date": "08.12.20",
       "title": "Countingソートとは",
 <<<<<<< HEAD
       "description": "",
@@ -40,7 +40,7 @@
     },
     {
       "id": "kor-sorting-counting",
-      "date": "Aug 12, 2020",
+      "date": "08.12.20",
       "title": "계수 정렬(Counting Sort)이란",
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -61,7 +61,7 @@
     },
     {
       "id": "eng-sorting-quick",
-      "date": "Aug 12, 2020",
+      "date": "08.12.20",
       "title": "What is Quick Sort?",
 <<<<<<< HEAD
       "description": "Quick sort is an efficient sorting algorithm that can be faster than the merge or heap sort - if implemented correctly.",
@@ -80,7 +80,7 @@
     },
     {
       "id": "jap-sorting-quick",
-      "date": "Aug 12, 2020",
+      "date": "08.12.20",
       "title": "Quickソートとは",
 <<<<<<< HEAD
       "description": "",
@@ -99,7 +99,7 @@
     },
     {
       "id": "kor-sorting-quick",
-      "date": "Aug 12, 2020",
+      "date": "08.12.20",
       "title": "퀵 정렬(Quick Sort)이란",
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -119,7 +119,7 @@
     },
     {
       "id": "eng-sorting-bubble",
-      "date": "Jul 09, 2020",
+      "date": "07.09.20",
       "title": "What is Bubble Sort?",
 <<<<<<< HEAD
       "description": "Bubble sort is the simplest sorting algorithm which works by repeatedly comparing and swapping two adjacent elements if they're in the wrong order.",
@@ -134,7 +134,7 @@
     },
     {
       "id": "jap-sorting-bubble",
-      "date": "Jul 09, 2020",
+      "date": "07.09.20",
       "title": "バブルソート「Bubble Sort」とは",
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -153,7 +153,7 @@
     },
     {
       "id": "kor-sorting-bubble",
-      "date": "Jul 09, 2020",
+      "date": "07.09.20",
       "title": "거품 정렬(Bubble Sort)이란",
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -169,7 +169,7 @@
     },
     {
       "id": "eng-sorting-merge",
-      "date": "Jun 26, 2020",
+      "date": "06.26.20",
       "title": "What is Merge Sort?",
 <<<<<<< HEAD
       "description": "Merge sort is an efficient comparison-based, divide-and-conquer algorithm invented by John von Neumann in 1945.",
@@ -184,7 +184,7 @@
     },
     {
       "id": "jap-sorting-merge",
-      "date": "Jun 26, 2020",
+      "date": "06.26.20",
       "title": "マージソート「Merge Sort」とは",
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -203,7 +203,7 @@
     },
     {
       "id": "kor-sorting-merge",
-      "date": "Jun 26, 2020",
+      "date": "06.26.20",
       "title": "병합 정렬(Merge Sort)이란",
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -219,7 +219,7 @@
     },
     {
       "id": "eng-sorting-selection",
-      "date": "Jun 19, 2020",
+      "date": "06.19.20",
       "title": "What is Selection Sort?",
 <<<<<<< HEAD
       "description": "Selection sort is an in-place comparison sorting algorithm. Generally it performs worse than the insertion sort on larger lists.",
@@ -234,7 +234,7 @@
     },
     {
       "id": "jap-sorting-selection",
-      "date": "Jun 19, 2020",
+      "date": "06.19.20",
       "title": "選択ソート「Selection Sort」とは",
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -253,7 +253,7 @@
     },
     {
       "id": "kor-sorting-selection",
-      "date": "Jun 19, 2020",
+      "date": "06.19.20",
       "title": "선택 정렬(Selection Sort)이란",
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -269,7 +269,7 @@
     },
     {
       "id": "eng-sorting-insertion",
-      "date": "Jun 12, 2020",
+      "date": "06.12.20",
       "title": "What is Insertion Sort?",
 <<<<<<< HEAD
       "description": "Insertion sort is an efficient sorting algorithm for sorting smaller sets of data.",
@@ -284,7 +284,7 @@
     },
     {
       "id": "jap-sorting-insertion",
-      "date": "Jun 12, 2020",
+      "date": "06.12.20",
       "title": "挿入ソート「Insertion Sort」とは",
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -303,7 +303,7 @@
     },
     {
       "id": "kor-sorting-insertion",
-      "date": "Jun 12, 2020",
+      "date": "06.12.20",
       "title": "삽입 정렬(Insertion Sort)이란",
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -319,7 +319,7 @@
     },
     {
       "id": "eng-graph-bfs",
-      "date": "Jun 11, 2020",
+      "date": "06.11.20",
       "title": "Graph - Breadth First Search (BFS)",
       "description": "BFS starts at the root (given) node and explores all of the neighbor nodes at the present depth prior to moving on to the nodes at the next depth level.",
       "published": true,
@@ -327,7 +327,7 @@
     },
     {
       "id": "jap-graph-bfs",
-      "date": "Jun 11, 2020",
+      "date": "06.11.20",
       "title": "グラフ・幅優先探索（BFS）",
       "description": "近隣のノードたちから探索するアルゴリズム。",
       "published": true,
@@ -335,7 +335,7 @@
     },
     {
       "id": "kor-graph-bfs",
-      "date": "Jun 11, 2020",
+      "date": "06.11.20",
       "title": "그래프 - 넓이 우선 탐색 (BFS)",
       "description": "루트 노드에서 시작해 인접한 노드들을 먼저 탐색하는 알고리즘.",
       "published": true,
@@ -343,7 +343,7 @@
     },
     {
       "id": "eng-graph-dfs",
-      "date": "Jun 10, 2020",
+      "date": "06.10.20",
       "title": "Graph - Depth First Search (DFS)",
 <<<<<<< HEAD
       "description": "DFS starts at the root (given) node and explores as deep as possible along each branch before backtracking.",
@@ -358,7 +358,7 @@
     },
     {
       "id": "jap-graph-dfs",
-      "date": "Jun 10, 2020",
+      "date": "06.10.20",
       "title": "グラフ・深さ優先探索（DFS）",
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -377,7 +377,7 @@
     },
     {
       "id": "kor-graph-dfs",
-      "date": "Jun 10, 2020",
+      "date": "06.10.20",
       "title": "그래프 - 깊이 우선 탐색 (DFS)",
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -396,7 +396,7 @@
   "PS": [
     {
       "id": "kor-boj-2167",
-      "date": "Aug 08, 2020",
+      "date": "08.08.20",
       "title": "BOJ 2167 - 2차원 배열의 합",
       "description": "백준 온라인 저지 문제 2167  풀이",
       "published": true,
@@ -404,7 +404,7 @@
     },
     {
       "id": "eng-apc2020",
-      "date": "Jul 11, 2020",
+      "date": "07.11.20",
       "title": "Alsing Programming Contest 2020",
 <<<<<<< HEAD
       "description": "Alsing Programming Contest 2020 - A, B",
@@ -419,7 +419,7 @@
     },
     {
       "id": "jap-apc2020",
-      "date": "Jul 11, 2020",
+      "date": "07.11.20",
       "title": "Alsing Programming Contest 2020",
 <<<<<<< HEAD
       "description": "Alsing Programming Contest 2020 - A, B",
@@ -434,7 +434,7 @@
     },
     {
       "id": "kor-apc2020",
-      "date": "Jul 11, 2020",
+      "date": "07.11.20",
       "title": "Alsing Programming Contest 2020",
 <<<<<<< HEAD
       "description": "Alsing Programming Contest 2020 - A, B",
@@ -449,8 +449,12 @@
     },
     {
       "id": "eng-abc173",
+<<<<<<< HEAD
       "date": "Jul 05, 2020",
 <<<<<<< HEAD
+=======
+      "date": "07.05.20",
+>>>>>>> a457855 (posts date format changed)
       "title": "ABC 173",
       "description": "AtCoder Beginner Contest 173 - A, B",
 <<<<<<< HEAD
@@ -465,8 +469,12 @@
     },
     {
       "id": "jap-abc173",
+<<<<<<< HEAD
       "date": "Jul 05, 2020",
 <<<<<<< HEAD
+=======
+      "date": "07.05.20",
+>>>>>>> a457855 (posts date format changed)
       "title": "ABC 173",
       "description": "AtCoder Beginner Contest 173 - A, B",
 <<<<<<< HEAD
@@ -481,8 +489,12 @@
     },
     {
       "id": "kor-abc173",
+<<<<<<< HEAD
       "date": "Jul 05, 2020",
 <<<<<<< HEAD
+=======
+      "date": "07.05.20",
+>>>>>>> a457855 (posts date format changed)
       "title": "ABC 173",
       "description": "AtCoder Beginner Contest 173 - A, B",
 <<<<<<< HEAD
@@ -518,8 +530,12 @@
     },
     {
       "id": "eng-abc172",
+<<<<<<< HEAD
       "date": "Jun 27, 2020",
 <<<<<<< HEAD
+=======
+      "date": "06.27.20",
+>>>>>>> a457855 (posts date format changed)
       "title": "ABC 172",
       "description": "AtCoder Beginner Contest 172 - A, B",
 <<<<<<< HEAD
@@ -534,8 +550,12 @@
     },
     {
       "id": "jap-abc172",
+<<<<<<< HEAD
       "date": "Jun 27, 2020",
 <<<<<<< HEAD
+=======
+      "date": "06.27.20",
+>>>>>>> a457855 (posts date format changed)
       "title": "ABC 172",
       "description": "AtCoder Beginner Contest 172 - A, B",
 <<<<<<< HEAD
@@ -550,8 +570,12 @@
     },
     {
       "id": "kor-abc172",
+<<<<<<< HEAD
       "date": "Jun 27, 2020",
 <<<<<<< HEAD
+=======
+      "date": "06.27.20",
+>>>>>>> a457855 (posts date format changed)
       "title": "ABC 172",
       "description": "AtCoder Beginner Contest 172 - A, B",
 <<<<<<< HEAD
@@ -566,8 +590,12 @@
     },
     {
       "id": "eng-abc169",
+<<<<<<< HEAD
       "date": "May 31, 2020",
 <<<<<<< HEAD
+=======
+      "date": "05.31.20",
+>>>>>>> a457855 (posts date format changed)
       "title": "ABC 169",
       "description": "AtCoder Beginner Contest 169 - A, B, C",
 <<<<<<< HEAD
@@ -582,8 +610,12 @@
     },
     {
       "id": "jap-abc169",
+<<<<<<< HEAD
       "date": "May 31, 2020",
 <<<<<<< HEAD
+=======
+      "date": "05.31.20",
+>>>>>>> a457855 (posts date format changed)
       "title": "ABC 169",
       "description": "AtCoder Beginner Contest 169 - A, B, C",
 <<<<<<< HEAD
@@ -598,8 +630,12 @@
     },
     {
       "id": "kor-abc169",
+<<<<<<< HEAD
       "date": "May 31, 2020",
 <<<<<<< HEAD
+=======
+      "date": "05.31.20",
+>>>>>>> a457855 (posts date format changed)
       "title": "ABC 169",
       "description": "AtCoder Beginner Contest 169 - A, B, C",
 <<<<<<< HEAD
@@ -614,8 +650,12 @@
     },
     {
       "id": "eng-abc168",
+<<<<<<< HEAD
       "date": "May 17, 2020",
 <<<<<<< HEAD
+=======
+      "date": "05.17.20",
+>>>>>>> a457855 (posts date format changed)
       "title": "ABC 168",
       "description": "AtCoder Beginner Contest 168 - A, B, C",
 <<<<<<< HEAD
@@ -630,8 +670,12 @@
     },
     {
       "id": "jap-abc168",
+<<<<<<< HEAD
       "date": "May 17, 2020",
 <<<<<<< HEAD
+=======
+      "date": "05.17.20",
+>>>>>>> a457855 (posts date format changed)
       "title": "ABC 168",
       "description": "AtCoder Beginner Contest 168 - A, B, C",
 <<<<<<< HEAD
@@ -646,8 +690,12 @@
     },
     {
       "id": "kor-abc168",
+<<<<<<< HEAD
       "date": "May 17, 2020",
 <<<<<<< HEAD
+=======
+      "date": "05.17.20",
+>>>>>>> a457855 (posts date format changed)
       "title": "ABC 168",
       "description": "AtCoder Beginner Contest 168 - A, B, C",
 <<<<<<< HEAD
@@ -662,8 +710,12 @@
     },
     {
       "id": "eng-abc167",
+<<<<<<< HEAD
       "date": "May 10, 2020",
 <<<<<<< HEAD
+=======
+      "date": "05.10.20",
+>>>>>>> a457855 (posts date format changed)
       "title": "ABC 167",
       "description": "AtCoder Beginner Contest 167 - A, B",
 <<<<<<< HEAD
@@ -678,8 +730,12 @@
     },
     {
       "id": "jap-abc167",
+<<<<<<< HEAD
       "date": "May 10, 2020",
 <<<<<<< HEAD
+=======
+      "date": "05.10.20",
+>>>>>>> a457855 (posts date format changed)
       "title": "ABC 167",
       "description": "AtCoder Beginner Contest 167 - A, B",
 <<<<<<< HEAD
@@ -694,8 +750,12 @@
     },
     {
       "id": "kor-abc167",
+<<<<<<< HEAD
       "date": "May 10, 2020",
 <<<<<<< HEAD
+=======
+      "date": "05.10.20",
+>>>>>>> a457855 (posts date format changed)
       "title": "ABC 167",
       "description": "AtCoder Beginner Contest 167 - A, B",
 <<<<<<< HEAD
@@ -710,8 +770,12 @@
     },
     {
       "id": "eng-abc166",
+<<<<<<< HEAD
       "date": "May 03, 2020",
 <<<<<<< HEAD
+=======
+      "date": "05.03.20",
+>>>>>>> a457855 (posts date format changed)
       "title": "ABC 166",
       "description": "AtCoder Beginner Contest 166 - A",
 <<<<<<< HEAD
@@ -726,8 +790,12 @@
     },
     {
       "id": "jap-abc166",
+<<<<<<< HEAD
       "date": "May 03, 2020",
 <<<<<<< HEAD
+=======
+      "date": "05.03.20",
+>>>>>>> a457855 (posts date format changed)
       "title": "ABC 166",
       "description": "AtCoder Beginner Contest 166 - A",
 <<<<<<< HEAD
@@ -742,8 +810,12 @@
     },
     {
       "id": "kor-abc166",
+<<<<<<< HEAD
       "date": "May 03, 2020",
 <<<<<<< HEAD
+=======
+      "date": "05.03.20",
+>>>>>>> a457855 (posts date format changed)
       "title": "ABC 166",
       "description": "AtCoder Beginner Contest 166 - A",
 <<<<<<< HEAD
@@ -758,8 +830,12 @@
     },
     {
       "id": "eng-abc162",
+<<<<<<< HEAD
       "date": "Apr 12, 2020",
 <<<<<<< HEAD
+=======
+      "date": "04.12.20",
+>>>>>>> a457855 (posts date format changed)
       "title": "ABC 162",
       "description": "AtCoder Beginner Contest 162 - A, B, C",
 <<<<<<< HEAD
@@ -774,8 +850,12 @@
     },
     {
       "id": "jap-abc162",
+<<<<<<< HEAD
       "date": "Apr 12, 2020",
 <<<<<<< HEAD
+=======
+      "date": "04.12.20",
+>>>>>>> a457855 (posts date format changed)
       "title": "ABC 162",
       "description": "AtCoder Beginner Contest 162 - A, B, C",
 <<<<<<< HEAD
@@ -790,8 +870,12 @@
     },
     {
       "id": "kor-abc162",
+<<<<<<< HEAD
       "date": "Apr 12, 2020",
 <<<<<<< HEAD
+=======
+      "date": "04.12.20",
+>>>>>>> a457855 (posts date format changed)
       "title": "ABC 162",
       "description": "AtCoder Beginner Contest 162 - A, B, C",
 <<<<<<< HEAD
@@ -806,8 +890,12 @@
     },
     {
       "id": "eng-abc161",
+<<<<<<< HEAD
       "date": "Apr 04, 2020",
 <<<<<<< HEAD
+=======
+      "date": "04.04.20",
+>>>>>>> a457855 (posts date format changed)
       "title": "ABC 161",
       "description": "AtCoder Beginner Contest 161 - A, B, C",
 <<<<<<< HEAD
@@ -822,8 +910,12 @@
     },
     {
       "id": "jap-abc161",
+<<<<<<< HEAD
       "date": "Apr 04, 2020",
 <<<<<<< HEAD
+=======
+      "date": "04.04.20",
+>>>>>>> a457855 (posts date format changed)
       "title": "ABC 161",
       "description": "AtCoder Beginner Contest 161 - A, B, C",
 <<<<<<< HEAD
@@ -838,8 +930,12 @@
     },
     {
       "id": "kor-abc161",
+<<<<<<< HEAD
       "date": "Apr 04, 2020",
 <<<<<<< HEAD
+=======
+      "date": "04.04.20",
+>>>>>>> a457855 (posts date format changed)
       "title": "ABC 161",
       "description": "AtCoder Beginner Contest 161 - A, B, C",
 <<<<<<< HEAD
@@ -854,7 +950,7 @@
     },
     {
       "id": "eng-abc153",
-      "date": "Feb 04, 2020",
+      "date": "02.04.20",
       "title": "ABC 153",
       "description": "AtCoder Beginner Contest 153 - A, B, C, D, E",
       "published": true,
@@ -862,8 +958,12 @@
     },
     {
       "id": "jap-abc153",
+<<<<<<< HEAD
       "date": "Feb 04, 2020",
 <<<<<<< HEAD
+=======
+      "date": "02.04.20",
+>>>>>>> a457855 (posts date format changed)
       "title": "ABC 153",
       "description": "AtCoder Beginner Contest 153 - A, B, C, D, E",
 <<<<<<< HEAD
@@ -878,8 +978,12 @@
     },
     {
       "id": "kor-abc153",
+<<<<<<< HEAD
       "date": "Feb 04, 2020",
 <<<<<<< HEAD
+=======
+      "date": "02.04.20",
+>>>>>>> a457855 (posts date format changed)
       "title": "ABC 153",
       "description": "AtCoder Beginner Contest 153 - A, B, C, D, E",
 <<<<<<< HEAD
@@ -896,7 +1000,7 @@
   "DataStructure": [
     {
       "id": "eng-binaryheap",
-      "date": "Aug 13, 2020",
+      "date": "08.13.20",
       "title": "What is Binary Heap?",
       "description": "",
       "published": false,
@@ -904,7 +1008,7 @@
     },
     {
       "id": "eng-bst",
-      "date": "Aug 12, 2020",
+      "date": "08.12.20",
       "title": "Ruby・Binary Search Tree",
       "description": "",
       "published": false,
@@ -912,7 +1016,7 @@
     },
     {
       "id": "kor-bst",
-      "date": "Aug 12, 2020",
+      "date": "08.12.20",
       "title": "Ruby・Binary Search Tree",
       "description": "",
       "published": false,
@@ -920,7 +1024,7 @@
     },
     {
       "id": "jap-bst",
-      "date": "Aug 12, 2020",
+      "date": "08.12.20",
       "title": "Ruby・Binary Search Tree",
       "description": "",
       "published": false,
@@ -928,7 +1032,7 @@
     },
     {
       "id": "eng-binarytree",
-      "date": "Aug 12, 2020",
+      "date": "08.12.20",
       "title": "Ruby・Binary Tree",
       "description": "",
       "published": false,
@@ -936,7 +1040,7 @@
     },
     {
       "id": "eng-tree",
-      "date": "Aug 12, 2020",
+      "date": "08.12.20",
       "title": "What is tree?",
       "description": "",
       "published": false,
@@ -944,7 +1048,7 @@
     },
     {
       "id": "eng-queue",
-      "date": "Aug 10, 2020",
+      "date": "08.10.20",
       "title": "Ruby・Queue",
       "description": "Queue is a linear data structure which follows a particular order in which the operations are performed -- FIFO.",
       "published": true,
@@ -952,7 +1056,7 @@
     },
     {
       "id": "kor-queue",
-      "date": "Aug 10, 2020",
+      "date": "08.10.20",
       "title": "Ruby・큐(queue)란",
       "description": "First-In-First-Out (FIFO)구조로 자료를 저장하는 형식의 선형 자료구조.",
       "published": true,
@@ -960,7 +1064,7 @@
     },
     {
       "id": "jap-queue",
-      "date": "Aug 10, 2020",
+      "date": "08.10.20",
       "title": "Ruby・キュー「Queue」とは",
       "description": "First-In-First-Out（FIFO）の方法でデータを保存するデータ構造。",
       "published": true,
@@ -968,7 +1072,7 @@
     },
     {
       "id": "eng-stack",
-      "date": "Aug 10, 2020",
+      "date": "08.10.20",
       "title": "Ruby・Stack",
       "description": "Stack is a linear data structure which follows a particular order in which the operations are performed -- LIFO or FILO.",
       "published": true,
@@ -976,7 +1080,7 @@
     },
     {
       "id": "kor-stack",
-      "date": "Aug 10, 2020",
+      "date": "08.10.20",
       "title": "Ruby・스택(Stack)이란",
       "description": "Last-In-First-Out (LIFO) 또는 First-In-Last-Out (FILO) 구조로 자료를 저장하는 선형 자료구조.",
       "published": true,
@@ -984,7 +1088,7 @@
     },
     {
       "id": "jap-stack",
-      "date": "Aug 10, 2020",
+      "date": "08.10.20",
       "title": "Ruby・スタック「Stack」とは",
       "description": "Last-In-First-Out（LIFO）またはFirst-In-Last-Out（FILO）方法でデータを保存するデータ構造。",
       "published": true,
@@ -992,7 +1096,7 @@
     },
     {
       "id": "eng-array",
-      "date": "Aug 03, 2020",
+      "date": "08.03.20",
       "title": "Ruby・Array",
       "description": "Array is a data structure consisting of a collection of elements, each identified by at least one array index or key.",
       "published": true,
@@ -1000,7 +1104,7 @@
     },
     {
       "id": "jap-array",
-      "date": "Aug 03, 2020",
+      "date": "08.03.20",
       "title": "Ruby・配列「array」とは",
       "description": "同じデータ型の変数を含むコンテナ。",
       "published": true,
@@ -1008,7 +1112,7 @@
     },
     {
       "id": "kor-array",
-      "date": "Aug 03, 2020",
+      "date": "08.03.20",
       "title": "Ruby・배열(array)이란",
       "description": "같은 타입형의 변수들로 이루어진 유한 집합. 각각의 요소들은 메모리 상에 연속적으로 나열되어 있다.",
       "published": true,
@@ -1016,7 +1120,7 @@
     },
     {
       "id": "eng-linked-list-circular",
-      "date": "Jul 18, 2020",
+      "date": "07.18.20",
       "title": "Ruby・Circular Linked List",
       "description": "Circular linked list is a variation of a linked list where the first node points to the last node and vice versa.",
       "published": true,
@@ -1024,7 +1128,7 @@
     },
     {
       "id": "jap-linked-list-circular",
-      "date": "Jul 18, 2020",
+      "date": "07.18.20",
       "title": "Ruby・循環リスト「Circular Linked List」とは",
       "description": "最初と最後のノードがつながってる連結リスト。",
       "published": true,
@@ -1032,7 +1136,7 @@
     },
     {
       "id": "kor-linked-list-circular",
-      "date": "Jul 18, 2020",
+      "date": "07.18.20",
       "title": "Ruby・원형 연결 리스트(Circular Linked List)란",
       "description": "첫 번째와 마지막 노드가 서로 연결되어 있는 리스트.",
       "published": true,
@@ -1040,7 +1144,7 @@
     },
     {
       "id": "eng-linked-list-doubly",
-      "date": "Jul 11, 2020",
+      "date": "07.11.20",
       "title": "Ruby・Doubly Linked List",
       "description": "Doubly linked list is a bidirectional linked list, that is, it can be traversed in either direction.",
       "published": true,
@@ -1048,7 +1152,7 @@
     },
     {
       "id": "jap-linked-list-doubly",
-      "date": "Jul 11, 2020",
+      "date": "07.11.20",
       "title": "Ruby・双方向リスト「Doubly Linked List」とは",
       "description": "双方向のポインタを持ってるノードからなるリスト。",
       "published": true,
@@ -1056,7 +1160,7 @@
     },
     {
       "id": "kor-linked-list-doubly",
-      "date": "Jul 11, 2020",
+      "date": "07.11.20",
       "title": "Ruby・이중 연결 리스트(Doubly Linked List)란",
       "description": "양방향의 포인터를 가진 노드로 이루어진 리스트.",
       "published": true,
@@ -1064,7 +1168,7 @@
     },
     {
       "id": "eng-linked-list-singly",
-      "date": "May 9, 2020",
+      "date": "05.9,.0",
       "title": "Ruby・Singly Linked List",
       "description": "Singly linked list is a unidirectional linked list, that is, it can only traverse in forward direction.",
       "published": true,
@@ -1072,7 +1176,7 @@
     },
     {
       "id": "jap-linked-list-singly",
-      "date": "May 9, 2020",
+      "date": "05.9,.0",
       "title": "Ruby・単方向リスト「Singly Linked List」とは",
       "description": "単方向のポインタを持ってるノードからなるリスト。",
       "published": true,
@@ -1080,7 +1184,7 @@
     },
     {
       "id": "kor-linked-list-singly",
-      "date": "May 9, 2020",
+      "date": "05.9,.0",
       "title": "Ruby・단일 연결 리스트(Singly Linked List)란",
       "description": "단일 방향의 포인터를 가진 노드로 이루어진 리스트.",
       "published": true,
@@ -1088,7 +1192,7 @@
     },
     {
       "id": "eng-linked-list",
-      "date": "May 9, 2020",
+      "date": "05.9,.0",
       "title": "What is Linked List?",
       "description": "A linked list is a linear collection of data elements whose order is not given by their physical placement in memory.",
       "published": true,
@@ -1096,7 +1200,7 @@
     },
     {
       "id": "jap-linked-list",
-      "date": "May 9, 2020",
+      "date": "05.9,.0",
       "title": "連結リスト「Linked List」とは",
       "description": "メモリに離れているデータ「node」たちを連結しながらデータを保存するデータ構造。",
       "published": true,
@@ -1104,7 +1208,7 @@
     },
     {
       "id": "kor-linked-list",
-      "date": "May 9, 2020",
+      "date": "05.9,.0",
       "title": "연결 리스트(Linked List)란",
       "description": "데이터와 포인터를 가지는 노드를 한 줄로 연결해서 데이터를 저장하는 방식의 자료구조.",
       "published": true,
