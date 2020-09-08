@@ -149,7 +149,7 @@ end
 
 자료가 들어온 순서대로 처리할 때 사용되는 자료구조.
 
-- 넓이 우선 탐색 (Breadth First Sort)
+- 넓이 우선 탐색 (Breadth First Search)
 - 우선 순위 큐 (Priority Queue)
 - Cache Implementation
 - 프로세스 관리자 (Process Manager)
