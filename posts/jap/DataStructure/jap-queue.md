@@ -1,12 +1,26 @@
 ### キュー「Queue」とは
 
+First-In-First-Out（FIFO）の方法でデータを保存するデータ構造です。
+
+「で、FIFOってなに？」っと思う方がいると思います。でもFIFOの概念って、皆さんはもう知っていると思います。レストランとかデーパトーのレジの様子を考えてみましょう。先に並んだ人からまずレジに行って、お金を払いますね。
+
 <center>
 <img src="assets/data-structure/queue/queue-1.png" alt="Customer Queue" /> <br />
 </center>
 
+キューのデータ構造はレジに並んでいる人たちの形と同じです。先にリストに入ったデータから演算をします。
+
+### キューの演算 (Operations)
+**First-In-First-Out**のデータ構造。
+
+- `enqueue (data)` - リスト最後に`data`を追加。
+- `dequeue` - リスト最初のデータを除去。
+- `empty?` - リストが空いてる場合は`true`を、逆の場合は`false`を返す。
+- `front` - リストの最初のデータを返す。
+
 ### 実装
 
-### 配列
+### 配列 (Array)
 ```rb
 class Queue
   def initialize (size)
@@ -61,7 +75,7 @@ class Queue
 end
 ```
 
-### 連結リスト
+### 連結リスト (Linked List)
 ```rb
 class Node
   attr_accessor :next, :data
@@ -128,3 +142,16 @@ class Queue
   end
 end
 ```
+
+### キューの応用事例
+
+データが入った順番で処理しなければダメな時使うデータ構造。
+
+- 幅優先探索（Breadth First Search）
+- Priority Queue
+- Cache Implementation
+- Process Manager
+- Printer queues
+
+### Related Post
+- <router-link to="./jap-stack">スタック「Stack」とは</router-link>
