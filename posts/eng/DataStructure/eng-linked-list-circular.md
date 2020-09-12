@@ -378,3 +378,9 @@ Same as above. The idea is exactly same with the one removing the first node exc
 ### Source code
 - [Circular Linked List full implementation source code](https://github.com/jioneeu/coding/blob/master/data_structure/ruby/linked-list/circular/cll.rb)
 - [Circular Linked List testing code](https://github.com/jioneeu/coding/blob/master/data_structure/ruby/linked-list/circular/test.rb)
+
+
+### Related Post
+- <router-link to="./eng-linked-list">What is Linked List?</router-link>
+- <router-link to="./eng-linked-list-singly">Singly Linked List</router-link>
+- <router-link to="./eng-linked-list-doubly">Doubly Linked List</router-link>

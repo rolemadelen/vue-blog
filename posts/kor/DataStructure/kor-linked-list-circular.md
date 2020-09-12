@@ -373,3 +373,9 @@ end
 ### 구현 코드
 - [원형 연결 리스트 전체 구현 코드](https://github.com/jioneeu/coding/blob/master/data_structure/ruby/linked-list/circular/cll.rb)
 - [원형 연결 리스트 테스트 입출력 코드](https://github.com/jioneeu/coding/blob/master/data_structure/ruby/linked-list/circular/test.rb)
+
+
+### Related Post
+- <router-link to="./kor-linked-list">연결 리스트(Linked List)란?</router-link>
+- <router-link to="./kor-linked-list-singly">단일 연결 리스트(Singly Linked List)란?</router-link>
+- <router-link to="./kor-linked-list-doubly">이중 연결 리스트(Doubly Linked List)란?</router-link>

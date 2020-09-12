@@ -90,3 +90,7 @@ print_list(head)
 # 1 2 3
 ```
 
+### Related Post
+- <router-link to="./eng-linked-list-singly">Singly Linked List</router-link>
+- <router-link to="./eng-linked-list-doubly">Doubly Linked List</router-link>
+- <router-link to="./eng-linked-list-circular">Circular Linked List</router-link>

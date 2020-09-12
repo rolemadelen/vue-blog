@@ -427,3 +427,9 @@ list is empty
 ```
 
 이중 연결 리스트 [전체 코드 보기](https://github.com/jioneeu/coding/blob/master/data_structure/ruby/linked-list/doubly/dll.rb).
+
+
+### Related Post
+- <router-link to="./kor-linked-list">연결 리스트(Linked List)란?</router-link>
+- <router-link to="./kor-linked-list-singly">단일 연결 리스트(Singly Linked List)란?</router-link>
+- <router-link to="./kor-linked-list-circular">원형 연결 리스트(Circular Linked List)란?</router-link>

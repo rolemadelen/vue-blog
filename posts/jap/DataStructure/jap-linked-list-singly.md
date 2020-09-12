@@ -136,3 +136,8 @@ root.print_list
 # 2番目のノードを捜して、その値を出力。
 puts "search_node_at(2): #{root.search_node_at(2).data}"
 ```
+
+### Related Post
+- <router-link to="./jap-linked-list">連結リスト「Linked List」とは</router-link>
+- <router-link to="./jap-linked-list-doubly">双方向リスト「Doubly Linked List」とは</router-link>
+- <router-link to="./jap-linked-list-circular">循環リスト「Circular Linked List」とは</router-link>

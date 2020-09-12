@@ -374,3 +374,9 @@ end
 ### 実装コード
 - [循環リストすべてのコード](https://github.com/jioneeu/coding/blob/master/data_structure/ruby/linked-list/circular/cll.rb)
 - [循環リストテストコード](https://github.com/jioneeu/coding/blob/master/data_structure/ruby/linked-list/circular/test.rb)
+
+
+### Related Post
+- <router-link to="./jap-linked-list">連結リスト「Linked List」とは</router-link>
+- <router-link to="./jap-linked-list-singly">単方向リスト「Singly List」とは</router-link>
+- <router-link to="./jap-linked-list-doubly">双方向リスト「Doubly Linked List」とは</router-link>
