@@ -134,4 +134,4 @@ end
 ```
 
 ###  Related Post
-- <router-link to="./kor-queue">큐(Stack)란?</router-link>
+- <router-link to="./kor-queue">큐(Queue)란?</router-link>
