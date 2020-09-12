@@ -435,3 +435,9 @@ list is empty
 ```
 
 Doubly Linked List [source code](https://github.com/jioneeu/coding/blob/master/data_structure/ruby/linked-list/doubly/dll.rb).
+
+
+### Related Post
+- <router-link to="./eng-linked-list">What is Linked List?</router-link>
+- <router-link to="./eng-linked-list-singly">Singly Linked List</router-link>
+- <router-link to="./eng-linked-list-circular">Circular Linked List</router-link>

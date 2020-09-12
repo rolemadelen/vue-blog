@@ -139,3 +139,8 @@ root.print_list
 # get the data of the 2nd node
 puts "search_node_at(2): #{root.search_node_at(2).data}"
 ```
+
+### Related Post
+- <router-link to="./eng-linked-list">What is Linked List?</router-link>
+- <router-link to="./eng-linked-list-doubly">Doubly Linked List</router-link>
+- <router-link to="./eng-linked-list-circular">Circular Linked List</router-link>

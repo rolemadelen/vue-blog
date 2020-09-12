@@ -82,4 +82,7 @@ print_list(head)
 # 1 2 3
 ```
 
-
+### Related Post
+- <router-link to="./jap-linked-list-singly">単方向リスト「Singly List」とは</router-link>
+- <router-link to="./jap-linked-list-doubly">双方向リスト「Doubly Linked List」とは</router-link>
+- <router-link to="./jap-linked-list-circular">循環リスト「Circular Linked List」とは</router-link>

@@ -423,3 +423,10 @@ list is empty
 ```
 
 双方向リストの[全コード](https://github.com/jioneeu/coding/blob/master/data_structure/ruby/linked-list/doubly/dll.rb)。
+
+
+
+### Related Post
+- <router-link to="./jap-linked-list">連結リスト「Linked List」とは</router-link>
+- <router-link to="./jap-linked-list-singly">単方向リスト「Singly List」とは</router-link>
+- <router-link to="./jap-linked-list-circular">循環リスト「Circular Linked List」とは</router-link>

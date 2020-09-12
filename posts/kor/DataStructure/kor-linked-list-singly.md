@@ -139,3 +139,8 @@ root.print_list
 # 두 번째 노드를 탐색, 값을 출력
 puts "search_node_at(2): #{root.search_node_at(2).data}"
 ```
+
+### Related Post
+- <router-link to="./kor-linked-list">연결 리스트(Linked List)란?</router-link>
+- <router-link to="./kor-linked-list-doubly">이중 연결 리스트(Doubly Linked List)란?</router-link>
+- <router-link to="./kor-linked-list-circular">원형 연결 리스트(Circular Linked List)란?</router-link>
