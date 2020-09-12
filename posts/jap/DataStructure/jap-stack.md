@@ -132,3 +132,6 @@ class Stack
   end
 end
 ```
+
+###  Related Post
+- <router-link to="./jap-queue">キュー「Queue」とは？</router-link>
