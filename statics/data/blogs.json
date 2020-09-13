@@ -3,7 +3,7 @@
     {
       "id": "eng-stack-infix-to-postfix",
       "date": "09.12.20",
-      "title": "Convert Infix to Postfix",
+      "title": "Reverse Polish Notation, RPN",
       "description": "We can use stack to convert an expression from infix to postfix.",
       "published": true,
       "lang": "eng"
@@ -11,9 +11,9 @@
     {
       "id": "jap-stack-infix-to-postfix",
       "date": "09.12.20",
-      "title": "후위표기식(Postfix)",
-      "description": "스택을 이용해 중위표기식을 후위표기식으로 변환하는 알고리즘.",
-      "published": false,
+      "title": "逆ポーランド記法「Reverse Polish Notation, RPN」に変換",
+      "description": "スタックを使って中置記法の式を後置記法の式に変換するアルゴリズム。",
+      "published": true,
       "lang": "jap"
     },
     {

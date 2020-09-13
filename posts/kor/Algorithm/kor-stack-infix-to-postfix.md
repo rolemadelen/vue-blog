@@ -1,6 +1,6 @@
-### 후위표기식(Postfix Notation)으로 변환하기
+### 후위표기식(Postfix Notation)
 
-`A*(B+C)`와 같은 식을 중위표기식(Infix Notation)이라고 하는데, 이를 `ABC+*`와 같이 연산자들이 오른쪽에 오도록 표기할 수 있다. 이런 표기 방식을 후위표기식(Postfix Notation)이라고 한다. 
+`A*(B+C)`와 같은 식을 **중위표기식**(Infix Notation)이라고 하는데, 이를 `ABC+*`와 같이 연산자들이 오른쪽에 오도록 표기할 수 있다. 이런 표기 방식을 **후위표기식**(Postfix Notation)이라고 한다. 
 
 <router-link to="../DataStructure/kor-stack">스택</router-link>을 처음 배울 때 가장 많이 접하게 되는 문제로써, 스택 자료구조를 사용해 중위표기식을 후위표기식으로 변환할 수 있다.
 

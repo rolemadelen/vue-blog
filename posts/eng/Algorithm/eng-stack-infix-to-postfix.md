@@ -1,12 +1,12 @@
-### Convert Infix to Postfix Notation
+### Reverse Polish Notation
 
-An expression like `A*(B+C)` is called **infix expression**. We can represent this same expression in different ways like `ABC+*`. This form of expression where operators are on the right or post operands are called **postfix expression** or **postfix notation**.
+An expression like `A*(B+C)` is called **infix expression**. We can represent this same expression in different ways like `ABC+*`. This form of expression where operators are on the right or post operands are called **reverse polish notation** or simply **postfix notation**.
 
-Infix/Postfix is a very common problem that you'll encounter while you're learning about <router-link to="../DataStructure/eng-stack">Stack</router-link>. 
+Infix/Postfix is a very common problem that you'll encounter when you're learning about <router-link to="../DataStructure/eng-stack">Stack</router-link>. 
 
 Here are general steps of the algorithm.
 
-Scan each character(operands and operators) from the infix expression and ...
+Scan each character (operands and operators) from the infix expression and ...
 
 1. if it's an operand, print it.
 ```rb
@@ -53,7 +53,7 @@ if (expr[i]=='+' or expr[i]=='-' or expr[i]=='*' or expr[i]=='/')
 end
 ```
 
-6. Empty out the stack.
+6. Finally, empty out the stack.
 ```rb
 op.size.times do
     print op.pop
