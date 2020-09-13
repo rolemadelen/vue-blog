@@ -3,9 +3,9 @@
     {
       "id": "eng-stack-infix-to-postfix",
       "date": "09.12.20",
-      "title": "Postfix Notation",
+      "title": "Convert Infix to Postfix",
       "description": "We can use stack to convert an expression from infix to postfix.",
-      "published": false,
+      "published": true,
       "lang": "eng"
     },
     {
@@ -19,7 +19,7 @@
     {
       "id": "kor-stack-infix-to-postfix",
       "date": "09.12.20",
-      "title": "후위표기식(Postfix)",
+      "title": "중위표기식(Infix) 후위표기식(Postfix)으로 변환하기",
       "description": "스택을 이용해 중위표기식을 후위표기식으로 변환하는 알고리즘.",
       "published": true,
       "lang": "kor"
