@@ -1,23 +1,26 @@
-### Postfix Notation
+### 逆ポーランド記法「Reverse Polish Notation, RPN」
 
-`A*(B+C)`와 같은 식을 중위표기식(Infix Notation)이라고 하는데, 이를 `ABC+*`와 같이 연산자들이 오른쪽에 오도록 표기할 수 있다. 이런 표기 방식을 후위표기식(Postfix Notation)이라고 한다. 
+`A*(B+C)`などな数式を**中置記法**（Infix Notation）っと呼びます。この数式を`ABC+*`みたいに表現するのができます。この記法を**後置記法**（Postfix Notation）または**逆ポーランド記法**と呼びます。
 
-<router-link to="../DataStructure/kor-stack">스택</router-link>을 처음 배울 때 가장 많이 접하게 되는 문제로써, 스택 자료구조를 사용해 중위표기식을 후위표기식으로 변환할 수 있다.
+中置記法からRPNに変換するアルゴリズムは<router-link to="../DataStructure/jap-stack">スタック</router-link>を使うアルゴリズムとして有名なんで、スタックを学ぶ時絶対に向き合うことになる問題中一つです。
 
-해당 알고리즘은 아래의 행동을 반복한다.
-1. 피연산자 (숫자, 여기서는 A~Z)의 경우 바로 출력한다.
+では早速アルゴリズムの動作方式を見てみましょう。
+
+アルゴリズムの一般的な手順は下記の通りです。
+
+1. 被演算子の場合、すぐ出力する。
 ```rb
 if (expr[i]>='A' and expr[i]<='Z') 
     print expr[i]
 end
 ```
-2. 여는 괄호(`(`)의 경우 스택에 push한다.
+2. `(`の場合、スタックにpushする。
 ```rb
 if (expr[i]=='(')
     op << expr[i]
 end
 ```
-3. 닫힌 괄호(`)`)를 만난 경우, 스택에서 여는 괄호를 만날때까지 pop한다.
+3. `)`の場合、`(`がでるまでスタックをpopする。
 ```rb
 if (expr[i]==')')
     while op.last != '('
@@ -27,12 +30,12 @@ if (expr[i]==')')
     op.pop
 end
 ```
-4. 연산자를 만난 경우, 아래의 조건이 참이면 스택에 push한다. <br>
-  i. 스택이 비어있는 경우<br>
-  ii. 스택 top이 여는 괄호(`(`)인 경우<br>
-  iii. 지금 만난 연산자의 우선순위가, 스택 top의 연산자의 우선순위 보다 높은 경우<br>
+4. 演算子の場合、下記の条件がtrueだったらスタックにpushする。 <br>
+  i. スタックが空いてる場合、<br>
+  ii. スタックのtopが`(`の場合、<br>
+  iii. 今の演算子の優先順位がスタックのtopの演算子より湯煎順位が高い場合。<br>
 
-5. 4번이 해당하지 않을 경우, 지금 만난 연산자의 우선순위보다 낮거나 같은 연산자들을 스택에서 전부 pop한 후, 지금의 연산자를 push한다.
+5. ４番の条件がfalseの場合、今の演算子の優先順位がスタックのtopの演算子の優先順位より小さいか同じまでスタックをpopする。popするのが終わったら今の演算子をpushする。
 ```rb
 if (expr[i]=='+' or expr[i]=='-' or expr[i]=='*' or expr[i]=='/')
     ## 4번
@@ -50,14 +53,49 @@ if (expr[i]=='+' or expr[i]=='-' or expr[i]=='*' or expr[i]=='/')
 end
 ```
 
-6. 5번까지의 연산이 완료된 후, 스택에 남아있는 연산자들을 전부 출력한다.
+6. 最後に、スタックに残っている演算子を全部出力する。
 ```rb
 op.size.times do
     print op.pop
 end
 ```
 
-### 전체 코드
+例えば`A*(B+C)`式が与えられたとしてみてみましょう。
+<center>
+<img src="assets/algorithm/stack/infix2postfix/infix2postfix-1.png" alt="Infix to Postfix step 1" /> <br />
+</center>
+
+`A`は被演算子なので**ルール#1**によって出力します。
+
+<center>
+<img src="assets/algorithm/stack/infix2postfix/infix2postfix-2.png" alt="Infix to Postfix step 2-3" /> <br />
+</center>
+
+`*`は**ルール#4**（`スタックが空いてる場合`）によって、`(`は**ルール#2**によってスタッにpushします。
+
+<center>
+<img src="assets/algorithm/stack/infix2postfix/infix2postfix-3.png" alt="Infix to Postfix step 3-4" /> <br />
+</center>
+
+`B`は被演算子なので**ルール#1**によって出力します。`+`はルール#4の中で `スタックのtopが ( の場合`に該当するのでスタックにpushします。
+
+<center>
+<img src="assets/algorithm/stack/infix2postfix/infix2postfix-4.png" alt="Infix to Postfix step 5" /> <br />
+</center>
+
+`C`も被演算子なので**ルール#1**によって出力します。
+
+<center>
+<img src="assets/algorithm/stack/infix2postfix/infix2postfix-5.png" alt="Infix to Postfix step 6" /> <br />
+</center>
+
+`)`は**ルール#3**によって`(`がでるまでスタックをpopします。最後にスタックに残っている演算子を全部popして出力します。
+
+<center>
+<img src="assets/algorithm/stack/infix2postfix/infix2postfix-6.png" alt="Infix to Postfix step 7"/> <br />
+</center>
+
+### 実装・中置記法 → 後置記法
 ```rb
 def priority(c)
   return 2 if (c=='*' or c=='/')
@@ -104,5 +142,4 @@ expr = gets.chomp
 to_postfix(expr)
 ```
 
-### 문제 풀어보기
-- <a href="https://www.acmicpc.net/problem/1918">백준 온라인 저지 - 1918번. 후위표기식</a>
+<div class="divider"></div>
