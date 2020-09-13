@@ -1,4 +1,4 @@
-### 후위표기식(Postfix Notation)
+### 후위표기식(Postfix Notation)으로 변환하기
 
 `A*(B+C)`와 같은 식을 중위표기식(Infix Notation)이라고 하는데, 이를 `ABC+*`와 같이 연산자들이 오른쪽에 오도록 표기할 수 있다. 이런 표기 방식을 후위표기식(Postfix Notation)이라고 한다. 
 
@@ -17,7 +17,7 @@ if (expr[i]=='(')
     op << expr[i]
 end
 ```
-3. 닫힌 괄호(`)`)를 만난 경우, 스택에서 여는 괄호를 만날때까지 pop한다.
+3. 닫는 괄호(`)`)를 만난 경우, 스택에서 여는 괄호를 만날때까지 pop한다.
 ```rb
 if (expr[i]==')')
     while op.last != '('
@@ -57,7 +57,47 @@ op.size.times do
 end
 ```
 
-### 전체 코드
+`A*(B+C)`를 예로 들어보자.
+<center>
+<img src="assets/algorithm/stack/infix2postfix/infix2postfix-1.png" alt="Infix to Postfix step 1" /> <br />
+</center>
+
+`A`는 피연산자이기 1번 규칙을 따라 곧바로 출력한다.
+
+<center>
+<img src="assets/algorithm/stack/infix2postfix/infix2postfix-2.png" alt="Infix to Postfix step 2-3" /> <br />
+</center>
+
+`*`연산자의 경우 4번 규칙 (스택이 비어있는 경우)에 때라 스택에 push하고, 
+
+`(` 연산자는 2번 규칙을 따라 스택에 push한다.
+
+<center>
+<img src="assets/algorithm/stack/infix2postfix/infix2postfix-3.png" alt="Infix to Postfix step 3-4" /> <br />
+</center>
+
+`B`는 1번 규칙을 따라 곧바로 출력한다.
+
+ `+`의 경우 4번 규칙 중 `스택의 top이 여는 괄호인 경우`에 해당하기 때문에 스택에 push한다.
+
+<center>
+<img src="assets/algorithm/stack/infix2postfix/infix2postfix-4.png" alt="Infix to Postfix step 5" /> <br />
+</center>
+
+`C`또한 피연산자이기 때문에 바로 출력한다.
+
+<center>
+<img src="assets/algorithm/stack/infix2postfix/infix2postfix-5.png" alt="Infix to Postfix step 6" /> <br />
+</center>
+
+닫는 괄호를 만났기 때문에 3번 규칙에 따라 여는 괄호가 나올때까지 스택에서 pop해준다. 
+
+모든 연산자들과 피연산자들의 스캔이 끝났다. 끝으로, 스택이 비어있는지 확인하고 남아있는 것들을 전부 pop해준다.
+<center>
+<img src="assets/algorithm/stack/infix2postfix/infix2postfix-6.png" alt="Infix to Postfix step 7"/> <br />
+</center>
+
+### 중위표기식 → 후위표기식 전체 코드
 ```rb
 def priority(c)
   return 2 if (c=='*' or c=='/')
@@ -105,4 +145,7 @@ to_postfix(expr)
 ```
 
 ### 문제 풀어보기
-- <a href="https://www.acmicpc.net/problem/1918">백준 온라인 저지 - 1918번. 후위표기식</a>
+- <a href="https://www.acmicpc.net/problem/1918" target="_blank">백준 온라인 저지 - 1918번: 후위표기식</a>
+- <a href="https://www.acmicpc.net/problem/1935" target="_blank">백준 온라인 저지 - 1935번: 후위표기식 2</a>
+
+<div class="divider"></div>
