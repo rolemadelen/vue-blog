@@ -135,6 +135,7 @@ div#header {
   img.logo:hover {
     box-shadow: 0 0 2px black;
     margin-right: 3px;
+    cursor: pointer;
   }
 
   .lang-selector {
