@@ -30,7 +30,8 @@
           name="ps"
           @click.native="navMenu('-problem-solving/')"
         />
-        <header-menu page="til/" name="TIL" @click.native="navMenu('-til/')" />
+        <a href="https://jioneeu-til.com"> TIL </a>
+        
       </div>
     </div>
     <div class="divider"></div>
