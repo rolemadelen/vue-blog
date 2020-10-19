@@ -1,8 +1,8 @@
 ### 逆ポーランド記法「Reverse Polish Notation, RPN」
 
-`A*(B+C)`などな数式を**中置記法**（Infix Notation）っと呼びます。この数式を`ABC+*`みたいに表現するのができます。この記法を**後置記法**（Postfix Notation）または**逆ポーランド記法**と呼びます。
+`A*(B+C)`などの数式を**中置記法**（Infix Notation）とよびます。この数式を`ABC+*`みたいに表現するのができます。この記法を**後置記法**（Postfix Notation）または**逆ポーランド記法**とよびます。
 
-中置記法からRPNに変換するアルゴリズムは<router-link to="../DataStructure/jap-stack">スタック</router-link>を使うアルゴリズムとして有名なんで、スタックを学ぶ時絶対に向き合うことになる問題中一つです。
+中置記法からRPNに変換するアルゴリズムは<router-link to="../DataStructure/jap-stack">スタック</router-link>を使うアルゴリズムとして有名なので、スタックを学ぶ時絶対にぶつかる問題の一つです。
 
 では早速アルゴリズムの動作方式を見てみましょう。
 
@@ -33,9 +33,9 @@ end
 4. 演算子の場合、下記の条件がtrueだったらスタックにpushする。 <br>
   i. スタックが空いてる場合、<br>
   ii. スタックのtopが`(`の場合、<br>
-  iii. 今の演算子の優先順位がスタックのtopの演算子より湯煎順位が高い場合。<br>
+  iii. 今の演算子の優先順位がスタックのtopの優先子より湯煎順位が高い場合。<br>
 
-5. ４番の条件がfalseの場合、今の演算子の優先順位がスタックのtopの演算子の優先順位より小さいか同じまでスタックをpopする。popするのが終わったら今の演算子をpushする。
+5. ４番の条件がfalseの場合、今の演算子の優先順位がスタックのtopの演算子の優先式より小さいか同じになるまでスタックをpopする。popするのが終わったら今の演算子をpushする。
 ```rb
 if (expr[i]=='+' or expr[i]=='-' or expr[i]=='*' or expr[i]=='/')
     ## 4번
@@ -71,7 +71,7 @@ end
 <img src="assets/algorithm/stack/infix2postfix/infix2postfix-2.png" alt="Infix to Postfix step 2-3" /> <br />
 </center>
 
-`*`は**ルール#4**（`スタックが空いてる場合`）によって、`(`は**ルール#2**によってスタッにpushします。
+`*`は**ルール#4**（`スタックが空いてる場合`）によって、`(`は**ルール#2**によってスタックにpushします。
 
 <center>
 <img src="assets/algorithm/stack/infix2postfix/infix2postfix-3.png" alt="Infix to Postfix step 3-4" /> <br />
