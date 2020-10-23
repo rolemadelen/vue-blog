@@ -1,5 +1,4 @@
-
-### 連結リスト「Linked List」とは
+## 連結リスト「Linked List」とは
 
 連結リスト（Linked List）はオブジェクトを線形順序に保存するデータ構造です。この順序ですが、配列と同じようにインデックスではなく、それぞれのオブジェクトのポインターで決められます。
 
@@ -7,9 +6,9 @@
 <div style="font-size: 10px; text-align: center;">Source: https://dev.to/swarup260/data-structures-algorithms-in-javascript-single-linked-list-part-1-3ghg</div>
 
 ## Node
-リストのそれぞれのオブジェクトを<b>node（ノード）</b>とよびます。
+リストのそれぞれのオブジェクトを<b>ノード（node）</b>とよびます。
 
-Nodeはdataと他のnodeを指すポインターで構成されています。この他のnodeというのは、例えば次のnode（`next`）とか前のノード（`prev`）があります。
+ノードはdataと他のノードを示すポインターで構成されています。この他のノードというのは、例えば次のノード（`next`）とか前のノード（`prev`）があります。
 
 ```cpp
 class Node 
@@ -26,7 +25,7 @@ class Node
 ## 連結リストのタイプ
 
 - <b>単方向リスト（Singly Linked List）</b>
-  + 順次につながっているので片方にだけ移動ができる連結リスト。
+  + 順番につながっているので片方にだけ移動ができる連結リスト。
 - <b>双方向リスト（Doubly Linked List）</b>
   + nodeが両方向でつながっている連結リスト。
 - <b>循環リスト（Circular Linked List）</b>
@@ -36,66 +35,79 @@ class Node
 
 ## Operations
 
-- `search(L, k)` finds the first element with key *k* in list *L*.
-  ```cpp
-  Node* search(Node *L, int key) 
-  {
-    Node *curr = L->head;
-    while (curr->next != nullptr and curr->key != key)
-      curr = curr->next;
+### search(L, k)
 
-    return curr;
+list `L`の中からkey `k`が含まれる最初の要素を探します。
+
+```cpp
+Node* search(Node *L, int key) 
+{
+  Node *curr = L->head;
+  while (curr->next != nullptr and curr->key != key)
+    curr = curr->next;
+
+  return curr;
+}
+```
+
+時間複雑度：<b>O(n)</b>
+
+<div class="divider"></div>
+
+### insert(L, x)
+
+リストLの最初に要素xを挿入します。
+
+```cpp
+  void insert(Node *L, Node *x) 
+  {
+    x->next = L->head;
+    if (L->head != nullptr)
+      L->head->prev = x;
+
+    L->head = x;
+    x->prev = nullptr;
   }
   ```
 
-  Time complexity: O(n)
+時間複雑度：<b>O(1)</b>
 
-- `insert(L, x)` splices `x` onto the front of the list `L`.
-  ```cpp
-    void insert(Node *L, Node *x) 
-    {
-      x->next = L->head;
-      if (L->head != nullptr)
-        L->head->prev = x;
+<div class="divider"></div>
 
-      L->head = x;
-      x->prev = nullptr;
-    }
-    ```
+### delete(L, x)
 
-  Time complexity: O(1)
+リスト`L`の中から要素`x`を削除します。
 
-- `delete(L, x)` removes an element `x` from the list `L`.
-  ```cpp
-    void delete(Node *L, Node *x) 
-    {
-      if (x->prev != nullptr)
-        x->prev->next = x->next;
-      else
-        L->head = x->next;
+```cpp
+  void delete(Node *L, Node *x) 
+  {
+    if (x->prev != nullptr)
+      x->prev->next = x->next;
+    else
+      L->head = x->next;
 
-      if (x->next != nullptr)
-        x->next->prev = x->prev;
+    if (x->next != nullptr)
+      x->next->prev = x->prev;
 
-      delete x;
-    }
-  ```
+    delete x;
+  }
+```
+時間複雑度：<b>O(1)</b>
 
 ## Sentinels
 
-We can ignore the boundary conditions of head and tail in `insert` and `delete` by using a **sentinel** node. 
-A *sentinel* is simply a dummy node that lies in between head and tail and it doesn't hold any values.
+Sentinelノードを使うことでinsertとdelete関数の中のheadとtailの境界条件を適応させないことができます。Sentinelはheadとtailの
+間に書かれているので、ダミーノードであり、値とされないません。
 
-`sentinel->next` points to the head and `sentinel->prev` points to the tail of the list.
+`sentinel->next`はリストの最初（head）を示し、`sentinel->prev`はリストの最後（tail）を示します。
 
 ![sentinel node](assets/data-structure/linked-list/sentinel-node.png)
 
-Part `(a)` shows an **empty** list with only the sentinel in the list.
+上の表をご覧ください。<b>(a)</b>は空リストであり、sentinelだけが入っています。`sentinel->next`と`sentinel->prev`はsentinel自分を示します。
 
-In part `(b)`, `sentinel->next` points to the first node of the list (`9`) and `sentinel->prev` points to the 
-last node of the list(`1`).
+<b>(b)</b>は`sentinel->next`がリストの最初を、そして`sentinel->prev`がリストの最後を示しています。
 
-Now we can simplify our `insert` and `delete` function like the below.
+以上をもとに`insert`と`delete`関数を下記のように簡略化することができます。
 
  ```cpp
   void insert(Node *sentinel, Node *x) 
@@ -114,30 +126,18 @@ Now we can simplify our `insert` and `delete` function like the below.
   }
   ```
 
-Sentinels should be used judiciously since it doesn't have any effect on its performance. In fact, 
-it could waste lot of memory by adding an extra node, a sentinel, in many small lists. 
+sentinelはパフォマンスに影響をあたえないので慎重に使用しなければいけません。特に多くの短いリストを使う場合、余分なノード（`sentinel node`）を加えることでメモリーに負担をかけることがあります。
 
-So use sentinels when you're sure that it will simplify your code.
+なのでsentinelはコードの簡略化が確実にできる場合のみ使います。
 
+## 連結リストの長所
+- 連結リストの大きさは動的です。つまり、リストの長さが固定的ではありません。
+- 挿入と削除の演算の時間がO(1)です。
 
-### 連結リスト vs. 配列
-配列は同じ資料型のデータを保存するとき使えられるが、<br>下記の短所がある：
-- 配列の大きさは変わられない。
-- 挿入と除去演算の費用が大きい。
-  + **挿入**「access」：新しいデータを挿入する位置を捜して、その位置からあるすべての要素を一間ずつ右側に移す過程が必要。
-  + **除去**「delete」: 除去した後、その穴を埋めるためにデータを一間ずつ左側に移す過程が必要。
-
-
-### 連結リストの長所
-- 連結リストの大きさは動的だ（大きさが固定的でない）。
-- 挿入と除去の演算が早い。
-
-### 連結リストの短所
-- 要素に接近するためには必ず最初のノードから接近しなければならない。
-- 新しいデータ＝新しいノード
-  + メモリの使用量が増える。
-- 配列のようにデータがメモリに順次保存されてないので、ノードたちの地域性「locality」がない。
-  + キャッシュ「cache」親和的ではない。
+## 連結リストの短所
+- 要素に接近するためには必ず最初のノードから接近しなければいけません。
+- 新しいデータは新しいノードを意味するので、メモリの使用量が増えます。
+- 配列のようにデータがメモリに順番に保存されていないので、ノードたちの地域性（locality）がないのでキャッシュ（cache）親和的ではないです。
 
 | 演算 | 配列 | 連結リスト |
 |:---:|:---:|:---:|
