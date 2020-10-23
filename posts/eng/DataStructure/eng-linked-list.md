@@ -1,16 +1,128 @@
 
-### Linked List
-Linked List is a linear data structure in which data are not stored
-contiguously in the memory. Each element in a linked list is called a _node_. 
-These nodes are linked together via _pointers_ referencing different nodes.
+## Linked List
+
+A **linked list** is a data strucutre which stores the object in **linear order**. 
+This order, however, is not decided by its index like an array. The order of the linked list
+is determined by a pointer in each object.
 
 ![Linked List image](assets/data-structure/linked-list/linkedlist.png)
-
 <div style="font-size: 10px; text-align: center;">Source: https://dev.to/swarup260/data-structures-algorithms-in-javascript-single-linked-list-part-1-3ghg</div>
 
-<div class="divider"></div>
+## Node
+Each object in a list is called **node**.
 
-### Linked List vs. Array
+Node consists of a *data* and a pointer that references the *next*, *previous*, or *both*.
+
+```cpp
+class Node 
+{
+  public: 
+    Node(int val):data(val), next(nullptr), prev(nullptr) {}
+
+    int data;
+    Node *next;
+    Node *prev;
+};
+```
+
+## Types of Linked List
+
+- Singly
+  + node has a *next* pointer.
+- Doubly
+  + node has both *next* and *prev* pointers.
+- Circular
+  + the first node's *prev* points to the last node and last node's *tail* points to the first node.
+- Sorted
+  + singly, doubly, or circular linked list with orders preserved.
+  + The head node is the smallest item and the tail node is the largest or vice versa.
+
+## Operations
+
+- `search(L, k)` finds the first element with key *k* in list *L*.
+  ```cpp
+  Node* search(Node *L, int key) 
+  {
+    Node *curr = L->head;
+    while (curr->next != nullptr and curr->key != key)
+      curr = curr->next;
+
+    return curr;
+  }
+  ```
+
+  Time complexity: O(n)
+
+- `insert(L, x)` splices `x` onto the front of the list `L`.
+  ```cpp
+    void insert(Node *L, Node *x) 
+    {
+      x->next = L->head;
+      if (L->head != nullptr)
+        L->head->prev = x;
+
+      L->head = x;
+      x->prev = nullptr;
+    }
+    ```
+
+  Time complexity: O(1)
+
+- `delete(L, x)` removes an element `x` from the list `L`.
+  ```cpp
+    void delete(Node *L, Node *x) 
+    {
+      if (x->prev != nullptr)
+        x->prev->next = x->next;
+      else
+        L->head = x->next;
+
+      if (x->next != nullptr)
+        x->next->prev = x->prev;
+
+      delete x;
+    }
+  ```
+
+## Sentinels
+
+We can ignore the boundary conditions of head and tail in `insert` and `delete` by using a **sentinel** node. 
+A *sentinel* is simply a dummy node that lies in between head and tail and it doesn't hold any values.
+
+`sentinel->next` points to the head and `sentinel->prev` points to the tail of the list.
+
+![sentinel node](assets/data-structure/linked-list/sentinel-node.png)
+
+Part `(a)` shows an **empty** list with only the sentinel in the list.
+
+In part `(b)`, `sentinel->next` points to the first node of the list (`9`) and `sentinel->prev` points to the 
+last node of the list(`1`).
+
+Now we can simplify our `insert` and `delete` function like the below.
+
+ ```cpp
+  void insert(Node *sentinel, Node *x) 
+  {
+    x->next = sentinel->next;
+    sentinel->next->prev = x;
+    sentinel->next = x;
+    x->prev = sentinel;
+  }
+
+  void delete(Node *x) 
+  {
+    x->prev->next = x->next;
+    x->next->prev = x->prev;
+    delete x;
+  }
+  ```
+
+Sentinels should be used judiciously since it doesn't have any effect on its performance. In fact, 
+it could waste lot of memory by adding an extra node, a sentinel, in many small lists. 
+
+So use sentinels when you're sure that it will simplify your code.
+
+## Linked List vs. Array
 Arrays are used to store linear data of same types, but they have the following limitations:
 1. The size of the array is fixed.
 2. Inserting and deleting an element is expensive, because we first need to create a room for the 
@@ -22,14 +134,12 @@ For example, let's say we have a sorted list of IDs:<br>
 To insert a new id (`1001`) in a **sorted list**, we need to shift every elements after `id[0]` to
 the right to maintain its order. 
 
-<div class="divider"></div>
-
-### Advantages of Linked List
+## Advantages of Linked List
 - Unlike the arrays, the size of the linked lists is dynamic. You can insert or delete elements
 without resizing or shifting its elements.
 - Linked lists have faster insert and delete operations.
 
-### Disadvantages of Linked List
+## Disadvantages of Linked List
 - Random access is not allowed. We have to access elements sequentially starting from the 
 first node.
 - Every time we create a new node to link, we're using that much more memory space.
@@ -43,52 +153,8 @@ so there's locality of reference.
 |**Insert**| O(n) | O(1) |
 |**Delete**| O(n) | O(1) |
 
-<div class="divider"></div>
-
-### Representation
-A linked list is represented by a pointer to the first node or the linked list, which is called 
-the `head` node. `head` is `nil` if the list is empty.
-
-Each node consists of at least two parts: `value`, which is the data stored in the node and `next` which is a pointer/reference to the next node.
-
-<div class="divider"></div>
-
-### Simple Linked List
-```rb
-class Node
-  attr_accessor :data, :next
-  
-  def initialize(data)
-    @data = data
-    @next = nil
-  end
-end
-
-head = Node.new(1)    # [head,   1] -> nil
-second = Node.new(2)  # [second, 2] -> nil
-third = Node.new(3)   # [third , 3] -> nil
-
-head.next = second    # [head, 1] -> [second, 2] -> nil
-second.next = third   # [head, 1] -> [second, 2] -> [third, 3]
-```
-
-### Traversal
-```rb
-def print_list(node)
-  while node != nil
-    print "#{node.data} "
-    node = node.next
-  end
-  puts
-end
-
-head = Node.new(1)             # 1 -> nil
-head.next = Node.new(2)        # 1 -> 2 -> nil
-head.next.next = Node.new(3)   # 1 -> 2 -> 3 -> nil
-
-print_list(head)
-# 1 2 3
-```
+## Reference
+- Introduction to Algorithms, 3rd Edition (CLRS)
 
 ### Related Post
 - <router-link to="./eng-linked-list-singly">Singly Linked List</router-link>
