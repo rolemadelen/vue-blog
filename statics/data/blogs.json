@@ -1023,6 +1023,30 @@
   ],
   "DataStructure": [
     {
+      "id": "eng-linked-list",
+      "date": "10.24.20",
+      "title": "What is Linked List?",
+      "description": "A linked list is a linear collection of data elements whose order is not given by their physical placement in memory.",
+      "published": true,
+      "lang": "eng"
+    },
+    {
+      "id": "jap-linked-list",
+      "date": "10.24.20",
+      "title": "連結リスト「Linked List」とは",
+      "description": "メモリに離れているnodeたちを連結しながらデータを保存するデータ構造。",
+      "published": true,
+      "lang": "jap"
+    },
+    {
+      "id": "kor-linked-list",
+      "date": "10.24.20",
+      "title": "연결 리스트(Linked List)란",
+      "description": "데이터와 포인터를 가지는 노드를 한 줄로 연결해서 데이터를 저장하는 방식의 자료구조.",
+      "published": true,
+      "lang": "kor"
+    },
+    {
       "id": "eng-binaryheap",
       "date": "08.13.20",
       "title": "What is Binary Heap?",
@@ -1192,7 +1216,7 @@
     },
     {
       "id": "eng-linked-list-singly",
-      "date": "05.9,.0",
+      "date": "05.09.20",
       "title": "Ruby・Singly Linked List",
       "description": "Singly linked list is a unidirectional linked list, that is, it can only traverse in forward direction.",
       "published": true,
@@ -1200,7 +1224,7 @@
     },
     {
       "id": "jap-linked-list-singly",
-      "date": "05.9,.0",
+      "date": "05.09.20",
       "title": "Ruby・単方向リスト「Singly Linked List」とは",
       "description": "単方向のポインタを持ってるノードからなるリスト。",
       "published": true,
@@ -1208,33 +1232,9 @@
     },
     {
       "id": "kor-linked-list-singly",
-      "date": "05.9,.0",
+      "date": "05.09.20",
       "title": "Ruby・단일 연결 리스트(Singly Linked List)란",
       "description": "단일 방향의 포인터를 가진 노드로 이루어진 리스트.",
-      "published": true,
-      "lang": "kor"
-    },
-    {
-      "id": "eng-linked-list",
-      "date": "05.9,.0",
-      "title": "What is Linked List?",
-      "description": "A linked list is a linear collection of data elements whose order is not given by their physical placement in memory.",
-      "published": true,
-      "lang": "eng"
-    },
-    {
-      "id": "jap-linked-list",
-      "date": "05.9,.0",
-      "title": "連結リスト「Linked List」とは",
-      "description": "メモリに離れているデータ「node」たちを連結しながらデータを保存するデータ構造。",
-      "published": true,
-      "lang": "jap"
-    },
-    {
-      "id": "kor-linked-list",
-      "date": "05.9,.0",
-      "title": "연결 리스트(Linked List)란",
-      "description": "데이터와 포인터를 가지는 노드를 한 줄로 연결해서 데이터를 저장하는 방식의 자료구조.",
       "published": true,
       "lang": "kor"
     }
