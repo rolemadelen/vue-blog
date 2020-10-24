@@ -417,6 +417,7 @@
     }
 
   ],
+<<<<<<< HEAD
   "PS": [
     {
       "id": "kor-boj-2167",
@@ -1021,6 +1022,8 @@
       "lang": "kor"
     }
   ],
+=======
+>>>>>>> b90ba29 (About page updated & Content width widened)
   "DataStructure": [
     {
       "id": "eng-linked-list",

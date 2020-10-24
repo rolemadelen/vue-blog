@@ -20,7 +20,7 @@ export default {
 .blog {
   @import "../styles/_content.scss";
   line-height: 1.5;
-  max-width: 40em;
+  max-width: 50em;
   margin: 3rem auto;
 }
 </style>

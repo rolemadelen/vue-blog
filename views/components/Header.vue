@@ -25,11 +25,11 @@
           name="data-structure"
           @click.native="navMenu('-data-structure/')"
         />
-        <header-menu
+        <!-- <header-menu
           page="problem-solving/"
           name="ps"
           @click.native="navMenu('-problem-solving/')"
-        />
+        /> -->
         <a href="https://jioneeu-til.com"> TIL </a>
         
       </div>
@@ -171,7 +171,7 @@ div#header {
   .header-menu {
     display: flex;
     width: auto;
-    max-width: 26em;
+    max-width: 25em;
     justify-content: space-evenly;
     margin: 2em auto;
     font-size: 15px;
