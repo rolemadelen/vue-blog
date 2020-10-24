@@ -1,7 +1,7 @@
 <template>
   <div id="footer">
     <div class="divider"></div>
-    <div class="created-by center">© 2020 Jii Eu</div>
+    <div class="created-by center">© 2020 Eubug</div>
     <div class="powered-by center">
       &lt;/&gt; Powered by
       <a href="https://vuejs.org">Vue</a> and referenced
