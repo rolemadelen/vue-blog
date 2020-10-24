@@ -39,50 +39,65 @@ class Node
 
 ## Operations
 
-- `search(L, k)` finds the first element with key *k* in list *L*.
-  ```cpp
-  Node* search(Node *L, int key) 
-  {
-    Node *curr = L->head;
-    while (curr->next != nullptr and curr->key != key)
-      curr = curr->next;
+### search(L, k)
 
-    return curr;
+This function finds the first element with key *k* in list *L*.
+
+```cpp
+Node* search(Node *L, int key) 
+{
+  Node *curr = L->head;
+  while (curr->next != nullptr and curr->key != key)
+    curr = curr->next;
+
+  return curr;
+}
+```
+
+Time complexity: **O(n)**
+
+<div class="divider"></div>
+
+### insert(L, x)
+
+This function splices `x` onto the front of the list `L`.
+
+```cpp
+  void insert(Node *L, Node *x) 
+  {
+    x->next = L->head;
+    if (L->head != nullptr)
+      L->head->prev = x;
+
+    L->head = x;
+    x->prev = nullptr;
   }
   ```
 
-  Time complexity: O(n)
+Time complexity: **O(1)**
 
-- `insert(L, x)` splices `x` onto the front of the list `L`.
-  ```cpp
-    void insert(Node *L, Node *x) 
-    {
-      x->next = L->head;
-      if (L->head != nullptr)
-        L->head->prev = x;
+<div class="divider"></div>
 
-      L->head = x;
-      x->prev = nullptr;
-    }
-    ```
+### delete(L, x)
 
-  Time complexity: O(1)
+This function removes an element `x` from the list `L`.
 
-- `delete(L, x)` removes an element `x` from the list `L`.
-  ```cpp
-    void delete(Node *L, Node *x) 
-    {
-      if (x->prev != nullptr)
-        x->prev->next = x->next;
-      else
-        L->head = x->next;
+```cpp
+  void delete(Node *L, Node *x) 
+  {
+    if (x->prev != nullptr)
+      x->prev->next = x->next;
+    else
+      L->head = x->next;
 
-      if (x->next != nullptr)
-        x->next->prev = x->prev;
+    if (x->next != nullptr)
+      x->next->prev = x->prev;
 
-      delete x;
-    }
-  ```
+    delete x;
+  }
+```
+
+Time complexity: **O(1)**
 
 ## Sentinels
 
@@ -121,18 +136,6 @@ Sentinels should be used judiciously since it doesn't have any effect on its per
 it could waste lot of memory by adding an extra node, a sentinel, in many small lists. 
 
 So use sentinels when you're sure that it will simplify your code.
-
-## Linked List vs. Array
-Arrays are used to store linear data of same types, but they have the following limitations:
-1. The size of the array is fixed.
-2. Inserting and deleting an element is expensive, because we first need to create a room for the 
-new element and then shift all elements.
-
-For example, let's say we have a sorted list of IDs:<br>
-`id[] = [1000, 1010, 1050, 2000, 2040]`.
-
-To insert a new id (`1001`) in a **sorted list**, we need to shift every elements after `id[0]` to
-the right to maintain its order. 
 
 ## Advantages of Linked List
 - Unlike the arrays, the size of the linked lists is dynamic. You can insert or delete elements
