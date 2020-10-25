@@ -138,16 +138,15 @@ it could waste lot of memory by adding an extra node, a sentinel, in many small 
 So use sentinels when you're sure that it will simplify your code.
 
 ## Advantages of Linked List
-- Unlike the arrays, the size of the linked lists is dynamic. You can insert or delete elements
-without resizing or shifting its elements.
+- Size is dynamic. The size of the list will grow and shrink as we insert or delete a node.
 - Linked lists have faster insert and delete operations.
 
 ## Disadvantages of Linked List
 - Random access is not allowed. We have to access elements sequentially starting from the 
 first node.
-- Every time we create a new node to link, we're using that much more memory space.
-- Linked Lists are not cache friendly. Array elements are located contiguously in a memory, 
-so there's locality of reference.
+- Every time we create a new node, we're using that much more memory.
+- Array elements are located contiguously in a memory so there's locality of reference. 
+But elements in linked lists are not; thus, linked lists are not cache friendly.
 
 | Operations| Array | Linked List|
 |:---:|:---:|:---:|
