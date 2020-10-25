@@ -35,6 +35,7 @@
 #bug-content {
   margin: 0 auto;
   max-width: 25em;
+  font-size: 14px;
 }
 
 .bug-links {
@@ -52,10 +53,11 @@
 }
 
 .about {
-  font-size: 15px;
+  // font-size: 14px;
   line-height: 1.5;
   max-width: 40em;
   margin: 0 auto;
+  font-family: 'Noto Serif JP', serif;
 
   h2 {
     margin-bottom: 2em;

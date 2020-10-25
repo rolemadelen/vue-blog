@@ -22,5 +22,6 @@ export default {
   line-height: 1.5;
   max-width: 50em;
   margin: 3rem auto;
+  font-family: 'Noto Serif JP', serif;
 }
 </style>
