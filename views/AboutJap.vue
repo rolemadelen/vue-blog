@@ -21,11 +21,14 @@
 </template>
 
 <style lang="scss" scoped>
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@600;700;800;900&display=swap');
+
 #bug-title {
   text-align: center;
   font-family: 'Maven Pro', sans-serif;
+  font-weight: 900;
   margin-bottom: 25px;
-  font-size: 3em;
+  font-size: 2.7em;
 }
 
 #bug-content {
