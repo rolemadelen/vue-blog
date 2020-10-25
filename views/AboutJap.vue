@@ -24,9 +24,8 @@
 #bug-title {
   text-align: center;
   font-family: 'Maven Pro', sans-serif;
-  font-weight: 900;
   margin-bottom: 25px;
-  font-size: 2.7em;
+  font-size: 3em;
 }
 
 #bug-content {
