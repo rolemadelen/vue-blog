@@ -23,7 +23,8 @@
 <style lang="scss" scoped>
 #bug-title {
   text-align: center;
-  font-family: 'Maven Pro', sans-serif !important;
+  font-family: 'Maven Pro', sans-serif;
+  font-weight: 900;
   margin-bottom: 25px;
   font-size: 2.7em;
 }
