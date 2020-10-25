@@ -56,6 +56,7 @@
   line-height: 1.5;
   max-width: 40em;
   margin: 0 auto;
+  font-family: 'Noto Serif JP', serif;
 
   h2 {
     margin-bottom: 2em;
