@@ -23,5 +23,6 @@ export default {
   max-width: 50em;
   margin: 3rem auto;
   font-family: 'Noto Serif JP', serif;
+  font-size: 15px;
 }
 </style>
