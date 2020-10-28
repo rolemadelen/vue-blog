@@ -13,10 +13,6 @@ import Algorithm from './views/Algorithm.vue';
 import AlgorithmKor from './views/AlgorithmKor.vue';
 import AlgorithmJap from './views/AlgorithmJap.vue';
 
-import Ps from './views/PS.vue';
-import PsKor from './views/PSKor.vue';
-import PsJap from './views/PSJap.vue';
-
 import DataStructure from './views/DataStructure.vue';
 import DataStructureKor from './views/DataStructureKor.vue';
 import DataStructureJap from './views/DataStructureJap.vue';
@@ -56,9 +52,6 @@ export default new VueRouter({
         { path: '/eng/eng-data-structure', name: 'data-structure', component: DataStructure },
         { path: '/kor/kor-data-structure', name: 'data-structure-kor', component: DataStructureKor },
         { path: '/jap/jap-data-structure', name: 'data-structure-jap', component: DataStructureJap },
-        { path: '/eng/eng-problem-solving', name: 'ps', component: Ps },
-        { path: '/kor/kor-problem-solving', name: 'ps-kor', component: PsKor },
-        { path: '/jap/jap-problem-solving', name: 'ps-jap', component: PsJap },
         ...blogRoutes
     ],
     scrollBehavior (to, from, savedPosition) {
