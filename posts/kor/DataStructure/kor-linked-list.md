@@ -1,3 +1,6 @@
+<div class="update">
+last updated 10.24.20
+</div>
 
 ## 연결 리스트란
 
