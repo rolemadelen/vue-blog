@@ -1,4 +1,8 @@
 
+<div class="update">
+last updated 10.24.20
+</div>
+
 ## Linked List
 
 A **linked list** is a data strucutre which stores the object in **linear order**. 
@@ -158,7 +162,7 @@ But elements in linked lists are not; thus, linked lists are not cache friendly.
 ## Reference
 - Introduction to Algorithms, 3rd Edition (CLRS)
 
-### Related Post
+## Related Post
 - <router-link to="./eng-linked-list-singly">Singly Linked List</router-link>
 - <router-link to="./eng-linked-list-doubly">Doubly Linked List</router-link>
 - <router-link to="./eng-linked-list-circular">Circular Linked List</router-link>

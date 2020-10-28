@@ -1,3 +1,7 @@
+<div class="update">
+last updated 10.24.20
+</div>
+
 ## 連結リストとは
 
 連結リスト（リンクドリスト；英. Linked List）はオブジェクトを線形順序に保存するデータ構造です。この順序ですが、配列と同じようにインデックスではなく、それぞれのオブジェクトのポインターで決められます。
@@ -24,13 +28,13 @@ class Node
 
 ## 連結リストのタイプ
 
-- <b>単方向リスト（Singly Linked List）</b>
+- 単方向リスト（Singly Linked List）
   + 順番につながっているので片方にだけ移動ができる連結リスト。
-- <b>双方向リスト（Doubly Linked List）</b>
+- 双方向リスト（Doubly Linked List）
   + ノードが両方向でつながっている連結リスト。
-- <b>循環リスト（Circular Linked List）</b>
+- 循環リスト（Circular Linked List）
   + 最後のノードのnextは最初を、最初のノードのprevは最後を指す。
-- <b>整列リスト</b>
+- 整列リスト
   + 単方向、双方向、または循環リストの全てノードが`data`の値で整列されているリスト。
 
 ## Operations
@@ -149,7 +153,7 @@ sentinelはパフォマンスに影響をあたえないので慎重に使用し
 ## Reference
 - Introduction to Algorithms, 3rd Edition (CLRS)
 
-### Related Post
+## Related Post
 - <router-link to="./jap-linked-list-singly">単方向リスト「Singly List」とは</router-link>
 - <router-link to="./jap-linked-list-doubly">双方向リスト「Doubly Linked List」とは</router-link>
 - <router-link to="./jap-linked-list-circular">循環リスト「Circular Linked List」とは</router-link>
