@@ -1,3 +1,7 @@
+<div class="update">
+last updated 10.19.20
+</div>
+
 ### 逆ポーランド記法「Reverse Polish Notation, RPN」
 
 `A*(B+C)`などの数式を**中置記法**（Infix Notation）とよびます。この数式を`ABC+*`みたいに表現するのができます。この記法を**後置記法**（Postfix Notation）または**逆ポーランド記法**とよびます。
