@@ -1084,7 +1084,7 @@
     {
       "id": "kor-queue",
       "date": "08.10.20",
-      "title": "Ruby・큐(queue)란",
+      "title": "Ruby・큐(Queue)란",
       "description": "First-In-First-Out (FIFO)구조로 자료를 저장하는 형식의 선형 자료구조.",
       "published": true,
       "lang": "kor"
@@ -1092,7 +1092,7 @@
     {
       "id": "jap-queue",
       "date": "08.10.20",
-      "title": "Ruby・キュー「Queue」とは",
+      "title": "Ruby・キュー(Queue)とは",
       "description": "First-In-First-Out（FIFO）の方法でデータを保存するデータ構造。",
       "published": true,
       "lang": "jap"
@@ -1116,7 +1116,7 @@
     {
       "id": "jap-stack",
       "date": "08.10.20",
-      "title": "Ruby・スタック「Stack」とは",
+      "title": "Ruby・スタック(Stack)とは",
       "description": "Last-In-First-Out（LIFO）またはFirst-In-Last-Out（FILO）方法でデータを保存するデータ構造。",
       "published": true,
       "lang": "jap"
@@ -1132,7 +1132,7 @@
     {
       "id": "jap-array",
       "date": "08.03.20",
-      "title": "Ruby・配列「array」とは",
+      "title": "Ruby・配列(Array)とは",
       "description": "同じデータ型の変数を含むコンテナ。",
       "published": true,
       "lang": "jap"
@@ -1140,7 +1140,7 @@
     {
       "id": "kor-array",
       "date": "08.03.20",
-      "title": "Ruby・배열(array)이란",
+      "title": "Ruby・배열(Array)이란",
       "description": "같은 타입형의 변수들로 이루어진 유한 집합. 각각의 요소들은 메모리 상에 연속적으로 나열되어 있다.",
       "published": true,
       "lang": "kor"
@@ -1156,7 +1156,7 @@
     {
       "id": "jap-linked-list-circular",
       "date": "07.18.20",
-      "title": "Ruby・循環リスト「Circular Linked List」とは",
+      "title": "Ruby・循環リストと(Circular Linked List)は",
       "description": "最初と最後のノードがつながってる連結リスト。",
       "published": true,
       "lang": "jap"
@@ -1180,7 +1180,7 @@
     {
       "id": "jap-linked-list-doubly",
       "date": "07.11.20",
-      "title": "Ruby・双方向リスト「Doubly Linked List」とは",
+      "title": "Ruby・双方向リスト(Doubly Linked List)とは",
       "description": "双方向のポインタを持ってるノードからなるリスト。",
       "published": true,
       "lang": "jap"
@@ -1204,7 +1204,7 @@
     {
       "id": "jap-linked-list-singly",
       "date": "05.09.20",
-      "title": "Ruby・単方向リスト「Singly Linked List」とは",
+      "title": "Ruby・単方向リスト(Singly Linked List)とは",
       "description": "単方向のポインタを持ってるノードからなるリスト。",
       "published": true,
       "lang": "jap"
@@ -1228,7 +1228,7 @@
     {
       "id": "jap-linked-list",
       "date": "05.09.20",
-      "title": "連結リスト「Linked List」とは",
+      "title": "連結リスト(Linked List)とは",
       "description": "メモリに離れているnodeたちを連結しながらデータを保存するデータ構造。",
       "published": true,
       "lang": "jap"
