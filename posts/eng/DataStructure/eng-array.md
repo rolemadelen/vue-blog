@@ -13,7 +13,7 @@ Array is a container or a set which contains same type of variables. For example
 We refer to each data in an array as an <i>element</i> and the position each element is in is called the <i>index</i>. 
 In most programming languages, arrays use zero-based numbering meaning the first number starts from `0` and so on; negative indexes are not used (their are  exceptions).
 
-### Types on an array
+### Types of an array
 
 - Linear array (1 dimension; see the picture above)
 - 2D Array: array of an array (think of a cartesian plane)
