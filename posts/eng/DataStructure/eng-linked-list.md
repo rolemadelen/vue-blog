@@ -136,7 +136,7 @@ Now we can simplify our `insert` and `delete` function like the below.
   }
   ```
 
-Sentinels should be used judiciously since it doesn't have any effect on its performance. In fact, 
+Sentinels should be used judiciously since it doesn't have any effect on its performance (it takes away the O(1) opertaion so reduces the coefficient but it doesn't change the complexity). In fact, 
 it could waste lot of memory by adding an extra node, a sentinel, in many small lists. 
 
 So use sentinels when you're sure that it will simplify your code.
