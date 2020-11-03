@@ -10,15 +10,18 @@
     <div class="sns center">
       <span class="github">
         <a href="https://github.com/jioneeu" target="_blank">GitHub</a>
-      </span> |
+      </span>
+      |
       <span class="twitter">
         <a href="https://twitter.com/jioneeu" target="_blank">Twitter</a>
-      </span> |
+      </span>
+      |
       <span class="youtube">
         <a
           href="https://www.youtube.com/channel/UC8hY3wjYlK2U9W4fqKN598Q?view_as=subscriber"
           target="_blank"
-        >YouTube</a>
+          >YouTube</a
+        >
       </span>
     </div>
   </div>
@@ -88,6 +91,32 @@
     .youtube a:hover {
       color: rgb(189, 66, 89);
     }
+  }
+}
+
+html.darkmode {
+  #footer {
+    color: #d3c6db;
+
+    a {
+      color: #d3c6db;
+    }
+    a:hover {
+      color: #da9dff;
+    }
+
+    .sns {
+    .github a:hover {
+      color: #d6d6d6;
+    }
+    .twitter a:hover {
+      color: rgb(48, 168, 255);
+    }
+
+    .youtube a:hover {
+      color: rgb(189, 66, 89);
+    }
+  }
   }
 }
 </style>
