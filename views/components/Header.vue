@@ -163,13 +163,14 @@ div#header {
     width: 85px;
     height: 85px;
     border-radius: 40%;
-    box-shadow: 0 0 2px rgb(160, 152, 152);
-    transition: margin-right 0.1s ease-in;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.8);
+    transition: all 0.2s;
   }
 
   img.logo:hover {
-    box-shadow: 0 0 2px black;
-    margin-right: 3px;
+    transform: scale(1.02);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
+    transition: 0.2s;
     cursor: pointer;
   }
 
@@ -185,20 +186,22 @@ div#header {
       border-radius: 50%;
       width: 22px;
       height: 22px;
-      box-shadow: 0 0 0 white;
-      transition: box-shadow 0.3s ease;
+      box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.8);
+      background-color: rgba(255, 255, 255, 0.801);
+      transition: 0.3s;
 
       cursor: pointer;
     }
     div img:hover {
-      box-shadow: 0 0 4px black;
+      transition: 0.3s;
+      transform: scale(1.15);
     }
 
     div.selected img {
-      // opacity: 0.5;
-      width: 24px;
-      height: 24px;
-      box-shadow: 0 0 2px black;
+      transition: 0.3s;
+      transform: scale(0.9);
+      background-color: rgb(113, 113, 113);
+      box-shadow: 1px 2px 4px black;
     }
   }
 
@@ -281,10 +284,40 @@ html.darkmode {
   color: #d3c6db;
   background-color: #121212;
 
-  div#header .header-menu a {
-    color: #d3c6db;
-  }
+  div#header {
+    .header-menu a {
+      color: #d3c6db;
+    }
 
+    img.logo {
+      box-shadow: 0 4px 4px #777777;
+      transition: all 0.2s;
+    }
+
+    img.logo:hover {
+      transform: scale(1.02);
+      box-shadow: 0 4px 5px #a1a1a1;
+      transition: 0.2s;
+      cursor: pointer;
+    }
+
+    .lang-selector {
+      div img {
+        box-shadow: 1px 2px 4px #cccccc;
+        background-color: rgba(255, 255, 255, 0.801);
+        transition: 0.3s;
+
+        cursor: pointer;
+      }
+
+      div.selected img {
+        transition: 0.3s;
+        transform: scale(0.9);
+        background-color: rgb(36, 36, 36);
+        box-shadow: 1px 2px 4px #ececec;
+      }
+    }
+  }
   transition: all 0.3s;
 }
 </style>
