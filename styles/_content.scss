@@ -287,7 +287,7 @@ pre>code {
 }
 
 pre {
-    background-color: #f8f8f8;
+    background-color: rgba(0, 0, 0, 0.03);
     border: 1px solid #ccc;
     font-size: 14px;
     line-height: 19px;
@@ -473,4 +473,9 @@ sub {
     display: block;
     text-align: center;
     font-size: 13px;
+}
+
+// override HLJS library syntax highlighter
+.hljs-comment {
+    color: #82a0d6;
 }

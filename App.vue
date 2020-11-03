@@ -18,6 +18,11 @@ export default {
 </script>
 
 <style lang="scss">
+html {
+  background-color: rgba(0, 0, 0, 0.03);
+  color: rgba(0, 0, 0, 0.8);
+}
+
 @media only screen and (min-width: 1025px) {
   body {
     margin: 0;
