@@ -12,6 +12,14 @@
         />
       </div>
 
+      <div id="mode-wrapper">
+        <span id="lightmode-txt">Light</span>
+        <button id="mode-btn" @click="onClickMode">
+          <div id="btn-ball"></div>
+        </button>
+        <span id="darkmode-txt">Dark</span>
+      </div>
+
       <div class="lang-selector">
         <language-selector
           lang="eng"
@@ -20,10 +28,6 @@
         />
         <language-selector lang="kor" @click.native="onChangeLang('kor')" />
         <language-selector lang="jap" @click.native="onChangeLang('jap')" />
-      </div>
-
-      <div>
-        <button id="mode-btn" @click="onClickMode">Dark</button>
       </div>
 
       <div class="header-menu">
@@ -65,9 +69,6 @@ export default {
       lang: "eng",
       darkmode: false,
     };
-  },
-  mounted() {
-    // this.goHome();
   },
   computed: {
     lang2: {
@@ -134,19 +135,23 @@ export default {
     },
     onClickMode() {
       const html = document.getElementsByTagName("html")[0];
-      const darkmodeBtn = document.getElementById("mode-btn");
+      const modeWrapper = document.getElementById("mode-wrapper");
       const profileImg = document.getElementById("profile");
 
       if (this.darkmode) {
         html.classList.remove("darkmode");
         html.classList.toggle("lightmode");
         this.darkmode = false;
-        darkmodeBtn.textContent = "Dark";
+        modeWrapper.firstElementChild.style.color = "black";
+        modeWrapper.lastElementChild.style.color = "#d2d2d2";
+        modeWrapper.children[1].firstElementChild.classList.remove("enable");
       } else {
         html.classList.remove("lightmode");
         html.classList.toggle("darkmode");
         this.darkmode = true;
-        darkmodeBtn.textContent = "Light";
+        modeWrapper.firstElementChild.style.color = "rgb(40, 40, 40)";
+        modeWrapper.lastElementChild.style.color = "#f1ebf5";
+        modeWrapper.children[1].firstElementChild.classList.add("enable");
       }
     },
   },
@@ -180,7 +185,8 @@ div#header {
 
     min-width: 11em;
     max-width: 15em;
-    margin: 0.5rem auto;
+    margin: 0 auto;
+    padding-top: 10px;
 
     div img {
       border-radius: 50%;
@@ -199,8 +205,7 @@ div#header {
 
     div.selected img {
       transition: 0.3s;
-      transform: scale(0.9);
-      background-color: rgb(113, 113, 113);
+      transform: scale(0.8);
       box-shadow: 1px 2px 4px black;
     }
   }
@@ -210,7 +215,7 @@ div#header {
     width: auto;
     max-width: 25em;
     justify-content: space-evenly;
-    margin: 2em auto;
+    margin: 15px auto;
     font-size: 15px;
 
     a {
@@ -251,26 +256,51 @@ div#header {
   margin: 2em auto;
 }
 
-#mode-btn {
-  font-weight: bold;
-  border-radius: 10px;
-  background: #121212;
-  border: none;
-  color: #e1d2ec;
-  cursor: pointer;
-  transition: 0.3s;
-}
+#mode-wrapper {
+  #lightmode-txt {
+    color: black;
+  }
+  margin: 13px 0 10px 0;
+  color: #d2d2d2;
+  font-family: "Copperplate", "sans-serif";
+  font-size: 13px;
+  text-transform: uppercase;
 
-#mode-btn:focus {
-  outline: none;
-  box-shadow: none;
-}
+  #mode-btn {
+    
+    #btn-ball {
+      -webkit-transform: translateX(-2px);
+      -ms-transform: translateX(-2px);
+      transform: translateX(-2px);
 
-.darkmode #mode-btn {
-  background: rgba(233, 233, 233, 0.9);
-  color: #121212;
-  cursor: pointer;
-  transition: 0.3s;
+      background: white;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      transition: all 0.3s;
+    }
+
+    #btn-ball.enable {
+      -webkit-transform: translateX(16px);
+      -ms-transform: translateX(16px);
+      transform: translateX(16px);
+      background-color: #a690c6;
+      transition: all 0.3s;
+    }
+
+    width: 35px;
+    height: 15px;
+    border-radius: 10px;
+    background-color: #a690c6;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  #mode-btn:focus {
+    outline: none;
+    box-shadow: none;
+  }
 }
 
 html.lightmode {
@@ -284,6 +314,13 @@ html.darkmode {
   color: #d3c6db;
   background-color: #121212;
 
+  #mode-wrapper #mode-btn {
+    background: rgba(233, 233, 233, 0.9);
+    color: #121212;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
   div#header {
     .header-menu a {
       color: #d3c6db;
@@ -295,25 +332,18 @@ html.darkmode {
     }
 
     img.logo:hover {
-      transform: scale(1.02);
       box-shadow: 0 4px 5px #a1a1a1;
-      transition: 0.2s;
-      cursor: pointer;
     }
 
     .lang-selector {
       div img {
         box-shadow: 1px 2px 4px #cccccc;
         background-color: rgba(255, 255, 255, 0.801);
-        transition: 0.3s;
 
         cursor: pointer;
       }
 
       div.selected img {
-        transition: 0.3s;
-        transform: scale(0.9);
-        background-color: rgb(36, 36, 36);
         box-shadow: 1px 2px 4px #ececec;
       }
     }
