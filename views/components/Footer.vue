@@ -30,7 +30,6 @@
   position: relative;
   width: 100%;
   height: 7em;
-  background-color: rgba(255, 255, 255, 1);
   color: rgba(0, 0, 0, 0.6);
   text-align: center;
 
