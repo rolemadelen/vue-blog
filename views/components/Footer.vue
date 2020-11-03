@@ -41,6 +41,7 @@
 
     font-weight: bold;
     color: rgba(0, 0, 0, 0.5);
+    transition: 0.3s;
   }
 
   a:hover {
@@ -92,6 +93,8 @@
       color: rgb(189, 66, 89);
     }
   }
+
+  transition: all 0.3s;
 }
 
 html.darkmode {
@@ -106,17 +109,19 @@ html.darkmode {
     }
 
     .sns {
-    .github a:hover {
-      color: #d6d6d6;
-    }
-    .twitter a:hover {
-      color: rgb(48, 168, 255);
+      .github a:hover {
+        color: #d6d6d6;
+      }
+      .twitter a:hover {
+        color: rgb(48, 168, 255);
+      }
+
+      .youtube a:hover {
+        color: rgb(189, 66, 89);
+      }
     }
 
-    .youtube a:hover {
-      color: rgb(189, 66, 89);
-    }
-  }
+    transition: all 0.3s;
   }
 }
 </style>

@@ -15,12 +15,13 @@
     text-transform: capitalize;
     font-size: 0.9em;
     margin-left: -10px;
+    transition: 0.4s;
   }
 
   h3 {
     font-size: 15.5px;
     // color: #298ed8;
-    
+
     margin-bottom: 0;
     cursor: pointer;
 
@@ -34,6 +35,8 @@
       float: right;
       font-weight: normal;
     }
+
+    transition: 0.3s;
   }
 
   p {
@@ -45,9 +48,21 @@
     width: 30rem;
     font-size: 13px;
     color: rgba(0, 0, 0, 0.7);
+    transition: 0.4s;
   }
-  
+
   .group {
     margin-bottom: 3rem;
+  }
+}
+
+html.darkmode {
+  h2 {
+    color: rgba(166, 144, 198, 1);
+    transition: 0.3s;
+  }
+  p.description {
+    color: #aca5b1;
+    transition: 0.4s;
   }
 }
