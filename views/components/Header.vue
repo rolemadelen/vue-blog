@@ -258,6 +258,11 @@ div#header {
   transition: 0.3s;
 }
 
+#mode-btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+
 .darkmode #mode-btn {
   background: rgba(233, 233, 233, 0.9);
   color: #121212;
