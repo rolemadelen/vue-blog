@@ -3,10 +3,11 @@
     <div id="header">
       <div @click="goHome">
         <img
+          id="profile"
           class="logo"
           width="85px"
           height="85px"
-          src="https://avatars3.githubusercontent.com/u/34954499?v=4"
+          :src="'../../assets/profile-img.jpg'"
           alt="Github Logo"
         />
       </div>
@@ -22,7 +23,7 @@
       </div>
 
       <div>
-        <button id="dark-btn" @click="onClickMode">Dark</button>
+        <button id="mode-btn" @click="onClickMode">Dark</button>
       </div>
 
       <div class="header-menu">
@@ -133,7 +134,8 @@ export default {
     },
     onClickMode() {
       const html = document.getElementsByTagName("html")[0];
-      const darkmodeBtn = document.getElementById("dark-btn");
+      const darkmodeBtn = document.getElementById("mode-btn");
+      const profileImg = document.getElementById("profile");
 
       if (this.darkmode) {
         html.classList.remove("darkmode");
@@ -244,6 +246,23 @@ div#header {
   );
   height: 1px;
   margin: 2em auto;
+}
+
+#mode-btn {
+  font-weight: bold;
+  border-radius: 10px;
+  background: #121212;
+  border: none;
+  color: #e1d2ec;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.darkmode #mode-btn {
+  background: rgba(233, 233, 233, 0.9);
+  color: #121212;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
 html.lightmode {

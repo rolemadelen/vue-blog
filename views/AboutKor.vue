@@ -8,22 +8,26 @@
 
       <br /><br />
 
-    <div class="bug-links">
-      <div><a href="https://github.com/bugxvii">GitHub</a></div>
-      <a href="https://www.instagram.com/jioneeu_4am/">Instagram</a>
-      <div><a href="https://www.linkedin.com/in/jioneeu/">LinkedIn</a></div> 
-    </div>
-    <div class="bug-links">
-      <a href="https://twitter.com/bugxvii">Twitter</a>
-      <div><a href="https://www.youtube.com/channel/UC8hY3wjYlK2U9W4fqKN598Q?view_as=subscriber">YouTube</a></div>
-    </div>
+      <div class="bug-links">
+        <div><a href="https://github.com/bugxvii">GitHub</a></div>
+        <a href="https://www.instagram.com/jioneeu_4am/">Instagram</a>
+        <div><a href="https://www.linkedin.com/in/jioneeu/">LinkedIn</a></div>
       </div>
+      <div class="bug-links">
+        <a href="https://twitter.com/bugxvii">Twitter</a>
+        <div>
+          <a
+            href="https://www.youtube.com/channel/UC8hY3wjYlK2U9W4fqKN598Q?view_as=subscriber"
+            >YouTube</a
+          >
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
 <style lang="scss" scoped>
-
-@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap");
 
 #bug-title {
   text-align: center;
@@ -41,13 +45,12 @@
   display: flex;
   justify-content: space-between;
 
-  a {
+  .lightmode a, a {
     color: black;
   }
 
   a:hover {
     color: #7a7b7c;
-  
   }
 }
 
@@ -56,7 +59,7 @@
   line-height: 1.5;
   max-width: 40em;
   margin: 0 auto;
-  font-family: 'Noto Sans Javanese', serif;
+  font-family: "Noto Sans Javanese", serif;
 
   h2 {
     margin-bottom: 2em;
@@ -78,6 +81,7 @@ li {
 .darkmode {
   a {
     color: #d3c6db;
+    transition: 0.3s;
   }
   a:hover {
     color: #da9dff;

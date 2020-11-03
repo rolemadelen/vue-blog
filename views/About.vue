@@ -42,8 +42,9 @@
   display: flex;
   justify-content: space-between;
 
-  a {
+  .lightmode a, a{
     color: black;
+    transition: .3s;
   }
 
   a:hover {
@@ -79,6 +80,7 @@ li {
 .darkmode {
   a {
     color: #d3c6db;
+    transition: 0.3s;
   }
   a:hover {
     color: #da9dff;
