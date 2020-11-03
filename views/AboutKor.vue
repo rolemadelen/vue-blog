@@ -56,7 +56,7 @@
   line-height: 1.5;
   max-width: 40em;
   margin: 0 auto;
-  font-family: 'Noto Serif JP', serif;
+  font-family: 'Noto Sans Javanese', serif;
 
   h2 {
     margin-bottom: 2em;
@@ -73,5 +73,14 @@
 ul,
 li {
   list-style-type: none;
+}
+
+.darkmode {
+  a {
+    color: #d3c6db;
+  }
+  a:hover {
+    color: #da9dff;
+  }
 }
 </style>

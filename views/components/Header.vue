@@ -12,14 +12,30 @@
       </div>
 
       <div class="lang-selector">
-        <language-selector lang="eng" class="selected" @click.native="onChangeLang('eng')" />
+        <language-selector
+          lang="eng"
+          class="selected"
+          @click.native="onChangeLang('eng')"
+        />
         <language-selector lang="kor" @click.native="onChangeLang('kor')" />
         <language-selector lang="jap" @click.native="onChangeLang('jap')" />
       </div>
 
+      <div>
+        <button id="dark-btn" @click="onClickMode">Dark</button>
+      </div>
+
       <div class="header-menu">
-        <header-menu page="about/" name="about" @click.native="navMenu('-about/')" />
-        <header-menu page="algorithm/" name="algorithm" @click.native="navMenu('-algorithm/')" />
+        <header-menu
+          page="about/"
+          name="about"
+          @click.native="navMenu('-about/')"
+        />
+        <header-menu
+          page="algorithm/"
+          name="algorithm"
+          @click.native="navMenu('-algorithm/')"
+        />
         <header-menu
           page="data-structure/"
           name="data-structure"
@@ -31,7 +47,6 @@
           @click.native="navMenu('-problem-solving/')"
         /> -->
         <a href="https://jioneeu-til.com"> TIL </a>
-        
       </div>
     </div>
     <div class="divider"></div>
@@ -46,7 +61,8 @@ export default {
   components: { LanguageSelector, HeaderMenu },
   data() {
     return {
-      lang: 'eng',
+      lang: "eng",
+      darkmode: false,
     };
   },
   mounted() {
@@ -76,7 +92,7 @@ export default {
           langSelector[1].className = "";
           langSelector[2].className = "selected";
         }
-      }
+      },
     },
     getLangSelector: function () {
       return document.querySelectorAll("div.lang-selector div");
@@ -113,6 +129,22 @@ export default {
       if (prevPath !== currPath) {
         this.lang2 = lang;
         this.$router.replace({ path: currPath });
+      }
+    },
+    onClickMode() {
+      const html = document.getElementsByTagName("html")[0];
+      const darkmodeBtn = document.getElementById("dark-btn");
+
+      if (this.darkmode) {
+        html.classList.remove("darkmode");
+        html.classList.toggle("lightmode");
+        this.darkmode = false;
+        darkmodeBtn.textContent = "Dark";
+      } else {
+        html.classList.remove("lightmode");
+        html.classList.toggle("darkmode");
+        this.darkmode = true;
+        darkmodeBtn.textContent = "Light";
       }
     },
   },
@@ -212,5 +244,23 @@ div#header {
   );
   height: 1px;
   margin: 2em auto;
+}
+
+html.lightmode {
+  color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.03);
+
+  transition: all 0.3s;
+}
+
+html.darkmode {
+  color: #d3c6db;
+  background-color: #121212;
+
+  div#header .header-menu a {
+    color: #d3c6db;
+  }
+
+  transition: all 0.3s;
 }
 </style>
