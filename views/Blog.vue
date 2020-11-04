@@ -5,11 +5,7 @@
 </template>
 
 <script>
-import { Disqus } from "vue-disqus";
 
-export default {
-  components: { Disqus },
-};
 </script>
 
 <style lang="scss">
