@@ -15,7 +15,7 @@
   max-width: 50em;
   margin: 3rem auto;
   font-family: "Noto Sans Javanese", serif;
-  font-size: 15px;
+  font-size: 16px;
 
   a {
     text-decoration: underline;
