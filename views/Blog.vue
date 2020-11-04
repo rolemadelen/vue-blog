@@ -54,11 +54,37 @@ html.darkmode {
   }
 
   .hljs-string {
-    color: #166e20;
+    color: #4a951e;
   }
 
   .hljs-comment {
-    color: #5d5d5d;
+    color: #848484;
+  }
+
+  .hljs-attr,
+  .hljs-selector-attr,
+  .hljs-selector-class,
+  .hljs-selector-id,
+  .hljs-selector-pseudo,
+  .hljs-title {
+    color: #9473ce;
+  }
+
+  .hljs-keyword,
+  .hljs-selector-tag,
+  .hljs-type {
+    color: #dd5667;
+  }
+
+  .hljs-number {
+    color: #1281ff;
+  }
+
+  .hljs-attribute,
+  .hljs-bullet,
+  .hljs-literal,
+  .hljs-symbol {
+    color: #008ebd;
   }
 }
 </style>
