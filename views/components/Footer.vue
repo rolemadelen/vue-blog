@@ -9,11 +9,11 @@
     </div>
     <div class="sns center">
       <span class="github">
-        <a href="https://github.com/jioneeu" target="_blank">GitHub</a>
+        <a href="https://github.com/bugxvii" target="_blank">GitHub</a>
       </span>
       |
       <span class="twitter">
-        <a href="https://twitter.com/jioneeu" target="_blank">Twitter</a>
+        <a href="https://twitter.com/bugxvii" target="_blank">Twitter</a>
       </span>
       |
       <span class="youtube">
