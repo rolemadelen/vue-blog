@@ -19,7 +19,7 @@ export default {
 
 <style lang="scss">
 html {
-  background-color: rgba(0, 0, 0, 0.03);
+  background-color: #f5f5f5;
   color: rgba(0, 0, 0, 0.8);
 }
 

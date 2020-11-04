@@ -311,7 +311,7 @@ html.lightmode {
 }
 
 html.darkmode {
-  color: #d3c6db;
+  color: #ded4e4;
   background-color: #121212;
 
   #mode-wrapper #mode-btn {

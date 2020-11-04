@@ -10,7 +10,7 @@ Description: Github README style. Includes theme for Pygmentized code blocks.
 
 /*
 I (Jione Eu) Modified colors and font-size;
-*/ 
+*/
 
 html,
 body {
@@ -476,6 +476,3 @@ sub {
 }
 
 // override HLJS library syntax highlighter
-.hljs-comment {
-    color: #82a0d6;
-}
