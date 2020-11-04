@@ -17,6 +17,10 @@ import DataStructure from './views/DataStructure.vue';
 import DataStructureKor from './views/DataStructureKor.vue';
 import DataStructureJap from './views/DataStructureJap.vue';
 
+import Dcp from './views/DCP.vue';
+import DcpKor from './views/DCPKor.vue';
+import DcpJap from './views/DCPJap.vue';
+
 Vue.use(VueRouter);
 
 import BlogEntries from './statics/data/blogs.json';
@@ -52,6 +56,9 @@ export default new VueRouter({
         { path: '/eng/eng-data-structure', name: 'data-structure', component: DataStructure },
         { path: '/kor/kor-data-structure', name: 'data-structure-kor', component: DataStructureKor },
         { path: '/jap/jap-data-structure', name: 'data-structure-jap', component: DataStructureJap },
+        { path: '/eng/eng-daily-coding-problem', name: 'dcp', component: Dcp },	
+        { path: '/kor/kor-daily-coding-problem', name: 'dcp-kor', component: DcpKor },	
+        { path: '/jap/jap-daily-coding-problem', name: 'dcp-jap', component: DcpJap },	
         ...blogRoutes
     ],
     scrollBehavior (to, from, savedPosition) {
