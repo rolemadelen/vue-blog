@@ -58,11 +58,18 @@
 
 html.darkmode {
   h2 {
-    color: rgba(166, 144, 198, 1);
+    color: #616161;
     transition: 0.3s;
   }
+  h3 {
+    color: #cdbaef;
+
+    .date {
+      color: #616161;
+    }
+  }
   p.description {
-    color: #aca5b1;
+    color: #616161;
     transition: 0.4s;
   }
 }
