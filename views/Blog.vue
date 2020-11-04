@@ -37,7 +37,7 @@ html.darkmode {
   }
   .blog pre code {
     border: none;
-    background-color: #161616;
+    background-color: #121212;
     color: #c6c6c6;
   }
 
