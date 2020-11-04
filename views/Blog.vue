@@ -1,10 +1,6 @@
 <template>
   <div class="blog">
     <router-view />
-
-    <br />
-
-    <disqus shortname="jioneeu" />
   </div>
 </template>
 
@@ -24,9 +20,25 @@ export default {
   margin: 3rem auto;
   font-family: "Noto Sans Javanese", serif;
   font-size: 15px;
+
+  a {
+    text-decoration: underline;
+  }
+
+  a:hover {
+    color: #1c4c8a;
+  }
 }
 
 html.darkmode {
+  .blog a {
+    color: #d3c6db;
+  }
+
+  .blog a:hover {
+    color: #cc7ce2;
+  }
+
   .blog code {
     border: 1px solid #828282;
     background-color: #444444;
