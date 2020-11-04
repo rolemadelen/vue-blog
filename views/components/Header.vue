@@ -46,11 +46,11 @@
           name="data-structure"
           @click.native="navMenu('-data-structure/')"
         />
-        <!-- <header-menu
-          page="problem-solving/"
+        <header-menu
+          page="daily-coding-problem/"
           name="ps"
-          @click.native="navMenu('-problem-solving/')"
-        /> -->
+          @click.native="navMenu('-daily-coding-problem/')"
+        />
         <a href="https://jioneeu-til.com"> TIL </a>
       </div>
     </div>
@@ -267,7 +267,6 @@ div#header {
   text-transform: uppercase;
 
   #mode-btn {
-    
     #btn-ball {
       -webkit-transform: translateX(-2px);
       -ms-transform: translateX(-2px);
@@ -313,6 +312,19 @@ html.lightmode {
 html.darkmode {
   color: #ded4e4;
   background-color: #121212;
+
+  .divider {
+    background: -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      #121212,
+      color-stop(#9a909f),
+      #121212
+    );
+    background: -webkit-linear-gradient(left, #121212, #9a909f, #121212);
+    background: linear-gradient(to right, #121212, #9a909f, #121212);
+  }
 
   #mode-wrapper #mode-btn {
     background: rgba(233, 233, 233, 0.9);
