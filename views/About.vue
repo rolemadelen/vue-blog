@@ -35,7 +35,7 @@
 #bug-content {
   margin: 0 auto;
   max-width: 25em;
-  font-size: 14px;
+  font-size: 15px;
 }
 
 .bug-links {
@@ -54,7 +54,6 @@
 }
 
 .about {
-  // font-size: 14px;
   line-height: 1.5;
   max-width: 40em;
   margin: 0 auto;

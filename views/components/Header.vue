@@ -216,7 +216,7 @@ div#header {
     max-width: 25em;
     justify-content: space-evenly;
     margin: 15px auto;
-    font-size: 15px;
+    font-size: 16px;
 
     a {
       text-decoration: none;
