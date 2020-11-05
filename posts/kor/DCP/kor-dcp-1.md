@@ -2,9 +2,9 @@
 
 This problem was recently asked by Google.
 
-Given a list of numbers and a number k, return whether any two numbers from the list add up to k.
+Given a list of numbers and a number `k`, return whether any two numbers from the list add up to `k`.
 
-For example, given [10, 15, 3, 7] and k of 17, return true since 10 + 7 is 17.
+For example, given `[10, 15, 3, 7]` and `k` of `17`, return true since `10 + 7` is `17`.
 
 Bonus: Can you do this in one pass?
 
@@ -12,7 +12,6 @@ Bonus: Can you do this in one pass?
 
 이 문제는 LeetCode에 [Two Sum](https://leetcode.com/problems/two-sum/submissions/)이라는 문제와 동일한 문제입니다.
 본인의 코드가 제대로 작동하는지 확인해보세요.
-
 
 ## Solution
 
