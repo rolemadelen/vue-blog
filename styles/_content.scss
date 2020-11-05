@@ -411,15 +411,15 @@ sub {
     }
 
     ::selection {
-        background: rgba(157, 193, 200, 0.5);
+        background: rgba(238, 238, 238, 0.02);
     }
 
     h1::selection {
-        background-color: rgba(45, 156, 208, 0.3);
+        background-color: rgba(45, 156, 208, 0.03);
     }
 
     h2::selection {
-        background-color: rgba(90, 182, 224, 0.3);
+        background-color: rgba(90, 182, 224, 0.03);
     }
 
     h3::selection,
