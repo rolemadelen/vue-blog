@@ -40,8 +40,8 @@ html.darkmode {
 
   .blog code {
     border: 1px solid #828282;
-    background-color: #444444;
-    color: #c3c3c3;
+    background-color: #4b4b4b;
+    color: #d2d2d2;
   }
   .blog pre {
     border: 1px solid #595959;
