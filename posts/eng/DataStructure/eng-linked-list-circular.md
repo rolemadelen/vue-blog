@@ -1,5 +1,5 @@
 ### What is Circular Linked List?
-The end of the linked lists are normally defined by the tail node pointing to `nil`. In the case of <routerlink to="/en-data-structure-linked-list-doubly">Doubly Linked List</router-link> both the `head.prev` and `tail.next` points to `nil`.
+The end of the linked lists are normally defined by the tail node pointing to `nil`. In the case of <router-link to="./eng-linked-list-doubly">Doubly Linked List</router-link> both the `head.prev` and `tail.next` points to `nil`.
 
 <div style="text-align: center">
   <img src="assets/data-structure/linked-list/cll-doubly-example.png" alt="Linked list picture">
@@ -207,7 +207,8 @@ And finally, we update `head.prev` so that it's pointing to our new head.
 <div style="text-align: center">
   <img src="assets/data-structure/linked-list/cll-doubly-insert_at5.png" alt="circular doubly linked list picture">
 </div>
- Inserting a node in between nodes
+ 
+ ### Inserting a node in between nodes
 
 **Circular Singly Linked List**
 
@@ -225,11 +226,19 @@ When we're inserting a new node at index `i`, we need to have an access to a nod
   <img src="assets/data-structure/linked-list/cll-singly-insert_at3.png" alt="circular doubly linked list picture">
 </div>
 
-And we connect `curr.next` with `new_node` and we're done.
+And we connect `curr.next` with `new_node`. 
 
 <div style="text-align: center">
   <img src="assets/data-structure/linked-list/cll-singly-insert_at4.png" alt="circular doubly linked list picture">
 </div>
+
+Lets rearrange those nodes in the figure just to double check that everything is well connected.
+
+<div style="text-align: center">
+  <img src="assets/data-structure/linked-list/cll-singly-insert_at5.png" alt="circular doubly linked list picture">
+</div>
+
+
 
 **Circular Doubly Linked List**
 
@@ -244,17 +253,24 @@ And we connect `curr.next` with `new_node` and we're done.
   curr.prev = new_node
 ```
 
-Save the node located at the index we're going to insert a new node to `curr` -- `B` node in the figure below -- and link `new_node.prev` and `new_node.next` to `curr.prev` and `curr.next` respectively.
+Save the node located at the index we're going to insert a new node to `curr` (`B` in the below figure) node in the figure below -- and link `new_node.prev` and `new_node.next` to `curr.prev` and `curr.next` respectively.
 
 <div style="text-align: center">
   <img src="assets/data-structure/linked-list/cll-doubly-insert_at1.png" alt="circular doubly linked list picture">
 </div>
 
-And let `curr.prev.next` -- `head.next` -- and `curr.prev` point to `new_node`.
+And let `head.next` and `curr.prev` point to `new_node`, and it looks like the below.
+
+<div style="text-align: center">
+  <img src="assets/data-structure/linked-list/cll-doubly-insert_at6.png" alt="circular doubly linked list picture">
+</div>
+
+Which is basically same as this.
 
 <div style="text-align: center">
   <img src="assets/data-structure/linked-list/cll-doubly-insert_at2.png" alt="circular doubly linked list picture">
 </div>
+
 
 ### remove\_at
 
@@ -269,6 +285,10 @@ def remove_front
   temp = temp.next = nil
 end
 ```
+
+<div style="text-align: center">
+  <img src="assets/data-structure/linked-list/cll-singly-remove-at0.png" alt="circular doubly linked list picture">
+</div>
 
 Since `@last.next` points to the head node, we can simply re-link this node to `@last.next.next`.
 
@@ -287,6 +307,10 @@ def remove_front
   temp = temp.next = temp.prev = nil
 end
 ```
+
+<div style="text-align: center">
+  <img src="assets/data-structure/linked-list/cll-doubly-remove-at0.png" alt="Linked list picture">
+</div>
 
 We need to dislink all nodes connected to `@head`.
 ```rb
@@ -322,6 +346,10 @@ def remove_last
   temp = temp.next = nil
 end
 ```
+
+<div style="text-align: center">
+  <img src="assets/data-structure/linked-list/cll-singly-remove-at0.png" alt="circular doubly linked list picture">
+</div>
 
 In order to remove the `@last` node, we need to have an access to its previous node (`B` node in the figure below). We save this node to `curr` and let `curr.next` point to `@last.next`.
 
