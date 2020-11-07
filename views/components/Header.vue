@@ -62,6 +62,12 @@
 import LanguageSelector from "./LanguageSelector";
 import HeaderMenu from "./HeaderMenu";
 
+document.addEventListener('keydown', (e) => {
+  if (e.keyCode == 68) {
+    document.getElementById("mode-btn").click();
+  }
+})
+
 export default {
   components: { LanguageSelector, HeaderMenu },
   data() {
