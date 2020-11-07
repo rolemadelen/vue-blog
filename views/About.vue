@@ -78,7 +78,7 @@ li {
 
 .darkmode {
   a {
-    color: #d3c6db;
+    color: #eee;
     transition: 0.3s;
   }
   a:hover {

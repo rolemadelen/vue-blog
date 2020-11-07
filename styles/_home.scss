@@ -3,7 +3,7 @@
 }
 
 .sections {
-  max-width: 35em;
+  max-width: 30em;
   margin: 0 auto;
 
   .section {
@@ -19,8 +19,7 @@
   }
 
   h3 {
-    font-size: 15.5px;
-    // color: #298ed8;
+    font-size: 1.1em;
 
     margin-bottom: 0;
     cursor: pointer;
@@ -46,7 +45,7 @@
   p.description {
     padding-left: 5px;
     width: 30rem;
-    font-size: 13px;
+    font-size: 90%;
     color: rgba(0, 0, 0, 0.7);
     transition: 0.4s;
   }
@@ -58,17 +57,11 @@
 
 html.darkmode {
   h2 {
-    color: #616161;
+    color: #828282;
   }
-  h3 {
-    color: #cdbaef;
 
-    .date {
-      color: #616161;
-    }
-  }
   p.description {
-    color: #848484;
+    color: #d8d7d7;
     transition: 0.4s;
   }
 }
