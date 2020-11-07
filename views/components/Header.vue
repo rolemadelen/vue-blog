@@ -23,7 +23,6 @@
       <div class="lang-selector">
         <language-selector
           lang="eng"
-          class="selected"
           @click.native="onChangeLang('eng')"
         />
         <language-selector lang="kor" @click.native="onChangeLang('kor')" />
@@ -72,17 +71,42 @@ export default {
   components: { LanguageSelector, HeaderMenu },
   data() {
     return {
-      lang: "eng",
-      darkmode: false,
+      lang: localStorage.getItem('lang'),
+      darkmode: localStorage.getItem('darkmode')
     };
+  },
+  mounted: () => {
+    if (localStorage.getItem('darkmode') == "true") {
+      document.getElementsByTagName("html")[0].classList.toggle('darkmode');
+      document.getElementById("mode-wrapper").children[1].firstElementChild.classList.add("enable");
+    }
+
+    let langSelector = document.getElementsByClassName('lang-selector')[0].children;
+    let lang = localStorage.getItem('lang');
+    lang = (lang == null) ? 'eng' : lang;
+    let path = '/#/home/' + lang + '-home';
+
+    if (lang == 'eng') {
+      document.location.replace(path);
+      langSelector[0].classList.toggle('selected');
+    } else if (lang == 'kor') {
+      document.location.replace(path);  
+      langSelector[1].classList.toggle('selected');
+    } else if (lang == 'jap') {
+      document.location.replace(path);
+      langSelector[2].classList.toggle('selected');
+    }
+
+      console.log(path);
+
   },
   computed: {
     lang2: {
       get: function () {
-        return this.lang;
+        return (this.lang == null) ? 'eng' : this.lang;
       },
       set: function (lang) {
-        const langSelector = this.getLangSelector;
+        const langSelector = document.querySelectorAll("div.lang-selector div");
         this.lang = lang;
         if (lang === "eng") {
           this.lang = "eng";
@@ -101,9 +125,6 @@ export default {
           langSelector[2].className = "selected";
         }
       },
-    },
-    getLangSelector: function () {
-      return document.querySelectorAll("div.lang-selector div");
     },
   },
   methods: {
@@ -138,11 +159,14 @@ export default {
         this.lang2 = lang;
         this.$router.replace({ path: currPath });
       }
+
+      localStorage.setItem('lang', this.lang2);
     },
     onClickMode() {
       const html = document.getElementsByTagName("html")[0];
       const modeWrapper = document.getElementById("mode-wrapper");
       const profileImg = document.getElementById("profile");
+      this.darkmode = (this.darkmode == 'null') ? false : this.darkmode;
 
       if (this.darkmode) {
         html.classList.remove("darkmode");
@@ -159,6 +183,8 @@ export default {
         modeWrapper.lastElementChild.style.color = "#f1ebf5";
         modeWrapper.children[1].firstElementChild.classList.add("enable");
       }
+
+      localStorage.setItem('darkmode', this.darkmode);
     },
   },
 };
