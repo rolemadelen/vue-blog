@@ -1,5 +1,5 @@
 ### 원형 연결 리스트란?
-일반적으로 연결 리스트에서 마지막 노드는 '이 노드가 마지막입니다'라는 의미로 `nil`을 가리킨다. [이중 연결 리스트](/ko-data-structure-linked-list-doubly)의 경우 마지막 노드의 `next`와 더불어 첫 번째 노드의 `prev`도 `nil`을 가리킨다.
+일반적으로 연결 리스트에서 마지막 노드는 '이 노드가 마지막입니다'라는 의미로 `nil`을 가리킨다. <router-link to="./kor-linked-list-doubly">이중 연결 리스트</router-link>의 경우 마지막 노드의 `next`와 더불어 첫 번째 노드의 `prev`도 `nil`을 가리킨다.
 
 <div style="text-align: center">
   <img src="assets/data-structure/linked-list/cll-doubly-example.png" alt="Linked list picture">

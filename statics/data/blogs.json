@@ -1244,6 +1244,30 @@
   ],
   "DCP": [
     {
+      "id": "eng-dcp-2",
+      "date": "Nov 6, 2020",
+      "title": "Daily Coding Problem 2",
+      "description": "DCP 2 asked by Uber",
+      "published": true,
+      "lang": "eng"
+    },
+    {
+      "id": "kor-dcp-2",
+      "date": "Nov 6, 2020",
+      "title": "Daily Coding Problem 2",
+      "description": "DCP 2 asked by Uber",
+      "published": true,
+      "lang": "kor"
+    },
+    {
+      "id": "jap-dcp-2",
+      "date": "Nov 6, 2020",
+      "title": "Daily Coding Problem 2",
+      "description": "DCP 2 asked by Uber",
+      "published": true,
+      "lang": "jap"
+    },
+    {
       "id": "eng-dcp-1",
       "date": "Nov 5, 2020",
       "title": "Daily Coding Problem 1",

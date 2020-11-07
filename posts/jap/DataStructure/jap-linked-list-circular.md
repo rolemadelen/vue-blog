@@ -1,12 +1,12 @@
 
 ### 循環リストとは?
-一般的に連結リストの最後のノードの次は「これがラストです」っと言う意味で`nil`を指す。<router-link to="./jap-linked-list-doubly">双方向リスト</router-link>の場合最後のノードの次「`next`」だけじゃなく、最初のノードの以前「`prev`」も`nil`を指す。
+一般的に連結リストの最後のノードは「これがラストです」という意味でnilを示します。<router-link to="./jap-linked-list-doubly">双方向リスト</router-link>の場合は最後のノードのnextと最初のノードのprevがnilを示します。
 
 <div style="text-align: center">
   <img src="assets/data-structure/linked-list/cll-doubly-example.png" alt="Linked list picture">
 </div>
 
-だが循環リストの最後のノードの`next`は最初を指して、最初のノードの`prev`が最後を指す。循環する構造だ。
+でも循環リストの場合、最後のノードのnextは最初のノードを、最初のノードのprevは最後を示します。循環する構造です。
 
 <div style="text-align: center">
   <img src="assets/data-structure/linked-list/cll-doubly.png" alt="Linked list picture">
