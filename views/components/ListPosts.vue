@@ -9,7 +9,6 @@
               <div class="entry">
                 <h3 @click="$router.push({name: entry.id, lang: entry.lang})">
                   {{entry.title}}
-                  <span class="date">{{entry.date}}</span>
                 </h3>
                 <p class="description">{{entry.description}}</p>
               </div>

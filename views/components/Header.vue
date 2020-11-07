@@ -310,20 +310,20 @@ html.lightmode {
 }
 
 html.darkmode {
-  color: #ded4e4;
-  background-color: #121212;
+  color: #eee;
+  background-color: #282c35;
 
   .divider {
     background: -webkit-gradient(
       linear,
       left top,
       right top,
-      #121212,
+      #282c35,
       color-stop(#9a909f),
-      #121212
+      #282c35
     );
-    background: -webkit-linear-gradient(left, #121212, #9a909f, #121212);
-    background: linear-gradient(to right, #121212, #9a909f, #121212);
+    background: -webkit-linear-gradient(left, #282c35, #9a909f, #282c35);
+    background: linear-gradient(to right, #282c35, #9a909f, #282c35);
   }
 
   #mode-wrapper #mode-btn {
@@ -335,7 +335,7 @@ html.darkmode {
 
   div#header {
     .header-menu a {
-      color: #d3c6db;
+      color: #eee;
     }
 
     img.logo {

@@ -17,12 +17,9 @@
   font-family: "Noto Sans Javanese", serif;
   font-size: 16px;
 
-  a {
-    text-decoration: underline;
-  }
-
   a:hover {
     color: #1c4c8a;
+    text-decoration: underline;
   }
 }
 
@@ -31,25 +28,22 @@ html.darkmode {
     border-bottom: 1px solid #3e3e3e;
   }
   .blog a {
-    color: #d3c6db;
-  }
-
-  .blog a:hover {
-    color: #cc7ce2;
+    color: #2db4ff;
   }
 
   .blog code {
-    border: 1px solid #828282;
-    background-color: #4b4b4b;
-    color: #d2d2d2;
+    border: 1px solid #ffa6d2;
+    background-color: #292929;
+    color: #ffa6d2;
   }
   .blog pre {
     border: 1px solid #595959;
+    background-color: rgba(27, 27, 27, 1);
   }
   .blog pre code {
     border: none;
-    background-color: #121212;
-    color: #c6c6c6;
+    background-color: transparent;
+    color: #eee;
   }
 
   .hljs-string {
@@ -66,13 +60,13 @@ html.darkmode {
   .hljs-selector-id,
   .hljs-selector-pseudo,
   .hljs-title {
-    color: #9473ce;
+    color: #c4adec;
   }
 
   .hljs-keyword,
   .hljs-selector-tag,
   .hljs-type {
-    color: #dd5667;
+    color: #f87171;
   }
 
   .hljs-number {
@@ -83,7 +77,7 @@ html.darkmode {
   .hljs-bullet,
   .hljs-literal,
   .hljs-symbol {
-    color: #008ebd;
+    color: #4cd2ff;
   }
 }
 </style>
