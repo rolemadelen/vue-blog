@@ -14,8 +14,8 @@
   line-height: 1.5;
   max-width: 50em;
   margin: 3rem auto;
-  font-family: "Noto Sans Javanese", serif;
-  font-size: 16px;
+  font-family: "Noto Sans Javanese", "serif";
+  font-size: 15px;
 
   a:hover {
     color: #1c4c8a;
