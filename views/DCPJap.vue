@@ -1,6 +1,7 @@
 <template>
   <div class="home">
     <list-posts _section="DCP" lang="jap"/>
+    <list-posts _section="PS" lang="jap"/>
   </div>
 </template>
 

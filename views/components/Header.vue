@@ -353,11 +353,11 @@ html.darkmode {
       left top,
       right top,
       #282c35,
-      color-stop(#9a909f),
+      color-stop(#494849),
       #282c35
     );
-    background: -webkit-linear-gradient(left, #282c35, #9a909f, #282c35);
-    background: linear-gradient(to right, #282c35, #9a909f, #282c35);
+    background: -webkit-linear-gradient(left, #282c35, #494849, #282c35);
+    background: linear-gradient(to right, #282c35, #494849, #282c35);
   }
 
   #mode-wrapper #mode-btn {
