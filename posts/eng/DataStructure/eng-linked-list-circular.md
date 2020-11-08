@@ -1,90 +1,107 @@
-### What is Circular Linked List?
-The end of the linked lists are normally defined by the tail node pointing to `nil`. In the case of <router-link to="./eng-linked-list-doubly">Doubly Linked List</router-link> both the `head.prev` and `tail.next` points to `nil`.
+## What is a Circular Linked List?
+
+In <router-link to="./eng-linked-list-singly">singly</router-link> and <router-link to="./eng-linked-list-doubly">doubly linked list</router-link>, we can track the end of list by finding a node that points to `nil`; doubly linked has one more of this node, which is `head.prev`, like the figure below.
 
 <div style="text-align: center">
   <img src="assets/data-structure/linked-list/cll-doubly-example.png" alt="Linked list picture">
 </div>
 
-In the circular linked list, however, `tail.next` points to the head node and `head.prev` points back to the tail node.
+A circular linked list is a linked list that does not end; there is no `nll`. The last element of the node links back to its first node; for the case of doubly linked list, `head.prev` 
+is linked with the last node. This is perhaps why it's called a _circular_ linked list.
 
 <div style="text-align: center">
   <img src="assets/data-structure/linked-list/cll-doubly.png" alt="Linked list picture">
 </div>
 
-### Node Structure
-The difference of circular list and other linked lists are in adding and removing nodes; thus, the structure of the Node of the circular list is same with other typical linked lists' structures of the Node.
+## Structure of a Node
+
+A circular linked list is a variation of a singly and a doubly linked list; the structure of a node in a circular linked list will be based on the type of a linked list we use.
 
 **Circular Singly Linked List**
 
-```rb
-class Node
-  attr_accessor :data, :next     
-
-  def initialize(data, _next=nil)
-    @data = data
-    @next = _next
-  end
-end
+```cpp
+template <class T>
+class Node 
+{ 
+  private:
+  public:
+    Node<T>(T val) : next(nullptr) { data = val; }
+    Node<T> *next;
+    T data;
+};
 ```
 
 **Circular Doubly Linked List**
 
-```rb
-class Node
-  attr_accessor :data, :prev, :next
-
-  def initialize(data, prev=nil, _next=nil)
-    @data = data
-    @prev = prev
-    @next = _next
-  end
-end
+```cpp
+template <class T>
+class Node 
+{ 
+  private:
+  public:
+    Node<T>(T val) : next(nullptr), prev(nullptr) { data = val; }
+    Node<T> *next;
+    Node<T> *prev;
+    T data;
+};
 ```
 
-<div class="divider"></div>
+## Implementation
 
-### Circular Linked List Implementation
+Let's go through each operation in a circular linked list including the constructor, and see how to implement them in both circular singly and doubly linked lists.
 
-### initialize: Constructor
+### Constructor
 
-**Circular Singly Linked List**
+### **Circular Singly Linked List**
 
-```rb
-def initialize
-  @last = nil
-  @length = 0
-end
+In a singly linked list, most operations start by accessing the first node and traverse to insert, delete, or search an element. So we save the first element into a node called `head` or `first` (names don't matter, but these two are typically used).
+
+Circular singly linked list is little different. We save the _last_ element into a node called `tail` or `last`; we don't use `head`.
+
+```cpp
+template <class T>
+CircularLinkedList<T>::CircularLinkedList(int val)
+{
+  last = new Node(val);
+  last->next = last;
+  capacity = 1;
+}
 ```
 
-In a singly linked list, normally `@head` -- a node which holds the address of the first node -- is used. In a circular singly list, however, we use `@last` which is a node that holds the last element of a linked list.
+Having the `last` node serves as a great advantage in singly linked lists especially when inserting a new element at the end. 
+We don't have to traverse the whole list; we can insert a new element at the end in constant time using `last->next`.
 
 <div style="text-align: center">
   <img src="assets/data-structure/linked-list/cll-singly-insert1.png" alt="circular singly list image">
 </div>
 
-We can still use `@head`, but it is better to use `@last` because by doing it this way, we have a direct access to the tail (`@last`) and the head (`@last.next`). Also in some insert/remove operations, it is more efficient and time saving to know the last node rather than the first node.
+<div class="divider"></div>
 
-**Circular Doubly Linked List**
+### **Circular Doubly Linked List**
 
-```rb
-def initialize
-  @head = nil
-  @length = 0
-end
-```
-
-In Circular Doubly Linked List, we can access the tail node with `@head.prev`, so we only define and use `@head`.
+A doubly linked list can traverse the list in both ways using `next` and `prev` pointers.
 
 <div style="text-align: center">
   <img src="assets/data-structure/linked-list/cll-doubly-insert1.png" alt="circular doubly linked list picture">
 </div>
 
+There's no need to use the `last` node since we can already access it via `head->prev`.
 
-### insert
+```cpp
+template <class T>
+DoublyLinkedList<T>::DoublyLinkedList(int val)
+{
+  head = new Node(val);
+  head->next = head->prev = head;
+  last = head;
 
-`insert` method adds a node at the back of the list.
+  capacity = 1;
+}
+```
 
-**Circular Singly Linked List**
+## Insert at the end
+
+### **Circular Singly Linked List**
 
 ```rb
   new_node = Node.new(data)
