@@ -99,18 +99,15 @@
 
 html.darkmode {
   #footer {
-    color: #d3c6db;
+    color: #eee;
 
     a {
-      color: #d3c6db;
-    }
-    a:hover {
-      color: #da9dff;
+      color: #eee;
     }
 
     .sns {
       .github a:hover {
-        color: #d6d6d6;
+        color: #818181;
       }
       .twitter a:hover {
         color: rgb(48, 168, 255);
