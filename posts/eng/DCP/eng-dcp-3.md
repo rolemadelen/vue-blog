@@ -17,8 +17,6 @@ node = Node('root', Node('left', Node('left.left')), Node('right'))
 assert deserialize(serialize(node)).left.left.val == 'left.left'
 ```
 
-[Explanation](https://www.jioneeu.com/en-dcp-3)
-
 ## Solution
 
 ```rb
