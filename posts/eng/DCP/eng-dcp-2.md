@@ -49,5 +49,4 @@ def dcp2_better?(arr)
 
   new_arr
 end
-
 ```
