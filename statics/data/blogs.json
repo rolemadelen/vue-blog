@@ -1150,7 +1150,7 @@
       "date": "07.18.20",
       "title": "Ruby・Circular Linked List",
       "description": "Circular linked list is a variation of a linked list where the first node points to the last node and vice versa.",
-      "published": false,
+      "published": true,
       "lang": "eng"
     },
     {
@@ -1158,7 +1158,7 @@
       "date": "07.18.20",
       "title": "Ruby・循環リストと(Circular Linked List)は",
       "description": "最初と最後のノードがつながってる連結リスト。",
-      "published": false,
+      "published": true,
       "lang": "jap"
     },
     {
@@ -1166,7 +1166,7 @@
       "date": "07.18.20",
       "title": "Ruby・원형 연결 리스트(Circular Linked List)란",
       "description": "첫 번째와 마지막 노드가 서로 연결되어 있는 리스트.",
-      "published": false,
+      "published": true,
       "lang": "kor"
     },
     {
