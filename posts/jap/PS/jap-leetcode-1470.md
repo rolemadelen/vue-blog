@@ -1,6 +1,6 @@
 ## Shuffle the Array
 
-[LeetCode #1431](https://leetcode.com/problems/shuffle-the-array/)
+[LeetCode #1470](https://leetcode.com/problems/shuffle-the-array/)
 
 Given the array nums consisting of 2n elements in the form `[x1,x2,...,xn,y1,y2,...,yn]`.
 
