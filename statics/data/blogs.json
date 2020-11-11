@@ -1148,7 +1148,7 @@
     {
       "id": "eng-linked-list-circular",
       "date": "07.18.20",
-      "title": "Ruby・Circular Linked List",
+      "title": "What is a Circular Linked List?",
       "description": "Circular linked list is a variation of a linked list where the first node points to the last node and vice versa.",
       "published": true,
       "lang": "eng"
