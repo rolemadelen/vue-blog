@@ -1502,6 +1502,30 @@
   ],
   "PS": [
     {
+      "id": "eng-leetcode-1470",
+      "date": "Nov 12, 2020",
+      "title": "LeetCode - 1470",
+      "description": "C++ solution to LeetCode #1470. Shuffle the Array",
+      "published": true,
+      "lang": "eng"
+    },
+    {
+      "id": "kor-leetcode-1470",
+      "date": "Nov 12, 2020",
+      "title": "LeetCode - 1470",
+      "description": "JavaScript solution to LeetCode #1470. Shuffle the Array",
+      "published": true,
+      "lang": "kor"
+    },
+    {
+      "id": "jap-leetcode-1470",
+      "date": "Nov 12, 2020",
+      "title": "LeetCode - 1470",
+      "description": "Ruby solution to LeetCode #1470. Shuffle the Array",
+      "published": true,
+      "lang": "jap"
+    },
+    {
       "id": "eng-leetcode-1431",
       "date": "Nov 12, 2020",
       "title": "LeetCode - 1431",
