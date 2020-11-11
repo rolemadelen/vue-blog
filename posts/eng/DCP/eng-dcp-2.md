@@ -10,43 +10,55 @@ Follow-up: what if you can't use division?
 
 ## Solution
 
-```rb
-# time: O(n)
-def dcp2_div(arr)
-  product = arr.inject(:*) 
-  arr.each_with_index do |x, i|
-    arr[i] = product/x
-  end
-end
+### Naive
 
-# time: O(n^2)
-# memory: O(1)
-def dcp2_naive(arr)
-  size = arr.size
-  new_arr = [1]*size
+This one is candid. First find the product of all values in the list. Then, replace each element with `product / array[i]`.
+The time complexity is linear and we did not use any additional space.
 
-  for i in 0...size
-    for j in 0...size
-      next if j == i
-      new_arr[i] *= arr[j]
-    end
-  end
+```cpp
+/* 
+ * Time Complexity: O(n)
+ * Space Complexity: O(1)
+ * */
+void naive(int *arr, const int SIZE)
+{
+  unsigned long mult = 1;
+  for(int i=0; i<SIZE; ++i)
+  {
+    mult *= arr[i];
+  }
 
-  new_arr
-end
+  for(int i=0; i<SIZE; ++i)
+  {
+    arr[i] = mult / arr[i];
+  }
+}
+```
 
-# time: O(n)
-# memory: O(n)
-def dcp2_better?(arr)
-  storage = arr.clone
-  new_arr = []
+### Bruteforce
+Without using the division, only solution I could came up with was a bruteforce approach.
 
-  arr.each do
-    x = storage.shift()
-    new_arr.push(storage.inject(:*))
-    storage.push(x)
-  end
+I'm iterating the list and multiplying each value manually if two are different indexes, thus the time complexiy is O(N^2).
+I'm also saving these multiplied values into a temporary space and copy them back to the original array at the end. 
+So, the space complexity is O(N).
 
-  new_arr
-end
+```cpp
+void bruteforce(int *arr, const int SIZE)
+{
+  int *temp = new int[SIZE];
+
+  for (int i=0; i<SIZE; ++i)
+  {
+    int val = 1;
+    for (int j=0; j<SIZE; ++j)
+      if (i != j) 
+        val = val * arr[j];
+    temp[i] = val;
+  }
+
+  for (int i=0; i<SIZE; ++i)
+    arr[i] = temp[i];
+
+  delete [] temp;
+}
 ```
