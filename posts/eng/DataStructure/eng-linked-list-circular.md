@@ -141,7 +141,7 @@ We need to let `newNode` point to the first element in the list which is `last->
   <img src="assets/data-structure/linked-list/cll-singly-insert_at1.png" alt="circular doubly linked list picture">
 </div>
 
-Currently our `last->next` is pointinig at A. We need to update this so that it's pointing at the new head, which is `newNode`.
+Currently our `last->next` is pointing at A. We need to update this so that it's pointing at the new head, which is `newNode`.
 
 <div style="text-align: center">
   <img src="assets/data-structure/linked-list/cll-singly-insert_at2.png" alt="circular doubly linked list picture">
