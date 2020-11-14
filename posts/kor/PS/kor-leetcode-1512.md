@@ -9,7 +9,6 @@ Return the number of good pairs.
 
 ## Solution in JS
 
-### Linear Time Complexity
 ```js
 /**
  * Runtime: 80 ms, faster than 47.12%.
