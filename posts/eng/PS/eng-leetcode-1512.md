@@ -9,7 +9,6 @@ Return the number of good pairs.
 
 ## Solution in Ruby
 
-### Linear Time Complexity
 ```cpp
 /**
 * Runtime: 4 ms, faster than 54.71%

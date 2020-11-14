@@ -9,7 +9,6 @@ Return the number of good pairs.
 
 ## Solution in Ruby
 
-### Linear Time Complexity
 ```rb
 # Runtime: 48 ms, faster than 79.58%
 # Memory Usage: 209.7 MB, less than 70.42%
