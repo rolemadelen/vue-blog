@@ -1502,10 +1502,82 @@
   ],
   "PS": [
     {
+      "id": "eng-leetcode-771",
+      "date": "Nov 14, 2020",
+      "title": "LeetCode - 771",
+      "description": "C++ solution to LeetCode #771. Jewels and Stones",
+      "published": true,
+      "lang": "eng"
+    },
+    {
+      "id": "kor-leetcode-771",
+      "date": "Nov 14, 2020",
+      "title": "LeetCode - 771",
+      "description": "JavaScript solution to LeetCode #771. Jewels and Stones",
+      "published": true,
+      "lang": "kor"
+    },
+    {
+      "id": "jap-leetcode-771",
+      "date": "Nov 14, 2020",
+      "title": "LeetCode - 771",
+      "description": "Ruby solution to LeetCode #771. Jewels and Stones",
+      "published": true,
+      "lang": "jap"
+    },
+    {
+      "id": "eng-leetcode-1512",
+      "date": "Nov 14, 2020",
+      "title": "LeetCode - 1512",
+      "description": "C++ solution to LeetCode #1512. Number of Good Pairs",
+      "published": true,
+      "lang": "eng"
+    },
+    {
+      "id": "kor-leetcode-1512",
+      "date": "Nov 14, 2020",
+      "title": "LeetCode - 1512",
+      "description": "JavaScript solution to LeetCode #1512. Number of Good Pairs",
+      "published": true,
+      "lang": "kor"
+    },
+    {
+      "id": "jap-leetcode-1512",
+      "date": "Nov 14, 2020",
+      "title": "LeetCode - 1512",
+      "description": "Ruby solution to LeetCode #1512. Number of Good Pairs",
+      "published": true,
+      "lang": "jap"
+    },
+    {
+      "id": "eng-leetcode-1108",
+      "date": "Nov 14, 2020",
+      "title": "LeetCode - 1108",
+      "description": "C++ solution to LeetCode #1108. Defanging an IP Address",
+      "published": true,
+      "lang": "eng"
+    },
+    {
+      "id": "kor-leetcode-1108",
+      "date": "Nov 14, 2020",
+      "title": "LeetCode - 1108",
+      "description": "JavaScript solution to LeetCode #1108. Defanging an IP Address",
+      "published": true,
+      "lang": "kor"
+    },
+    {
+      "id": "jap-leetcode-1108",
+      "date": "Nov 14, 2020",
+      "title": "LeetCode - 1108",
+      "description": "Ruby solution to LeetCode #1108. Defanging an IP Address",
+      "published": true,
+      "lang": "jap"
+    },
+    {
       "id": "eng-leetcode-1480",
       "date": "Nov 13, 2020",
       "title": "LeetCode - 1480",
-      "description": "C++ solution to LeetCode #1480. Shuffle the Array",
+      "description": "C++ solution to LeetCode #1480. Running Sum of 1d Array",
       "published": true,
       "lang": "eng"
     },
@@ -1513,7 +1585,7 @@
       "id": "kor-leetcode-1480",
       "date": "Nov 13, 2020",
       "title": "LeetCode - 1480",
-      "description": "JavaScript solution to LeetCode #1480. Shuffle the Array",
+      "description": "JavaScript solution to LeetCode #1480. Running Sum of 1d Array",
       "published": true,
       "lang": "kor"
     },
@@ -1521,7 +1593,7 @@
       "id": "jap-leetcode-1480",
       "date": "Nov 13, 2020",
       "title": "LeetCode - 1480",
-      "description": "Ruby solution to LeetCode #1480. Shuffle the Array",
+      "description": "Ruby solution to LeetCode #1480. Running Sum of 1d Array",
       "published": true,
       "lang": "jap"
     },
