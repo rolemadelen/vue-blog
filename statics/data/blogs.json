@@ -1502,6 +1502,30 @@
   ],
   "PS": [
     {
+      "id": "eng-leetcode-1365",
+      "date": "Nov 15, 2020",
+      "title": "LeetCode - 1365",
+      "description": "C++ solution to LeetCode #1365. How Many Numbers Are Smaller Than the Current Number",
+      "published": true,
+      "lang": "eng"
+    },
+    {
+      "id": "kor-leetcode-1365",
+      "date": "Nov 15, 2020",
+      "title": "LeetCode - 1365",
+      "description": "JavaScript solution to LeetCode #1365. How Many Numbers Are Smaller Than the Current Number",
+      "published": true,
+      "lang": "kor"
+    },
+    {
+      "id": "jap-leetcode-1365",
+      "date": "Nov 15, 2020",
+      "title": "LeetCode - 1365",
+      "description": "Ruby solution to LeetCode #1365. How Many Numbers Are Smaller Than the Current Number",
+      "published": true,
+      "lang": "jap"
+    },
+    {
       "id": "eng-leetcode-1528",
       "date": "Nov 14, 2020",
       "title": "LeetCode - 1528",
