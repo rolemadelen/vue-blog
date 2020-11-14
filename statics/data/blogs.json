@@ -1502,6 +1502,54 @@
   ],
   "PS": [
     {
+      "id": "eng-leetcode-1528",
+      "date": "Nov 14, 2020",
+      "title": "LeetCode - 1528",
+      "description": "C++ solution to LeetCode #1528. Shuffle String",
+      "published": true,
+      "lang": "eng"
+    },
+    {
+      "id": "kor-leetcode-1528",
+      "date": "Nov 14, 2020",
+      "title": "LeetCode - 1528",
+      "description": "JavaScript solution to LeetCode #1528. Shuffle String",
+      "published": true,
+      "lang": "kor"
+    },
+    {
+      "id": "jap-leetcode-1528",
+      "date": "Nov 14, 2020",
+      "title": "LeetCode - 1528",
+      "description": "Ruby solution to LeetCode #1528. Shuffle String",
+      "published": true,
+      "lang": "jap"
+    },
+    {
+      "id": "eng-leetcode-1342",
+      "date": "Nov 14, 2020",
+      "title": "LeetCode - 1342",
+      "description": "C++ solution to LeetCode #1342. Number of Steps to Reduce a Number to Zero",
+      "published": true,
+      "lang": "eng"
+    },
+    {
+      "id": "kor-leetcode-1342",
+      "date": "Nov 14, 2020",
+      "title": "LeetCode - 1342",
+      "description": "JavaScript solution to LeetCode #1342. Number of Steps to Reduce a Number to Zero",
+      "published": true,
+      "lang": "kor"
+    },
+    {
+      "id": "jap-leetcode-1342",
+      "date": "Nov 14, 2020",
+      "title": "LeetCode - 1342",
+      "description": "Ruby solution to LeetCode #1342. Number of Steps to Reduce a Number to Zero",
+      "published": true,
+      "lang": "jap"
+    },
+    {
       "id": "eng-leetcode-771",
       "date": "Nov 14, 2020",
       "title": "LeetCode - 771",
