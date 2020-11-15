@@ -261,7 +261,7 @@ void SinglyLinkedList<T>::traverse()
 }
 ```
 
-[View full source code](https://github.com/bugxvii/ds-algo/blob/master/linkedlist/singly/sll.hpp).
+[View full source code](https://github.com/bugxvii/ds-algo/blob/master/linkedlist/singly/sll.hpp)
 
 ## Related Post
 - <router-link to="./eng-linked-list">What is Linked List?</router-link>

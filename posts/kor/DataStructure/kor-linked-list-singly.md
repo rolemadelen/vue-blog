@@ -265,9 +265,9 @@ void SinglyLinkedList<T>::traverse()
 }
 ```
 
-[C++ 전체 코드 보기](https://github.com/bugxvii/ds-algo/blob/master/linkedlist/singly/sll.hpp).
+[C++ 전체 코드 보기](https://github.com/bugxvii/ds-algo/blob/master/linkedlist/singly/sll.hpp)
 
-## Related Post
-- <router-link to="./eng-linked-list">What is Linked List?</router-link>
-- <router-link to="./eng-linked-list-doubly">Doubly Linked List</router-link>
-- <router-link to="./eng-linked-list-circular">Circular Linked List</router-link>
+## 관련 포스트
+- <router-link to="./kor-linked-list">연결 리스트(Linked List)란</router-link>
+- <router-link to="./kor-linked-list-doubly">이중 연결 리스트(Doubly Linked List)란</router-link>
+- <router-link to="./kor-linked-list-circular">원형 연결 리스트(Circular Linked List)란</router-link>
