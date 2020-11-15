@@ -1192,7 +1192,7 @@
     {
       "id": "jap-linked-list-circular",
       "date": "07.18.20",
-      "title": "Ruby・循環リストと(Circular Linked List)は",
+      "title": "循環リストと(Circular Linked List)は",
       "description": "最初と最後のノードがつながってる連結リスト。",
       "published": false,
       "lang": "jap"
@@ -1200,9 +1200,9 @@
     {
       "id": "kor-linked-list-circular",
       "date": "07.18.20",
-      "title": "Ruby・원형 연결 리스트(Circular Linked List)란",
+      "title": "원형 연결 리스트(Circular Linked List)란",
       "description": "첫 번째와 마지막 노드가 서로 연결되어 있는 리스트.",
-      "published": false,
+      "published": true,
       "lang": "kor"
     },
     {
