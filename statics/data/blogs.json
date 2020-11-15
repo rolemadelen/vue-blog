@@ -1232,7 +1232,7 @@
     {
       "id": "eng-linked-list-singly",
       "date": "05.09.20",
-      "title": "What is Singly Linked List?",
+      "title": "What is a Singly Linked List?",
       "description": "Singly linked list is a unidirectional linked list, that is, it can only traverse in forward direction.",
       "published": true,
       "lang": "eng"
@@ -1256,7 +1256,7 @@
     {
       "id": "eng-linked-list",
       "date": "05.09.20",
-      "title": "What is Linked List?",
+      "title": "What is a Linked List?",
       "description": "A linked list is a linear collection of data elements whose order is not given by their physical placement in memory.",
       "published": true,
       "lang": "eng"
@@ -1280,7 +1280,7 @@
     {
       "id": "eng-array",
       "date": "08.03.20",
-      "title": "Ruby・What is Array?",
+      "title": "Ruby・What is an Array?",
       "description": "Array is a data structure consisting of a collection of elements, each identified by at least one array index or key.",
       "published": true,
       "lang": "eng"
