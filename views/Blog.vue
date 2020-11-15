@@ -24,6 +24,9 @@
 }
 
 html.darkmode {
+  table {
+    color: #171717;
+  }
   .blog h2 {
     border-bottom: 1px solid #3e3e3e;
   }
