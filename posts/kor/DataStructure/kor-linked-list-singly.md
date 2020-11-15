@@ -1,146 +1,273 @@
+<div class="update">
+last updated 11.15.20
+</div>
 
-연결 리스트에 대해 생소하다면 이 <router-link to="./kor-linked-list">포스팅</router-link>을 먼저 읽어주세요.
+## 단일 연결 리스트란?
 
-<div class="divider"></div>
-
-### 단일 연결 리스트란?
-단일 연결 리스트(Singly Linked List)는 모든 노드들이 순차적으로 연결되어 있다. 
-또한 단방향의 연결 리스트이기 때문에 오직 앞으로만 이동할 수 있다.
+단일 연결 리스트는 한방향으로만 노드들이 연결되어 있는 리스트이며, 각 노드는 메모리 어딘가에 있는 노드를 참조 할 `next` 포인터를 지니고 있습니다.
 
 ![Linked List image](assets/data-structure/linked-list/linkedlist.png)
 <div style="font-size: 10px; text-align: center;">Source: https://dev.to/swarup260/data-structures-algorithms-in-javascript-single-linked-list-part-1-3ghg</div>
 
-단일 연결 리스트의 노드는 기본적으로 두 개의 정보를 가진다.
-1. 다음 노드를 가리키는 포인터
-2. 데이터의 값
+각 노드는 아래의 정보를 지니고 있습니다:
+1. 다음 노드를 참조 할 `next` 포인터.
+2. 데이터 값을 저장하는 `data` 변수.
 
-노드를 코드로 구현했을 때의 모습은 대체적으로 아래와 같다.
+```cpp
+template <class T>
+class Node 
+{
+  private:
+  public:
+    Node(T data) : next(nullptr) { this->data = data; }
 
-```rb
-class Node
-  attr_accessor :data, :next
-  
-  def initialize(data)
-    @data = data
-    @next = nil
-  end
-end
+    Node<T> *next;
+    T data;
+};
 ```
 
-처음 생성한 노드의 경우 가리키고 있는 노드가 없기 때문에 `@next` -- 현재 노드가 가리키고 있는 노드 -- 는 nil로 초기화 한다.
+## 구현
 
-<div class="divider"></div>
+아래는 구현 해당 포스트에서 구현 할 단일 연결 리스트의 구조입니다.
 
-### 연산
-
-단일 연결 리스트에서는 기본적으로 아래 세 개의 연산이 가능하다.
-- `add()`: 리스트에 데이터를 추가
-- `remove(n)`: <i>n</i>번째 노드를 리스트에서 삭제. 
-- `search_node_at(n)`: <i>n</i>번째 노드를 탐색.
-
-<div class="divider"></div>
-
-### 단일 연결 리스트 Ruby 코드
-
-```rb
+```cpp
+template <class T>
 class SinglyLinkedList
-  attr_reader :head, :length
+{
+  private: 
+    Node<T> *head;
+    Node<T> *tail;
+    int size;
 
-  def initialize()
-    @head = nil
-    @length = 0
-  end
+  public:
+    SinglyLinkedList();
+    SinglyLinkedList(T data);
+    ~SinglyLinkedList();
 
-  def add(value)
-    new_node = Node.new(value)
-    if @head == nil
-      @head = new_node
-    else
-      curr = @head
-      while curr.next != nil
-        curr = curr.next
-      end
+    void push_front(T data);
+    void push_back(T data);
+    void push_at(int index, T data);
 
-      curr.next = new_node
-    end
+    void pop_front();
+    void pop_back();
+    void pop_at(int index);
 
-    @length += 1
-  end
+    T peek_first();
+    T peek_last();
 
-  # first node => position 1
-  def remove(pos)
-    return -1 if pos < 1 or pos > @length
-    if pos==1
-      @head = @head.next
-    else
-      curr = @head
-      for i in 1...(pos-1)
-        curr = curr.next
-      end
+    void traverse();
 
-      curr.next = curr.next.next
-    end
-
-    @length -= 1
-  end
-
-  # first node => position 1
-  def search_node_at(pos)
-    if @head == nil
-      puts "---- list is empty"
-      return 
-    elsif pos < 1 or pos > @length
-      puts "---- invalid position"
-      return
-    else
-      curr = @head
-      for i in 1...pos
-        curr = curr.next
-      end
-      return curr
-    end
-  end
-
-  def length()
-    @length
-  end
-
-  def print_list()
-    curr = @head
-    for i in 0...@length
-      print "#{curr.data} "
-      curr = curr.next
-    end
-    puts
-  end
-end
+};
 ```
 
-### 사용 예제
+`tail`은 리스트의 마지막 노드를 가리킵니다. `tail`을 사용하면 리스트 끝에 노드를 삽입할시, 불필요하게 머리부터 끝까지 순회 할 필요가 없어집니다.
 
-```rb
-# 단일 연결 리스트의 인스턴스를 생성
-root = SinglyLinkedList.new()
+단인 연결 리스트의 함수들을 살펴보도록 합시다.
 
-# 각각 1부터 5의 값을 가진  5개의 노드를 추가
-1.upto(5) do |x|
-  root.add(x)
-end
+## 생성자
 
-# 리스트의 길이와 모든 요소를들 출력
-puts "len: #{root.length}"
-root.print_list
+디폴트와 첫 노드의 값을 인자로 하나 받는 매개변수 생성자, 이렇게 두 개를 정의했습니다.
 
-# 첫 번째 노드를 삭제
-root.remove(1)
-puts "len: #{root.length}"
-root.print_list
+### 디폴트 생성자
 
-# 두 번째 노드를 탐색, 값을 출력
-puts "search_node_at(2): #{root.search_node_at(2).data}"
+멤버 변수들을 기본값으로 초기화 해줍니다.
+
+```cpp
+/* 기본 생성자 */
+template <class T>
+SinglyLinkedList<T>::SinglyLinkedList()
+{
+  head = tail = nullptr;
+  size = 0;
+}
 ```
 
-### Related Post
-- <router-link to="./kor-linked-list">연결 리스트(Linked List)란?</router-link>
-- <router-link to="./kor-linked-list-doubly">이중 연결 리스트(Doubly Linked List)란?</router-link>
-- <router-link to="./kor-linked-list-circular">원형 연결 리스트(Circular Linked List)란?</router-link>
+### 매개변수 생성자
+
+파라미터로 받은 값을 기반으로 노드를 생성, `head`와 `tail`이 해당 노드를 가리키게 됩니다.
+
+![Linked List image](assets/data-structure/linked-list/sll-constructor-1.png)
+
+```cpp
+/* 매개변수 생성자 */
+template <class T>
+SinglyLinkedList<T>::SinglyLinkedList(T data)
+{
+  head = new Node(data);
+  tail = head;
+  size = 1;
+}
+```
+
+## 데이터 추가하기
+
+새로운 노드는 리스트의 처음, 중간, 그리고 끝에 삽입이 가능합니다.
+
+### 리스트 처음에 노드 삽입하기
+
+1. 새로운 노드 `newNode` 생성.
+2. `newNode`가 현재의 머리를 가리키도록 한다.
+3. `head`를 업데이트 한다.
+4. (`tail`노드를 사용하는 경우 `tail`도 업데이트 한다.)
+
+```cpp
+template <class T>
+void SinglyLinkedList<T>::push_front(T data) 
+{
+  Node<T> *temp = new Node<T>(data);
+  temp->next = head;
+  head = temp;
+
+  if (tail == nullptr)
+  {
+    tail = head;
+    tail->next = nullptr;
+  }
+
+  ++size;
+}
+```
+
+### 리스트 끝에 노드 추가하기
+
+1. 새로운 노드 `newNode` 생성
+2. `tail->next`가 `newNode`를 가리키도록 한다.
+3. `newNode`가 `tail`이 되도록 `tail`을 업데이트 한다.
+
+`tail`을 사용하지 않을 경우, 리스트를 순회해서 마지막 노드 까지 하나하나 방문해야 하는
+불필요한 작업을 거쳐야 합니다.
+
+```cpp
+template <class T>
+void SinglyLinkedList<T>::push_back(T data) 
+{
+  Node<T> *temp = new Node<T>(data);
+  tail->next = temp;
+  tail = temp;
+  tail->next = nullptr;
+
+  ++size;
+}
+```
+
+### 리스트 중간에 노드 추가하기
+
+매개변수로 넘어온 `index` 위치에 노드를 삽입하려고 하는 과정입니다.
+
+1. `index-1`번 째 노드를 찾고 이를 `temp`노드에 저장.
+2. 새로운 노드 `newNode`를 생성.
+3. `temp`와 `temp->next`사이에 `newNode`를 삽입한다. 위에서 설명한 리스트 처음에 노드를 삽입하는 과정과 같다. 다만 `head`대신 `temp`를 사용.
+
+```cpp
+template <class T>
+void SinglyLinkedList<T>::push_at(int index, T data)
+{
+  Node<T> *temp = head;
+  for (int i=0; i<index-1; ++i)
+  {
+    temp = temp->next;
+  }
+
+  Node<T> *newNode = new Node<T>(data);
+  newNode->next = temp->next;
+  temp->next = newNode;
+  ++size;
+}
+```
+
+## 데이터 삭제하기
+
+### 첫 번째 노드 삭제하기
+
+첫 번째 노드를 삭제하는 방법은 생각보다 되게 간단합니다.
+
+1. 우선 `head`를 임시 포인터에 저장. 그리고
+2. `head`를 `head->next`로 업데이트.
+3. 임시 포인터에 저장해놓은 이전 `head` 포인터의 메모리를 해제해준다 (노드를 지운다).
+
+```cpp
+template <class T>
+void SinglyLinkedList<T>::pop_front()
+{
+  Node<T> *temp = head;
+  head = head->next;
+  delete temp;
+}
+```
+
+### 마지막 노드 삭제하기
+
+1. 마지막 노드의 이전 노드에 접근.
+2. 마지막 노드의 메모리 할당을 해제한다 (노드를 지운다).
+3. `tail`을 사용하는 경우, `tail`의 포인터를 업데이트 한다.
+
+```cpp
+template <class T>
+void SinglyLinkedList<T>::pop_back()
+{
+  if (size == 1)
+  {
+    delete head;
+    head = tail = nullptr;
+    size = 0;
+    return;
+  }
+
+  Node<T> *temp = head;
+  for (int i=1; i<size-1; ++i)
+  {
+    temp = temp->next;
+  }
+
+  delete temp->next;
+  temp->next = nullptr;
+  tail = temp;
+}
+```
+
+### 중간 노드 삭제하기
+
+바로 위에서 설명 한 마지막 노드 삭제하기와 작동방법은 동일합니다. 다만 위에서는 
+마지막 노드의 이전 노드까지 이동했다면, 여기서는 마지막 노드가 아닌 `index`의 이전, 즉 `index-1`까지 이동해줍니다. 그 후는 위에서 언급한 동작방법과 동일합니다.
+
+```cpp
+template <class T>
+void SinglyLinkedList<T>::pop_at(int index)
+{
+  Node<T> *temp = head;
+  for (int i=0; i<index-1; ++i)
+  {
+    temp = temp->next;
+  }
+
+  Node<T> *temp2 = temp->next;
+  temp->next = temp->next->next;
+  delete temp2;
+}
+```
+
+## 연결리스트 순회
+단일 연결리스트를 순회하는 방법입니다.
+머리(`head`)부터 접근해서 그 다음 노드가 꼬리일때까지 반복합니다.
+
+```cpp
+template <class T>
+void SinglyLinkedList<T>::traverse()
+{
+  Node<T> *temp = head;
+  while(temp->next != nullptr) 
+  {
+    cout << temp->data << ' ';
+    temp = temp->next;
+  }
+
+  cout << temp->data << endl;
+}
+```
+
+[C++ 전체 코드 보기](https://github.com/bugxvii/ds-algo/blob/master/linkedlist/singly/sll.hpp).
+
+## Related Post
+- <router-link to="./eng-linked-list">What is Linked List?</router-link>
+- <router-link to="./eng-linked-list-doubly">Doubly Linked List</router-link>
+- <router-link to="./eng-linked-list-circular">Circular Linked List</router-link>

@@ -148,12 +148,16 @@
 <<<<<<< HEAD
       "description": "Bubble sort is the simplest sorting algorithm which works by repeatedly comparing and swapping two adjacent elements if they're in the wrong order.",
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
       "description": "Learn and implement BFS algorithm",
 >>>>>>> 939a889 (Algorithm posts ported and assets added')
 =======
       "published": true,
 >>>>>>> 4dc8b76 (kor description added & on refresh, move to home)
+=======
+      "published": false,
+>>>>>>> 0131ce9 (Non-updated post are un-published)
       "lang": "eng"
     },
     {
@@ -170,9 +174,13 @@
 =======
 =======
       "description": "隣接する2個の要素を反復的に比較して、位置を変えながら整列が行われるアルゴリズム。",
+<<<<<<< HEAD
 >>>>>>> 866aeb5 (Japanese posts description added & jp posts line-height added)
       "published": true,
 >>>>>>> 4dc8b76 (kor description added & on refresh, move to home)
+=======
+      "published": false,
+>>>>>>> 0131ce9 (Non-updated post are un-published)
       "lang": "jap"
     },
     {
@@ -187,8 +195,12 @@
 >>>>>>> 939a889 (Algorithm posts ported and assets added')
 =======
       "description": "인접한 두 요소를 비교하고 순서가 틀릴 시 서로 위치를 바꾸는 과정을 반복하며 정렬을 하는 알고리즘.",
+<<<<<<< HEAD
       "published": true,
 >>>>>>> 4dc8b76 (kor description added & on refresh, move to home)
+=======
+      "published": false,
+>>>>>>> 0131ce9 (Non-updated post are un-published)
       "lang": "kor"
     },
     {
@@ -198,12 +210,16 @@
 <<<<<<< HEAD
       "description": "Merge sort is an efficient comparison-based, divide-and-conquer algorithm invented by John von Neumann in 1945.",
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
       "description": "Learn and implement BFS algorithm",
 >>>>>>> 939a889 (Algorithm posts ported and assets added')
 =======
       "published": true,
 >>>>>>> 4dc8b76 (kor description added & on refresh, move to home)
+=======
+      "published": false,
+>>>>>>> 0131ce9 (Non-updated post are un-published)
       "lang": "eng"
     },
     {
@@ -220,9 +236,13 @@
 =======
 =======
       "description": "分割統治「Divide-and-Conquer」アルゴリズムと呼ばれる効率的なアルゴリズム。",
+<<<<<<< HEAD
 >>>>>>> 866aeb5 (Japanese posts description added & jp posts line-height added)
       "published": true,
 >>>>>>> 4dc8b76 (kor description added & on refresh, move to home)
+=======
+      "published": false,
+>>>>>>> 0131ce9 (Non-updated post are un-published)
       "lang": "jap"
     },
     {
@@ -237,8 +257,12 @@
 >>>>>>> 939a889 (Algorithm posts ported and assets added')
 =======
       "description": "존 폰 노이만(John von Neumann)이 고안한 분할정복(divide-and-conquer) 방식의 효율적인 정렬 알고리즘.",
+<<<<<<< HEAD
       "published": true,
 >>>>>>> 4dc8b76 (kor description added & on refresh, move to home)
+=======
+      "published": false,
+>>>>>>> 0131ce9 (Non-updated post are un-published)
       "lang": "kor"
     },
     {
@@ -248,12 +272,16 @@
 <<<<<<< HEAD
       "description": "Selection sort is an in-place comparison sorting algorithm. Generally it performs worse than the insertion sort on larger lists.",
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
       "description": "Learn and implement BFS algorithm",
 >>>>>>> 939a889 (Algorithm posts ported and assets added')
 =======
       "published": true,
 >>>>>>> 4dc8b76 (kor description added & on refresh, move to home)
+=======
+      "published": false,
+>>>>>>> 0131ce9 (Non-updated post are un-published)
       "lang": "eng"
     },
     {
@@ -270,9 +298,13 @@
 =======
 =======
       "description": "In-placeアルゴリズムの一つ。一般的に挿入ソートよりファフォマンスが悪い。",
+<<<<<<< HEAD
 >>>>>>> 866aeb5 (Japanese posts description added & jp posts line-height added)
       "published": true,
 >>>>>>> 4dc8b76 (kor description added & on refresh, move to home)
+=======
+      "published": false,
+>>>>>>> 0131ce9 (Non-updated post are un-published)
       "lang": "jap"
     },
     {
@@ -287,8 +319,12 @@
 >>>>>>> 939a889 (Algorithm posts ported and assets added')
 =======
       "description": "제자리 정렬 알고리즘 중 하나. 일반적으로 삽입 정렬보다 느린 정렬 속도를 가진다.",
+<<<<<<< HEAD
       "published": true,
 >>>>>>> 4dc8b76 (kor description added & on refresh, move to home)
+=======
+      "published": false,
+>>>>>>> 0131ce9 (Non-updated post are un-published)
       "lang": "kor"
     },
     {
@@ -298,12 +334,16 @@
 <<<<<<< HEAD
       "description": "Insertion sort is an efficient sorting algorithm for sorting smaller sets of data.",
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
       "description": "Learn and implement BFS algorithm",
 >>>>>>> 939a889 (Algorithm posts ported and assets added')
 =======
       "published": true,
 >>>>>>> 4dc8b76 (kor description added & on refresh, move to home)
+=======
+      "published": false,
+>>>>>>> 0131ce9 (Non-updated post are un-published)
       "lang": "eng"
     },
     {
@@ -320,9 +360,13 @@
 =======
 =======
       "description": "少ない数のデータを整列するとき効率的なアルゴリズム。",
+<<<<<<< HEAD
 >>>>>>> 866aeb5 (Japanese posts description added & jp posts line-height added)
       "published": true,
 >>>>>>> 4dc8b76 (kor description added & on refresh, move to home)
+=======
+      "published": false,
+>>>>>>> 0131ce9 (Non-updated post are un-published)
       "lang": "jap"
     },
     {
@@ -337,8 +381,12 @@
 >>>>>>> 939a889 (Algorithm posts ported and assets added')
 =======
       "description": "적은 수의 자료들을 정렬할 때 효율적인 절령 알고리즘.",
+<<<<<<< HEAD
       "published": true,
 >>>>>>> 4dc8b76 (kor description added & on refresh, move to home)
+=======
+      "published": false,
+>>>>>>> 0131ce9 (Non-updated post are un-published)
       "lang": "kor"
     },
     {
@@ -346,7 +394,7 @@
       "date": "06.11.20",
       "title": "Graph - Breadth First Search (BFS)",
       "description": "BFS starts at the root (given) node and explores all of the neighbor nodes at the present depth prior to moving on to the nodes at the next depth level.",
-      "published": true,
+      "published": false,
       "lang": "eng"
     },
     {
@@ -354,7 +402,7 @@
       "date": "06.11.20",
       "title": "グラフ・幅優先探索（BFS）",
       "description": "近隣のノードたちから探索するアルゴリズム。",
-      "published": true,
+      "published": false,
       "lang": "jap"
     },
     {
@@ -362,7 +410,7 @@
       "date": "06.11.20",
       "title": "그래프 - 넓이 우선 탐색 (BFS)",
       "description": "루트 노드에서 시작해 인접한 노드들을 먼저 탐색하는 알고리즘.",
-      "published": true,
+      "published": false,
       "lang": "kor"
     },
     {
@@ -372,12 +420,16 @@
 <<<<<<< HEAD
       "description": "DFS starts at the root (given) node and explores as deep as possible along each branch before backtracking.",
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
       "description": "Learn and implement BFS algorithm",
 >>>>>>> 939a889 (Algorithm posts ported and assets added')
 =======
       "published": true,
 >>>>>>> 4dc8b76 (kor description added & on refresh, move to home)
+=======
+      "published": false,
+>>>>>>> 0131ce9 (Non-updated post are un-published)
       "lang": "eng"
     },
     {
@@ -394,9 +446,13 @@
 =======
 =======
       "description": " rootノードから始めてもう走査ができないノードまで深く探索するアルゴリズム。",
+<<<<<<< HEAD
 >>>>>>> 866aeb5 (Japanese posts description added & jp posts line-height added)
       "published": true,
 >>>>>>> 4dc8b76 (kor description added & on refresh, move to home)
+=======
+      "published": false,
+>>>>>>> 0131ce9 (Non-updated post are un-published)
       "lang": "jap"
     },
     {
@@ -411,8 +467,12 @@
 >>>>>>> 939a889 (Algorithm posts ported and assets added')
 =======
       "description": "루트 노드에서 시작해 다음 분기로 넘어가기 전, 해당 분기를 끝까지 탐색하는 알고리즘.",
+<<<<<<< HEAD
       "published": true,
 >>>>>>> 4dc8b76 (kor description added & on refresh, move to home)
+=======
+      "published": false,
+>>>>>>> 0131ce9 (Non-updated post are un-published)
       "lang": "kor"
     }
 
@@ -1078,7 +1138,7 @@
       "date": "08.10.20",
       "title": "Ruby・Queue",
       "description": "Queue is a linear data structure which follows a particular order in which the operations are performed -- FIFO.",
-      "published": true,
+      "published": false,
       "lang": "eng"
     },
     {
@@ -1086,7 +1146,7 @@
       "date": "08.10.20",
       "title": "Ruby・큐(Queue)란",
       "description": "First-In-First-Out (FIFO)구조로 자료를 저장하는 형식의 선형 자료구조.",
-      "published": true,
+      "published": false,
       "lang": "kor"
     },
     {
@@ -1094,7 +1154,7 @@
       "date": "08.10.20",
       "title": "Ruby・キュー(Queue)とは",
       "description": "First-In-First-Out（FIFO）の方法でデータを保存するデータ構造。",
-      "published": true,
+      "published": false,
       "lang": "jap"
     },
     {
@@ -1102,7 +1162,7 @@
       "date": "08.10.20",
       "title": "Ruby・Stack",
       "description": "Stack is a linear data structure which follows a particular order in which the operations are performed -- LIFO or FILO.",
-      "published": true,
+      "published": false,
       "lang": "eng"
     },
     {
@@ -1110,7 +1170,7 @@
       "date": "08.10.20",
       "title": "Ruby・스택(Stack)이란",
       "description": "Last-In-First-Out (LIFO) 또는 First-In-Last-Out (FILO) 구조로 자료를 저장하는 선형 자료구조.",
-      "published": true,
+      "published": false,
       "lang": "kor"
     },
     {
@@ -1118,32 +1178,8 @@
       "date": "08.10.20",
       "title": "Ruby・スタック(Stack)とは",
       "description": "Last-In-First-Out（LIFO）またはFirst-In-Last-Out（FILO）方法でデータを保存するデータ構造。",
-      "published": true,
+      "published": false,
       "lang": "jap"
-    },
-    {
-      "id": "eng-array",
-      "date": "08.03.20",
-      "title": "Ruby・Array",
-      "description": "Array is a data structure consisting of a collection of elements, each identified by at least one array index or key.",
-      "published": true,
-      "lang": "eng"
-    },
-    {
-      "id": "jap-array",
-      "date": "08.03.20",
-      "title": "Ruby・配列(Array)とは",
-      "description": "同じデータ型の変数を含むコンテナ。",
-      "published": true,
-      "lang": "jap"
-    },
-    {
-      "id": "kor-array",
-      "date": "08.03.20",
-      "title": "Ruby・배열(Array)이란",
-      "description": "같은 타입형의 변수들로 이루어진 유한 집합. 각각의 요소들은 메모리 상에 연속적으로 나열되어 있다.",
-      "published": true,
-      "lang": "kor"
     },
     {
       "id": "eng-linked-list-circular",
@@ -1158,7 +1194,7 @@
       "date": "07.18.20",
       "title": "Ruby・循環リストと(Circular Linked List)は",
       "description": "最初と最後のノードがつながってる連結リスト。",
-      "published": true,
+      "published": false,
       "lang": "jap"
     },
     {
@@ -1166,7 +1202,7 @@
       "date": "07.18.20",
       "title": "Ruby・원형 연결 리스트(Circular Linked List)란",
       "description": "첫 번째와 마지막 노드가 서로 연결되어 있는 리스트.",
-      "published": true,
+      "published": false,
       "lang": "kor"
     },
     {
@@ -1174,7 +1210,7 @@
       "date": "07.11.20",
       "title": "Ruby・Doubly Linked List",
       "description": "Doubly linked list is a bidirectional linked list, that is, it can be traversed in either direction.",
-      "published": true,
+      "published": false,
       "lang": "eng"
     },
     {
@@ -1182,7 +1218,7 @@
       "date": "07.11.20",
       "title": "Ruby・双方向リスト(Doubly Linked List)とは",
       "description": "双方向のポインタを持ってるノードからなるリスト。",
-      "published": true,
+      "published": false,
       "lang": "jap"
     },
     {
@@ -1190,13 +1226,13 @@
       "date": "07.11.20",
       "title": "Ruby・이중 연결 리스트(Doubly Linked List)란",
       "description": "양방향의 포인터를 가진 노드로 이루어진 리스트.",
-      "published": true,
+      "published": false,
       "lang": "kor"
     },
     {
       "id": "eng-linked-list-singly",
       "date": "05.09.20",
-      "title": "Ruby・Singly Linked List",
+      "title": "What is Singly Linked List?",
       "description": "Singly linked list is a unidirectional linked list, that is, it can only traverse in forward direction.",
       "published": true,
       "lang": "eng"
@@ -1204,7 +1240,7 @@
     {
       "id": "jap-linked-list-singly",
       "date": "05.09.20",
-      "title": "Ruby・単方向リスト(Singly Linked List)とは",
+      "title": "単方向リスト(Singly Linked List)とは",
       "description": "単方向のポインタを持ってるノードからなるリスト。",
       "published": true,
       "lang": "jap"
@@ -1212,7 +1248,7 @@
     {
       "id": "kor-linked-list-singly",
       "date": "05.09.20",
-      "title": "Ruby・단일 연결 리스트(Singly Linked List)란",
+      "title": "단일 연결 리스트(Singly Linked List)란",
       "description": "단일 방향의 포인터를 가진 노드로 이루어진 리스트.",
       "published": true,
       "lang": "kor"
@@ -1238,6 +1274,30 @@
       "date": "05.09.20",
       "title": "연결 리스트(Linked List)란",
       "description": "데이터와 포인터를 가지는 노드를 한 줄로 연결해서 데이터를 저장하는 방식의 자료구조.",
+      "published": true,
+      "lang": "kor"
+    },
+    {
+      "id": "eng-array",
+      "date": "08.03.20",
+      "title": "Ruby・What is Array?",
+      "description": "Array is a data structure consisting of a collection of elements, each identified by at least one array index or key.",
+      "published": true,
+      "lang": "eng"
+    },
+    {
+      "id": "jap-array",
+      "date": "08.03.20",
+      "title": "Ruby・配列(Array)とは",
+      "description": "同じデータ型の変数を含むコンテナ。",
+      "published": true,
+      "lang": "jap"
+    },
+    {
+      "id": "kor-array",
+      "date": "08.03.20",
+      "title": "Ruby・배열(Array)이란",
+      "description": "같은 타입형의 변수들로 이루어진 유한 집합. 각각의 요소들은 메모리 상에 연속적으로 나열되어 있다.",
       "published": true,
       "lang": "kor"
     }

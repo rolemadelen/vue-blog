@@ -1,3 +1,6 @@
+<div class="update">
+last updated 11.15.20
+</div>
 
 ## Singly Linked List?
 
@@ -103,10 +106,10 @@ We can add data either at the beginning, middle, or end of the list.
 
 ### Add to the beginning
 
-1. Create a new node.
-2. New node points to the current head.
-3. Update the `head` pointer.
-4. (If you're using the `tail` node) make sure `tail` pointer is not `null`.
+1. Create a new node (`newNode`).
+2. `newNode` points to the current head.
+3. Update `head`.
+4. (If you're using `tail`) update `tail`.
 
 ```cpp
 template <class T>
@@ -121,76 +124,66 @@ void SinglyLinkedList<T>::push_front(T data)
     tail = head;
     tail->next = nullptr;
   }
-
-  ++size;
 }
 ```
 
 ### Add to the end
 
+1. Create a new node (`newNode`).
+2. let `tail->next` points to `newNode`.
+3. Update `tail` so that `newNode` becomes the `tail`.
+
+If you don't have `tail`, you'll have to traverse the list first to get to the last node of the list.
+
 ```cpp
 template <class T>
 void SinglyLinkedList<T>::push_back(T data) 
 {
-  if (size == 0) 
-  {
-    push_front(data);
-    return;
-  }
-
   Node<T> *temp = new Node<T>(data);
   tail->next = temp;
   tail = temp;
   tail->next = nullptr;
-
-  ++size;
 }
 ```
 
 ### Add in between
 
+You're trying to insert a node at `index` which is given in the parameter.
+
+1. Navigate to `index-1` node and let this be called `temp`.
+2. Create a new node, `newNode`.
+3. Insert `newNode` in between `temp` and `temp->next`.
+
 ```cpp
 template <class T>
 void SinglyLinkedList<T>::push_at(int index, T data)
 {
-  if (index <= 0) 
+  Node<T> *temp = head;
+  for (int i=0; i<index-1; ++i)
   {
-    push_front(data);
+    temp = temp->next;
   }
-  else if (index >= size) 
-  {
-    push_back(data);
-  }
-  else 
-  {
-    Node<T> *temp = head;
-    for (int i=0; i<index-1; ++i)
-    {
-      temp = temp->next;
-    }
 
-    Node<T> *newNode = new Node<T>(data);
-    newNode->next = temp->next;
-    temp->next = newNode;
-    ++size;
-  }
+  Node<T> *newNode = new Node<T>(data);
+  newNode->next = temp->next;
+  temp->next = newNode;
 }
 ```
 
 ## Deleting a data
 
 ### Delete from beginning
+
+Deleting process is quite candid.
+
+1. Save `head` into a temporary space.
+2. Move `head` to its `next`.
+3. Delete `head` saved in the temporary space.
+
 ```cpp
 template <class T>
 void SinglyLinkedList<T>::pop_front()
 {
-  if (size == 0)
-  {
-    cerr << "pop_front(): List is empty" << endl;
-    return;
-  }
-
-  --size;
   Node<T> *temp = head;
   head = head->next;
   delete temp;
@@ -198,16 +191,15 @@ void SinglyLinkedList<T>::pop_front()
 ```
 
 ### Delete from end
+
+1. Navigate to the node one previous to the last; even if you have `tail`, you need `tail->prev` which doesn't exist in singly linked list.
+2. Deallocate the last node.
+3. Update `tail` (if you're using it).
+
 ```cpp
 template <class T>
 void SinglyLinkedList<T>::pop_back()
 {
-  if (size == 0)
-  {
-    cerr << "pop_front(): List is empty" << endl;
-    return;
-  }
-
   if (size == 1)
   {
     delete head;
@@ -225,79 +217,39 @@ void SinglyLinkedList<T>::pop_back()
   delete temp->next;
   temp->next = nullptr;
   tail = temp;
-
-  --size;
 }
 ```
 
 ### Delete from middle
+
+The process is exactly same as one deleting from the end. Except, you navigate one previous to the `index` not the last node.
+
 ```cpp
 template <class T>
 void SinglyLinkedList<T>::pop_at(int index)
 {
-  if (index <= 0) 
+  Node<T> *temp = head;
+  for (int i=0; i<index-1; ++i)
   {
-    pop_front();
-  }
-  else if (index >= size)
-  {
-    pop_back();
-  }
-  else 
-  {
-    Node<T> *temp = head;
-    for (int i=0; i<index-1; ++i)
-    {
-      temp = temp->next;
-    }
-    Node<T> *temp2 = temp->next;
-    temp->next = temp->next->next;
-    --size;
-    delete temp2;
-  }
-}
-```
-
-## Peeking a data
-
-```cpp
-template <class T>
-T SinglyLinkedList<T>::peek_first()
-{
-  if (size == 0)
-  {
-    cerr << "List is empty" << endl;
-    return static_cast<T>(-1);
+    temp = temp->next;
   }
 
-  return head->data;
-}
-
-template <class T>
-T SinglyLinkedList<T>::peek_last()
-{
-  if (size == 0)
-  {
-    cerr << "List is empty" << endl;
-    return static_cast<T>(-1);
-  }
-
-  return tail->data;
+  Node<T> *temp2 = temp->next;
+  temp->next = temp->next->next;
+  delete temp2;
 }
 ```
 
 ## Traversing a linked list
 
+Print all data in the list.
+The process is straightforward. You start from `head` and loop it until `head->next` is not `tail`.
+Don't forget to print last `tail`'s data.
+
 ```cpp
 template <class T>
 void SinglyLinkedList<T>::traverse()
 {
-  if (head == nullptr) 
-  {
-    cout << "traverse(): List is emtpy" << endl;
-    return;
-  }
-
   Node<T> *temp = head;
   while(temp->next != nullptr) 
   {
@@ -307,80 +259,6 @@ void SinglyLinkedList<T>::traverse()
 
   cout << temp->data << endl;
 }
-```
-
-## Example
-
-```cpp
-#include "sll.hpp"
-
-using std::cin;
-
-int main()
-{
-  SinglyLinkedList<int> sll;
-  int choice;
-
-  while(true)
-  {
-    cout << "=================================================" << endl;
-    cout << "1. push_front    2. push_back     3. push_at" << endl;
-    cout << "4. pop_front     5. pop_back      6. pop_at" << endl;
-    cout << "7. traverse      8. peek_front    9. peek_last" << endl;
-    cout << "0. exit" << endl;
-    cout << "> ";
-    cin >> choice;
-    cout << "=================================================" << endl;
-
-    int data, index;
-    switch(choice)
-    {
-      case 1: 
-        cout << "Enter the data to insert: ";
-        cin >> data;
-        sll.push_front(data);
-        break;
-      case 2:
-        cout << "Enter the data to insert: ";
-        cin >> data;
-        sll.push_back(data);
-        break;
-      case 3: 
-        cout << "enter the index and data: ";
-        cin >> index >> data;
-        sll.push_at(index, data);
-        break;
-      case 4: 
-        sll.pop_front(); 
-        break;
-      case 5: 
-        sll.pop_back(); 
-        break;
-      case 6: 
-        cout << "Pop the element located at: ";
-        cin >> index;
-        sll.pop_at(index); 
-        break;
-      case 7:
-        sll.traverse();
-        break;
-      case 8:
-        cout << "front: " << sll.peek_first() << endl;
-        break;
-      case 9:
-        cout << "back: " << sll.peek_last() << endl;
-        break;
-      case 0:
-        // fallthrough
-      default:
-        cout << "Exit" << endl;
-        goto Loop;
-    }
-  }
-Loop:
-  return 0;
-}
-
 ```
 
 [View full source code](https://github.com/bugxvii/ds-algo/blob/master/linkedlist/singly/sll.hpp).
