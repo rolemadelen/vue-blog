@@ -1562,6 +1562,30 @@
   ],
   "PS": [
     {
+      "id": "eng-leetcode-1603",
+      "date": "Nov 16, 2020",
+      "title": "LeetCode - 1603",
+      "description": "C++ solution to LeetCode #1603. Desgin Parking System",
+      "published": true,
+      "lang": "eng"
+    },
+    {
+      "id": "kor-leetcode-1603",
+      "date": "Nov 16, 2020",
+      "title": "LeetCode - 1603",
+      "description": "JavaScript solution to Leete #1603. Desgin Parking System",
+      "published": true,
+      "lang": "kor"
+    },
+    {
+      "id": "jap-leetcode-1603",
+      "date": "Nov 16, 2020",
+      "title": "LeetCode - 1603",
+      "description": "Ruby solution to LeetCode #1603. Desgin Parking System",
+      "published": true,
+      "lang": "jap"
+    },
+    {
       "id": "eng-leetcode-1365",
       "date": "Nov 15, 2020",
       "title": "LeetCode - 1365",
