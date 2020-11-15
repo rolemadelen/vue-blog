@@ -372,11 +372,12 @@ void CircularDoublyLinkedList<T>::remove_back()
 - `head->prev->prev` == `last->prev`
 - `head->prev->prev->next` == `last->prev->next`
 
-이를 이용해서 `last->prev->next`가 `head`와 연결되도록 업데이트 합니다. 마찬가지로 `head->prev`를 `last`에서 `last->prev`로 업데이트 해주면 끝입니다.
-
 <div style="text-align: center">
   <img src="assets/data-structure/linked-list/cll-doubly-remove-at3.png" alt="원형 이중 리스트 picture">
 </div>
+
+이를 이용해서 `last->prev->next`가 `head`와 연결되도록 업데이트 합니다. 마찬가지로 `head->prev`를 `last`에서 `last->prev`로 업데이트 해주면 끝입니다.
+
 
 <a id="fullcode">[전체 구현 코드 보기](https://github.com/bugxvii/ds-algo/tree/master/linkedlist/circular)</a>
 
