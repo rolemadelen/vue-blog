@@ -1,16 +1,19 @@
 <div class="update">
-last updated: November 11th, 2020
+last updated 11.15.20
 </div>
+
 
 ## What is a Circular Linked List?
 
-In <router-link to="./eng-linked-list-singly">singly</router-link> and <router-link to="./eng-linked-list-doubly">doubly linked list</router-link>, we can track the end of list by finding a node that points to `nil`; doubly linked has one more of this node, which is `head.prev`, like the figure below.
+> In this post, the word _list_ refers to the linked list.
+
+In <router-link to="./eng-linked-list-singly">singly</router-link> and <router-link to="./eng-linked-list-doubly">doubly linked list</router-link>, we can track the end of list by finding a node that points to `nil`; doubly linked has one more of this node, which is `head.prev` like the figure below.
 
 <div style="text-align: center">
   <img src="assets/data-structure/linked-list/cll-doubly-example.png" alt="Linked list picture">
 </div>
 
-A circular linked list is a linked list that does not end; there is no `nll`. The last element of the node links back to its first node; for the case of doubly linked list, `head.prev` 
+A circular list is a linked list that does not end; there is no `nll`. The last element of the node links back to its first node; for the case of a doubly linked list, `head.prev` 
 is linked with the last node. This is perhaps why it's called a _circular_ linked list.
 
 <div style="text-align: center">
@@ -19,7 +22,7 @@ is linked with the last node. This is perhaps why it's called a _circular_ linke
 
 ## Structure of a Node
 
-A circular linked list is a variation of a singly and a doubly linked list; the structure of a node in a circular linked list will be based on the type of a linked list we use.
+A circular linked list is a variation of a singly and a doubly linked list, thus the structure of a node in a circular list will be based on the type of a linked list we use.
 
 ### **Circular Singly Linked List**
 
@@ -52,7 +55,7 @@ class Node
 
 ## Implementation
 
-Let's go through each operation in a circular linked list, and see how to implement them in both circular singly and doubly linked lists.
+Here's the skeleton of a circular linked list we're going to implement. For the full source code, please refer to the [link below](#fullcode).
 
 ```cpp
 template <class T>
@@ -74,7 +77,7 @@ class CircularLinkedList
 };
 ```
 
-### Constructor
+## Constructor
 
 ### **Circular Singly Linked List**
 
@@ -165,20 +168,11 @@ void CircularDoublyLinkedList<T>::insert_front(int val)
 
 First connect `newNode->prev` and `newNode->next`.
 
-```cpp
-  newNode->next = head;
-  newNode->prev = head->prev;
-```
-
 <div style="text-align: center">
   <img src="assets/data-structure/linked-list/cll-doubly-insert_at3.png" alt="circular doubly linked list picture">
 </div>
 
 Our current `last->next` is pointing at the first element in the list. Update this so that its pointing at `newNode`.
-
-```cpp
-  head->prev->next = newNode;
-```
 
 <div style="text-align: center">
   <img src="assets/data-structure/linked-list/cll-doubly-insert_at4.png" alt="circular doubly linked list picture">
@@ -186,10 +180,6 @@ Our current `last->next` is pointing at the first element in the list. Update th
 
 And lastly, update our current `head->prev` so that it points to `newNode`.
 
-```cpp
-  head->prev = newNode;
-  head = newNode;
-```
 <div style="text-align: center">
   <img src="assets/data-structure/linked-list/cll-doubly-insert_at5.png" alt="circular doubly linked list picture">
 </div>
@@ -198,8 +188,7 @@ And lastly, update our current `head->prev` so that it points to `newNode`.
 
 ### **Circular Singly Linked List**
 
-We're trying to add a new node at the end, and we have this `last` node which is pointing at the last node.
-We can simply connect this `last` with `newNode`, and update `last` so that its pointing at the new last not the old one.
+At the beginning of this post, I mentioned that it's easier to insert an element at the end when we use the `tail` node. This is the part.
 
 Here's the code.
 
@@ -214,36 +203,16 @@ void CircularSinglyLinkedList<T>::insert_back(int val)
 }
 ```
 
-Let's go through each step, line by line.
-
-```cpp
-  newNode->next = last->next;
-```
-
 `newNode` is going to be our new last, thus `newNode->next` should point to the first element of the list, which is current `last->next`.
 
 <div style="text-align: center">
   <img src="assets/data-structure/linked-list/cll-singly-insert2.png" alt="circular singly list image">
 </div>
 
-```cpp
-  last->next = newNode;
-```
-
-Update the `last->next` so that its pointing `newNode`, which is our new last.
+Now change the link for `last->next` so that its pointing `newNode`, which is our new last. And update `last`.
 
 <div style="text-align: center">
   <img src="assets/data-structure/linked-list/cll-singly-insert3.png" alt="circular singly list image">
-</div>
-
-```cpp
-  last = newNode;
-```
-
-Finally, update our `last`.
-
-<div style="text-align: center">
-  <img src="assets/data-structure/linked-list/cll-singly-insert4.png" alt="circular singly list image">
 </div>
 
 ### **Circular Doubly Linked List**
@@ -264,35 +233,23 @@ void CircularDoublyLinkedList<T>::insert_back(int val)
 
 Let's connect `newNode->prev` and `newNode->next` with current last and first node respectively.
 
-```cpp
-  Node<T> *last = head->prev;
-  newNode->prev = last;
-  newNode->next = head;
-```
-
 <div style="text-align: center">
   <img src="assets/data-structure/linked-list/cll-doubly-insert2.png" alt="circular doubly linked list picture">
 </div>
 
-Our current `last`, which is B, is pointing at the first element, but this should be updated and point to `newNode`.
-
-```cpp
-  last->next = newNode;
-```
+Our current `last`, which is B, is pointing at the first element. Re-link this node and let it point to `newNode`.
 
 <div style="text-align: center">
   <img src="assets/data-structure/linked-list/cll-doubly-insert3.png" alt="circular doubly linked list picture">
 </div>
 
 Last but not least, the previous node of our current `head` should now be the `newNode`.
-```cpp
-  head->prev = newNode;
-```
+
 <div style="text-align: center">
   <img src="assets/data-structure/linked-list/cll-doubly-insert4.png" alt="circular doubly linked list picture">
 </div>
 
-### Remove the first node
+## Remove the first node
 
 ### **Circular Singly Linked List**
 
@@ -300,30 +257,21 @@ Last but not least, the previous node of our current `head` should now be the `n
 template <class T>
 void CircularSinglyLinkedList<T>::remove_front()
 {
-  if (size == 1)
-  {
-    delete last;
-    last = nullptr;
-    size = 0;
-  }
-  else
-  {
-    Node<T> *temp = last->next;
-    last->next = last->next->next;
+  Node<T> *temp = last->next;
+  last->next = last->next->next;
 
-    delete temp;
-  }
+  delete temp;
 }
 ```
 
 The process of removing the first node is candid. Since `last->next` is pointing at the first node, we just update this link.
 
-So if we have this list with three elements like the below, 
+Assume we have a list with three elements like the below. 
 <div style="text-align: center">
   <img src="assets/data-structure/linked-list/cll-singly-remove-at0.png" alt="circular doubly linked list picture">
 </div>
 
-we can update our `last->next` to point `last->next->next`.
+we can let our `last->next` point it its next which is `last->next->next`.
 
 <div style="text-align: center">
   <img src="assets/data-structure/linked-list/cll-singly-remove-at1.png" alt="circular doubly linked list picture">
@@ -335,52 +283,34 @@ we can update our `last->next` to point `last->next->next`.
 template <class T>
 void CircularDoublyLinkedList<T>::remove_front()
 {
-  if (size == 1)
-  {
-    delete head;
-    head = nullptr;
-    size = 0;
-  }
-  else
-  {
-    Node<T> *temp = head->next;
-    head->next->prev = head->prev;
-    head->prev->next = head->next;
-    delete head;
-    head = temp;
-  }
+  Node<T> *temp = head->next;
+  head->next->prev = head->prev;
+  head->prev->next = head->next;
+  delete head;
+  head = temp;
 }
 ```
 
-This one is a bit trickier than the circular singly linked list.
+This one is also very straightforward. Perhaps, it's easier than the circular singly list.
 
-Let say we have this linked list (see the figure below), and we're trying to remove the current head node.
+Given a list like the below, let's remove the head node.
 <div style="text-align: center">
   <img src="assets/data-structure/linked-list/cll-doubly-remove-at0.png" alt="Linked list picture">
 </div>
 
-First, delink all nodes connected to `head`.
-```cpp
-  head->next->prev = head->prev;  // B->prev = C;
-  head->prev->next = head->next;  // C->next = B;
-```
+On the whole, delink all nodes connected to `head`.
 
 <div style="text-align: center">
   <img src="assets/data-structure/linked-list/cll-doubly-remove-at1.png" alt="circular doubly linked list picture">
 </div>
 
-Then update the `head`.
-
-```cpp
-  delete head;
-  head = temp; // head = head->next
-```
+And update the `head` and we're done.
 
 <div style="text-align: center">
   <img src="assets/data-structure/linked-list/cll-doubly-remove-at2.png" alt="circular doubly linked list picture">
 </div>
  
-### Remove the last node
+## Remove the last node
 
 ### **Circular Singly Linked List**
 
@@ -388,24 +318,15 @@ Then update the `head`.
 template <class T>
 void CircularSinglyLinkedList<T>::remove_back()
 {
-  if (size == 1)
+  Node<T> *curr = last->next;
+  while (curr->next != last) 
   {
-    delete last;
-    last = nullptr;
-    size = 0;
+    curr = curr->next;
   }
-  else 
-  {
-    Node<T> *curr = last->next;
-    while (curr->next != last) 
-    {
-      curr = curr->next;
-    }
 
-    curr->next = curr->next->next;
-    delete last;
-    last = curr; 
-  }
+  curr->next = curr->next->next;
+  delete last;
+  last = curr; 
 }
 ```
 
@@ -414,29 +335,15 @@ We have a list like the below.
   <img src="assets/data-structure/linked-list/cll-singly-remove-at0.png" alt="circular doubly linked list picture">
 </div>
 
-In order to remove `last`, we need to first navigate to the previous node of `last`, which is B in the figure.
+In order to remove `last`, we need `last->prev`. But we don't have `prev` in a singly list, thus we need to traverse the list from the beginning upto where `last->prev` is, which is B in the figure.
 
-```cpp
-  Node<T> *curr = last->next;
-  while (curr->next != last) 
-  {
-    curr = curr->next;
-  }
-```
+Now when we're at B, we update its link and let it point to the `head`.
 
-Now we're at B. Let's update this link so that its no longer pointing at `last`.
-```cpp
-  temp->next = temp->next->next;
-```
 <div style="text-align: center">
   <img src="assets/data-structure/linked-list/cll-singly-remove-at2.png" alt="circular doubly linked list picture">
 </div>
 
-And then we let our B to be the new last node.
-```cpp
-  delete last;
-  last = temp; 
-```
+Then we delete our current `last` and we're done.
 
 <div style="text-align: center">
   <img src="assets/data-structure/linked-list/cll-singly-remove-at3.png" alt="circular doubly linked list picture">
@@ -448,49 +355,32 @@ And then we let our B to be the new last node.
 template <class T>
 void CircularDoublyLinkedList<T>::remove_back()
 {
-  if (size == 1)
-  {
-    delete head;
-    head = nullptr;
-    size = 0;
-  }
-  else
-  {
-    Node<T> *temp = head->prev;
-    head->prev->prev->next = head;
-    head->prev = head->prev->prev;
-    delete temp;
-  }
+  Node<T> *temp = head->prev;
+  head->prev->prev->next = head;
+  head->prev = head->prev->prev;
+  delete temp;
 }
 ```
 
 It looks complicated compare to the singly linked list, but it's actually much simpler.
-We can directly access any node's previous node using the `prev` pointer. 
 
-So the previous node of our current last would be `head->prev->prev`. Update this node's `next` so that its pointing to `head`.
-Also update `head->prev` so that its pointing to the node previous to the current `last`.
+First please take a look at the below and see which refers to which.
 
-```cpp
-  head->prev->prev->next = head;
-  head->prev = head->prev->prev;
-```
+- `head->prev` == `last`
+- `head->prev->prev` == `last->prev`
+- `head->prev->prev->next` == `last->prev->next`
 
-And delete the current last.
-```cpp
-  delete temp;
-```
 
 <div style="text-align: center">
   <img src="assets/data-structure/linked-list/cll-doubly-remove-at3.png" alt="circular doubly linked list picture">
 </div>
-<div class="divider"></div>
 
-### Source code
-- [Circular Linked List full implementation source code](https://github.com/jioneeu/coding/blob/master/data_structure/ruby/linked-list/circular/cll.rb)
-- [Circular Linked List testing code](https://github.com/jioneeu/coding/blob/master/data_structure/ruby/linked-list/circular/test.rb)
+Hopefully it's not that confusing. We need to connect `last->prev->next` with the `head`. And 
+change `head->prev`'s link from `last` to `last->prev`.
 
+<a id="fullcode">[View the full source code](https://github.com/bugxvii/ds-algo/tree/master/linkedlist/circular)</a>
 
-### Related Post
+## Related Post
 - <router-link to="./eng-linked-list">What is Linked List?</router-link>
 - <router-link to="./eng-linked-list-singly">Singly Linked List</router-link>
 - <router-link to="./eng-linked-list-doubly">Doubly Linked List</router-link>
