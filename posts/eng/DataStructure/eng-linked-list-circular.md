@@ -5,7 +5,7 @@ last updated 11.15.20
 
 ## What is a Circular Linked List?
 
-> In this post, the word _list_ refers to the linked list.
+> In this post, the term _list_ refers to the linked list.
 
 In <router-link to="./eng-linked-list-singly">singly</router-link> and <router-link to="./eng-linked-list-doubly">doubly linked list</router-link>, we can track the end of list by finding a node that points to `nil`; doubly linked has one more of this node, which is `head.prev` like the figure below.
 
