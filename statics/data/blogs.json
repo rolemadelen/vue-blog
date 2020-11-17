@@ -1,6 +1,14 @@
 {
   "Algorithm": [
     {
+      "id": "eng-linear-search",
+      "date": "11.18.20",
+      "title": "Linear Search",
+      "description": "Linear search algorithm",
+      "published": false,
+      "lang": "eng"
+    },
+    {
       "id": "eng-stack-infix-to-postfix",
       "date": "09.12.20",
       "title": "Reverse Polish Notation, RPN",
@@ -1208,9 +1216,9 @@
     {
       "id": "eng-linked-list-doubly",
       "date": "07.11.20",
-      "title": "Ruby・Doubly Linked List",
+      "title": "What is a Doubly Linked List?",
       "description": "Doubly linked list is a bidirectional linked list, that is, it can be traversed in either direction.",
-      "published": false,
+      "published": true,
       "lang": "eng"
     },
     {
@@ -1561,6 +1569,54 @@
     }
   ],
   "PS": [
+    {
+      "id": "eng-leetcode-1614",
+      "date": "Nov 18, 2020",
+      "title": "LeetCode - 1614",
+      "description": "C++ solution to LeetCode #1614. Maximum Nesting Depth of the Parentheses",
+      "published": true,
+      "lang": "eng"
+    },
+    {
+      "id": "kor-leetcode-1614",
+      "date": "Nov 18, 2020",
+      "title": "LeetCode - 1614",
+      "description": "JavaScript solution to Leete #1614. Maximum Nesting Depth of the Parentheses",
+      "published": true,
+      "lang": "kor"
+    },
+    {
+      "id": "jap-leetcode-1614",
+      "date": "Nov 18, 2020",
+      "title": "LeetCode - 1614",
+      "description": "Ruby solution to LeetCode #1614. Maximum Nesting Depth of the Parentheses",
+      "published": true,
+      "lang": "jap"
+    },
+    {
+      "id": "eng-leetcode-1313",
+      "date": "Nov 18, 2020",
+      "title": "LeetCode - 1313",
+      "description": "C++ solution to LeetCode #1313. Decompress Run-Length Encoded List",
+      "published": true,
+      "lang": "eng"
+    },
+    {
+      "id": "kor-leetcode-1313",
+      "date": "Nov 18, 2020",
+      "title": "LeetCode - 1313",
+      "description": "JavaScript solution to Leete #1313. Decompress Run-Length Encoded List",
+      "published": true,
+      "lang": "kor"
+    },
+    {
+      "id": "jap-leetcode-1313",
+      "date": "Nov 18, 2020",
+      "title": "LeetCode - 1313",
+      "description": "Ruby solution to LeetCode #1313. Decompress Run-Length Encoded List",
+      "published": true,
+      "lang": "jap"
+    },
     {
       "id": "eng-leetcode-1281",
       "date": "Nov 17, 2020",
