@@ -1562,6 +1562,30 @@
   ],
   "PS": [
     {
+      "id": "eng-leetcode-1281",
+      "date": "Nov 17, 2020",
+      "title": "LeetCode - 1281",
+      "description": "C++ solution to LeetCode #1281. Subtract the Product and Sum of Digits of an Integer",
+      "published": true,
+      "lang": "eng"
+    },
+    {
+      "id": "kor-leetcode-1281",
+      "date": "Nov 17, 2020",
+      "title": "LeetCode - 1281",
+      "description": "JavaScript solution to Leete #1281. Subtract the Product and Sum of Digits of an Integer",
+      "published": true,
+      "lang": "kor"
+    },
+    {
+      "id": "jap-leetcode-1281",
+      "date": "Nov 17, 2020",
+      "title": "LeetCode - 1281",
+      "description": "Ruby solution to LeetCode #1281. Subtract the Product and Sum of Digits of an Integer",
+      "published": true,
+      "lang": "jap"
+    },
+    {
       "id": "eng-leetcode-1603",
       "date": "Nov 16, 2020",
       "title": "LeetCode - 1603",
