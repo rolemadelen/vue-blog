@@ -1570,6 +1570,30 @@
   ],
   "PS": [
     {
+      "id": "eng-leetcode-1389",
+      "date": "Nov 19, 2020",
+      "title": "LeetCode - 1389",
+      "description": "C++ solution to LeetCode #1389. Create Target Array in the Given Order",
+      "published": true,
+      "lang": "eng"
+    },
+    {
+      "id": "kor-leetcode-1389",
+      "date": "Nov 19, 2020",
+      "title": "LeetCode - 1389",
+      "description": "JavaScript solution to Leete #1389. Create Target Array in the Given Order",
+      "published": true,
+      "lang": "kor"
+    },
+    {
+      "id": "jap-leetcode-1389",
+      "date": "Nov 19, 2020",
+      "title": "LeetCode - 1389",
+      "description": "Ruby solution to LeetCode #1389. Create Target Array in the Given Order",
+      "published": true,
+      "lang": "jap"
+    },
+    {
       "id": "eng-leetcode-1614",
       "date": "Nov 18, 2020",
       "title": "LeetCode - 1614",
