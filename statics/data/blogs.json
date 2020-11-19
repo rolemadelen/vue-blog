@@ -1218,7 +1218,7 @@
       "date": "07.11.20",
       "title": "What is a Doubly Linked List?",
       "description": "Doubly linked list is a bidirectional linked list, that is, it can be traversed in either direction.",
-      "published": true,
+      "published": false,
       "lang": "eng"
     },
     {
@@ -1569,6 +1569,30 @@
     }
   ],
   "PS": [
+    {
+      "id": "eng-leetcode-1486",
+      "date": "Nov 20, 2020",
+      "title": "LeetCode - 1486",
+      "description": "C++ solution to LeetCode #1486. XOR Operation in an Array",
+      "published": true,
+      "lang": "eng"
+    },
+    {
+      "id": "kor-leetcode-1486",
+      "date": "Nov 20, 2020",
+      "title": "LeetCode - 1486",
+      "description": "JavaScript solution to Leete #1486. XOR Operation in an Array",
+      "published": true,
+      "lang": "kor"
+    },
+    {
+      "id": "jap-leetcode-1486",
+      "date": "Nov 20, 2020",
+      "title": "LeetCode - 1486",
+      "description": "Ruby solution to LeetCode #1486. XOR Operation in an Array",
+      "published": true,
+      "lang": "jap"
+    },
     {
       "id": "eng-leetcode-1389",
       "date": "Nov 19, 2020",
