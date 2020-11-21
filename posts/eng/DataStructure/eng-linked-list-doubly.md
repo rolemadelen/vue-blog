@@ -1,3 +1,7 @@
+<div class="update">
+last updated 11.21.20
+</div>
+
 ## What is Doubly Linked List?
 > In this post, the term _list_ refers to the linked list.
 
