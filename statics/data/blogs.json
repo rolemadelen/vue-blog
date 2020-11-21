@@ -1224,9 +1224,9 @@
     {
       "id": "jap-linked-list-doubly",
       "date": "07.11.20",
-      "title": "Ruby・双方向リスト(Doubly Linked List)とは",
+      "title": "双方向リスト(Doubly Linked List)とは",
       "description": "双方向のポインタを持ってるノードからなるリスト。",
-      "published": false,
+      "published": true,
       "lang": "jap"
     },
     {
