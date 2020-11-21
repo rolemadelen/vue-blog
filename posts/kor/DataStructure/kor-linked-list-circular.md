@@ -4,7 +4,7 @@ last updated 11.15.20
 
 ## 원형 연결 리스트란
 
-<router-link to="./eng-linked-list-singly">단일</router-link>과 <router-link to="./eng-linked-list-doubly">이중 연결 리스트</router-link>에서는 
+<router-link to="./kor-linked-list-singly">단일</router-link>과 <router-link to="./kor-linked-list-doubly">이중 연결 리스트</router-link>에서는 
 `nil`을 가리키는 노드를 찾으므로써 리스트의 마지막이 어디인지 확인할 수 있습니다; 이중 연결 리스트의 경우에는 `prev`도 있기 때문에 아래의 그림 처럼 두 개의 노드가 `nil`을 가리키죠.
 
 <div style="text-align: center">
