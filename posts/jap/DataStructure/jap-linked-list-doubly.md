@@ -337,7 +337,7 @@ void DoublyLinkedList<T>::remove_at(int index)
 <img src="assets/data-structure/linked-list/dll-remove_at1.png" alt="three nodes linked together">
 </div>
 
-[GitHub: 全体コードをみたい！](https://github.com/bugxvii/ds-algo/blob/master/linkedlist/doubly/dll.hpp)
+[GitHub: 全体コードがみたい！](https://github.com/bugxvii/ds-algo/blob/master/linkedlist/doubly/dll.hpp)
 
 ### 関連記事
 - <router-link to="./jap-linked-list">連結リスト「Linked List」とは</router-link>
