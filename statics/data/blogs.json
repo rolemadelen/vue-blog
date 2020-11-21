@@ -1232,9 +1232,9 @@
     {
       "id": "kor-linked-list-doubly",
       "date": "07.11.20",
-      "title": "Ruby・이중 연결 리스트(Doubly Linked List)란",
+      "title": "이중 연결 리스트(Doubly Linked List)란",
       "description": "양방향의 포인터를 가진 노드로 이루어진 리스트.",
-      "published": false,
+      "published": true,
       "lang": "kor"
     },
     {
