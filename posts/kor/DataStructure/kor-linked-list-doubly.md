@@ -1,435 +1,346 @@
+<div class="update">
+last updated 11.21.20
+</div>
 
-### 이중 연결 리스트란?
-이중 연결 리스트(Doubly Linked List)는 노드들이 한 방향으로만 연결된 <router-link to="./kor-linked-list-singly">단일 리스트</router-link>와는 달리, 노드가 양쪽 방향으로 연결된 연결 리스트이다.
+## 이중 연결 리스트란?
+> 해당 글에서의 '리스트'는 '연결 리스트'를 의미합니다.
+
+이중 연결 리스트는 단방향으로만 이동이 가능했던 단일 연결 리스트와는 달리, 앙방향으로 이동이 가능한 자료구조이다.
+이중 리스트의 각 노드들은 `prev`와 `next` 두 개의 포인터를 가지며, 이들을 이용해 현재 노드의 이전(*prev*)과 다음(*next*)노드를 가리킬 수 있다.
+
+예를들어 아래와 같은 리스트가 있을 때, 두 번째 노드인 **B**의 이전과 다음 노드는 `B-prev`와 `B->next`로 접근이 가능하다.
 
 ![Linked List image](assets/data-structure/linked-list/dll.png)
 
-이중 연결 리스트의 노드는 기본적으로 아래 세 가지의 정보를 가지고 있다.
-1. 데이터의 값
-3. 이전 노드의 포인터 -- `prev`
-2. 다음 노드의 포인터 -- `next`
+## 노드의 구조
 
-```rb
-class Node
-  attr_accessor :data, :prev, :next
+위에서 언급한대로, 이중 연결 리스트의 노드에는 두 개의 포인터가 존재하는데, 바로 `prev`와 `next`이다.
+이 두 포인터를 이용해 앞뒤 어느 방향으로도 순회가 가능하다.
 
-  # default parameter: prev/next의 기본값은 nil이다
-  def initialize(data, prev=nil, _next=nil)
-    @data = data
-    @prev = prev
-    @next = _next
-  end
-end
+```cpp
+template <class T>
+class Node 
+{ 
+  private:
+  public:
+    Node<T>(T val) : prev(nullptr), next(nullptr) { data = val; }
+    Node<T> *prev;
+    Node<T> *next;
+    T data;
+};
 ```
 
-처음 노드를 생성할 때 `prev`와 `next` 둘 다 가리키고 있는 노드가 없기 때문에 인자가 따로 주어지지 않은 이상 nil을  기본 값으로 한다.
+## 구현
 
-<div class="divider"></div>
+해당 글에서 구현 할 이중 연결 리스트의 인터페이스는 아래와 같다.
 
-### 연결 리스트 구현
+```cpp
+template <class T>
+class DoublyLinkedList 
+{
+  private: 
+    Node<T> *head;
+    int capacity;
 
-여기서 구현 할 이중 연결 리스트의 구조는 아래와 같다.
+  public: 
+    DoublyLinkedList(int val);
+    ~DoublyLinkedList();
 
-```rb
-class DoublyLinkedList
-  # 생성자
-  def initialize
-  end
+    void init(T val);
+    void insert_back(int val);
+    void insert_front(int val);
+    void insert_at(int index, int val);
 
-  # 리스트 맨 뒤에 노드를 추가
-  def insert(value)
-  end
+    void remove_back();
+    void remove_front();
+    void remove_at(int index);
 
-  # 해당 위치에 노드를 추가
-  def insert_at(index, value)
-  end
-
-  # 해당 위치의 노드를 반환
-  def get_node_at(index)
-  end
-
-  # 해당 위치의 노드를 삭제
-  def remove_at(index)
-  end
-
-  # 리스트에서 data를 탐색
-  def search(data)
-  end
-
-  # 리스트 순회
-  def print_list
-  end
-end
+    void link(Node<T> *a, Node<T> *b);
+    void print();
+};
 ```
 
-수 많은 구현 방법 중 하나이기 때문에 꼭 이 구조를 따를 필요는 없다. 필요하다 싶은 메소드가 있으면 따로 추가해도 되고, 필요없다고 생각되는 부분은 무시해도 좋다.
+그럼 각각의 함수들이 어떻게 동작하는지, 하나하나 살펴보도록 하자.
 
-그럼 각각의 메소드들의 구현을 살펴보도록 하자.
+## 생성자
 
-### 생성자 (initialize)
-```rb
-def initialize
-  @head = @tail = nil
-  @length = 0
-end
+초기 노드의 데이터 값을 매개변수로 받아 `head`노드와 `tail`을 정의한다. `tail`은 리스트의 마지막 노드를 가리킨다.
+
+```cpp
+template <class T>
+DoublyLinkedList<T>::DoublyLinkedList(int val)
+{
+  head = new Node<T>(val);
+  tail = head;
+  head->next = tail;
+  tail->prev = head;
+  head->prev = tail->next = nullptr;
+}
 ```
 
-개체를 생성한 초기, 리스트가 비어있기 때문에 `@head`와 `@tail`둘 다 `nil`의 값을 가진다.
-
-`@length`는 리스트의 길이를 저장한다. 이 메타데이터가 없을 시, 리스트의 크기를 구할 때 머리부터 순회를 해야하기 때문에 O(n)의 시간이 걸린다. 하지만 `@length`를 사용하면 O(1)으로 크기를 구할 수 있다.
+![Linked List image](assets/data-structure/linked-list/dll-constructor.png)
 
 
-### 연결 리스트 노드 추가 (insert)
-```rb
-def insert(value)
-  new_node = Node.new(value, @tail)
+## 노드의 삽입
 
-  # 리스트에 이미 노드가 존재하는 경우
-  if @tail != nil
-    @tail.next = new_node
-    new_node.prev = @tail
-    @tail = new_node
-  # 리스트가 비어있는 경우
-  else
-    @tail = new_node
-    @head = @tail
-  end
+편의를 위해 `link(curr, newNode)`라는 도움 함수를 만들었다. 매개변수의 **첫 번째** 인자는 현재 내가 가리키고 있는 노드이며, 두 번째 인자는
+지금 가리키고 있는 노드와 연결 할 노드를 의미한다.
 
-  @length += 1
-end
+```cpp
+template <class T>
+void DoublyLinkedList<T>::link(Node<T> *curr, Node<T> *newNode)
+{
+  curr->next = newNode;
+  newNode->prev = curr;
+}
 ```
 
-`insert`메소드는 리스트 끝에 노드를 추가한다. 리스트가 비어있는 경우와 비어있지 않은 경우를 생각해서 구현을 해야한다.
+### 리스트 끝에 추가
+```cpp
+template <class T>
+void DoublyLinkedList<T>::insert_back(int val) 
+{
+  Node<T> *newNode = new Node(val);
+  if (capacity == 1)
+  {
+    link(head, newNode);
+  }
+  else 
+  {
+    link(tail, newNode);
+  }
+  tail = newNode;
+}
+```
 
-리스트가 비어있는 경우, 새로운 노드를 `@head`와 `@tail`에 대입한다.
+우선 리스트에 존재하는 노드가 `head` 뿐인지 검사한다. 만약 그렇다면 `head`뒤에 새로운 노드를 삽입하고 `tail`이 마지막 노드를 참조하도록 한다.
+아래의 그림에서는 `newNode`가 `tail`이 된다.
 
 <div style="text-align: center">
 <img src="assets/data-structure/linked-list/dll-insert1.png" alt="head and tail pointing to the node">
 </div>
 
-리스트가 비어있지 않은 경우, `@tail`의 다음 노드(`next`)가 
-새로운 노드(`new_node`)를 가리키도록 한다. 그 다음 `new_node`의 이전 노드(`prev`)가 현재의 꼬리를 향하도록 한다. 
+한 개 이상의 노드가 리스트에 존재한다면, 마지막 노드를 가리키는 `tail` 뒤에 바로 노드를 삽입한다. 그리고 다시 `tail`이 마지막 노드(`newNode`)를 가리키도록 하면된다.
 
 <div style="text-align: center">
 <img src="assets/data-structure/linked-list/dll-insert2.png" alt="tail pointing to the new node">
 </div>
 
-마지막으로 `@tail`을 업데이트 해준다.
-
-<div style="text-align: center">
-<img src="assets/data-structure/linked-list/dll-insert3.png" alt="update the tail">
-</div>
-
-### 연결 리스트 노드 삽입 (insert\_at)
-```rb
-def insert_at(index, value)
-  # 범위 밖인 경우
-  if index < 0 or index > @length
-    puts "... failed to insert #{value} at index #{index}"
-    return nil
-  # 마지막인 경우 insert 메소드를 호출
-  elsif index == @length
-    insert(value)   
-  # 첫 번째 위치인 경우
-  elsif index == 0
-    new_node = Node.new(value, nil, @head)
-
-    if @head != nil
-      @head.prev = new_node
-      new_node.next = @head
-      @head = new_node
-    else
-      @head = new_node
-      @tail = @head
-    end
-
-    @length += 1
-  # 노드와 노드 사이일 경우
+### 리스트 처음에 추가
+```cpp
+template <class T>
+void DoublyLinkedList<T>::insert_front(int val) 
+{
+  Node<T> *newNode = new Node(val);
+  if (capacity == 1)
+  {
+    link(newNode, tail);
+  }
   else
-    new_node = Node.new(value)
-    curr = get_node_at(index-1)
-
-    new_node.next = curr.next
-    new_node.prev = curr
-    curr.next.prev = new_node
-    curr.next = new_node
-
-    @length += 1
-  end
-
-end
+  {
+    link(newNode, head);
+  }
+  head = newNode;
+}
 ```
 
-원하는 위치에 노드를 삽입하는 메소드이다. 아래와 같이 노드가 연결되어 있을 때 삽입할 수 있는 경우의 수는 세 가지다.
+리스트 끝에 추가하는 `insert_back` 함수와 거의 완전히 동일하게 동작한다. 다만 새로운 노드를 `tail`이 아닌 `head`와 연결시킨다.
+
+### 리스트 중간에 추가
+
+매개변수로 노드를 삽입 할 위치인 `index`와 노드의 값 `val`을 넘겨받는다. `index`는 제로베이스로 0부터 시작한다.
+
+```cpp
+template <class T>
+void DoublyLinkedList<T>::insert_at(int index, int val) 
+{
+  if (index <= 0) 
+  {
+    insert_front(val);
+  }
+  else if (index >= capacity) 
+  {
+    insert_back(val);
+  }
+  else 
+  {
+    Node<T> *temp = head;
+    for (int i=0; i<index; ++i) 
+    {
+      temp = temp->next;
+    }
+
+    Node<T> *newNode = new Node(val);
+    temp->prev->next = newNode;
+    newNode->prev = temp->prev;
+    link(newNode, temp);
+  }
+}
+```
+
+잘못된 인덱스가 매개변수로 넘어올 경우, 먼저 구현 한 `insert_front`와 `insert_back`을 호출하는 방식으로 대처를 했다. 
+예를들어 음수 인덱스의 경우는 리스트 앞에 노드를 삽입하고, 범위를 초과한 경우에는 리스트 끝에 노드를 삽입한다.
+
+두 노드 사이에 삽입하는 경우, 우선 삽입할 위치(`index`)에 있는 노드까지 이동해야 한다.
+
+```cpp
+  Node<T> *temp = head;
+  for (int i=0; i<index; ++i) 
+  {
+    temp = temp->next;
+  }
+```
+
+예를들어 `index = 1`에 새로운 노드를 추가하는 경우, 아래 그림과 같이 두 번째 노드인 **B**까지 이동을 해야한다.
 
 <div style="text-align: center">
 <img src="assets/data-structure/linked-list/dll-insert_at1.png" alt="two nodes connected to each other">
 </div>
 
-1. 노드 C 뒤에 추가: `insert` 메소드 호출
-2. 노드 A 앞에 추가: `insert` 메소드와 거의 같은 코드
-3. 노드 A와 C 중간에 추가
+그 다음 새로운 노드인 `newNode`를 현재 위치(`temp`) 이전에 있는 노드(**head**)와 연결한다.
 
-3번의 경우만 살펴보도록 하겠다.
-
-```rb
-new_node = Node.new(value)
-curr = get_node_at(index-1)
-```
-새로운 노드를 만들고 `curr`에다가 삽입할 위치 이전에 있는 노드(A)를 대입한다. 
-
-```rb
-new_node.next = curr.next
-new_node.prev = curr
-```
-
-위 두 줄의 코드를 실행했을 때의 모습이다.
-
-<div style="text-align: center">
-<img src="assets/data-structure/linked-list/dll-insert_at2.png" alt="new nodes next/prev linked to A and C">
-</div>
-
-`new_node`는 확실히 노드 A와 C중간에 위치하게 됐다. 하지만 기존에 연결되어 있던 A와 C의 링크를 끊어야 한다.
-
-```rb
-curr.next.prev = new_node   # c.prev = new_node
-curr.next = new_node
+```cpp
+  temp->prev->next = newNode;
+  newNode->prev = temp->prev;
 ```
 
 <div style="text-align: center">
-<img src="assets/data-structure/linked-list/dll-insert_at3.png" alt="links disconnected between A and C">
+<img src="assets/data-structure/linked-list/dll-insert_at2.png" alt="two nodes connected to each other">
 </div>
 
-### 연결 리스트 노드 반환 (get\_node\_at)
-```rb
-def get_node_at(index)
-  return nil if index < 0 or index >= @length
-  return @head if index == 0
-  return @tail if index+1 == @length
-
-  curr = @head
-  index.times do
-    curr = curr.next
-  end
-
-  curr
-end
+그 다음 `newNode`와 현재 삽입할 위치에 있는 `temp`를 서로 연결해주면 `index`에 `newNode`가 존재하게 된다.
+```cpp
+  link(newNode, temp);
 ```
 
-주어진 위치에 있는 노드를 반환하는 메소드로 헬퍼 함수의 느낌이 강하다. 위 `insert_at` 메소드에서 사용되었다.
+<div style="text-align: center">
+<img src="assets/data-structure/linked-list/dll-insert_at4.png" alt="two nodes connected to each other">
+</div>
 
-### 연결 리스트 노드 제거 (remove\_at)
-```rb
-def remove_at(index)
-  if index < 0 or index >= @length
-    puts ".. failed to remove a node at #{index}"
-    return nil
-  end
+## 노드의 삭제
 
-  if index == 0
-    data = @head.data
-    @head = @head.next
-    @head.prev = nil if @head
-  elsif  index == @length-1
-    data = @tail.data
-    @tail = @tail.prev
-    @tail.next = nil if @tail
+### 마지막 노드 삭제
+```cpp
+template <class T>
+void DoublyLinkedList<T>::remove_back()
+{
+  if (capacity == 1)
+  {
+    delete head;
+    head = tail = nullptr;
+    capacity = 0;
+  }
   else
-    curr = get_node_at(index)
-    data = curr.data
+  {
+    Node<T> *temp = tail;
+    tail = tail->prev;
+    delete temp;
+    tail->next = nullptr;
 
-    curr.prev.next = curr.next
-    curr.next.prev = curr.prev
-    curr = curr.prev = curr.next = nil
-  end
-
-  @length -= 1
-
-  @head = @tail = nil if @length == 0
-
-  return data
-end
+    --capacity;
+  }
+}
 ```
 
-노드를 삭제할 때 고려해야 할 부분은 세 가지가 있다.
+아래와 같은 이중 리스트가 있을 때, 마지막 노드를 삭제하려면 어떻게 해야할까? 생각보다 간단하다.
+
+<div style="text-align: center">
+<img src="assets/data-structure/linked-list/dll-remove1.png" alt="two nodes connected to each other">
+</div>
+
+우선 메모리 해제를 위해 현재 `tail`을 어딘가 따로 보존해둔다 -- `temp = tail`. 그리고 `tail`을 `tail->prev`로 이동시켜주고 `temp`에 보존해둔
+노드의 메모리를 해제시켜주면 끝이다.
+
+<div style="text-align: center">
+<img src="assets/data-structure/linked-list/dll-remove2.png" alt="two nodes connected to each other">
+</div>
+
+### 머리 노드 삭제
+
+```cpp
+template <class T>
+void DoublyLinkedList<T>::remove_front()
+{
+  if (capacity == 1)
+  {
+    delete head;
+    head = tail = nullptr;
+    capacity = 0;
+  }
+  else
+  {
+    Node<T> *temp = head;
+    head = head->next;
+    delete temp;
+    head->prev = nullptr;
+
+    --capacity;
+  }
+}
+```
+
+`tail`이 아닌 `head`를 사용한다는 것만 제외하면 위에서 설명한 '마지막 노드 삭제'의 동작과 거의 일치하기 때문에 설명은 넘어가도록 하겠다. 
+
+<div style="text-align: center">
+<img src="assets/data-structure/linked-list/dll-remove3.png" alt="two nodes connected to each other">
+</div>
+
+### 중간 노드 삭제
+
+```cpp
+template <class T>
+void DoublyLinkedList<T>::remove_at(int index)
+{
+  if (index <= 0) 
+    remove_front();
+  else if (index >= (capacity-1)) 
+    remove_back();
+  else 
+  {
+    Node<T> *temp = head;
+    for(int i=0; i<index; ++i) 
+    {
+      temp = temp->next;
+    }
+
+    temp->prev->next = temp->next;
+    temp->next->prev = temp->prev;
+    delete temp;
+  }
+}
+```
+
+다시 아래와 같은 이중 리스트가 있다고 가정해보자. 여기서 중간의 초록색 노드를 삭제해보자.
+<div style="text-align: center">
+<img src="assets/data-structure/linked-list/dll-remove1.png" alt="two nodes connected to each other">
+</div>
+
+우선 삭제하려는 노드가 있는 곳까지 이동한다.
+
+```cpp
+  Node<T> *temp = head;
+  for(int i=0; i<index; ++i) 
+  {
+    temp = temp->next;
+  }
+```
+
+삭제하려는 노드와 연결되어 있는 모든 링크들을 끊고, 해당 노드의 메모리를 해제해주면 끝이다.
+
+```cpp
+  temp->prev->next = temp->next;
+  temp->next->prev = temp->prev;
+  delete temp;
+```
+
 
 <div style="text-align: center">
 <img src="assets/data-structure/linked-list/dll-remove_at1.png" alt="three nodes linked together">
 </div>
 
-1. 첫 번째 노드를 제거 (노드 A)
-2. 마지막 노드를 제거 (노드 C)
-3. 리스트 중간에 있는 노드를 제거 (노드 B)
+[GitHub: 전체 코드 보기](https://github.com/bugxvii/ds-algo/blob/master/linkedlist/doubly/dll.hpp)
 
-1번과 2번은 간단하다. `head`의 경우는 `head.next`로 이동한 다음 `head.prev`의 링크를 끊어주면 되고, `tail`은 `tail.prev`로 이동한 다음 `tail.next`의 링크를 끊어주면 된다.
-
-3번의 경우를 살펴보자.
-```rb
-curr = get_node_at(index)
-```
-
-우선 삭제할 위치에 있는 노드를 가져와 `curr`에 대입하고, `curr`의 `prev`와 `next`를 이용해 A노드와 C노드에서 연결된 링크들을 끊는다.
-```rb
-curr.prev.next = curr.next
-curr.next.prev = curr.prev
-```
-
-<div style="text-align: center">
-<img src="assets/data-structure/linked-list/dll-remove_at3.png" alt="three nodes linked together">
-</div>
-
-마지막으로 `curr`에서 이어진 링크들을 끊고, 노드를 지운다.
-```rb
-curr = curr.prev = curr.next = nil
-```
-
-<div style="text-align: center">
-<img src="assets/data-structure/linked-list/dll-remove_at4.png" alt="three nodes linked together">
-</div>
-
-### 연결 리스트 자료 탐색 (search)
-```rb
-def search(data)
-  curr = @head
-  @length.times do |i|
-    # 일치할 경우
-    if curr.data == data
-      puts "'#{data}' is located at index '#{i}'"
-      return i
-    end
-    curr = curr.next
-  end
-
-  # 리스트에 데이터가 없는 경우
-  puts "'#{data}' is not in the list"
-  return false
-end
-```
-
-`head`에서부터 시작해 모든 노드들을 순회하면서 노드의 값이 `data`와 일치하는지 확인, 일치하면 해당 인덱스를 
-반환한다. 만약 해당 자료가 존재하지 않으면 `false`를 반환한다.
-
-### 연결 리스트 순회 (print\_list)
-```rb
-def print_list
-  if @length <= 0
-    puts "list is empty"
-    return
-  end
-
-  curr = @head
-  (@length-1).times do
-    print "#{curr.data} -> "
-    curr = curr.next
-  end
-  puts "#{curr.data}"
-end
-```
-
-연결 리스트의 노드들을 전부 출력한다. 
-
-`curr`에다가 `@head`를 대입하고 노드의 개수만큼 반복한다. 만약 `@length`의 정보가 없다면 `curr`의 다음이 `nil`이
-아닐때까지 반복하면 된다. 머리에서 시작했을 때 `curr`이 `nil`이 되는 순간은 오직 `tail` 다음, 즉 리스트의 끝 밖에 없다.
-
-### 구현 코드 테스트 
-```rb
-# 개체 생성
-list = DoublyLinkedList.new()
-
-puts "Insert 1 to 5 at index 0"
-1.upto(5) do |i|
-  list.insert_at(0,i)
-end
-list.print_list
-
-puts "insert 0 at the front"
-list.insert_at(0, 0)
-list.print_list
-
-puts "insert 6 to 10 at the back"
-6.upto(10) do |i|
-  list.insert(i)
-end
-list.print_list
-
-puts "insert 100 at index 5"
-list.insert_at(5, 100)
-list.print_list
-
-puts "remove a node at index 3"
-list.remove_at(3)
-list.print_list
-
-puts "print list's size"
-puts list.length
-
-puts "search for the data '6'"
-list.search(6)
-
-puts "search for the data '77'"
-list.search(77)
-
-puts "insert 123 at index 10"
-list.insert_at(11, 123)
-list.print_list
-
-puts "delete the last element"
-while list.length > 0 do
-  list.print_list
-  list.remove_at(list.length-1)
-end
-list.print_list # list is empty
-```
-
-```
-Insert 1 to 5 at index 0
-5 -> 4 -> 3 -> 2 -> 1
-
-insert 0 at the front
-0 -> 5 -> 4 -> 3 -> 2 -> 1
-
-insert 6 to 10 at the back
-0 -> 5 -> 4 -> 3 -> 2 -> 1 -> 6 -> 7 -> 8 -> 9 -> 10
-
-insert 100 at index 5
-0 -> 5 -> 4 -> 3 -> 2 -> 100 -> 1 -> 6 -> 7 -> 8 -> 9 -> 10
-
-remove a node at index 3
-0 -> 5 -> 4 -> 2 -> 100 -> 1 -> 6 -> 7 -> 8 -> 9 -> 10
-
-print list's size
-11
-
-search for the data '6'
-'6' is located at index '6'
-
-search for the data '77'
-'77' is not in the list
-
-insert 123 at index 10
-0 -> 5 -> 4 -> 2 -> 100 -> 1 -> 6 -> 7 -> 8 -> 9 -> 10 -> 123
-
-delete the last element
-0 -> 5 -> 4 -> 2 -> 100 -> 1 -> 6 -> 7 -> 8 -> 9 -> 10 -> 123
-0 -> 5 -> 4 -> 2 -> 100 -> 1 -> 6 -> 7 -> 8 -> 9 -> 10
-0 -> 5 -> 4 -> 2 -> 100 -> 1 -> 6 -> 7 -> 8 -> 9
-0 -> 5 -> 4 -> 2 -> 100 -> 1 -> 6 -> 7 -> 8
-0 -> 5 -> 4 -> 2 -> 100 -> 1 -> 6 -> 7
-0 -> 5 -> 4 -> 2 -> 100 -> 1 -> 6
-0 -> 5 -> 4 -> 2 -> 100 -> 1
-0 -> 5 -> 4 -> 2 -> 100
-0 -> 5 -> 4 -> 2
-0 -> 5 -> 4
-0 -> 5
-0
-
-list is empty
-```
-
-이중 연결 리스트 [전체 코드 보기](https://github.com/jioneeu/coding/blob/master/data_structure/ruby/linked-list/doubly/dll.rb).
-
-
-### Related Post
-- <router-link to="./kor-linked-list">연결 리스트(Linked List)란?</router-link>
-- <router-link to="./kor-linked-list-singly">단일 연결 리스트(Singly Linked List)란?</router-link>
-- <router-link to="./kor-linked-list-circular">원형 연결 리스트(Circular Linked List)란?</router-link>
+## 관련 글
+- <router-link to="./kor-linked-list">연결 리스트란?</router-link>
+- <router-link to="./kor-linked-list-singly">단일 연결 리스트란?</router-link>
+- <router-link to="./kor-linked-list-circular">원형 연결 리스트란?</router-link>
