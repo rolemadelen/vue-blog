@@ -7,6 +7,11 @@
 
       <br /><br />
 
+      * 2020年11月 – 就職内定できました。 <br>
+      * 2021年03月 – フロントエンドエンジニアで働くことになりました。
+
+      <br /><br />
+
       <div class="bug-links">
         <div><a href="https://github.com/bugxvii">GitHub</a></div>
         <a href="https://www.instagram.com/jioneeu_4am/">Instagram</a>
