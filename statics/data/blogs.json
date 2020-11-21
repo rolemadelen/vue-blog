@@ -1218,7 +1218,7 @@
       "date": "07.11.20",
       "title": "What is a Doubly Linked List?",
       "description": "Doubly linked list is a bidirectional linked list, that is, it can be traversed in either direction.",
-      "published": false,
+      "published": true,
       "lang": "eng"
     },
     {
