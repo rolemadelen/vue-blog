@@ -1202,7 +1202,7 @@
       "date": "07.18.20",
       "title": "循環リストと(Circular Linked List)は",
       "description": "最初と最後のノードがつながってる連結リスト。",
-      "published": false,
+      "published": true,
       "lang": "jap"
     },
     {
@@ -1218,7 +1218,7 @@
       "date": "07.11.20",
       "title": "What is a Doubly Linked List?",
       "description": "Doubly linked list is a bidirectional linked list, that is, it can be traversed in either direction.",
-      "published": true,
+      "published": false,
       "lang": "eng"
     },
     {
