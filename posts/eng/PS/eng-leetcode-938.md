@@ -13,15 +13,14 @@ Given the `root` node of a binary search tree, return the sum of values of all n
 
 class Solution {
   public:
-    void preorder(TreeNode* node, int low, int high, int& sum) {
-      if(!node) return;
-      if (node->val >= low && node->val <= high) sum += node->val;
-      preorder(node->left, low, high, sum);
-      preorder(node->right, low, high, sum);
-    }
     int rangeSumBST(TreeNode* root, int low, int high) {
+      if(!root) return 0;
+
       int sum = 0;
-      preorder(root, low, high, sum);
+      if (root->val >= low && root->val <= high) sum = root->val;
+      if (root->val > low) sum += rangeSumBST(root->left, low, high);
+      if (root->val < high) sum += rangeSumBST(root->right, low, high);
+
       return sum;
     }
 };
