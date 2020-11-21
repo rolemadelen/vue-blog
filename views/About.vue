@@ -8,6 +8,11 @@
 
       <br /><br />
 
+      * 2020 November - Got an offer. <br>
+      * 2021 March - Will be working as a Frontend developer.
+
+      <br /><br />
+
     <div class="bug-links">
       <div><a href="https://github.com/bugxvii">GitHub</a></div>
       <a href="https://www.instagram.com/jioneeu_4am/">Instagram</a>

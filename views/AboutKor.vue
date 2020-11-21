@@ -8,6 +8,11 @@
 
       <br /><br />
 
+      * 2020년 11월 내정을 받았습니다. <br>
+      * 2021년 03월부터 프론트엔드 개발자로 일하게 되었습니다.
+
+      <br /><br />
+
       <div class="bug-links">
         <div><a href="https://github.com/bugxvii">GitHub</a></div>
         <a href="https://www.instagram.com/jioneeu_4am/">Instagram</a>
