@@ -1570,6 +1570,30 @@
   ],
   "PS": [
     {
+      "id": "eng-leetcode-1662",
+      "date": "Nov 23, 2020",
+      "title": "LeetCode - 1662",
+      "description": "C++ solution to LeetCode #1662. Check If Two String Arrays are Equivalent",
+      "published": true,
+      "lang": "eng"
+    },
+    {
+      "id": "kor-leetcode-1662",
+      "date": "Nov 23, 2020",
+      "title": "LeetCode - 1662",
+      "description": "JavaScript solution to Leete #1662. Check If Two String Arrays are Equivalent",
+      "published": true,
+      "lang": "kor"
+    },
+    {
+      "id": "jap-leetcode-1662",
+      "date": "Nov 23, 2020",
+      "title": "LeetCode - 1662",
+      "description": "Ruby solution to LeetCode #1662. Check If Two String Arrays are Equivalent",
+      "published": true,
+      "lang": "jap"
+    },
+    {
       "id": "eng-leetcode-938",
       "date": "Nov 22, 2020",
       "title": "LeetCode - 938",
