@@ -1570,6 +1570,30 @@
   ],
   "PS": [
     {
+      "id": "eng-leetcode-1295",
+      "date": "Nov 25, 2020",
+      "title": "LeetCode - 1295",
+      "description": "C++ solution to LeetCode #1295. Find Numbers with Even Number of Digits",
+      "published": true,
+      "lang": "eng"
+    },
+    {
+      "id": "kor-leetcode-1295",
+      "date": "Nov 25, 2020",
+      "title": "LeetCode - 1295",
+      "description": "JavaScript solution to Leete #1295. Find Numbers with Even Number of Digits",
+      "published": true,
+      "lang": "kor"
+    },
+    {
+      "id": "jap-leetcode-1295",
+      "date": "Nov 25, 2020",
+      "title": "LeetCode - 1295",
+      "description": "Ruby solution to LeetCode #1295. Find Numbers with Even Number of Digits",
+      "published": true,
+      "lang": "jap"
+    },
+    {
       "id": "eng-leetcode-1179",
       "date": "Nov 24, 2020",
       "title": "LeetCode - 1179",
