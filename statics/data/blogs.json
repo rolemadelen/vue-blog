@@ -1570,6 +1570,30 @@
   ],
   "PS": [
     {
+      "id": "eng-leetcode-206",
+      "date": "Nov 26, 2020",
+      "title": "LeetCode - 206",
+      "description": "C++ solution to LeetCode #206. Reverse Linked List",
+      "published": true,
+      "lang": "eng"
+    },
+    {
+      "id": "kor-leetcode-206",
+      "date": "Nov 26, 2020",
+      "title": "LeetCode - 206",
+      "description": "JavaScript solution to Leete #206. Reverse Linked List",
+      "published": true,
+      "lang": "kor"
+    },
+    {
+      "id": "jap-leetcode-206",
+      "date": "Nov 26, 2020",
+      "title": "LeetCode - 206",
+      "description": "Ruby solution to LeetCode #206. Reverse Linked List",
+      "published": true,
+      "lang": "jap"
+    },
+    {
       "id": "eng-leetcode-237",
       "date": "Nov 26, 2020",
       "title": "LeetCode - 237",
