@@ -9,7 +9,7 @@ Creating a personal blog using..
 - MacOS (Safari/Chrome)
 
 ## Demo
-<a href="https://jioneeu-blog.netlify.app" target="_blank">Blog Demo</a>
+<a href="https://old-vue-blog.netlify.app" target="_blank">Blog Demo</a>
 
 ## The original design of the blog
 
