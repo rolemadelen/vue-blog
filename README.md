@@ -1,4 +1,4 @@
-# Blog [![Netlify Status](https://api.netlify.com/api/v1/badges/5e8436d3-0e65-4b6d-89e8-6c5b66b5d195/deploy-status)](https://app.netlify.com/sites/jioneeu-blog/deploys)
+# Blog [![Netlify Status](https://api.netlify.com/api/v1/badges/5e8436d3-0e65-4b6d-89e8-6c5b66b5d195/deploy-status)](https://app.netlify.com/sites/old-vue-blog/deploys)
 
 Creating a personal blog using..
 - HTML/CSS/JS
@@ -9,7 +9,7 @@ Creating a personal blog using..
 - MacOS (Safari/Chrome)
 
 ## Demo
-<a href="https://jioneeu-blog.netlify.app" target="_blank">https://jioneeu-blog.netlify.app</a>
+<a href="https://jioneeu-blog.netlify.app" target="_blank">Blog Demo</a>
 
 ## The original design of the blog
 
