@@ -20,7 +20,7 @@ $ npm i webpack webpack-cli -D
 
 ## main.js
 
-I will be using codes from the [Countries Directory](https://github.com/jioneeu/countries-directiory) toy project only because this is the most recent project I did.
+I will be using codes from the [Countries Directory](https://github.com/euisblue/countries-directiory) toy project only because this is the most recent project I did.
 
 So here's my `main.js` 
 

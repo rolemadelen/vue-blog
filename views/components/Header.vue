@@ -47,7 +47,7 @@
           name="ps"
           @click.native="navMenu('-daily-coding-problem/')"
         />
-        <a href="https://jioneeu-til.com"> TIL </a>
+        <a href="#"> TIL </a>
       </div>
     </div>
     <div class="divider"></div>

@@ -24,5 +24,5 @@ or simply
 
 3 ways to implement
 1. array
-2. Linked Lists: [GitHub](https://github.com/jioneeu/coding/blob/master/data_structure/ruby/priority-queue/linked-list/pqueue.rb)
+2. Linked Lists: [GitHub](https://github.com/euisblue/coding/blob/master/data_structure/ruby/priority-queue/linked-list/pqueue.rb)
 2. heap (preferred) - better performance compare to arrays or linked lists

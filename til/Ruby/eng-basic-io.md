@@ -14,23 +14,23 @@ puts 'Hello, World!'
 
 ```rb
 last_name = "Eu"
-first_name = "Jione"
+first_name = "Mido"
 
 puts last_name + " " + first_name
 
 # 출력 결과
-Eu Jione
+Eu Mido
 ```
 
 ### String Interpolation
 문자열 중간에 변수를 삽입하는 법
 
 ```rb
-name = "jioneeu"
+name = "eubug"
 puts "Hello, #{name}!"
 
 # 출력 결과
-"Hello, jioneeu!"
+"Hello, eubug!"
 ```
 
 ### 그 외
@@ -46,10 +46,10 @@ name = gets
 puts "Name: #{name}"
 
 # 입력
-jioneeu
+eubug
 
 # 출력 결과
-Name: jioneeu
+Name: eubug
 ```
 
 `gets`로 받은 값은 언제나 문자열의 값을 가지고 있다.
