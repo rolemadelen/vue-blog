@@ -30,7 +30,7 @@ $ rails routes
 ### Root
 Root (root url) is the most important and simplest route in the file.
 ```rb
-root to: "jioneeu#index"  #jioneeu controller, index action (method)
+root to: "eubug#index"  #eubug controller, index action (method)
 ```
 
 ### RESTful Routes

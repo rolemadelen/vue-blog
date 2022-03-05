@@ -14,8 +14,8 @@
 
       <div class="bug-links">
         <div><a href="https://github.com/bugxvii">GitHub</a></div>
-        <a href="https://www.instagram.com/jioneeu_4am/">Instagram</a>
-        <div><a href="https://www.linkedin.com/in/jioneeu/">LinkedIn</a></div>
+        <a href="https://www.instagram.com/">Instagram</a>
+        <div><a href="https://www.linkedin.com/">LinkedIn</a></div>
       </div>
       <div class="bug-links">
         <a href="https://twitter.com/bugxvii">Twitter</a>

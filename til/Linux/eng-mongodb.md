@@ -1,6 +1,6 @@
 ## Install and setup MongoDB on Arch Linux
 
-I grabbed a large covid json file to add covid stats to each country for [this](https://github.com/jioneeu/countries-directory) side project I'm working on.
+I grabbed a large covid json file to add covid stats to each country for [this](https://github.com/euisblue/countries-directory) side project I'm working on.
 
 Thing is this json file is too large that I cannot (and shouldn't) commit to GitHub. So I decided to use MongoDB to save this JSON file.
 

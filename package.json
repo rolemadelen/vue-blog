@@ -1,7 +1,7 @@
 {
-  "name": "vue-jioneeu-blog",
+  "name": "vue-eubug-blog",
   "version": "1.0.0",
-  "description": "Vue practice - Creating a blog (https://www.jioneeu.com)",
+  "description": "Vue practice - Creating a blog (https://www.eubug.com)",
   "main": "index.js",
   "scripts": {
     "build": "webpack",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jioneeu/vue-jioneeu-blog.git"
+    "url": "git+https://github.com/eubug/vue-eubug-blog.git"
   },
-  "author": "Jione Eu",
+  "author": "Eu Mido",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jioneeu/vue-jioneeu-blog/issues"
+    "url": "https://github.com/eubug/vue-eubug-blog/issues"
   },
-  "homepage": "https://github.com/jioneeu/vue-jioneeu-blog#readme",
+  "homepage": "https://github.com/eubug/vue-eubug-blog#readme",
   "dependencies": {
     "vue": "^2.6.12"
   },

@@ -23,7 +23,7 @@ Operations:
 - `preorder traversal`
 - `postorder traversal`
 
-Implemenation: [GitHub](https://github.com/jioneeu/coding/blob/master/data_structure/ruby/tree/bst/bst.rb)
+Implemenation: [GitHub](https://github.com/eubug/coding/blob/master/data_structure/ruby/tree/bst/bst.rb)
 
 ## AVL Tree
 - Adelson, Velski & Landis (AVL Tree)
